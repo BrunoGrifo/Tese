@@ -12,13 +12,18 @@
 \usepackage{vhistory}
 \usepackage[hidelinks,bookmarks=true]{hyperref}
 \usepackage{graphicx}
-\usepackage{glossaries}
+\usepackage[acronym]{glossaries}
 \usepackage{tabularx}
+
+
+
 
 %\usepackage[colorinlistoftodos]{todonotes}
 \usepackage[disable]{todonotes}
 
 \usepackage{pdflscape}
+
+
 
 % Colors
 %\usepackage[disable]{todonotes}
@@ -130,6 +135,20 @@
 \fancyhead[LO]{}
 \fancyhead[RO]{\sl{\nouppercase{\leftmark}}}
 
+\fancypagestyle{glossarystyle}{
+	\fancyhead[LE]{Glossário}
+	\fancyhead[RE]{}
+	\fancyhead[LO]{}
+	\fancyhead[RO]{Glossário}
+}
+
+\fancypagestyle{acronymsstyle}{
+	\fancyhead[LE]{Acrónimos}
+	\fancyhead[RE]{}
+	\fancyhead[LO]{}
+	\fancyhead[RO]{Acrónimos}
+}
+
 %\fancyhead[RE,LO]{\rightmark}
 \renewcommand{\headrulewidth}{0.4pt}
 
@@ -147,6 +166,7 @@
 %Gobble Cover, TOC and acknowledgement section pages
 \pagenumbering{gobble}
 
+\input{text/0-glossaries}
 \input{text/0-acronyms}
 
 
@@ -202,8 +222,19 @@
 
 % List of acronyms
 \glsnogroupskiptrue
+
+\newpage
+\pagestyle{glossarystyle}
+\printglossary[style=list,title={Glossário}]
+
+\blankpage
+
+\newpage
+\pagestyle{acronymsstyle}
 \printglossary[type=\acronymtype,style=list,title={Acrónimos}]
 \newpage
+
+
 
 \blankpage
 
@@ -222,24 +253,8 @@
 
 
 %------------------------------
-\chapter{Introdução}
-\label{sec: Introdução}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sed efficitur magna, et laoreet elit. Praesent sed nulla est. Cras in sem nec sem posuere hendrerit eget eu ligula. Duis tincidunt, lacus quis sollicitudin porttitor, nibh lorem tempor elit, nec tempus nunc ante id felis.
-
-Citation example \cite{oppenheimer_why_2003}. 
-
-Acronym usage example \gls{dei}, \gls{os}, \gls{nyi}.
-
-
-\section{Secção 1}
-\label{subsec:sec1}
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sed efficitur magna, et laoreet elit. Praesent sed nulla est. Cras in sem nec sem posuere hendrerit eget eu ligula. Duis tincidunt, lacus quis sollicitudin porttitor, nibh lorem tempor elit, nec tempus nunc ante id felis. Sed volutpat massa nibh, eu tempor ipsum tempor vel. tempor neque.
-
-\subsection{SubSection1}
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sed efficitur magna, et laoreet elit. Praesent sed nulla est. Cras in sem nec sem posuere hendrerit eget eu ligula. Duis tincidunt, lacus quis sollicitudin porttitor, nibh lorem tempor elit, nec tempus nunc ante id felis.
+\input{text/1-introduction}
 
 
 %\input{text/2-conclusion}
@@ -252,16 +267,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sed efficitu
 
 \begin{appendices}
 %\renewcommand\chaptername{Appendix}
-\section*{Appendix A}
-\label{appendixA}
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sed efficitur magna, et laoreet elit. Praesent sed nulla est. Cras in sem nec sem posuere hendrerit eget eu ligula. Duis tincidunt, lacus quis sollicitudin porttitor, nibh lorem tempor elit, nec tempus nunc ante id felis.
-
-\blankpage
-\section*{Appendix B}
-\label{appendixB}
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sed efficitur magna, et laoreet elit. Praesent sed nulla est. Cras in sem nec sem posuere hendrerit eget eu ligula. Duis tincidunt, lacus quis sollicitudin porttitor, nibh lorem tempor elit, nec tempus nunc ante id felis.
+\input{text/9-appendices}
 \end{appendices}
 %------------------------------
 
