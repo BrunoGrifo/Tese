@@ -28,6 +28,36 @@ parent={},%
 %
 }%
 }%
+\ifglsentryexists{Django_API}{}%
+{%
+\gls@defglossaryentry{Django_API}%
+{%
+name={Django API},%
+sort={Django API},%
+type={main},%
+first={django api},%
+firstplural={django apis},%
+text={django api},%
+plural={django apis},%
+description={framework de django},%
+descriptionplural={framework de django},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
 \ifglsentryexists{rest}{}%
 {%
 \gls@defglossaryentry{rest}%
