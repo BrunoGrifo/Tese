@@ -28,17 +28,17 @@ parent={},%
 %
 }%
 }%
-\ifglsentryexists{Django_API}{}%
+\ifglsentryexists{leads}{}%
 {%
-\gls@defglossaryentry{Django_API}%
+\gls@defglossaryentry{leads}%
 {%
-name={Django API},%
-sort={Django API},%
+name={leads},%
+sort={leads},%
 type={main},%
-first={django api},%
-firstplural={django apis},%
-text={django api},%
-plural={django apis},%
+first={leads},%
+firstplural={leadss},%
+text={leads},%
+plural={leadss},%
 description={framework de django},%
 descriptionplural={framework de django},%
 symbol={\relax },%
