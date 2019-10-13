@@ -109,7 +109,7 @@
 \newpage
 \thispagestyle{empty}
 \vspace*{\fill}
-\begin{center} This page is intentionally left blank.
+\begin{center} 
 \end{center}
 \vspace{\fill}
 \newpage}
@@ -264,17 +264,28 @@
 \input{text/7-validacao}
 \input{text/8-produto-final}
 \input{text/9-conclusion}
-%\input{text/2-conclusion}
-%\input{texfiles/2-state-of-the-art}
-%\input{texfiles/3-methodology}
-%...
+
+
+%-------------------------------- Citations with no reference --------------------------
+\nocite{neipatel}
+\nocite{HubSpot}
+\nocite{hubacademy}
+%---------------------------------------------------------------------------------------
+
+
 %\bibliographystyle{unsrt}%Used BibTeX style is unsrt
 \renewcommand{\bibname}{References}
 \bibliography{references}
 
+%\renewcommand\chaptername{Anexo}
+\renewcommand{\appendixtocname}{Anexos}
+\renewcommand{\appendixpagename}{Anexos}
+\renewcommand{\appendixname}{Anexo}
+\addappheadtotoc
+\appendixtitletocoff
+\blankpage
 \begin{appendices}
-%\renewcommand\chaptername{Appendix}
-\input{text/10-appendices}
+	\input{text/10-appendices}
 \end{appendices}
 %------------------------------
 

@@ -58,19 +58,19 @@ parent={},%
 %
 }%
 }%
-\ifglsentryexists{rest}{}%
+\ifglsentryexists{cto}{}%
 {%
-\gls@defglossaryentry{rest}%
+\gls@defglossaryentry{cto}%
 {%
-name={REST},%
-sort={REST},%
+name={CTO},%
+sort={CTO},%
 type={acronym},%
-first={Representational State Transfer\glsspace (REST)},%
-firstplural={Representational State Transfers\glsspace (RESTs)},%
-text={REST},%
-plural={RESTs},%
-description={Representational State Transfer},%
-descriptionplural={Representational State Transfer\acrpluralsuffix },%
+first={Chief Technology Officer\glsspace (CTO)},%
+firstplural={Chief Technology Officers\glsspace (CTOs)},%
+text={CTO},%
+plural={CTOs},%
+description={Chief Technology Officer},%
+descriptionplural={Chief Technology Officer\acrpluralsuffix },%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -79,10 +79,10 @@ user3={},%
 user4={},%
 user5={},%
 user6={},%
-long={Representational State Transfer},%
-longplural={Representational State Transfers},%
-short={REST},%
-shortplural={RESTs},%
+long={Chief Technology Officer},%
+longplural={Chief Technology Officers},%
+short={CTO},%
+shortplural={CTOs},%
 counter={page},%
 parent={},%
 %

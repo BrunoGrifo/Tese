@@ -1,9 +1,47 @@
 \begin{thebibliography}{1}
 
-\bibitem{oppenheimer_why_2003}
-D.~Oppenheimer, A.~Ganapathi, and D.~Patterson.
-\newblock Why do {Internet} services fail, and what can be done about it?
-\newblock In {\em 4th {USENIX} Symp.~on {Internet} {Technologies} and {Systems}
-  ({USITS}'03)}, Seattle WA, USA, 2003.
+\bibitem{10}
+{10.Digital}.
+\newblock {10.Digital}.
+\newblock \url{https://www.10.digital}.
+
+\bibitem{inbound_paper}
+Zlatko Bezhovski.
+\newblock Inbound marketing - a new concept in digital business.
+\newblock {\em Annalen der Physik}, pages 27--34, 2015.
+
+\bibitem{bookinbound}
+Brian Halligan and Dharmesh Shah.
+\newblock {\em Inbound Marketing: Get Found Using Google, Social Media, and
+  Blogs}.
+\newblock John Wiley and Sons, 2009.
+
+\bibitem{HubSpot}
+{HubSpot}.
+\newblock {What Is Inbound Marketing?}
+\newblock \url{https://www.hubspot.com/inbound-marketing}.
+\newblock Accessed: 13.10.2019.
+
+\bibitem{hubacademy}
+{HubSpot Academy}.
+\newblock {Inbound Marketing}.
+\newblock
+  \url{https://academy.hubspot.com/courses/inbound-marketing?hubs_content=inbound-marketing&_ga=2.40178786.1956435587.1568624625-1822461395.1548689006}.
+\newblock Accessed: 2.10.2019.
+
+\bibitem{neipatel}
+{NEIPATEL}.
+\newblock {22 Inbound Marketing Strategies Your Startup Needs to Start Using
+  Today}.
+\newblock
+  \url{https://neilpatel.com/blog/22-inbound-marketing-strategies-startup-needs-start-using-today/}.
+\newblock Accessed: 13.10.2019.
+
+\bibitem{postNextiny}
+{Nextiny Marketing}.
+\newblock {History of Inbound Marketing: Then and Now}.
+\newblock
+  \url{https://blog.nextinymarketing.com/history-of-inbound-marketing-then-and-now}.
+\newblock Accessed: 13.10.2019.
 
 \end{thebibliography}
