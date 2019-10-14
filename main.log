@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.10.10)  14 OCT 2019 00:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.10.10)  14 OCT 2019 13:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1066,41 +1066,17 @@ Make it at least 13.59999pt.
 We now make it that large for the rest of the document.
 This may cause the page layout to be inconsistent, however.
 
-[3] [4] (./text/0-abstract-PT.tex
-
-! Package glossaries Error: Glossary entry `rest' has not been defined.
-
-See the glossaries package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.7 \gls{corpus}, \gls{rest}.
-                             
-You need to define a glossary entry before you can use it.
-
-) [5] [6] (./main.toc)
+[3] [4] (./text/0-abstract-PT.tex) [5] [6] (./main.toc)
 \tf@toc=\write10
 \openout10 = `main.toc'.
 
  [7
 
-] [8] (./main.gls) [9
+] [8] (./main.gls)
+[9
 
 
-] [10] (./main.acr
-
-Package glossaries Warning: Glossary entry `rest' has not been defined on input
- line 5.
-
-
-Package glossaries Warning: Glossary entry `rest' has not been defined on input
- line 5.
-
-
-Package glossaries Warning: Glossary entry `rest' has not been defined on input
- line 5.
-
-) [11
+] [10] (./main.acr) [11
 
 
 ] [12] (./main.lof)
@@ -1115,15 +1091,15 @@ Package glossaries Warning: Glossary entry `rest' has not been defined on input
 
  [15
 
-] [16]
-(./text/1-introduction.tex
+]
+[16] (./text/1-introduction.tex
 Cap\'{\i }tulo 1.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 31.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 30.
 (/usr/local/texlive/2019/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 31.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 30.
  [1
 
 ] [2] [3])
@@ -1218,31 +1194,28 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 293.
  ) 
 Here is how much of TeX's memory you used:
- 25728 strings out of 492616
- 475976 string characters out of 6129480
- 600625 words of memory out of 5000000
- 29003 multiletter control sequences out of 15000+600000
+ 25697 strings out of 492616
+ 475387 string characters out of 6129480
+ 600628 words of memory out of 5000000
+ 28973 multiletter control sequences out of 15000+600000
  17381 words of font info for 40 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,11n,94p,1990b,462s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{glo:cto} has been referenced but does not exist, 
-replaced by a fixed one
-
-{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</
-usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></u
-sr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr
-/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/l
-ocal/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/loc
-al/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local
-/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/t
-exlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/tex
-live/2019/texmf-dist/fonts/type1/public/cm-super/sfsx2488.pfb></usr/local/texli
-ve/2019/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive
-/2019/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on main.pdf (39 pages, 585858 bytes).
+{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
+</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
+/usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></u
+sr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr
+/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/l
+ocal/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/loc
+al/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local
+/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/t
+exlive/2019/texmf-dist/fonts/type1/public/cm-super/sfsx2488.pfb></usr/local/tex
+live/2019/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texli
+ve/2019/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
+Output written on main.pdf (39 pages, 587868 bytes).
 PDF statistics:
- 389 PDF objects out of 1000 (max. 8388607)
- 317 compressed objects within 4 object streams
- 78 named destinations out of 1000 (max. 500000)
+ 388 PDF objects out of 1000 (max. 8388607)
+ 316 compressed objects within 4 object streams
+ 77 named destinations out of 1000 (max. 500000)
  234 words of extra memory for PDF output out of 10000 (max. 10000000)
 

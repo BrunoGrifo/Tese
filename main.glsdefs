@@ -1,46 +1,16 @@
-\ifglsentryexists{corpus}{}%
+\ifglsentryexists{b2b}{}%
 {%
-\gls@defglossaryentry{corpus}%
+\gls@defglossaryentry{b2b}%
 {%
-name={Corpus},%
-sort={Corpus},%
+name={B2B},%
+sort={B2B},%
 type={main},%
-first={corpus},%
-firstplural={corpuss},%
-text={corpus},%
-plural={corpuss},%
-description={Conjunto de documentos ou informações relativos a um determinado tema ou domínio},%
-descriptionplural={Conjunto de documentos ou informações relativos a um determinado tema ou domínio},%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-}%
-\ifglsentryexists{leads}{}%
-{%
-\gls@defglossaryentry{leads}%
-{%
-name={leads},%
-sort={leads},%
-type={main},%
-first={leads},%
-firstplural={leadss},%
-text={leads},%
-plural={leadss},%
-description={framework de django},%
-descriptionplural={framework de django},%
+first={B2B},%
+firstplural={B2Bs},%
+text={B2B},%
+plural={B2Bs},%
+description={Business-to-Business. Denominação do comércio estabelecido entre empresas},%
+descriptionplural={Business-to-Business. Denominação do comércio estabelecido entre empresas},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
