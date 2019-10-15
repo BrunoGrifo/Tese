@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{10}
 {10.Digital}.
@@ -9,6 +9,11 @@
 Zlatko Bezhovski.
 \newblock Inbound marketing - a new concept in digital business.
 \newblock {\em Annalen der Physik}, pages 27--34, 2015.
+
+\bibitem{face}
+{Facebook}.
+\newblock {Facebook}.
+\newblock \url{https://www.facebook.com/}.
 
 \bibitem{bookinbound}
 Brian Halligan and Dharmesh Shah.
@@ -29,6 +34,11 @@ Brian Halligan and Dharmesh Shah.
   \url{https://academy.hubspot.com/courses/inbound-marketing?hubs_content=inbound-marketing&_ga=2.40178786.1956435587.1568624625-1822461395.1548689006}.
 \newblock Accessed: 2.10.2019.
 
+\bibitem{linkedin}
+{LinkedIn}.
+\newblock {LinkedIn}.
+\newblock \url{https://www.linkedin.com}.
+
 \bibitem{neipatel}
 {NEIPATEL}.
 \newblock {22 Inbound Marketing Strategies Your Startup Needs to Start Using
@@ -43,5 +53,10 @@ Brian Halligan and Dharmesh Shah.
 \newblock
   \url{https://blog.nextinymarketing.com/history-of-inbound-marketing-then-and-now}.
 \newblock Accessed: 13.10.2019.
+
+\bibitem{surveymonkey}
+{SurveyMonkey}.
+\newblock {SurveyMonkey}.
+\newblock \url{https://www.surveymonkey.com/}.
 
 \end{thebibliography}
