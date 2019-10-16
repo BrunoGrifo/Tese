@@ -15,6 +15,12 @@ Zlatko Bezhovski.
 \newblock {Facebook}.
 \newblock \url{https://www.facebook.com/}.
 
+\bibitem{googleform}
+{Google Forms}.
+\newblock {Google Forms}.
+\newblock \url{https://www.google.com/forms/about/}.
+\newblock Accessed:.
+
 \bibitem{bookinbound}
 Brian Halligan and Dharmesh Shah.
 \newblock {\em Inbound Marketing: Get Found Using Google, Social Media, and
@@ -58,5 +64,10 @@ Brian Halligan and Dharmesh Shah.
 {SurveyMonkey}.
 \newblock {SurveyMonkey}.
 \newblock \url{https://www.surveymonkey.com/}.
+
+\bibitem{typeform}
+{Typeform}.
+\newblock {Typeform}.
+\newblock \url{https://www.typeform.com}.
 
 \end{thebibliography}
