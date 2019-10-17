@@ -135,19 +135,6 @@
 \fancyhead[LO]{}
 \fancyhead[RO]{\sl{\nouppercase{\leftmark}}}
 
-\fancypagestyle{glossarystyle}{
-	\fancyhead[LE]{Glossário}
-	\fancyhead[RE]{}
-	\fancyhead[LO]{}
-	\fancyhead[RO]{Glossário}
-}
-
-\fancypagestyle{acronymsstyle}{
-	\fancyhead[LE]{Acrónimos}
-	\fancyhead[RE]{}
-	\fancyhead[LO]{}
-	\fancyhead[RO]{Acrónimos}
-}
 
 %\fancyhead[RE,LO]{\rightmark}
 \renewcommand{\headrulewidth}{0.4pt}
@@ -224,13 +211,13 @@
 \glsnogroupskiptrue
 
 \newpage
-\pagestyle{glossarystyle}
+
 \printglossary[style=list,title={Glossário}]
 
 \blankpage
 
 \newpage
-\pagestyle{acronymsstyle}
+
 \printglossary[type=\acronymtype,style=list,title={Acrónimos}]
 \newpage
 
