@@ -15,6 +15,11 @@ Zlatko Bezhovski.
 \newblock {Facebook}.
 \newblock \url{https://www.facebook.com/}.
 
+\bibitem{gdocs}
+{Google Docs}.
+\newblock {Google Docs}.
+\newblock \url{https://www.google.com/docs/about/}.
+
 \bibitem{googleform}
 {Google Forms}.
 \newblock {Google Forms}.
@@ -25,6 +30,11 @@ Zlatko Bezhovski.
 {Google Sheets}.
 \newblock {Google Sheets}.
 \newblock \url{https://www.google.com/sheets/about/}.
+
+\bibitem{gslides}
+{Google Slides}.
+\newblock {Google Slides}.
+\newblock \url{https://www.google.com/slides/about/}.
 
 \bibitem{bookinbound}
 Brian Halligan and Dharmesh Shah.
