@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.10.10)  10 NOV 2019 17:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.10.10)  10 NOV 2019 19:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1380,184 +1380,181 @@ Underfull \vbox (badness 1067) has occurred while \output is active []
  [1
 
 ]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [2]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 53.
-
-(/usr/local/texlive/2019/texmf-dist/tex/latex/base/omscmr.fd
+[2] [3]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 68.
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 53.
- [3] [4])
-(./text/2-estado-de-arte.tex
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 68.
+ [4]
+[5]) (./text/2-estado-de-arte.tex
 Cap\'{\i }tulo 2.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [5
+ [6
 
 ]
-<img/sm/survey-dashboard.png, id=393, 1445.4pt x 903.375pt>
+<img/sm/survey-dashboard.png, id=405, 1445.4pt x 903.375pt>
 File: img/sm/survey-dashboard.png Graphic file (type png)
 <use img/sm/survey-dashboard.png>
 Package pdftex.def Info: img/sm/survey-dashboard.png  used on input line 32.
 (pdftex.def)             Requested size: 426.79135pt x 266.74144pt.
 
-[6 <./img/sm/survey-dashboard.png>]
-<img/sm/survey-form-create.png, id=404, 1445.4pt x 903.375pt>
+[7 <./img/sm/survey-dashboard.png>]
+<img/sm/survey-form-create.png, id=415, 1445.4pt x 903.375pt>
 File: img/sm/survey-form-create.png Graphic file (type png)
 <use img/sm/survey-form-create.png>
 Package pdftex.def Info: img/sm/survey-form-create.png  used on input line 42.
 (pdftex.def)             Requested size: 426.79135pt x 266.74144pt.
-<img/sm/survey-form-bank2.png, id=407, 1445.4pt x 903.375pt>
+<img/sm/survey-form-bank2.png, id=418, 1445.4pt x 903.375pt>
 File: img/sm/survey-form-bank2.png Graphic file (type png)
 <use img/sm/survey-form-bank2.png>
 Package pdftex.def Info: img/sm/survey-form-bank2.png  used on input line 52.
 (pdftex.def)             Requested size: 426.79135pt x 266.74144pt.
-<img/sm/survey-form-bank1.png, id=408, 1445.4pt x 903.375pt>
+<img/sm/survey-form-bank1.png, id=419, 1445.4pt x 903.375pt>
 File: img/sm/survey-form-bank1.png Graphic file (type png)
 <use img/sm/survey-form-bank1.png>
 Package pdftex.def Info: img/sm/survey-form-bank1.png  used on input line 61.
 (pdftex.def)             Requested size: 426.79135pt x 266.74144pt.
- [7 <./img/sm/survey-form-create.png> <./img/sm/survey-form-bank2.png>]
-<img/sm/surveymonkey-form-element.png, id=418, 1445.4pt x 903.375pt>
+ [8 <./img/sm/survey-form-create.png> <./img/sm/survey-form-bank2.png>]
+<img/sm/surveymonkey-form-element.png, id=429, 1445.4pt x 903.375pt>
 File: img/sm/surveymonkey-form-element.png Graphic file (type png)
 <use img/sm/surveymonkey-form-element.png>
 Package pdftex.def Info: img/sm/surveymonkey-form-element.png  used on input li
 ne 74.
 (pdftex.def)             Requested size: 426.79135pt x 266.74144pt.
- [8 <./img/sm/survey-form-bank1.png> <./img/sm/surveymonkey-form-element.png>]
-<img/sm/surveymonkey-form-opcoes.png, id=425, 365.365pt x 652.4375pt>
+ [9 <./img/sm/survey-form-bank1.png> <./img/sm/surveymonkey-form-element.png>]
+<img/sm/surveymonkey-form-opcoes.png, id=437, 365.365pt x 652.4375pt>
 File: img/sm/surveymonkey-form-opcoes.png Graphic file (type png)
 <use img/sm/surveymonkey-form-opcoes.png>
 Package pdftex.def Info: img/sm/surveymonkey-form-opcoes.png  used on input lin
 e 83.
 (pdftex.def)             Requested size: 137.74744pt x 245.97836pt.
-<img/sm/surveymonkey-form-aparencia.png, id=426, 364.36125pt x 651.43375pt>
+<img/sm/surveymonkey-form-aparencia.png, id=438, 364.36125pt x 651.43375pt>
 File: img/sm/surveymonkey-form-aparencia.png Graphic file (type png)
 <use img/sm/surveymonkey-form-aparencia.png>
 Package pdftex.def Info: img/sm/surveymonkey-form-aparencia.png  used on input 
 line 93.
 (pdftex.def)             Requested size: 137.58028pt x 245.97836pt.
-<img/sm/surveymonkey-form-logica.png, id=427, 361.35pt x 650.43pt>
+<img/sm/surveymonkey-form-logica.png, id=439, 361.35pt x 650.43pt>
 File: img/sm/surveymonkey-form-logica.png Graphic file (type png)
 <use img/sm/surveymonkey-form-logica.png>
 Package pdftex.def Info: img/sm/surveymonkey-form-logica.png  used on input lin
 e 101.
 (pdftex.def)             Requested size: 136.65277pt x 245.97836pt.
- [9 <./img/sm/surveymonkey-form-opcoes.png> <./img/sm/surveymonkey-form-aparenc
-ia.png> <./img/sm/surveymonkey-form-logica.png>]
-<img/sm/surveymonkey-form-test-pc.png, id=441, 1445.4pt x 903.375pt>
+ [10 <./img/sm/surveymonkey-form-opcoes.png> <./img/sm/surveymonkey-form-aparen
+cia.png> <./img/sm/surveymonkey-form-logica.png>]
+<img/sm/surveymonkey-form-test-pc.png, id=452, 1445.4pt x 903.375pt>
 File: img/sm/surveymonkey-form-test-pc.png Graphic file (type png)
 <use img/sm/surveymonkey-form-test-pc.png>
 Package pdftex.def Info: img/sm/surveymonkey-form-test-pc.png  used on input li
 ne 115.
 (pdftex.def)             Requested size: 426.79135pt x 266.74144pt.
-<img/sm/surveymonkey-form-test-phone.png, id=442, 1445.4pt x 903.375pt>
+<img/sm/surveymonkey-form-test-phone.png, id=453, 1445.4pt x 903.375pt>
 File: img/sm/surveymonkey-form-test-phone.png Graphic file (type png)
 <use img/sm/surveymonkey-form-test-phone.png>
 Package pdftex.def Info: img/sm/surveymonkey-form-test-phone.png  used on input
  line 123.
 (pdftex.def)             Requested size: 426.79135pt x 266.74144pt.
 
-[10 <./img/sm/surveymonkey-form-test-pc.png> <./img/sm/surveymonkey-form-test-p
+[11 <./img/sm/surveymonkey-form-test-pc.png> <./img/sm/surveymonkey-form-test-p
 hone.png>]
-<img/sm/surveymonkey-form-share.png, id=450, 1445.4pt x 903.375pt>
+<img/sm/surveymonkey-form-share.png, id=460, 1445.4pt x 903.375pt>
 File: img/sm/surveymonkey-form-share.png Graphic file (type png)
 <use img/sm/surveymonkey-form-share.png>
 Package pdftex.def Info: img/sm/surveymonkey-form-share.png  used on input line
  135.
 (pdftex.def)             Requested size: 426.79135pt x 266.74144pt.
-<img/sm/surveymonkey-form-filtro.png, id=453, 1445.4pt x 903.375pt>
+<img/sm/surveymonkey-form-filtro.png, id=463, 1445.4pt x 903.375pt>
 File: img/sm/surveymonkey-form-filtro.png Graphic file (type png)
 <use img/sm/surveymonkey-form-filtro.png>
 Package pdftex.def Info: img/sm/surveymonkey-form-filtro.png  used on input lin
 e 148.
 (pdftex.def)             Requested size: 426.79135pt x 266.74144pt.
-<img/sm/surveymonkey-form-filtro1.png, id=454, 1445.4pt x 903.375pt>
+<img/sm/surveymonkey-form-filtro1.png, id=464, 1445.4pt x 903.375pt>
 File: img/sm/surveymonkey-form-filtro1.png Graphic file (type png)
 <use img/sm/surveymonkey-form-filtro1.png>
 Package pdftex.def Info: img/sm/surveymonkey-form-filtro1.png  used on input li
 ne 158.
 (pdftex.def)             Requested size: 426.79135pt x 266.74144pt.
- [11 <./img/sm/surveymonkey-form-share.png> <./img/sm/surveymonkey-form-filtro.
-png>] [12 <./img/sm/surveymonkey-form-filtro1.png>]
-<img/tf/tf-dashboard.png, id=470, 1445.4pt x 903.375pt>
+ [12 <./img/sm/surveymonkey-form-share.png> <./img/sm/surveymonkey-form-filtro.
+png>] [13 <./img/sm/surveymonkey-form-filtro1.png>]
+<img/tf/tf-dashboard.png, id=481, 1445.4pt x 903.375pt>
 File: img/tf/tf-dashboard.png Graphic file (type png)
 <use img/tf/tf-dashboard.png>
 Package pdftex.def Info: img/tf/tf-dashboard.png  used on input line 182.
 (pdftex.def)             Requested size: 426.79135pt x 266.74144pt.
-<img/tf/tf-form-create.png, id=472, 1445.4pt x 903.375pt>
+<img/tf/tf-form-create.png, id=483, 1445.4pt x 903.375pt>
 File: img/tf/tf-form-create.png Graphic file (type png)
 <use img/tf/tf-form-create.png>
 Package pdftex.def Info: img/tf/tf-form-create.png  used on input line 192.
 (pdftex.def)             Requested size: 426.79135pt x 266.74144pt.
- [13 <./img/tf/tf-dashboard.png> <./img/tf/tf-form-create.png>]
-<img/tf/tf-question-type.png, id=479, 1445.4pt x 903.375pt>
+ [14 <./img/tf/tf-dashboard.png> <./img/tf/tf-form-create.png>]
+<img/tf/tf-question-type.png, id=490, 1445.4pt x 903.375pt>
 File: img/tf/tf-question-type.png Graphic file (type png)
 <use img/tf/tf-question-type.png>
 Package pdftex.def Info: img/tf/tf-question-type.png  used on input line 201.
 (pdftex.def)             Requested size: 426.79135pt x 266.74144pt.
-<img/tf/tf-question-opcoes.png, id=483, 1445.4pt x 903.375pt>
+<img/tf/tf-question-opcoes.png, id=494, 1445.4pt x 903.375pt>
 File: img/tf/tf-question-opcoes.png Graphic file (type png)
 <use img/tf/tf-question-opcoes.png>
 Package pdftex.def Info: img/tf/tf-question-opcoes.png  used on input line 211.
 
 (pdftex.def)             Requested size: 426.79135pt x 266.74144pt.
-<img/tf/tf-question-custom.png, id=484, 1445.4pt x 903.375pt>
+<img/tf/tf-question-custom.png, id=495, 1445.4pt x 903.375pt>
 File: img/tf/tf-question-custom.png Graphic file (type png)
 <use img/tf/tf-question-custom.png>
 Package pdftex.def Info: img/tf/tf-question-custom.png  used on input line 219.
 
 (pdftex.def)             Requested size: 426.79135pt x 266.74144pt.
- [14 <./img/tf/tf-question-type.png> <./img/tf/tf-question-opcoes.png>]
-<img/tf/tf-question-logica.png, id=492, 1445.4pt x 903.375pt>
+ [15 <./img/tf/tf-question-type.png> <./img/tf/tf-question-opcoes.png>]
+<img/tf/tf-question-logica.png, id=504, 1445.4pt x 903.375pt>
 File: img/tf/tf-question-logica.png Graphic file (type png)
 <use img/tf/tf-question-logica.png>
 Package pdftex.def Info: img/tf/tf-question-logica.png  used on input line 231.
 
 (pdftex.def)             Requested size: 426.79135pt x 266.74144pt.
- [15 <./img/tf/tf-question-custom.png> <./img/tf/tf-question-logica.png>]
-<img/tf/tf-question-integration.png, id=502, 1445.4pt x 903.375pt>
+ [16 <./img/tf/tf-question-custom.png> <./img/tf/tf-question-logica.png>]
+<img/tf/tf-question-integration.png, id=513, 1445.4pt x 903.375pt>
 File: img/tf/tf-question-integration.png Graphic file (type png)
 <use img/tf/tf-question-integration.png>
 Package pdftex.def Info: img/tf/tf-question-integration.png  used on input line
  246.
 (pdftex.def)             Requested size: 426.79135pt x 266.74144pt.
- [16 <./img/tf/tf-question-integration.png>]
-<img/tf/tf-question-results.png, id=510, 1445.4pt x 903.375pt>
+ [17 <./img/tf/tf-question-integration.png>]
+<img/tf/tf-question-results.png, id=521, 1445.4pt x 903.375pt>
 File: img/tf/tf-question-results.png Graphic file (type png)
 <use img/tf/tf-question-results.png>
 Package pdftex.def Info: img/tf/tf-question-results.png  used on input line 260
 .
 (pdftex.def)             Requested size: 426.79135pt x 266.74144pt.
 
-[17 <./img/tf/tf-question-results.png>]
-<img/gf/gf-dashboard.png, id=521, 1445.4pt x 903.375pt>
+[18 <./img/tf/tf-question-results.png>]
+<img/gf/gf-dashboard.png, id=532, 1445.4pt x 903.375pt>
 File: img/gf/gf-dashboard.png Graphic file (type png)
 <use img/gf/gf-dashboard.png>
 Package pdftex.def Info: img/gf/gf-dashboard.png  used on input line 281.
 (pdftex.def)             Requested size: 426.79135pt x 266.74144pt.
-<img/gf/gf-form-q-type.png, id=522, 1445.4pt x 903.375pt>
+<img/gf/gf-form-q-type.png, id=533, 1445.4pt x 903.375pt>
 File: img/gf/gf-form-q-type.png Graphic file (type png)
 <use img/gf/gf-form-q-type.png>
 Package pdftex.def Info: img/gf/gf-form-q-type.png  used on input line 290.
 (pdftex.def)             Requested size: 426.79135pt x 266.74144pt.
- [18 <./img/gf/gf-dashboard.png> <./img/gf/gf-form-q-type.png>]
-<img/gf/gf-form-import.png, id=533, 1445.4pt x 903.375pt>
+ [19 <./img/gf/gf-dashboard.png> <./img/gf/gf-form-q-type.png>]
+<img/gf/gf-form-import.png, id=544, 1445.4pt x 903.375pt>
 File: img/gf/gf-form-import.png Graphic file (type png)
 <use img/gf/gf-form-import.png>
 Package pdftex.def Info: img/gf/gf-form-import.png  used on input line 300.
 (pdftex.def)             Requested size: 426.79135pt x 266.74144pt.
-<img/gf/gf-form-import-select.png, id=534, 1445.4pt x 903.375pt>
+<img/gf/gf-form-import-select.png, id=545, 1445.4pt x 903.375pt>
 File: img/gf/gf-form-import-select.png Graphic file (type png)
 <use img/gf/gf-form-import-select.png>
 Package pdftex.def Info: img/gf/gf-form-import-select.png  used on input line 3
 08.
 (pdftex.def)             Requested size: 426.79135pt x 266.74144pt.
-<img/gf/gf-form-imported.png, id=535, 1445.4pt x 903.375pt>
+<img/gf/gf-form-imported.png, id=546, 1445.4pt x 903.375pt>
 File: img/gf/gf-form-imported.png Graphic file (type png)
 <use img/gf/gf-form-imported.png>
 Package pdftex.def Info: img/gf/gf-form-imported.png  used on input line 316.
@@ -1566,7 +1563,7 @@ Package pdftex.def Info: img/gf/gf-form-imported.png  used on input line 316.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<img/gf/gf-form-design.png, id=536, 1445.4pt x 903.375pt>
+<img/gf/gf-form-design.png, id=547, 1445.4pt x 903.375pt>
 File: img/gf/gf-form-design.png Graphic file (type png)
 <use img/gf/gf-form-design.png>
 Package pdftex.def Info: img/gf/gf-form-design.png  used on input line 325.
@@ -1574,13 +1571,13 @@ Package pdftex.def Info: img/gf/gf-form-design.png  used on input line 325.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[19 <./img/gf/gf-form-import.png> <./img/gf/gf-form-import-select.png>]
-<img/gf/gf-form-set1.png, id=547, 594.22pt x 608.2725pt>
+[20 <./img/gf/gf-form-import.png> <./img/gf/gf-form-import-select.png>]
+<img/gf/gf-form-set1.png, id=558, 594.22pt x 608.2725pt>
 File: img/gf/gf-form-set1.png Graphic file (type png)
 <use img/gf/gf-form-set1.png>
 Package pdftex.def Info: img/gf/gf-form-set1.png  used on input line 337.
 (pdftex.def)             Requested size: 205.96722pt x 210.83707pt.
-<img/gf/gf-form-set2.png, id=548, 596.2275pt x 423.5825pt>
+<img/gf/gf-form-set2.png, id=559, 596.2275pt x 423.5825pt>
 File: img/gf/gf-form-set2.png Graphic file (type png)
 <use img/gf/gf-form-set2.png>
 Package pdftex.def Info: img/gf/gf-form-set2.png  used on input line 347.
@@ -1590,7 +1587,7 @@ Overfull \hbox (46.91185pt too wide) in paragraph at lines 347--348
  [] 
  []
 
-<img/gf/gf-form-set3.png, id=549, 596.2275pt x 675.52374pt>
+<img/gf/gf-form-set3.png, id=560, 596.2275pt x 675.52374pt>
 File: img/gf/gf-form-set3.png Graphic file (type png)
 <use img/gf/gf-form-set3.png>
 Package pdftex.def Info: img/gf/gf-form-set3.png  used on input line 355.
@@ -1600,8 +1597,8 @@ Overfull \hbox (15.37016pt too wide) in paragraph at lines 355--356
  [] 
  []
 
-[20 <./img/gf/gf-form-imported.png> <./img/gf/gf-form-design.png>]
-<img/gf/gf-form-results.png, id=557, 1445.4pt x 903.375pt>
+[21 <./img/gf/gf-form-imported.png> <./img/gf/gf-form-design.png>]
+<img/gf/gf-form-results.png, id=569, 1445.4pt x 903.375pt>
 File: img/gf/gf-form-results.png Graphic file (type png)
 <use img/gf/gf-form-results.png>
 Package pdftex.def Info: img/gf/gf-form-results.png  used on input line 370.
@@ -1614,47 +1611,47 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [21 <./img/gf/gf-form-set1.png> <./img/gf/gf-form-set2.png> <./img/gf/gf-form-
+ [22 <./img/gf/gf-form-set1.png> <./img/gf/gf-form-set2.png> <./img/gf/gf-form-
 set3.png>]
 Underfull \vbox (badness 2961) has occurred while \output is active []
 
- [22 <./img/gf/gf-form-results.png>]
+ [23 <./img/gf/gf-form-results.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 411--411
 []|\T1/cmr/m/n/10.95 Criar For-mu-lá-rio do
  []
 
-[23]
+[24]
 Underfull \hbox (badness 1496) in paragraph at lines 448--448
 []|\T1/cmr/m/n/10.95 Personalização do for-
  []
 
-[24]) (./text/3-abordagem.tex [25]
+[25]) (./text/3-abordagem.tex [26]
 Cap\'{\i }tulo 3.
-[26
+[27
 
-] [27]) (./text/4-especificacao-de-requisitos.tex
+] [28]) (./text/4-especificacao-de-requisitos.tex
 Cap\'{\i }tulo 4.
-[28
+[29
 
-] [29]) (./text/5-arquitectura.tex
+] [30]) (./text/5-arquitectura.tex
 Cap\'{\i }tulo 5.
-[30
+[31
 
-] [31]) (./text/6-implementacao.tex
+] [32]) (./text/6-implementacao.tex
 Cap\'{\i }tulo 6.
-[32
+[33
 
-] [33]) (./text/7-validacao.tex
+] [34]) (./text/7-validacao.tex
 Cap\'{\i }tulo 7.
-[34
+[35
 
-] [35]) (./text/8-produto-final.tex
+] [36]) (./text/8-produto-final.tex
 Cap\'{\i }tulo 8.
-[36
+[37
 
-] [37]) (./text/9-conclusion.tex
+] [38]) (./text/9-conclusion.tex
 Cap\'{\i }tulo 9.
-) (./main.bbl [38
+) (./main.bbl [39
 
 ]
 LaTeX Font Info:    Try loading font information for T1+cmtt on input line 6.
@@ -1714,13 +1711,13 @@ Underfull \hbox (badness 5022) in paragraph at lines 107--112
 ]methodology$[]\T1/cmr/m/n/10.95 .  Ac-ces-sed:
  []
 
-[39
+[40
 
-]) [40] [41] [42
+]) [41] [42] [43
 
-] (./text/10-appendices.tex [43] (./text/append/A.tex
+] (./text/10-appendices.tex [44] (./text/append/A.tex
 Anexo A.
-)) [44
+)) [45
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 282.
@@ -1733,18 +1730,24 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 282.
  ) 
 Here is how much of TeX's memory you used:
- 39229 strings out of 492616
- 744126 string characters out of 6129480
- 873750 words of memory out of 5000000
- 42302 multiletter control sequences out of 15000+600000
+ 39300 strings out of 492616
+ 745631 string characters out of 6129480
+ 874811 words of memory out of 5000000
+ 42369 multiletter control sequences out of 15000+600000
  547314 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,13n,94p,1990b,531s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,13n,94p,1990b,535s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{glo:tags} has been referenced but does not exist,
  replaced by a fixed one
 
 pdfTeX warning (dest): name{glo:backoffice} has been referenced but does not ex
 ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{glo:webinars} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{glo:social\040selling} has been referenced but does
+ not exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{glo:prospects} has been referenced but does not exi
 st, replaced by a fixed one
@@ -1768,10 +1771,10 @@ al/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local
 exlive/2019/texmf-dist/fonts/type1/public/cm-super/sfsx2488.pfb></usr/local/tex
 live/2019/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texli
 ve/2019/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on main.pdf (60 pages, 9089723 bytes).
+Output written on main.pdf (61 pages, 9099813 bytes).
 PDF statistics:
- 786 PDF objects out of 1000 (max. 8388607)
- 626 compressed objects within 7 object streams
- 155 named destinations out of 1000 (max. 500000)
+ 800 PDF objects out of 1000 (max. 8388607)
+ 639 compressed objects within 7 object streams
+ 159 named destinations out of 1000 (max. 500000)
  437 words of extra memory for PDF output out of 10000 (max. 10000000)
 

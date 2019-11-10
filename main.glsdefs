@@ -148,6 +148,66 @@ parent={},%
 %
 }%
 }%
+\ifglsentryexists{social selling}{}%
+{%
+\gls@defglossaryentry{social selling}%
+{%
+name={Social Selling},%
+sort={Social Selling},%
+type={main},%
+first={Social Selling},%
+firstplural={Social Sellings},%
+text={Social Selling},%
+plural={Social Sellings},%
+description={Processo de encontrar os prospects certos, criar relações de confiança e, ideialmente, atingir os objetivos de vendas da empresa.},%
+descriptionplural={Processo de encontrar os prospects certos, criar relações de confiança e, ideialmente, atingir os objetivos de vendas da empresa.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{webinars}{}%
+{%
+\gls@defglossaryentry{webinars}%
+{%
+name={Webinars},%
+sort={Webinars},%
+type={main},%
+first={Webinars},%
+firstplural={Webinarss},%
+text={Webinars},%
+plural={Webinarss},%
+description={Abreviação de \textit {Web-based seminar}. Um webinar é um \textit {workshop}, aula, seminário ou apresentação, em formato de video conferência, transmitido através da \textit {web}.},%
+descriptionplural={Abreviação de \textit {Web-based seminar}. Um webinar é um \textit {workshop}, aula, seminário ou apresentação, em formato de video conferência, transmitido através da \textit {web}.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
 \ifglsentryexists{cto}{}%
 {%
 \gls@defglossaryentry{cto}%
