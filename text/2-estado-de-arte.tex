@@ -1,12 +1,16 @@
 \chapter{Estado de Arte}
 \label{sec:estado-arte}
 
-Neste capítulo será feita uma análise de algumas plataformas existentes para recolha de dados em estratégias de inbound marketing. A recolha de informação nos dias de hoje tem um grande impacto na forma como os negócios são feitos, principalmente na internet. Neste contexto, serão analisadas algumas das soluções que partilham funcionalidades semelhantes com o que vai ser desenvolvido.\\
-Como referido no capítulo anterior, o modelo de negócio da plataforma é \gls{b2b} e neste sentido as caracteristicas analisadas serão focadas na segmentação de dados, integração com serviços externos, planos de pagamento e funcionalidades do \textit{back office}.
-Seguindo uma das estratégias de inbound marketing, o método de envio de formações e recolha de dados será através da formulários online e por isso mesmo algumas características associadas à experiencia do utilizador, como por exemplo a personalização do formulário, serão também analisadas.
+Neste capítulo será feita a análise de algumas plataformas existentes para recolha de dados em estratégias de inbound marketing e um estudo sobre algoritmos de decisão. Será também feita uma analise ao \acrshort{tcg}, que apesar de já estar no mercado, será integrado neste projecto.
+
+A recolha de informação nos dias de hoje tem um grande impacto na forma como os negócios são feitos, principalmente na internet.
+
+Como referido no capítulo anterior, o objectivo deste estátio incide  na criação de uma plataforma de inbound marketing que tem como principais objectivos conseguir criar questionários, formações e analisar, filtrar e segmentar os dados recolhidos. Neste sentido serão analisadas algumas das soluções que, apesar de terem um propósito distinto, partilham funcionalidades semelhantes com o que vai ser desenvolvido. 
+
+A recolha de informação nos dias de hoje tem um grande impacto na forma como os negócios são feitos, principalmente na internet. Seguindo uma das estratégias de inbound marketing, o método de recolha de dados será através de questionários e formações online e por isso mesmo algumas características associadas à experiencia do utilizador, como por exemplo a personalização dos mesmos, serão também analisadas.
 
 
-As plataformas a analisar serão: SurveyMonkey\cite{surveymonkey}, Typeform\cite{typeform}, Google Forms\cite{googleform}
+As plataformas SurveyMonkey\cite{surveymonkey}, Typeform\cite{typeform}, Google Forms\cite{googleform} são plataformas de criação de formulários, mas apesar de servirem um propósito distinto ao da plataforma a desenvolver, partilham funcionalidades semelhantes com as que vão ser desenvolvidas e por isso mesmo senão analisadas nesse sentido. Será também exposto o funcionamento do \acrshort{tcg} para melhor entendimento de como podem ser implementadas as funcionalidades e a \acrshort{api} do lado da plataforma a desenvolver. A integração do \acrshort{tcg} neste projecto, foi uma escolha da empresa (i. e. cliente), e por isso não serão analisadas plataformas concorrentes do \acrshort{tcg} na medida em que esse trabalho é feito pela equipa do \acrshort{tcg} e apenas serão feitas as mudanças necessárias no mesmo para o desenvolvimento da \acrshort{api} de comunicação. Por fim serão explorados e analisados algoritmos de decisão para a criação de questionários, tal como questionários online já existentes, que implementam algoritmos de decisão.
 
 Após a apresentação destas ferramentas será feita uma análise das vantagens e desvantagens de cada uma, assim como a comparação de funcionalidades.
 
@@ -14,23 +18,11 @@ Após a apresentação destas ferramentas será feita uma análise das vantagens
 \section{SurveyMonkey}
 \label{surveyMonkey}
 
-O SurveyMonkey é uma plataforma \acrfull{saas} de criação de formulários online. Permite recolher informações do público alvo através de formulários e personalizados e segmentar e visualizer esta informação.
+O SurveyMonkey é uma plataforma \acrfull{saas} de criação de formulários online. Permite recolher informações do público alvo através de formulários, personalizar, segmentar e visualizer esta informação.
 
 O SurveyMonkey é uma plataforma que dispões de diversos planos de pagamento, e por isso mesmo, apesar de estar disponível um plano gratuito, tem acesso apenas a algumas das funcionalidades e em cada formulário, no máximo, poderá ter 10 perguntas ou elementos.
 
-É necessário criar conta para aceder às funcionalidades da plataforma, dando a opção de utilizar serviços externos para esse efeito (e. g. Facebook\cite{face}, LinkedIn\cite{linkedin}), como podemos ver na Figura \ref{fig:surveymonkey-singin}.
-
-  
-
-\begin{figure}[ht!]
-	\begin{center}
-		\includegraphics[width=1\textwidth]{img/sm/surveymonkey-singin}
-		\caption{SurveyMonkey - Registro }
-		\label{fig:surveymonkey-singin}
-	\end{center}
-\end{figure}
-
-\newpage
+É necessário criar conta para aceder às funcionalidades da plataforma, dando a opção de utilizar serviços externos para esse efeito : Facebook\cite{face}, LinkedIn\cite{linkedin}, Google\cite{gaccount} e Microsoft\cite{microsoft}.
 
 No painel principal, como podemos ver na Figura \ref{fig:survey-dashboard} temos acesso rápido aos formulários recentes e a algumas métricas sobre os mesmos. Outra forma será aceder aos formulários do utilizador através da barra de navegação. 
 
@@ -114,7 +106,7 @@ São diversos os elementos que se podem adicionar ou arrastar para o formulário
 	\end{center}
 \end{figure}
 
-O SurveyMonkey permite também realizar algumas operações de personalização do formulário.Na Figuras \ref{fig:surveymonkey-form-opcoes}, \ref{fig:surveymonkey-form-aparencia} e \ref{fig:surveymonkey-form-logica} estão representaçãs as opções, aparência e lógica do formulário, respetivamente, que permite costumizar formulários ao público alvo. 
+O SurveyMonkey permite também realizar algumas operações de personalização do formulário. Nas Figuras \ref{fig:surveymonkey-form-opcoes}, \ref{fig:surveymonkey-form-aparencia} e \ref{fig:surveymonkey-form-logica} estão representaçãs as opções, aparência e lógica do formulário, respetivamente, que permite costumizar formulários ao público alvo. 
 Depois de realizado o formulário esta plataforma permite a visualização do mesmo, em diferentes tipos de dispositivos, como se pode ver nas Figuras \ref{fig:surveymonkey-form-test-pc} e \ref{fig:surveymonkey-form-test-phone}, para verificar se tudo está conforme planeado para se poder prosseguir para a recolha de dados. 
  \newpage
 
@@ -278,7 +270,7 @@ O Typeform não fornece quaisquer filtros para segmentar os dados, contudo, fora
 
 O Google Form é uma aplicação de adminstração de inquéritos que está incluída no Google Drive office juntamente com o Google Docs\cite{gdocs}, Google Sheets e Google Slides\cite{gslides}. Esta ferramenta permite recolher informações do público alvo através de formulários e inquéritos personalizados e automaticamente exportar os dados para uma \textit{google sheet}.
 
-Estam aplicação é totalmente gratuita, bastanto apenas criar uma conta Google\cite{gaccount} para poder aceder a todas as funcionalidades da ferramenta.
+Estam aplicação é totalmente gratuita, bastanto apenas criar uma conta Google para poder aceder a todas as funcionalidades da ferramenta.
 
 Representado na Figura \ref{fig:gf-dashboard}, está o painel de controlo da conta de um utilizador, onde o mesmo pode visualizar os formulários com que interagiu recentemente. Por cima dos formulários recentes temos o butão para criar um novo formulário juntamente com alguns \textit{templates}/recomendações de formulários.
 
@@ -381,8 +373,10 @@ Na análise de resultados, como podemos ver na Figura \ref{fig:gf-form-results} 
 	\end{center}
 \end{figure}
 
+\section{\acrfull{tcg}}
 
-\section{Comparação de Aplicações}
+
+\section{Discussão de funcionalidades}
 \label{comparacao}
 
 Nas Tabelas \ref{tab:comparacao1} e \ref{tab:comparacao} encontra-se a comparação entre as ferramentas analisadas nos secções \ref{surveyMonkey}, \ref{typeform} e \ref{googleform}, baseada numa lista de funcionalidades.
@@ -400,7 +394,8 @@ Antes de enviar/partilhar um formulário é sempre importante pré-visualizar e 
 
 Por fim temos a analise e tratamento de dados que é um dos suportes daquilo que é o tripé do marketing digital. Como será de esperar a plataforma a desenvolver, tal como todas as restantes plataformas analisadas, não é um software dedicado à analise e tratamento de dados, na medida que terá limitações, contudo, ao contrário do Typeform e do Google Form, terá as funcionalidades necessárias para satisfazer as necessidades do utilizador. Analisando mais em detalhe a plataforma SurveyMonkey, que das ferramentas analisadadas, foi a única que apresentou capacidade de filtrar e segmentar os dados recolhidos, será necessário perceber que funcionalidades podemos melhorar e o que podemos acrescentar. (FALTA FALAR NA PARTILHA DE DADOS )
 
-
+10.digital dá para dar feedback a cada pergunta
+Falar de um exemplo de resultado dos quesitonários e dar como exemplo dois dos sites que utilizei
 
 	\renewcommand{\arraystretch}{2.5}
 \setlength\arrayrulewidth{1.5pt}
@@ -453,6 +448,8 @@ Por fim temos a analise e tratamento de dados que é um dos suportes daquilo que
 			Personalização do formulário& \cellcolor{green!80}    & \cellcolor{green!80}   & \cellcolor{yellow!80} & \cellcolor{green!80}   \\ \hline
 			
 			 Pré-visualização do formulário& \cellcolor{green!80}  & \cellcolor{green!80}  & \cellcolor{green!80} & \cellcolor{green!80} \\ \hline
+			 
+			 	Deixar \textit{feedback} sobre as perguntas do formulário& \cellcolor{red!80}    & \cellcolor{red!80}   & \cellcolor{red!80} & \cellcolor{green!80}   \\ \hline
 			
 			 Integração de sistemas externos& \cellcolor{red!80}   & \cellcolor{green!80} & \cellcolor{yellow!80}  & ????  \\ \hline
 			

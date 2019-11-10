@@ -5,6 +5,11 @@
 \newblock {10.Digital}.
 \newblock \url{https://www.10.digital}.
 
+\bibitem{tcg}
+{10.digital}.
+\newblock {The Company Gym}.
+\newblock \url{https://www.thecompanygym.com/index.html}.
+
 \bibitem{inbound_paper}
 Zlatko Bezhovski.
 \newblock Inbound marketing - a new concept in digital business.
@@ -29,7 +34,6 @@ Zlatko Bezhovski.
 {Google Forms}.
 \newblock {Google Forms}.
 \newblock \url{https://www.google.com/forms/about/}.
-\newblock Accessed:.
 
 \bibitem{googlesheets}
 {Google Sheets}.
@@ -60,10 +64,22 @@ Brian Halligan and Dharmesh Shah.
   \url{https://academy.hubspot.com/courses/inbound-marketing?hubs_content=inbound-marketing&_ga=2.40178786.1956435587.1568624625-1822461395.1548689006}.
 \newblock Accessed: 2.10.2019.
 
+\bibitem{impact}
+{Impact}.
+\newblock {What is the Inbound Marketing Methodology}.
+\newblock
+  \url{https://www.impactbnd.com/blog/what-is-the-inbound-marketing-methodology}.
+\newblock Accessed: 25.10.2019.
+
 \bibitem{linkedin}
 {LinkedIn}.
 \newblock {LinkedIn}.
 \newblock \url{https://www.linkedin.com}.
+
+\bibitem{microsoft}
+{Microsoft}.
+\newblock {Microsoft}.
+\newblock \url{https://login.microsoftonline.com}.
 
 \bibitem{neipatel}
 {NEIPATEL}.
@@ -79,6 +95,20 @@ Brian Halligan and Dharmesh Shah.
 \newblock
   \url{https://blog.nextinymarketing.com/history-of-inbound-marketing-then-and-now}.
 \newblock Accessed: 13.10.2019.
+
+\bibitem{pbr}
+{Powered by Research}.
+\newblock {Understanding the Inbound Marketing Methodology}.
+\newblock
+  \url{https://www.poweredbysearch.com/blog/understanding-the-inbound-marketing-methodology/}.
+\newblock Accessed: 25.10.2019.
+
+\bibitem{pg}
+{Prism Global}.
+\newblock {What is Inbound Marketing? 4 Components to the Inbound Methodology}.
+\newblock
+  \url{https://www.prismglobalmarketing.com/blog/what-is-inbound-marketing-4-components-inbound-methodology}.
+\newblock Accessed: 25.10.2019.
 
 \bibitem{surveymonkey}
 {SurveyMonkey}.

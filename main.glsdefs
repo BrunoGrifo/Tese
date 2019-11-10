@@ -28,6 +28,126 @@ parent={},%
 %
 }%
 }%
+\ifglsentryexists{lead}{}%
+{%
+\gls@defglossaryentry{lead}%
+{%
+name={Lead},%
+sort={Lead},%
+type={main},%
+first={Lead},%
+firstplural={Leads},%
+text={Lead},%
+plural={Leads},%
+description={Potencial consumidor de uma marca, que demonstrou interesse num produto ou serviço, mas que ainda não está qualificado, ou seja, não temos quaisquer informações},%
+descriptionplural={Potencial consumidor de uma marca, que demonstrou interesse num produto ou serviço, mas que ainda não está qualificado, ou seja, não temos quaisquer informações},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{prospects}{}%
+{%
+\gls@defglossaryentry{prospects}%
+{%
+name={Prospects},%
+sort={Prospects},%
+type={main},%
+first={Prospects},%
+firstplural={Prospectss},%
+text={Prospects},%
+plural={Prospectss},%
+description={Potencial consumidor de uma marca, que demonstrou interesse num produto ou serviço, que está qualificado, ou seja, já temos informações sobre ele. Por outras palavras é uma \textit {lead} qualificado.},%
+descriptionplural={Potencial consumidor de uma marca, que demonstrou interesse num produto ou serviço, que está qualificado, ou seja, já temos informações sobre ele. Por outras palavras é uma \textit {lead} qualificado.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{backoffice}{}%
+{%
+\gls@defglossaryentry{backoffice}%
+{%
+name={BackOffice},%
+sort={BackOffice},%
+type={main},%
+first={BackOffice},%
+firstplural={BackOffices},%
+text={BackOffice},%
+plural={BackOffices},%
+description={Secção da plataforma feita para administração e configuração, uma espécie de painel de controle. Esta secção não é visivel pelo utilizador final.},%
+descriptionplural={Secção da plataforma feita para administração e configuração, uma espécie de painel de controle. Esta secção não é visivel pelo utilizador final.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{tags}{}%
+{%
+\gls@defglossaryentry{tags}%
+{%
+name={Tags},%
+sort={Tags},%
+type={main},%
+first={Tags},%
+firstplural={Tagss},%
+text={Tags},%
+plural={Tagss},%
+description={Palavras chaves para organização e classificação de informações.},%
+descriptionplural={Palavras chaves para organização e classificação de informações.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
 \ifglsentryexists{cto}{}%
 {%
 \gls@defglossaryentry{cto}%
@@ -83,6 +203,36 @@ long={Software as a Service},%
 longplural={Software as a Services},%
 short={SaaS},%
 shortplural={SaaSs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{tcg}{}%
+{%
+\gls@defglossaryentry{tcg}%
+{%
+name={TCG},%
+sort={TCG},%
+type={acronym},%
+first={The Company Gym\glsspace (TCG)},%
+firstplural={The Company Gyms\glsspace (TCGs)},%
+text={TCG},%
+plural={TCGs},%
+description={The Company Gym},%
+descriptionplural={The Company Gym\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={The Company Gym},%
+longplural={The Company Gyms},%
+short={TCG},%
+shortplural={TCGs},%
 counter={page},%
 parent={},%
 %
