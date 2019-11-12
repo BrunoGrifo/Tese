@@ -9,14 +9,14 @@
 \contentsline {section}{\numberline {2.2}Typeform}{13}{section.2.2}% 
 \contentsline {section}{\numberline {2.3}Google Form}{18}{section.2.3}% 
 \contentsline {section}{\numberline {2.4}\acrfull {tcg}}{23}{section.2.4}% 
-\contentsline {section}{\numberline {2.5}Discuss\IeC {\~a}o de funcionalidades}{23}{section.2.5}% 
-\contentsline {chapter}{\numberline {3}Abordagem}{27}{chapter.3}% 
-\contentsline {chapter}{\numberline {4}Especifica\IeC {\c c}\IeC {\~a}o de Requisitos}{29}{chapter.4}% 
-\contentsline {chapter}{\numberline {5}Arquitetura}{31}{chapter.5}% 
-\contentsline {chapter}{\numberline {6}Implementa\IeC {\c c}\IeC {\~a}o}{33}{chapter.6}% 
-\contentsline {chapter}{\numberline {7}Valida\IeC {\c c}\IeC {\~a}o}{35}{chapter.7}% 
-\contentsline {chapter}{\numberline {8}Produto Final}{37}{chapter.8}% 
-\contentsline {chapter}{\numberline {9}Conclusion}{39}{chapter.9}% 
-\contentsline {chapter}{References}{40}{chapter*.44}% 
-\contentsline {chapter}{Anexos}{41}{section*.45}% 
-\contentsline {chapter}{\numberline {A}Requisitos Funcionais}{45}{Anexo.1.A}% 
+\contentsline {section}{\numberline {2.5}Discuss\IeC {\~a}o de funcionalidades}{26}{section.2.5}% 
+\contentsline {chapter}{\numberline {3}Abordagem}{29}{chapter.3}% 
+\contentsline {chapter}{\numberline {4}Especifica\IeC {\c c}\IeC {\~a}o de Requisitos}{31}{chapter.4}% 
+\contentsline {chapter}{\numberline {5}Arquitetura}{33}{chapter.5}% 
+\contentsline {chapter}{\numberline {6}Implementa\IeC {\c c}\IeC {\~a}o}{35}{chapter.6}% 
+\contentsline {chapter}{\numberline {7}Valida\IeC {\c c}\IeC {\~a}o}{37}{chapter.7}% 
+\contentsline {chapter}{\numberline {8}Produto Final}{39}{chapter.8}% 
+\contentsline {chapter}{\numberline {9}Conclusion}{41}{chapter.9}% 
+\contentsline {chapter}{References}{42}{chapter*.48}% 
+\contentsline {chapter}{Anexos}{43}{section*.49}% 
+\contentsline {chapter}{\numberline {A}Requisitos Funcionais}{47}{Anexo.1.A}% 
