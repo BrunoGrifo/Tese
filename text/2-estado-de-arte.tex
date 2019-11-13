@@ -429,7 +429,9 @@ Na Figura \ref{fig:tcg-questoes} podemos ver que é possível listar todas as qu
 
 Nas Figuras \ref{fig:tcg-form}, \ref{fig:tcg-form1} e \ref{fig:tcg-form2} temos todas as fases para a criação de uma formação. Em primeiro lugar, é necessário definir a periocidade da formação.  Depois de escolher o nome é necessário dar um dia para o inicio e o fim da mesma, escolher os dias da semana em que o utilizador final irá receber a formação, a hora do dia a que recebe o mail e a duração (i. e. validade) que o utilizador tem para realizar a formação antes da mesma expirar. É de notar que a o sistema aceita uma duração com um max de horas igual à menor diferença entre os dias da semana escolhidos.
 
- A seleção dos utilizadores finais e das questões faz-se através de tags. Desta forma temos uma forma bastante poderosa de adicionar multiplas perguntas e ao mesmo tempo escolher exatamente quais as perguntas que queremos numa formação e sem ter que fazer quaqueis alterações, adicionar e remover questões a qualquer hora. O mesmo se trata para os utilizadores finais.
+ A seleção dos utilizadores finais e das questões faz-se através de tags. Desta forma temos uma forma bastante poderosa de adicionar multiplas perguntas e ao mesmo tempo escolher exatamente quais as perguntas que queremos numa formação e sem ter que fazer quaqueis alterações, adicionar e remover questões a qualquer hora. O mesmo se trata para os utilizadores finais. 
+ 
+
 
 \begin{figure}[ht!]
 	\begin{center}
@@ -438,7 +440,10 @@ Nas Figuras \ref{fig:tcg-form}, \ref{fig:tcg-form1} e \ref{fig:tcg-form2} temos 
 		\label{fig:tcg-form}
 	\end{center}
 \end{figure}
-
+ 
+ \newpage
+ 
+ 
 \begin{figure}[ht!]
 	\begin{center}
 		\includegraphics[width=1\textwidth]{img/tcg/tcg-form1.png}
@@ -455,8 +460,18 @@ Nas Figuras \ref{fig:tcg-form}, \ref{fig:tcg-form1} e \ref{fig:tcg-form2} temos 
 	\end{center}
 \end{figure}
 
+O botão "Activity feed" abre uma nova janela com o histórico de actividades da formação como podemos ver na Figura \ref{fig:tcg-feed}. O historico pode ser organizado pelas caracteristica de cada coluna e para cada registo, é possível ver verificar as respostas do utilizador final na formação.
 
-\newpage~\newpage
+
+\begin{figure}[ht!]
+	\begin{center}
+		\includegraphics[width=1\textwidth]{img/tcg/tcg-feed.png}
+		\caption{The Company Gym - Histórico de actividades}
+		\label{fig:tcg-feed}
+	\end{center}
+\end{figure}
+
+\newpage
 
 
 \begin{figure}[ht!]
@@ -467,7 +482,7 @@ Nas Figuras \ref{fig:tcg-form}, \ref{fig:tcg-form1} e \ref{fig:tcg-form2} temos 
 	\end{center}
 \end{figure}
 
-É também possivel gerir todas as Tags (i. e. adicionar, editar e remover) adicionadas pelo utilizador no sistema como podemos ver na Figura \ref{fig:tcg-tags} e alterar o template do mail que é enviado para os clientes finais com o link para a formação. 
+É também possivel gerir todas as Tags (i. e. adicionar, editar e remover) adicionadas pelo utilizador no sistema como podemos ver na Figura \ref{fig:tcg-tags} e alterar o template do mail que é enviado para os clientes finais com o link para a formação, representado na Figura \ref{fig:tcg-mail}. 
 
 \begin{figure}[ht!]
 	\begin{center}
@@ -477,9 +492,102 @@ Nas Figuras \ref{fig:tcg-form}, \ref{fig:tcg-form1} e \ref{fig:tcg-form2} temos 
 	\end{center}
 \end{figure}
 
-falta falar de:
-relatorios
-abordat messagens directas
+\newpage
+
+Na analise de resultados, podemos gerar relatórios gerais (i. e. relatórios com estatísticas de todas as formações, questões e utilizadores), como podemos ver na Figura \ref{fig:tcg-data}  e relatórios para uma formação em especifico (i. e. relatórios com estatísticas apenas das formações, questões e utilizadores adicionados a essa formação). 
+
+
+\begin{figure}[ht!]
+	\begin{center}
+		\includegraphics[width=1\textwidth]{img/tcg/tcg-data.png}
+		\caption{The Company Gym - Relatório geral (Painel inicial)}
+		\label{fig:tcg-data}
+	\end{center}
+\end{figure}
+
+\newpage
+
+\begin{figure}[ht!]
+	\begin{center}
+		\includegraphics[width=1\textwidth]{img/tcg/tcg-data1.png}
+		\caption{The Company Gym - Relatório geral (Participação/Respostas correctas)}
+		\label{fig:tcg-data1}
+	\end{center}
+\end{figure}
+
+Nas Figuras \ref{fig:tcg-data1} e \ref{fig:tcg-data2} temos reprentados a participação/respostas correctas de todas as formações e os resultados globais por formação, respectivamente.
+
+\begin{figure}[ht!]
+	\begin{center}
+		\includegraphics[width=1\textwidth]{img/tcg/tcg-data2.png}
+		\caption{The Company Gym - Relatório geral (Resultados globais por formação)}
+		\label{fig:tcg-data2}
+	\end{center}
+\end{figure}
+
+\newpage
+
+
+No relatório geral é também possível monitorizar quais as questões com maior numero de respostas erradas e o desempenho de cada utilizador final, como podemos ver nas Figuras \ref{fig:tcg-data3} e \ref{fig:tcg-data4}, respectivamente, numa escala temporal definida pelo utilizador. 
+
+\begin{figure}[ht!]
+	\begin{center}
+		\includegraphics[width=1\textwidth]{img/tcg/tcg-data3.png}
+		\caption{The Company Gym - Relatório geral (\textit{Top} de questões erradas)}
+		\label{fig:tcg-data3}
+	\end{center}
+\end{figure}
+
+
+\begin{figure}[ht!]
+	\begin{center}
+		\includegraphics[width=1\textwidth]{img/tcg/tcg-data4.png}
+		\caption{The Company Gym - Relatório geral (Utilizadores)}
+		\label{fig:tcg-data4}
+	\end{center}
+\end{figure}
+
+Nos relatórios específicos para uma formação, o tratamento dos dados é muito semelhante como poderemos verificar mais em diante nas Figuras \ref{fig:tcg-data-f},  \ref{fig:tcg-data-f1}, \ref{fig:tcg-data-f2} e \ref{fig:tcg-data-f3}. Depois de selecionar a formação para ser possível gerar o relatório de dados, são apresentados os gráficos relativos á percentagem de participação, repostas correctas por \textit{tag} de questão e utilizador. 
+
+No \textit{top} de questões erradas é possível listas os utilizadores finais que erraram uma determinada pergunta. O inverso acontece na página seguinte, representado na Figura \ref{fig:tcg-data-f2}, sendo possível listar as questões onde os utilizadores com mais respostas erradas, erraram. 
+
+
+\begin{figure}[ht!]
+	\begin{center}
+		\includegraphics[width=1\textwidth]{img/tcg/tcg-data-f.png}
+		\caption{The Company Gym - Relatório específico de uma formação (Gráficos)}
+		\label{fig:tcg-data-f}
+	\end{center}
+\end{figure}
+
+\begin{figure}[ht!]
+	\begin{center}
+		\includegraphics[width=1\textwidth]{img/tcg/tcg-data-f1.png}
+		\caption{The Company Gym - Relatório específico de uma formação (\textit{Top} de questões erradas)}
+		\label{fig:tcg-data-f1}
+	\end{center}
+\end{figure}
+
+\begin{figure}[ht!]
+	\begin{center}
+		\includegraphics[width=1\textwidth]{img/tcg/tcg-data-f2.png}
+		\caption{The Company Gym - Relatório específico de uma formação (\textit{Top} de utilizadores com mais respostas erradas)}
+		\label{fig:tcg-data-f2}
+	\end{center}
+\end{figure}
+
+\begin{figure}[ht!]
+	\begin{center}
+		\includegraphics[width=1\textwidth]{img/tcg/tcg-data-f3.png}
+		\caption{The Company Gym - Relatório específico de uma formação (Lista de utilizadores)}
+		\label{fig:tcg-data-f3}
+	\end{center}
+\end{figure}
+
+\newpage
+
+
+\section{Questionários}
 
 
 \section{Discussão de funcionalidades}
