@@ -208,6 +208,66 @@ parent={},%
 %
 }%
 }%
+\ifglsentryexists{users}{}%
+{%
+\gls@defglossaryentry{users}%
+{%
+name={Utilizadores},%
+sort={Utilizadores},%
+type={main},%
+first={Utilizadores},%
+firstplural={Utilizadoress},%
+text={Utilizadores},%
+plural={Utilizadoress},%
+description={Utilizador da plataforma em questão e/ou cliente(empresa)},%
+descriptionplural={Utilizador da plataforma em questão e/ou cliente(empresa)},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{finalusers}{}%
+{%
+\gls@defglossaryentry{finalusers}%
+{%
+name={Utilizadores Finais},%
+sort={Utilizadores Finais},%
+type={main},%
+first={Utilizadores Finais},%
+firstplural={Utilizadores Finaiss},%
+text={Utilizadores Finais},%
+plural={Utilizadores Finaiss},%
+description={Participantes de um concurso, Prospects, Leads ou Clientes},%
+descriptionplural={Participantes de um concurso, Prospects, Leads ou Clientes},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
 \ifglsentryexists{cto}{}%
 {%
 \gls@defglossaryentry{cto}%
