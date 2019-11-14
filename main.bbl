@@ -5,15 +5,30 @@
 \newblock {10.Digital}.
 \newblock \url{https://www.10.digital}.
 
-\bibitem{tcg}
-{10.digital}.
-\newblock {The Company Gym}.
-\newblock \url{https://www.thecompanygym.com/index.html}.
+\bibitem{akinator}
+{akinator}.
+\newblock {Akinator}.
+\newblock \url{https://pt.akinator.com}.
+
+\bibitem{id3_1}
+Anand Bahety.
+\newblock Extension and evaluation of id3 – decision tree algorithm.
 
 \bibitem{inbound_paper}
 Zlatko Bezhovski.
 \newblock Inbound marketing - a new concept in digital business.
 \newblock {\em Annalen der Physik}, pages 27--34, 2015.
+
+\bibitem{chaseforadventure}
+{Chase for Adventure}.
+\newblock {Where is the best country for you to visit?}
+\newblock \url{https://www.chaseforadventure.com/where-should-i-travel-to/}.
+
+\bibitem{driftwoodjournals}
+{Driftwood Journals}.
+\newblock {Discover your perfect travel destination}.
+\newblock
+  \url{https://www.driftwoodjournals.com/holiday-generator-discover-your-perfect-travel-destinations/}.
 
 \bibitem{face}
 {Facebook}.
@@ -51,6 +66,11 @@ Brian Halligan and Dharmesh Shah.
   Blogs}.
 \newblock John Wiley and Sons, 2009.
 
+\bibitem{5}
+{high5test}.
+\newblock {high5test}.
+\newblock \url{https://high5test.com/}.
+
 \bibitem{HubSpot}
 {HubSpot}.
 \newblock {What Is Inbound Marketing?}
@@ -70,6 +90,12 @@ Brian Halligan and Dharmesh Shah.
 \newblock
   \url{https://www.impactbnd.com/blog/what-is-the-inbound-marketing-methodology}.
 \newblock Accessed: 25.10.2019.
+
+\bibitem{insightvacations}
+{Insight Vacations}.
+\newblock {Find your dream travel destination with this fun quiz}.
+\newblock
+  \url{https://www.insightvacations.com/blog/find-your-dream-travel-destination/}.
 
 \bibitem{linkedin}
 {LinkedIn}.
@@ -110,16 +136,53 @@ Brian Halligan and Dharmesh Shah.
   \url{https://www.prismglobalmarketing.com/blog/what-is-inbound-marketing-4-components-inbound-methodology}.
 \newblock Accessed: 25.10.2019.
 
+\bibitem{id3_2}
+{Sagarnil Das}.
+\newblock {ID3 algorithm}.
+\newblock
+  \url{https://www.linkedin.com/pulse/how-does-id3-algorithm-works-decision-trees-sagarnil-das/}.
+\newblock Accessed: 01/11/2019.
+
+\bibitem{c4.5}
+{Sefik Ilkin Serengil}.
+\newblock {A Step By Step C4.5 Decision Tree Example}.
+\newblock
+  \url{https://sefiks.com/2018/05/13/a-step-by-step-c4-5-decision-tree-example/}.
+\newblock Accessed: 02/11/2019.
+
 \bibitem{surveymonkey}
 {SurveyMonkey}.
 \newblock {SurveyMonkey}.
 \newblock \url{https://www.surveymonkey.com/}.
 
 \bibitem{tcginfo}
-{TCG}.
+{The Company Gym}.
 \newblock {TCG}.
 \newblock \url{https://info.thecompanygym.com/4/}.
 \newblock Accessed: 12/11/2019.
+
+\bibitem{tcg}
+{The Company Gym}.
+\newblock {The Company Gym}.
+\newblock \url{https://www.thecompanygym.com/index.html}.
+
+\bibitem{id3}
+{The Learning Machine}.
+\newblock {ID3 algorithm}.
+\newblock \url{https://www.thelearningmachine.ai/tree-id3}.
+\newblock Accessed: 01/11/2019.
+
+\bibitem{cart}
+{Tomasz Golan}.
+\newblock {CART algorithm}.
+\newblock
+  \url{https://tomaszgolan.github.io/introduction_to_machine_learning/markdown/introduction_to_machine_learning_02_dt/introduction_to_machine_learning_02_dt/#cart}.
+\newblock Accessed: 02/11/2019.
+
+\bibitem{travelpicker}
+{travelpicker}.
+\newblock {We'll find your ideal holiday destination}.
+\newblock \url{http://travelpicker.com/}.
 
 \bibitem{typeform}
 {Typeform}.
