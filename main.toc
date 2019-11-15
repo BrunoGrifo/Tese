@@ -35,7 +35,7 @@
 \contentsline {chapter}{\numberline {7}Valida\IeC {\c c}\IeC {\~a}o}{55}{chapter.7}% 
 \contentsline {chapter}{\numberline {8}Produto Final}{57}{chapter.8}% 
 \contentsline {chapter}{\numberline {9}Conclusion}{59}{chapter.9}% 
-\contentsline {chapter}{References}{60}{chapter*.71}% 
-\contentsline {chapter}{Anexos}{61}{section*.72}% 
+\contentsline {chapter}{References}{60}{chapter*.72}% 
+\contentsline {chapter}{Anexos}{61}{section*.73}% 
 \contentsline {chapter}{\numberline {A}Projecto numa p\IeC {\'a}gina}{65}{Anexo.1.A}% 
 \contentsline {chapter}{\numberline {B}Requisitos Funcionais}{66}{Anexo.1.B}% 
