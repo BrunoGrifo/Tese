@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.10.10)  15 NOV 2019 12:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.10.10)  15 NOV 2019 18:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1740,80 +1740,80 @@ Cap\'{\i }tulo 4.
 [40
 
 ]
-<img/rf/legenda.png, id=928, 563.10374pt x 362.35374pt>
+<img/rf/legenda.png, id=929, 563.10374pt x 362.35374pt>
 File: img/rf/legenda.png Graphic file (type png)
 <use img/rf/legenda.png>
-Package pdftex.def Info: img/rf/legenda.png  used on input line 51.
+Package pdftex.def Info: img/rf/legenda.png  used on input line 52.
 (pdftex.def)             Requested size: 298.75264pt x 192.2456pt.
-<img/rf/10quest.png, id=929, 484.81125pt x 386.44376pt>
+ [41 <./img/rf/legenda.png>] [42]
+<img/rf/10quest.png, id=940, 484.81125pt x 386.44376pt>
 File: img/rf/10quest.png Graphic file (type png)
 <use img/rf/10quest.png>
-Package pdftex.def Info: img/rf/10quest.png  used on input line 62.
+Package pdftex.def Info: img/rf/10quest.png  used on input line 86.
 (pdftex.def)             Requested size: 256.07741pt x 204.1302pt.
- [41 <./img/rf/legenda.png>]
-<img/rf/alto-nivel.png, id=935, 644.4075pt x 543.02875pt>
+ [43 <./img/rf/10quest.png>]
+<img/rf/alto-nivel.png, id=947, 644.4075pt x 543.02875pt>
 File: img/rf/alto-nivel.png Graphic file (type png)
 <use img/rf/alto-nivel.png>
-Package pdftex.def Info: img/rf/alto-nivel.png  used on input line 74.
+Package pdftex.def Info: img/rf/alto-nivel.png  used on input line 98.
 (pdftex.def)             Requested size: 341.43437pt x 287.72928pt.
- [42 <./img/rf/10quest.png> <./img/rf/alto-nivel.png>]
-<img/rf/registo.png, id=942, 885.3075pt x 522.95375pt>
+ [44 <./img/rf/alto-nivel.png>]
+<img/rf/registo.png, id=953, 885.3075pt x 522.95375pt>
 File: img/rf/registo.png Graphic file (type png)
 <use img/rf/registo.png>
-Package pdftex.def Info: img/rf/registo.png  used on input line 86.
+Package pdftex.def Info: img/rf/registo.png  used on input line 110.
 (pdftex.def)             Requested size: 426.79135pt x 252.10815pt.
- [43 <./img/rf/registo.png>]
-<img/rf/gerir-formacoes.png, id=949, 1131.22626pt x 773.89125pt>
+ [45 <./img/rf/registo.png>]
+<img/rf/gerir-formacoes.png, id=959, 1131.22626pt x 773.89125pt>
 File: img/rf/gerir-formacoes.png Graphic file (type png)
 <use img/rf/gerir-formacoes.png>
-Package pdftex.def Info: img/rf/gerir-formacoes.png  used on input line 98.
+Package pdftex.def Info: img/rf/gerir-formacoes.png  used on input line 122.
 (pdftex.def)             Requested size: 426.79135pt x 291.96799pt.
- [44 <./img/rf/gerir-formacoes.png>]
-<img/rf/gerir-quest.png, id=955, 1081.03876pt x 733.74126pt>
+ [46 <./img/rf/gerir-formacoes.png>]
+<img/rf/gerir-quest.png, id=965, 1081.03876pt x 733.74126pt>
 File: img/rf/gerir-quest.png Graphic file (type png)
 <use img/rf/gerir-quest.png>
-Package pdftex.def Info: img/rf/gerir-quest.png  used on input line 110.
+Package pdftex.def Info: img/rf/gerir-quest.png  used on input line 134.
 (pdftex.def)             Requested size: 426.79135pt x 289.67348pt.
-
-[45 <./img/rf/gerir-quest.png>]
-<img/rf/gerir-concurso.png, id=961, 1081.03876pt x 733.74126pt>
+ [47 <./img/rf/gerir-quest.png>]
+<img/rf/gerir-concurso.png, id=971, 1081.03876pt x 733.74126pt>
 File: img/rf/gerir-concurso.png Graphic file (type png)
 <use img/rf/gerir-concurso.png>
-Package pdftex.def Info: img/rf/gerir-concurso.png  used on input line 123.
+Package pdftex.def Info: img/rf/gerir-concurso.png  used on input line 147.
 (pdftex.def)             Requested size: 426.79135pt x 289.67348pt.
- [46 <./img/rf/gerir-concurso.png>]
-<img/rf/gerir-perguntas-tcg.png, id=967, 970.62625pt x 653.44125pt>
+ [48 <./img/rf/gerir-concurso.png>]
+<img/rf/gerir-perguntas-tcg.png, id=977, 970.62625pt x 653.44125pt>
 File: img/rf/gerir-perguntas-tcg.png Graphic file (type png)
 <use img/rf/gerir-perguntas-tcg.png>
-Package pdftex.def Info: img/rf/gerir-perguntas-tcg.png  used on input line 137
+Package pdftex.def Info: img/rf/gerir-perguntas-tcg.png  used on input line 161
 .
 (pdftex.def)             Requested size: 426.79135pt x 287.32559pt.
- [47 <./img/rf/gerir-perguntas-tcg.png>]
-<img/rf/ajuda.png, id=973, 584.1825pt x 312.16624pt>
+ [49 <./img/rf/gerir-perguntas-tcg.png>]
+<img/rf/ajuda.png, id=984, 584.1825pt x 312.16624pt>
 File: img/rf/ajuda.png Graphic file (type png)
 <use img/rf/ajuda.png>
-Package pdftex.def Info: img/rf/ajuda.png  used on input line 150.
+Package pdftex.def Info: img/rf/ajuda.png  used on input line 174.
 (pdftex.def)             Requested size: 426.79135pt x 228.06999pt.
- [48 <./img/rf/ajuda.png>] [49] [50])
+ [50 <./img/rf/ajuda.png>] [51] [52])
 (./text/5-arquitectura.tex
 Cap\'{\i }tulo 5.
-[51
-
-] [52]) (./text/6-implementacao.tex
-Cap\'{\i }tulo 6.
 [53
 
-] [54]) (./text/7-validacao.tex
-Cap\'{\i }tulo 7.
+] [54]) (./text/6-implementacao.tex
+Cap\'{\i }tulo 6.
 [55
 
-] [56]) (./text/8-produto-final.tex
-Cap\'{\i }tulo 8.
+] [56]) (./text/7-validacao.tex
+Cap\'{\i }tulo 7.
 [57
 
-] [58]) (./text/9-conclusion.tex
+] [58]) (./text/8-produto-final.tex
+Cap\'{\i }tulo 8.
+[59
+
+] [60]) (./text/9-conclusion.tex
 Cap\'{\i }tulo 9.
-) (./main.bbl [59
+) (./main.bbl [61
 
 ]
 LaTeX Font Info:    Try loading font information for T1+cmtt on input line 6.
@@ -1854,7 +1854,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 111--117
 / / neilpatel . com / blog /
  []
 
-[60
+[62
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 126--131
@@ -1904,15 +1904,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 176--181
 hine _ learning _ 02 _ dt /
  []
 
-) [61] [62] [63
+) [63] [64] [65
 
-] (./text/10-appendices.tex [64] (./text/append/A.tex
+] (./text/10-appendices.tex [66] (./text/append/A.tex
 Anexo A.
-) (./text/append/B.tex [65
+) (./text/append/B.tex [67
 
 ]
 Anexo B.
-)) [66
+)) [68
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 282.
@@ -1925,11 +1925,11 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 282.
  ) 
 Here is how much of TeX's memory you used:
- 39694 strings out of 492616
- 752951 string characters out of 6129480
+ 39698 strings out of 492616
+ 752991 string characters out of 6129480
  874732 words of memory out of 5000000
- 42645 multiletter control sequences out of 15000+600000
- 549553 words of font info for 59 fonts, out of 8000000 for 9000
+ 42646 multiletter control sequences out of 15000+600000
+ 550254 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,14n,94p,1990b,543s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{glo:tags} has been referenced but does not exist,
@@ -1956,22 +1956,23 @@ placed by a fixed one
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</
 usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></u
 sr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb
-></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbi1200.pfb><
-/usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></u
-sr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr
-/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/l
-ocal/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/loc
-al/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local
-/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/t
-exlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/tex
-live/2019/texmf-dist/fonts/type1/public/cm-super/sfsl1095.pfb></usr/local/texli
-ve/2019/texmf-dist/fonts/type1/public/cm-super/sfsx2488.pfb></usr/local/texlive
-/2019/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2
-019/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on main.pdf (84 pages, 13724597 bytes).
+></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbi1095.pfb><
+/usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbi1200.pfb></u
+sr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr
+/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/l
+ocal/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/loc
+al/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local
+/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/t
+exlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/tex
+live/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texli
+ve/2019/texmf-dist/fonts/type1/public/cm-super/sfsl1095.pfb></usr/local/texlive
+/2019/texmf-dist/fonts/type1/public/cm-super/sfsx2488.pfb></usr/local/texlive/2
+019/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/201
+9/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
+Output written on main.pdf (86 pages, 13757507 bytes).
 PDF statistics:
- 1212 PDF objects out of 1440 (max. 8388607)
- 967 compressed objects within 10 object streams
- 241 named destinations out of 1000 (max. 500000)
+ 1226 PDF objects out of 1440 (max. 8388607)
+ 978 compressed objects within 10 object streams
+ 243 named destinations out of 1000 (max. 500000)
  729 words of extra memory for PDF output out of 10000 (max. 10000000)
 
