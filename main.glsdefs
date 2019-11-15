@@ -366,4 +366,25 @@ name={API},%
 sort={API},%
 type={acronym},%
 first={Application Programming Interface\glsspace (API)},%
-f
+firstplural={Application Programming Interfaces\glsspace (APIs)},%
+text={API},%
+plural={APIs},%
+description={Application Programming Interface},%
+descriptionplural={Application Programming Interface\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Application Programming Interface},%
+longplural={Application Programming Interfaces},%
+short={API},%
+shortplural={APIs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
