@@ -133,6 +133,10 @@ Ainda na página inicial da plataforma serão exibidas algumas estatísticas rel
 	\end{center}
 \end{figure}
 
+Para se efectuar um registo é necessário introduzir o nome da empresa, nome do utilizador, email, \textit{username} e \textit{password}. De seguida o utilizador é direcionado para a página de login onde terá de introduzir o \textit{username} e \textit{password} para se autenticar.
+
+Depois de se efectuar um registo é enviado um mail de confirmação para o email associado à conta.
+
 \newpage
 
 \subsection{Diagrama Gerir Formações}
@@ -145,6 +149,19 @@ Ainda na página inicial da plataforma serão exibidas algumas estatísticas rel
 	\end{center}
 \end{figure}
 
+Praticamente todas as funcionalidades da gestão de formações já estão implementadas no \acrshort{tcg} por isso, muitas das funcionalidades irão recurar a à capacidade do \acrshort{tcg} através de pedidos REST e toda a informação relacionada com formações será também guardada na bade de dados do \acrshort{tcg}.
+
+Na gestão de formações um utilizador consegue listar todas as formações associadas à sua conta (i. e. criadas por ele) e pode também criar uma nova formação. O sistema efetua um pedido de todas essas formações ao \acrshort{tcg} e a partir daqui o utilizador consegue criar, eliminar, editar e pesquisar formações.
+
+Para criar uma formação o utilizador terá, numa primeira instância, de atribuir um nome e definir a periodicidade (i. e. preencher a data de inicio e fim, dias da semana, hora de envio e  duração/validade). 
+
+Numa segunda fase, o utilizador, através do caso de uso \textbf{RF - Definições da formação} consegue adicionar e gerir entradas. As definições da formação é onde o utilizar, através de \textit{tags} associa grupos de perguntas a grupos de pessoas. 
+
+Numa entrada o utilizador terá de introduzir a \textit{tag} de utilizador(es), a \textit{tag} da(s) pergunta(s) e o número de perguntas dessa \textit{tag} que serão enviadas em cada \textit{quiz}(i. e. cada iteração) da formação.
+
+Por fim o utilizador pode partilhar a formação. As inscrições numa formação serão feitas através de uma \textit{landing page} que pode ser personalizada no requisito \textbf{RF - Partilhar} e enviadas para o email introduzido no mini formulário da \textit{landing page}. Este mail com o link para a formação, pode ser persolizado no requisito \textbf{RF - Notificações por E-mail}. 
+
+
 \newpage
 
 \subsection{Diagrama Gerir Questionários}
@@ -156,6 +173,19 @@ Ainda na página inicial da plataforma serão exibidas algumas estatísticas rel
 		\label{fig:rf-gerir-quest}
 	\end{center}
 \end{figure}
+
+Na gestão de questionários, à semelhança da gestão de formações, é feita uma listagens dos questionários e o utilizador tem a capacidade de criar, eliminhar, editar e pesquisar questionários.
+
+Na criação de um novo questionário, um utilizador, numa primeira fase 
+terá de criar um contundo de perguntas e gerar um serie de resultados. Cada resultado terá de ter obrigatóriamente uma \textit{tag} associada e um título e 
+caso o utilizador deseje uma imagem e/ou um link. As perguntas e resultados podem também ser importados e exportados numa \textit{spreadsheet}.
+
+Depois de terminar a primeira fase, podendo a qualquer momento voltar a essa fase, o utilizador já tem recursos para começar a criar o quesitonário (i. e. o sistema de pontuação através do caso de uso \textbf{RF - Criar sistema de pontuação}). Numa primeira instancia o utilizador terá de selecionar a pergunta pelo qual deseja começar o questionário. De seguida cria uma ou mais respostas e para cada uma delas é necessário associar uma pergunta que na iteração seguinte sejam apresentadas e se possa repetir este processo para conseguir criar um fluxo de perguntas. Para cada pergunta é atribuido um peso e para cada resposta são associadas \textit{tags} de resultados. Desta forma numa dada pergunta, as \textit{tags} da resposta selecionada serão pontuadas.
+ A qualquer momento o utilizador, em vez de associar uma pergunta a uma resposta, pode decidir, naquele estado (i. e. numa resposta em especifico), terminar o questionário e apresentar o resultado ao utilizador final. 
+
+
+FALAR DA PARTILHA E DOS REQUISITOS AUTOMATICOS.
+
 
 
 \newpage
