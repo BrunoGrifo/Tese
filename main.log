@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.10.10)  22 NOV 2019 13:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.10.10)  22 NOV 2019 17:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1235,8 +1235,19 @@ LaTeX Info: Redefining \nameref on input line 159.
 \openout8 = `main.out'.
 
  (./main.glsdefs)
-\c@lstlisting=\count357
+Runaway argument?
+{\gls@defglossaryentry {api}{name={API},sort={API},type={acronym},fir\ETC.
+! File ended while scanning use of \ifglsentryexists.
+<inserted text> 
+                \par 
+l.159 \begin{document}
+                      
+I suspect you have forgotten a `}', causing me
+to read past where you wanted me to stop.
+I'll try to recover; but if the error is serious,
+you'd better type `E' or `X' now and fix your file.
 
+\c@lstlisting=\count357
 ABD: EveryShipout initializing macros
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
@@ -1317,7 +1328,7 @@ LaTeX Font Info:    Try loading font information for T1+cmss on input line 15.
 (/usr/local/texlive/2019/texmf-dist/tex/latex/base/t1cmss.fd
 File: t1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-<images/_UC_logo.pdf, id=191, 217.81375pt x 285.065pt>
+<images/_UC_logo.pdf, id=31, 217.81375pt x 285.065pt>
 File: images/_UC_logo.pdf Graphic file (type pdf)
 <use images/_UC_logo.pdf>
 Package pdftex.def Info: images/_UC_logo.pdf  used on input line 40.
@@ -1337,225 +1348,460 @@ Make it at least 13.59999pt.
 We now make it that large for the rest of the document.
 This may cause the page layout to be inconsistent, however.
 
-[3] [4] (./text/0-abstract-PT.tex) [5] [6] (./main.toc
-LaTeX Font Info:    Try loading font information for U+msa on input line 3.
+[3] [4] (./text/0-abstract-PT.tex) [5] [6]
 
-(/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 3.
+Package hyperref Warning: old toc file detected, not used; run LaTeX again.
 
-(/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [7
-
-])
 \tf@toc=\write10
 \openout10 = `main.toc'.
 
- [8]
-[9] (./main.gls) [10
+[7
+
+] [8] (./main.gls) [9
 
 
-] [11] (./main.acr) [12
+] [10] (./main.acr) [11
 
 
-] [13] (./main.lof [14
+] [12]
 
-])
+Package hyperref Warning: old lof file detected, not used; run LaTeX again.
+
 \tf@lof=\write11
 \openout11 = `main.lof'.
 
- [15]
-[16] (./main.lot)
+[13
+
+] [14]
+
+Package hyperref Warning: old lot file detected, not used; run LaTeX again.
+
 \tf@lot=\write12
 \openout12 = `main.lot'.
 
- [17
+[15
 
-] [18] (./text/1-introduction.tex
+] [16] (./text/1-introduction.tex
 Cap\'{\i }tulo 1.
+
+Package natbib Warning: Citation `10' on page 1 undefined on input line 4.
+
+
+Package natbib Warning: Citation `bookinbound' on page 1 undefined on input lin
+e 13.
+
+
+Package natbib Warning: Citation `inbound_paper' on page 1 undefined on input l
+ine 13.
+
+
+Package natbib Warning: Citation `postNextiny' on page 1 undefined on input lin
+e 13.
+
+
+Package natbib Warning: Citation `inbound_paper' on page 1 undefined on input l
+ine 15.
+
 
 Underfull \vbox (badness 1067) has occurred while \output is active []
 
  [1
 
 ]
-[2] [3]
+
+Package natbib Warning: Citation `HubSpot' on page 2 undefined on input line 17
+.
+
+
+Package natbib Warning: Citation `pbr' on page 2 undefined on input line 18.
+
+[2]
+
+Package natbib Warning: Citation `linkedin' on page 3 undefined on input line 4
+0.
+
+
+LaTeX Warning: Reference `sec:abordagem' on page 3 undefined on input line 52.
+
+
+LaTeX Warning: Reference `sec:requisitos' on page 3 undefined on input line 54.
+
+
+
+Package natbib Warning: Citation `tcg' on page 3 undefined on input line 55.
+
+
+LaTeX Warning: Reference `sec:estado-arte' on page 3 undefined on input line 55
+.
+
+[3]
+
+Package natbib Warning: Citation `websummit' on page 4 undefined on input line 
+56.
+
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 68.
- (/usr/local/texlive/2019/texmf-dist/tex/latex/base/omscmr.fd
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 68.
- [4]
-[5]) (./text/2-estado-de-arte.tex
+
+
+LaTeX Warning: Reference `sec:estado-arte' on page 4 undefined on input line 68
+.
+
+
+LaTeX Warning: Reference `sec:abordagem' on page 4 undefined on input line 70.
+
+
+LaTeX Warning: Reference `sec:requisitos' on page 4 undefined on input line 72.
+
+
+
+LaTeX Warning: Reference `sec:arquitetura' on page 4 undefined on input line 74
+.
+
+
+LaTeX Warning: Reference `sec:implementacao' on page 4 undefined on input line 
+76.
+
+
+LaTeX Warning: Reference `sec:validacao' on page 4 undefined on input line 78.
+
+
+LaTeX Warning: Reference `sec:produto-final' on page 4 undefined on input line 
+80.
+
+
+LaTeX Warning: Reference `sec:conclusion' on page 4 undefined on input line 82.
+
+
+[4] [5]) (./text/2-estado-de-arte.tex
 Cap\'{\i }tulo 2.
+
+Package natbib Warning: Citation `surveymonkey' on page 6 undefined on input li
+ne 13.
+
+
+Package natbib Warning: Citation `typeform' on page 6 undefined on input line 1
+3.
+
+
+Package natbib Warning: Citation `googleform' on page 6 undefined on input line
+ 13.
+
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [6
 
 ]
-<img/sm/survey-dashboard.png, id=567, 1445.4pt x 903.375pt>
+
+Package natbib Warning: Citation `face' on page 7 undefined on input line 28.
+
+
+Package natbib Warning: Citation `gaccount' on page 7 undefined on input line 2
+8.
+
+
+Package natbib Warning: Citation `microsoft' on page 7 undefined on input line 
+28.
+
+
+LaTeX Warning: Reference `fig:survey-dashboard' on page 7 undefined on input li
+ne 30.
+
+<img/sm/survey-dashboard.png, id=198, 1445.4pt x 903.375pt>
 File: img/sm/survey-dashboard.png Graphic file (type png)
 <use img/sm/survey-dashboard.png>
 Package pdftex.def Info: img/sm/survey-dashboard.png  used on input line 35.
 (pdftex.def)             Requested size: 426.79135pt x 266.74144pt.
-
 [7 <./img/sm/survey-dashboard.png>]
-<img/sm/survey-form-create.png, id=578, 1445.4pt x 903.375pt>
+<img/sm/survey-form-create.png, id=207, 1445.4pt x 903.375pt>
 File: img/sm/survey-form-create.png Graphic file (type png)
 <use img/sm/survey-form-create.png>
 Package pdftex.def Info: img/sm/survey-form-create.png  used on input line 45.
 (pdftex.def)             Requested size: 426.79135pt x 266.74144pt.
-<img/sm/survey-form-bank2.png, id=581, 1445.4pt x 903.375pt>
+
+
+LaTeX Warning: Reference `fig:survey-form-create' on page 8 undefined on input 
+line 51.
+
+
+LaTeX Warning: Reference `fig:survey-form-banck2' on page 8 undefined on input 
+line 51.
+
+<img/sm/survey-form-bank2.png, id=208, 1445.4pt x 903.375pt>
 File: img/sm/survey-form-bank2.png Graphic file (type png)
 <use img/sm/survey-form-bank2.png>
 Package pdftex.def Info: img/sm/survey-form-bank2.png  used on input line 55.
 (pdftex.def)             Requested size: 426.79135pt x 266.74144pt.
-<img/sm/survey-form-bank1.png, id=582, 1445.4pt x 903.375pt>
+<img/sm/survey-form-bank1.png, id=209, 1445.4pt x 903.375pt>
 File: img/sm/survey-form-bank1.png Graphic file (type png)
 <use img/sm/survey-form-bank1.png>
 Package pdftex.def Info: img/sm/survey-form-bank1.png  used on input line 64.
 (pdftex.def)             Requested size: 426.79135pt x 266.74144pt.
- [8 <./img/sm/survey-form-create.png> <./img/sm/survey-form-bank2.png>]
-<img/sm/surveymonkey-form-element.png, id=592, 1445.4pt x 903.375pt>
+[8 <./img/sm/survey-form-create.png> <./img/sm/survey-form-bank2.png>]
+
+LaTeX Warning: Reference `fig:surveymonkey-form-element' on page 9 undefined on
+ input line 72.
+
+
+LaTeX Warning: Reference `fig:survey-form-banck2' on page 9 undefined on input 
+line 72.
+
+
+LaTeX Warning: Reference `fig:survey-form-banck1' on page 9 undefined on input 
+line 72.
+
+<img/sm/surveymonkey-form-element.png, id=218, 1445.4pt x 903.375pt>
 File: img/sm/surveymonkey-form-element.png Graphic file (type png)
 <use img/sm/surveymonkey-form-element.png>
 Package pdftex.def Info: img/sm/surveymonkey-form-element.png  used on input li
 ne 77.
 (pdftex.def)             Requested size: 426.79135pt x 266.74144pt.
- [9 <./img/sm/survey-form-bank1.png> <./img/sm/surveymonkey-form-element.png>]
-<img/sm/surveymonkey-form-opcoes.png, id=599, 365.365pt x 652.4375pt>
+[9 <./img/sm/survey-form-bank1.png> <./img/sm/surveymonkey-form-element.png>]
+<img/sm/surveymonkey-form-opcoes.png, id=228, 365.365pt x 652.4375pt>
 File: img/sm/surveymonkey-form-opcoes.png Graphic file (type png)
 <use img/sm/surveymonkey-form-opcoes.png>
 Package pdftex.def Info: img/sm/surveymonkey-form-opcoes.png  used on input lin
 e 86.
 (pdftex.def)             Requested size: 137.74744pt x 245.97836pt.
-<img/sm/surveymonkey-form-aparencia.png, id=600, 364.36125pt x 651.43375pt>
+<img/sm/surveymonkey-form-aparencia.png, id=229, 364.36125pt x 651.43375pt>
 File: img/sm/surveymonkey-form-aparencia.png Graphic file (type png)
 <use img/sm/surveymonkey-form-aparencia.png>
 Package pdftex.def Info: img/sm/surveymonkey-form-aparencia.png  used on input 
 line 96.
 (pdftex.def)             Requested size: 137.58028pt x 245.97836pt.
-<img/sm/surveymonkey-form-logica.png, id=601, 361.35pt x 650.43pt>
+LaTeX Font Info:    Try loading font information for U+msa on input line 100.
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 100.
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+<img/sm/surveymonkey-form-logica.png, id=230, 361.35pt x 650.43pt>
 File: img/sm/surveymonkey-form-logica.png Graphic file (type png)
 <use img/sm/surveymonkey-form-logica.png>
 Package pdftex.def Info: img/sm/surveymonkey-form-logica.png  used on input lin
 e 104.
 (pdftex.def)             Requested size: 136.65277pt x 245.97836pt.
- [10 <./img/sm/surveymonkey-form-opcoes.png> <./img/sm/surveymonkey-form-aparen
-cia.png> <./img/sm/surveymonkey-form-logica.png>]
-<img/sm/surveymonkey-form-test-pc.png, id=614, 1445.4pt x 903.375pt>
+
+
+LaTeX Warning: Reference `fig:surveymonkey-form-opcoes' on page 10 undefined on
+ input line 112.
+
+
+LaTeX Warning: Reference `fig:surveymonkey-form-aparencia' on page 10 undefined
+ on input line 112.
+
+
+LaTeX Warning: Reference `fig:surveymonkey-form-logica' on page 10 undefined on
+ input line 112.
+
+
+LaTeX Warning: Reference `fig:surveymonkey-form-test-pc' on page 10 undefined o
+n input line 113.
+
+
+LaTeX Warning: Reference `fig:surveymonkey-form-test-phone' on page 10 undefine
+d on input line 113.
+
+[10 <./img/sm/surveymonkey-form-opcoes.png> <./img/sm/surveymonkey-form-aparenc
+ia.png> <./img/sm/surveymonkey-form-logica.png>]
+<img/sm/surveymonkey-form-test-pc.png, id=240, 1445.4pt x 903.375pt>
 File: img/sm/surveymonkey-form-test-pc.png Graphic file (type png)
 <use img/sm/surveymonkey-form-test-pc.png>
 Package pdftex.def Info: img/sm/surveymonkey-form-test-pc.png  used on input li
 ne 118.
 (pdftex.def)             Requested size: 426.79135pt x 266.74144pt.
-<img/sm/surveymonkey-form-test-phone.png, id=615, 1445.4pt x 903.375pt>
+<img/sm/surveymonkey-form-test-phone.png, id=241, 1445.4pt x 903.375pt>
 File: img/sm/surveymonkey-form-test-phone.png Graphic file (type png)
 <use img/sm/surveymonkey-form-test-phone.png>
 Package pdftex.def Info: img/sm/surveymonkey-form-test-phone.png  used on input
  line 126.
 (pdftex.def)             Requested size: 426.79135pt x 266.74144pt.
 
+
+LaTeX Warning: Reference `fig:surveymonkey-form-share' on page 11 undefined on 
+input line 132.
+
 [11 <./img/sm/surveymonkey-form-test-pc.png> <./img/sm/surveymonkey-form-test-p
 hone.png>]
-<img/sm/surveymonkey-form-share.png, id=622, 1445.4pt x 903.375pt>
+<img/sm/surveymonkey-form-share.png, id=249, 1445.4pt x 903.375pt>
 File: img/sm/surveymonkey-form-share.png Graphic file (type png)
 <use img/sm/surveymonkey-form-share.png>
 Package pdftex.def Info: img/sm/surveymonkey-form-share.png  used on input line
  138.
 (pdftex.def)             Requested size: 426.79135pt x 266.74144pt.
-<img/sm/surveymonkey-form-filtro.png, id=625, 1445.4pt x 903.375pt>
+
+
+LaTeX Warning: Reference `fig:surveymonkey-form-filtro' on page 12 undefined on
+ input line 146.
+
+
+LaTeX Warning: Reference `fig:surveymonkey-form-filtro1' on page 12 undefined o
+n input line 146.
+
+<img/sm/surveymonkey-form-filtro.png, id=250, 1445.4pt x 903.375pt>
 File: img/sm/surveymonkey-form-filtro.png Graphic file (type png)
 <use img/sm/surveymonkey-form-filtro.png>
 Package pdftex.def Info: img/sm/surveymonkey-form-filtro.png  used on input lin
 e 151.
 (pdftex.def)             Requested size: 426.79135pt x 266.74144pt.
-<img/sm/surveymonkey-form-filtro1.png, id=626, 1445.4pt x 903.375pt>
+<img/sm/surveymonkey-form-filtro1.png, id=251, 1445.4pt x 903.375pt>
 File: img/sm/surveymonkey-form-filtro1.png Graphic file (type png)
 <use img/sm/surveymonkey-form-filtro1.png>
 Package pdftex.def Info: img/sm/surveymonkey-form-filtro1.png  used on input li
 ne 161.
 (pdftex.def)             Requested size: 426.79135pt x 266.74144pt.
- [12 <./img/sm/surveymonkey-form-share.png> <./img/sm/surveymonkey-form-filtro.
-png>] [13 <./img/sm/surveymonkey-form-filtro1.png>]
-<img/tf/tf-dashboard.png, id=644, 1445.4pt x 903.375pt>
+[12 <./img/sm/surveymonkey-form-share.png> <./img/sm/surveymonkey-form-filtro.p
+ng>]
+
+LaTeX Warning: Reference `fig:tf-dashboard' on page 13 undefined on input line 
+180.
+
+[13 <./img/sm/surveymonkey-form-filtro1.png>]
+<img/tf/tf-dashboard.png, id=270, 1445.4pt x 903.375pt>
 File: img/tf/tf-dashboard.png Graphic file (type png)
 <use img/tf/tf-dashboard.png>
 Package pdftex.def Info: img/tf/tf-dashboard.png  used on input line 185.
 (pdftex.def)             Requested size: 426.79135pt x 266.74144pt.
-<img/tf/tf-form-create.png, id=646, 1445.4pt x 903.375pt>
+
+
+LaTeX Warning: Reference `fig:tf-form-create' on page 14 undefined on input lin
+e 191.
+
+<img/tf/tf-form-create.png, id=271, 1445.4pt x 903.375pt>
 File: img/tf/tf-form-create.png Graphic file (type png)
 <use img/tf/tf-form-create.png>
 Package pdftex.def Info: img/tf/tf-form-create.png  used on input line 195.
 (pdftex.def)             Requested size: 426.79135pt x 266.74144pt.
- [14 <./img/tf/tf-dashboard.png> <./img/tf/tf-form-create.png>]
-<img/tf/tf-question-type.png, id=653, 1445.4pt x 903.375pt>
+[14 <./img/tf/tf-dashboard.png> <./img/tf/tf-form-create.png>]
+<img/tf/tf-question-type.png, id=280, 1445.4pt x 903.375pt>
 File: img/tf/tf-question-type.png Graphic file (type png)
 <use img/tf/tf-question-type.png>
 Package pdftex.def Info: img/tf/tf-question-type.png  used on input line 204.
 (pdftex.def)             Requested size: 426.79135pt x 266.74144pt.
-<img/tf/tf-question-opcoes.png, id=657, 1445.4pt x 903.375pt>
+
+
+LaTeX Warning: Reference `fig:tf-question-type' on page 15 undefined on input l
+ine 210.
+
+
+LaTeX Warning: Reference `fig:tf-question-opcoes' on page 15 undefined on input
+ line 210.
+
+
+LaTeX Warning: Reference `fig:tf-question-custom' on page 15 undefined on input
+ line 210.
+
+<img/tf/tf-question-opcoes.png, id=281, 1445.4pt x 903.375pt>
 File: img/tf/tf-question-opcoes.png Graphic file (type png)
 <use img/tf/tf-question-opcoes.png>
 Package pdftex.def Info: img/tf/tf-question-opcoes.png  used on input line 214.
 
 (pdftex.def)             Requested size: 426.79135pt x 266.74144pt.
-<img/tf/tf-question-custom.png, id=658, 1445.4pt x 903.375pt>
+<img/tf/tf-question-custom.png, id=282, 1445.4pt x 903.375pt>
 File: img/tf/tf-question-custom.png Graphic file (type png)
 <use img/tf/tf-question-custom.png>
 Package pdftex.def Info: img/tf/tf-question-custom.png  used on input line 222.
 
 (pdftex.def)             Requested size: 426.79135pt x 266.74144pt.
- [15 <./img/tf/tf-question-type.png> <./img/tf/tf-question-opcoes.png>]
-<img/tf/tf-question-logica.png, id=666, 1445.4pt x 903.375pt>
+
+LaTeX Warning: Reference `fig:tf-question-logica' on page 15 undefined on input
+ line 228.
+
+[15 <./img/tf/tf-question-type.png> <./img/tf/tf-question-opcoes.png>]
+<img/tf/tf-question-logica.png, id=292, 1445.4pt x 903.375pt>
 File: img/tf/tf-question-logica.png Graphic file (type png)
 <use img/tf/tf-question-logica.png>
 Package pdftex.def Info: img/tf/tf-question-logica.png  used on input line 234.
 
 (pdftex.def)             Requested size: 426.79135pt x 266.74144pt.
  [16 <./img/tf/tf-question-custom.png> <./img/tf/tf-question-logica.png>]
-<img/tf/tf-question-integration.png, id=675, 1445.4pt x 903.375pt>
+
+LaTeX Warning: Reference `fig:tf-question-integration' on page 17 undefined on 
+input line 244.
+
+
+Package natbib Warning: Citation `googlesheets' on page 17 undefined on input l
+ine 244.
+
+<img/tf/tf-question-integration.png, id=301, 1445.4pt x 903.375pt>
 File: img/tf/tf-question-integration.png Graphic file (type png)
 <use img/tf/tf-question-integration.png>
 Package pdftex.def Info: img/tf/tf-question-integration.png  used on input line
  249.
 (pdftex.def)             Requested size: 426.79135pt x 266.74144pt.
- [17 <./img/tf/tf-question-integration.png>]
-<img/tf/tf-question-results.png, id=683, 1445.4pt x 903.375pt>
+
+LaTeX Warning: Reference `fig:tf-question-results' on page 17 undefined on inpu
+t line 255.
+
+[17 <./img/tf/tf-question-integration.png>]
+<img/tf/tf-question-results.png, id=308, 1445.4pt x 903.375pt>
 File: img/tf/tf-question-results.png Graphic file (type png)
 <use img/tf/tf-question-results.png>
 Package pdftex.def Info: img/tf/tf-question-results.png  used on input line 263
 .
 (pdftex.def)             Requested size: 426.79135pt x 266.74144pt.
 
+
+Package natbib Warning: Citation `gdocs' on page 18 undefined on input line 274
+.
+
+
+Package natbib Warning: Citation `gslides' on page 18 undefined on input line 2
+74.
+
+
+LaTeX Warning: Reference `fig:gf-dashboard' on page 18 undefined on input line 
+278.
+
 [18 <./img/tf/tf-question-results.png>]
-<img/gf/gf-dashboard.png, id=694, 1445.4pt x 903.375pt>
+<img/gf/gf-dashboard.png, id=316, 1445.4pt x 903.375pt>
 File: img/gf/gf-dashboard.png Graphic file (type png)
 <use img/gf/gf-dashboard.png>
 Package pdftex.def Info: img/gf/gf-dashboard.png  used on input line 284.
 (pdftex.def)             Requested size: 426.79135pt x 266.74144pt.
-<img/gf/gf-form-q-type.png, id=695, 1445.4pt x 903.375pt>
+<img/gf/gf-form-q-type.png, id=317, 1445.4pt x 903.375pt>
 File: img/gf/gf-form-q-type.png Graphic file (type png)
 <use img/gf/gf-form-q-type.png>
 Package pdftex.def Info: img/gf/gf-form-q-type.png  used on input line 293.
 (pdftex.def)             Requested size: 426.79135pt x 266.74144pt.
- [19 <./img/gf/gf-dashboard.png> <./img/gf/gf-form-q-type.png>]
-<img/gf/gf-form-import.png, id=707, 1445.4pt x 903.375pt>
+
+
+LaTeX Warning: Reference `fig:gf-form-q-type' on page 19 undefined on input lin
+e 299.
+
+
+LaTeX Warning: Reference `fig:gf-form-import' on page 19 undefined on input lin
+e 299.
+
+
+LaTeX Warning: Reference `fig:gf-form-import-select' on page 19 undefined on in
+put line 299.
+
+
+LaTeX Warning: Reference `fig:gf-form-imported' on page 19 undefined on input l
+ine 299.
+
+[19 <./img/gf/gf-dashboard.png> <./img/gf/gf-form-q-type.png>]
+<img/gf/gf-form-import.png, id=326, 1445.4pt x 903.375pt>
 File: img/gf/gf-form-import.png Graphic file (type png)
 <use img/gf/gf-form-import.png>
 Package pdftex.def Info: img/gf/gf-form-import.png  used on input line 303.
 (pdftex.def)             Requested size: 426.79135pt x 266.74144pt.
-<img/gf/gf-form-import-select.png, id=708, 1445.4pt x 903.375pt>
+<img/gf/gf-form-import-select.png, id=327, 1445.4pt x 903.375pt>
 File: img/gf/gf-form-import-select.png Graphic file (type png)
 <use img/gf/gf-form-import-select.png>
 Package pdftex.def Info: img/gf/gf-form-import-select.png  used on input line 3
 11.
 (pdftex.def)             Requested size: 426.79135pt x 266.74144pt.
-<img/gf/gf-form-imported.png, id=709, 1445.4pt x 903.375pt>
+<img/gf/gf-form-imported.png, id=328, 1445.4pt x 903.375pt>
 File: img/gf/gf-form-imported.png Graphic file (type png)
 <use img/gf/gf-form-imported.png>
 Package pdftex.def Info: img/gf/gf-form-imported.png  used on input line 319.
@@ -1564,7 +1810,7 @@ Package pdftex.def Info: img/gf/gf-form-imported.png  used on input line 319.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<img/gf/gf-form-design.png, id=710, 1445.4pt x 903.375pt>
+<img/gf/gf-form-design.png, id=329, 1445.4pt x 903.375pt>
 File: img/gf/gf-form-design.png Graphic file (type png)
 <use img/gf/gf-form-design.png>
 Package pdftex.def Info: img/gf/gf-form-design.png  used on input line 328.
@@ -1573,12 +1819,28 @@ Package pdftex.def Info: img/gf/gf-form-design.png  used on input line 328.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [20 <./img/gf/gf-form-import.png> <./img/gf/gf-form-import-select.png>]
-<img/gf/gf-form-set1.png, id=721, 594.22pt x 608.2725pt>
+
+LaTeX Warning: Reference `fig:gf-form-set1' on page 21 undefined on input line 
+336.
+
+
+LaTeX Warning: Reference `fig:gf-form-set2' on page 21 undefined on input line 
+336.
+
+
+LaTeX Warning: Reference `fig:gf-form-set3' on page 21 undefined on input line 
+336.
+
+
+LaTeX Warning: Reference `fig:gf-form-design' on page 21 undefined on input lin
+e 336.
+
+<img/gf/gf-form-set1.png, id=339, 594.22pt x 608.2725pt>
 File: img/gf/gf-form-set1.png Graphic file (type png)
 <use img/gf/gf-form-set1.png>
 Package pdftex.def Info: img/gf/gf-form-set1.png  used on input line 340.
 (pdftex.def)             Requested size: 205.96722pt x 210.83707pt.
-<img/gf/gf-form-set2.png, id=722, 596.2275pt x 423.5825pt>
+<img/gf/gf-form-set2.png, id=340, 596.2275pt x 423.5825pt>
 File: img/gf/gf-form-set2.png Graphic file (type png)
 <use img/gf/gf-form-set2.png>
 Package pdftex.def Info: img/gf/gf-form-set2.png  used on input line 350.
@@ -1588,7 +1850,7 @@ Overfull \hbox (46.91185pt too wide) in paragraph at lines 350--351
  [] 
  []
 
-<img/gf/gf-form-set3.png, id=723, 596.2275pt x 675.52374pt>
+<img/gf/gf-form-set3.png, id=341, 596.2275pt x 675.52374pt>
 File: img/gf/gf-form-set3.png Graphic file (type png)
 <use img/gf/gf-form-set3.png>
 Package pdftex.def Info: img/gf/gf-form-set3.png  used on input line 358.
@@ -1599,135 +1861,319 @@ Overfull \hbox (15.37016pt too wide) in paragraph at lines 358--359
  []
 
 [21 <./img/gf/gf-form-imported.png> <./img/gf/gf-form-design.png>]
-<img/gf/gf-form-results.png, id=731, 1445.4pt x 903.375pt>
+
+LaTeX Warning: Reference `fig:gf-form-results' on page 22 undefined on input li
+ne 368.
+
+<img/gf/gf-form-results.png, id=351, 1445.4pt x 903.375pt>
 File: img/gf/gf-form-results.png Graphic file (type png)
 <use img/gf/gf-form-results.png>
 Package pdftex.def Info: img/gf/gf-form-results.png  used on input line 373.
 (pdftex.def)             Requested size: 426.79135pt x 266.74144pt.
 
-
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\acrfull' on input line 379.
+
+
+Package natbib Warning: Citation `tcginfo' on page 22 undefined on input line 3
+82.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [22 <./img/gf/gf-form-set1.png> <./img/gf/gf-form-set2.png> <./img/gf/gf-form-
 set3.png>]
+
+LaTeX Warning: Reference `fig:tcg-homepage' on page 23 undefined on input line 
+388.
+
 [23 <./img/gf/gf-form-results.png>]
-<img/tcg/tcg-homepage.png, id=754, 1445.4pt x 903.375pt>
+<img/tcg/tcg-homepage.png, id=375, 1445.4pt x 903.375pt>
 File: img/tcg/tcg-homepage.png Graphic file (type png)
 <use img/tcg/tcg-homepage.png>
-Package pdftex.def Info: img/tcg/tcg-homepage.png  used on input line 394.
+Package pdftex.def Info: img/tcg/tcg-homepage.png  used on input line 395.
 (pdftex.def)             Requested size: 426.79135pt x 266.74144pt.
-<img/tcg/tcg-utilizadores.png, id=755, 1445.4pt x 903.375pt>
+<img/tcg/tcg-utilizadores.png, id=376, 1445.4pt x 903.375pt>
 File: img/tcg/tcg-utilizadores.png Graphic file (type png)
 <use img/tcg/tcg-utilizadores.png>
-Package pdftex.def Info: img/tcg/tcg-utilizadores.png  used on input line 402.
+Package pdftex.def Info: img/tcg/tcg-utilizadores.png  used on input line 403.
 (pdftex.def)             Requested size: 426.79135pt x 266.74144pt.
- [24 <./img/tcg/tcg-homepage.png> <./img/tcg/tcg-utilizadores.png>]
-<img/tcg/tcg-questoes.png, id=763, 1445.4pt x 903.375pt>
+
+
+LaTeX Warning: Reference `fig:tcg-utilizadores' on page 24 undefined on input l
+ine 409.
+
+[24 <./img/tcg/tcg-homepage.png> <./img/tcg/tcg-utilizadores.png>]
+<img/tcg/tcg-questoes.png, id=385, 1445.4pt x 903.375pt>
 File: img/tcg/tcg-questoes.png Graphic file (type png)
 <use img/tcg/tcg-questoes.png>
-Package pdftex.def Info: img/tcg/tcg-questoes.png  used on input line 413.
+Package pdftex.def Info: img/tcg/tcg-questoes.png  used on input line 414.
 (pdftex.def)             Requested size: 426.79135pt x 266.74144pt.
-<img/tcg/tcg-criar-questao.png, id=764, 1445.4pt x 903.375pt>
+<img/tcg/tcg-criar-questao.png, id=386, 1445.4pt x 903.375pt>
 File: img/tcg/tcg-criar-questao.png Graphic file (type png)
 <use img/tcg/tcg-criar-questao.png>
-Package pdftex.def Info: img/tcg/tcg-criar-questao.png  used on input line 421.
+Package pdftex.def Info: img/tcg/tcg-criar-questao.png  used on input line 422.
 
 (pdftex.def)             Requested size: 426.79135pt x 266.74144pt.
- [25 <./img/tcg/tcg-questoes.png> <./img/tcg/tcg-criar-questao.png>]
-<img/tcg/tcg-form.png, id=777, 1445.4pt x 903.375pt>
+
+
+LaTeX Warning: Reference `fig:tcg-questoes' on page 25 undefined on input line 
+428.
+
+
+LaTeX Warning: Reference `fig:tcg-criar-questoes' on page 25 undefined on input
+ line 428.
+
+[25 <./img/tcg/tcg-questoes.png> <./img/tcg/tcg-criar-questao.png>]
+
+LaTeX Warning: Reference `fig:tcg-form' on page 26 undefined on input line 431.
+
+
+
+LaTeX Warning: Reference `fig:tcg-form1' on page 26 undefined on input line 431
+.
+
+
+LaTeX Warning: Reference `fig:tcg-form2' on page 26 undefined on input line 431
+.
+
+<img/tcg/tcg-form.png, id=395, 1445.4pt x 903.375pt>
 File: img/tcg/tcg-form.png Graphic file (type png)
 <use img/tcg/tcg-form.png>
-Package pdftex.def Info: img/tcg/tcg-form.png  used on input line 438.
+Package pdftex.def Info: img/tcg/tcg-form.png  used on input line 439.
 (pdftex.def)             Requested size: 426.79135pt x 266.74144pt.
- [26 <./img/tcg/tcg-form.png>]
-<img/tcg/tcg-form1.png, id=784, 1445.4pt x 903.375pt>
+[26 <./img/tcg/tcg-form.png>]
+<img/tcg/tcg-form1.png, id=402, 1445.4pt x 903.375pt>
 File: img/tcg/tcg-form1.png Graphic file (type png)
 <use img/tcg/tcg-form1.png>
-Package pdftex.def Info: img/tcg/tcg-form1.png  used on input line 449.
+Package pdftex.def Info: img/tcg/tcg-form1.png  used on input line 450.
 (pdftex.def)             Requested size: 426.79135pt x 266.74144pt.
-<img/tcg/tcg-form2.png, id=785, 1445.4pt x 903.375pt>
+<img/tcg/tcg-form2.png, id=403, 1445.4pt x 903.375pt>
 File: img/tcg/tcg-form2.png Graphic file (type png)
 <use img/tcg/tcg-form2.png>
-Package pdftex.def Info: img/tcg/tcg-form2.png  used on input line 457.
-(pdftex.def)             Requested size: 426.79135pt x 266.74144pt.
-<img/tcg/tcg-feed.png, id=787, 1445.4pt x 903.375pt>
-File: img/tcg/tcg-feed.png Graphic file (type png)
-<use img/tcg/tcg-feed.png>
-Package pdftex.def Info: img/tcg/tcg-feed.png  used on input line 468.
-(pdftex.def)             Requested size: 426.79135pt x 266.74144pt.
- [27 <./img/tcg/tcg-form1.png> <./img/tcg/tcg-form2.png>]
-<img/tcg/tcg-tags.png, id=794, 1445.4pt x 903.375pt>
-File: img/tcg/tcg-tags.png Graphic file (type png)
-<use img/tcg/tcg-tags.png>
-Package pdftex.def Info: img/tcg/tcg-tags.png  used on input line 479.
-(pdftex.def)             Requested size: 426.79135pt x 266.74144pt.
-<img/tcg/tcg-mail.png, id=797, 1445.4pt x 903.375pt>
-File: img/tcg/tcg-mail.png Graphic file (type png)
-<use img/tcg/tcg-mail.png>
-Package pdftex.def Info: img/tcg/tcg-mail.png  used on input line 489.
-(pdftex.def)             Requested size: 426.79135pt x 266.74144pt.
- [28 <./img/tcg/tcg-feed.png> <./img/tcg/tcg-tags.png>]
-<img/tcg/tcg-data.png, id=805, 1445.4pt x 903.375pt>
-File: img/tcg/tcg-data.png Graphic file (type png)
-<use img/tcg/tcg-data.png>
-Package pdftex.def Info: img/tcg/tcg-data.png  used on input line 502.
+Package pdftex.def Info: img/tcg/tcg-form2.png  used on input line 458.
 (pdftex.def)             Requested size: 426.79135pt x 266.74144pt.
 
+
+LaTeX Warning: Reference `fig:tcg-feed' on page 27 undefined on input line 464.
+
+
+<img/tcg/tcg-feed.png, id=404, 1445.4pt x 903.375pt>
+File: img/tcg/tcg-feed.png Graphic file (type png)
+<use img/tcg/tcg-feed.png>
+Package pdftex.def Info: img/tcg/tcg-feed.png  used on input line 469.
+(pdftex.def)             Requested size: 426.79135pt x 266.74144pt.
+[27 <./img/tcg/tcg-form1.png> <./img/tcg/tcg-form2.png>]
+<img/tcg/tcg-tags.png, id=414, 1445.4pt x 903.375pt>
+File: img/tcg/tcg-tags.png Graphic file (type png)
+<use img/tcg/tcg-tags.png>
+Package pdftex.def Info: img/tcg/tcg-tags.png  used on input line 480.
+(pdftex.def)             Requested size: 426.79135pt x 266.74144pt.
+
+
+LaTeX Warning: Reference `fig:tcg-tags' on page 28 undefined on input line 486.
+
+
+
+LaTeX Warning: Reference `fig:tcg-mail' on page 28 undefined on input line 486.
+
+
+<img/tcg/tcg-mail.png, id=415, 1445.4pt x 903.375pt>
+File: img/tcg/tcg-mail.png Graphic file (type png)
+<use img/tcg/tcg-mail.png>
+Package pdftex.def Info: img/tcg/tcg-mail.png  used on input line 490.
+(pdftex.def)             Requested size: 426.79135pt x 266.74144pt.
+[28 <./img/tcg/tcg-feed.png> <./img/tcg/tcg-tags.png>]
+
+LaTeX Warning: Reference `fig:tcg-data' on page 29 undefined on input line 498.
+
+
+<img/tcg/tcg-data.png, id=424, 1445.4pt x 903.375pt>
+File: img/tcg/tcg-data.png Graphic file (type png)
+<use img/tcg/tcg-data.png>
+Package pdftex.def Info: img/tcg/tcg-data.png  used on input line 503.
+(pdftex.def)             Requested size: 426.79135pt x 266.74144pt.
 [29 <./img/tcg/tcg-mail.png> <./img/tcg/tcg-data.png>]
-<img/tcg/tcg-data1.png, id=812, 1445.4pt x 903.375pt>
+<img/tcg/tcg-data1.png, id=433, 1445.4pt x 903.375pt>
 File: img/tcg/tcg-data1.png Graphic file (type png)
 <use img/tcg/tcg-data1.png>
-Package pdftex.def Info: img/tcg/tcg-data1.png  used on input line 512.
+Package pdftex.def Info: img/tcg/tcg-data1.png  used on input line 513.
 (pdftex.def)             Requested size: 426.79135pt x 266.74144pt.
-<img/tcg/tcg-data2.png, id=815, 1445.4pt x 903.375pt>
+
+
+LaTeX Warning: Reference `fig:tcg-data1' on page 30 undefined on input line 519
+.
+
+
+LaTeX Warning: Reference `fig:tcg-data2' on page 30 undefined on input line 519
+.
+
+<img/tcg/tcg-data2.png, id=434, 1445.4pt x 903.375pt>
 File: img/tcg/tcg-data2.png Graphic file (type png)
 <use img/tcg/tcg-data2.png>
-Package pdftex.def Info: img/tcg/tcg-data2.png  used on input line 522.
+Package pdftex.def Info: img/tcg/tcg-data2.png  used on input line 523.
 (pdftex.def)             Requested size: 426.79135pt x 266.74144pt.
- [30 <./img/tcg/tcg-data1.png> <./img/tcg/tcg-data2.png>]
-<img/tcg/tcg-data3.png, id=824, 1445.4pt x 903.375pt>
+[30 <./img/tcg/tcg-data1.png> <./img/tcg/tcg-data2.png>]
+
+LaTeX Warning: Reference `fig:tcg-data3' on page 31 undefined on input line 532
+.
+
+
+LaTeX Warning: Reference `fig:tcg-data4' on page 31 undefined on input line 532
+.
+
+<img/tcg/tcg-data3.png, id=443, 1445.4pt x 903.375pt>
 File: img/tcg/tcg-data3.png Graphic file (type png)
 <use img/tcg/tcg-data3.png>
-Package pdftex.def Info: img/tcg/tcg-data3.png  used on input line 535.
+Package pdftex.def Info: img/tcg/tcg-data3.png  used on input line 536.
 (pdftex.def)             Requested size: 426.79135pt x 266.74144pt.
-<img/tcg/tcg-data4.png, id=825, 1445.4pt x 903.375pt>
+<img/tcg/tcg-data4.png, id=444, 1445.4pt x 903.375pt>
 File: img/tcg/tcg-data4.png Graphic file (type png)
 <use img/tcg/tcg-data4.png>
-Package pdftex.def Info: img/tcg/tcg-data4.png  used on input line 544.
+Package pdftex.def Info: img/tcg/tcg-data4.png  used on input line 545.
 (pdftex.def)             Requested size: 426.79135pt x 266.74144pt.
- [31 <./img/tcg/tcg-data3.png> <./img/tcg/tcg-data4.png>]
-<img/tcg/tcg-data-f.png, id=838, 1445.4pt x 903.375pt>
+
+LaTeX Warning: Reference `fig:tcg-data-f' on page 31 undefined on input line 55
+1.
+
+
+LaTeX Warning: Reference `fig:tcg-data-f1' on page 31 undefined on input line 5
+51.
+
+
+LaTeX Warning: Reference `fig:tcg-data-f2' on page 31 undefined on input line 5
+51.
+
+
+LaTeX Warning: Reference `fig:tcg-data-f3' on page 31 undefined on input line 5
+51.
+
+
+LaTeX Warning: Reference `fig:tcg-data-f2' on page 31 undefined on input line 5
+52.
+
+[31 <./img/tcg/tcg-data3.png> <./img/tcg/tcg-data4.png>]
+<img/tcg/tcg-data-f.png, id=453, 1445.4pt x 903.375pt>
 File: img/tcg/tcg-data-f.png Graphic file (type png)
 <use img/tcg/tcg-data-f.png>
-Package pdftex.def Info: img/tcg/tcg-data-f.png  used on input line 556.
+Package pdftex.def Info: img/tcg/tcg-data-f.png  used on input line 557.
 (pdftex.def)             Requested size: 426.79135pt x 266.74144pt.
-<img/tcg/tcg-data-f1.png, id=839, 1183.42125pt x 594.22pt>
+<img/tcg/tcg-data-f1.png, id=454, 1183.42125pt x 594.22pt>
 File: img/tcg/tcg-data-f1.png Graphic file (type png)
 <use img/tcg/tcg-data-f1.png>
-Package pdftex.def Info: img/tcg/tcg-data-f1.png  used on input line 564.
+Package pdftex.def Info: img/tcg/tcg-data-f1.png  used on input line 565.
 (pdftex.def)             Requested size: 426.79135pt x 214.29985pt.
-<img/tcg/tcg-data-f2.png, id=840, 1177.39874pt x 553.06625pt>
+<img/tcg/tcg-data-f2.png, id=455, 1177.39874pt x 553.06625pt>
 File: img/tcg/tcg-data-f2.png Graphic file (type png)
 <use img/tcg/tcg-data-f2.png>
-Package pdftex.def Info: img/tcg/tcg-data-f2.png  used on input line 572.
+Package pdftex.def Info: img/tcg/tcg-data-f2.png  used on input line 573.
 (pdftex.def)             Requested size: 426.79135pt x 200.47926pt.
-<img/tcg/tcg-data-f3.png, id=841, 1171.37625pt x 421.575pt>
+<img/tcg/tcg-data-f3.png, id=456, 1171.37625pt x 421.575pt>
 File: img/tcg/tcg-data-f3.png Graphic file (type png)
 <use img/tcg/tcg-data-f3.png>
-Package pdftex.def Info: img/tcg/tcg-data-f3.png  used on input line 580.
+Package pdftex.def Info: img/tcg/tcg-data-f3.png  used on input line 581.
 (pdftex.def)             Requested size: 426.79135pt x 153.6002pt.
- [32 <./img/tcg/tcg-data-f.png> <./img/tcg/tcg-data-f1.png>] [33 <./img/tcg/tcg
--data-f2.png> <./img/tcg/tcg-data-f3.png>] [34]
-Underfull \hbox (badness 10000) in paragraph at lines 643--643
+ [32 <./img/tcg/tcg-data-f.png> <./img/tcg/tcg-data-f1.png>]
+
+LaTeX Warning: Reference `subsec:objetivos' on page 33 undefined on input line 
+592.
+
+
+Package natbib Warning: Citation `akinator' on page 33 undefined on input line 
+594.
+
+
+Package natbib Warning: Citation `5' on page 33 undefined on input line 594.
+
+
+Package natbib Warning: Citation `cart' on page 33 undefined on input line 594.
+
+
+
+Package natbib Warning: Citation `id3' on page 33 undefined on input line 594.
+
+
+Package natbib Warning: Citation `id3_1' on page 33 undefined on input line 594
+.
+
+
+Package natbib Warning: Citation `id3_2' on page 33 undefined on input line 594
+.
+
+
+Package natbib Warning: Citation `cart' on page 33 undefined on input line 594.
+
+
+
+Package natbib Warning: Citation `cart' on page 33 undefined on input line 594.
+
+
+
+Package natbib Warning: Citation `c4.5' on page 33 undefined on input line 594.
+
+
+
+LaTeX Warning: Reference `subsec:objetivos' on page 33 undefined on input line 
+594.
+
+[33 <./img/tcg/tcg-data-f2.png> <./img/tcg/tcg-data-f3.png>]
+
+Package natbib Warning: Citation `chaseforadventure' on page 34 undefined on in
+put line 598.
+
+
+Package natbib Warning: Citation `travelpicker' on page 34 undefined on input l
+ine 598.
+
+
+Package natbib Warning: Citation `insightvacations' on page 34 undefined on inp
+ut line 598.
+
+
+Package natbib Warning: Citation `driftwoodjournals' on page 34 undefined on in
+put line 598.
+
+
+LaTeX Warning: Reference `sec:requisitos' on page 34 undefined on input line 60
+0.
+
+
+LaTeX Warning: Reference `tab:comparacao1' on page 34 undefined on input line 6
+07.
+
+
+LaTeX Warning: Reference `tab:comparacao' on page 34 undefined on input line 60
+7.
+
+
+LaTeX Warning: Reference `surveyMonkey' on page 34 undefined on input line 607.
+
+
+
+LaTeX Warning: Reference `typeform' on page 34 undefined on input line 607.
+
+
+LaTeX Warning: Reference `googleform' on page 34 undefined on input line 607.
+
+
+LaTeX Warning: Reference `tab:comparacao' on page 34 undefined on input line 60
+9.
+
+
+LaTeX Warning: Reference `sec:introducao' on page 34 undefined on input line 61
+6.
+
+
+LaTeX Warning: Reference `subsec:contexto' on page 34 undefined on input line 6
+16.
+
+[34]
+Underfull \hbox (badness 10000) in paragraph at lines 644--644
 []|\T1/cmr/m/n/10.95 Criar For-mu-lá-rio do
  []
 
 [35]
-Underfull \hbox (badness 1496) in paragraph at lines 680--680
+Underfull \hbox (badness 1496) in paragraph at lines 681--681
 []|\T1/cmr/m/n/10.95 Personalização do for-
  []
 
@@ -1737,6 +2183,19 @@ Cap\'{\i }tulo 3.
 
 ] [39]) (./text/4-especificacao-de-requisitos.tex
 Cap\'{\i }tulo 4.
+
+LaTeX Warning: Reference `requisitos:tiposutilizadores' on page 40 undefined on
+ input line 10.
+
+
+LaTeX Warning: Reference `rnf' on page 40 undefined on input line 10.
+
+
+LaTeX Warning: Reference `rf' on page 40 undefined on input line 10.
+
+
+LaTeX Warning: Reference `prototipagem' on page 40 undefined on input line 10.
+
 [40
 
 ]
@@ -1745,63 +2204,78 @@ Overfull \hbox (21.45497pt too wide) in paragraph at lines 50--51
 -requisitos-nao-funcionais/9525 
  []
 
-<img/rf/legenda.png, id=929, 563.10374pt x 362.35374pt>
+
+LaTeX Warning: Reference `fig:rf-legenda' on page 41 undefined on input line 57
+.
+
+<img/rf/legenda.png, id=519, 563.10374pt x 362.35374pt>
 File: img/rf/legenda.png Graphic file (type png)
 <use img/rf/legenda.png>
 Package pdftex.def Info: img/rf/legenda.png  used on input line 61.
 (pdftex.def)             Requested size: 298.75264pt x 192.2456pt.
 [41] [42 <./img/rf/legenda.png>]
-<img/rf/10quest.png, id=940, 484.81125pt x 386.44376pt>
+<img/rf/10quest.png, id=535, 484.81125pt x 386.44376pt>
 File: img/rf/10quest.png Graphic file (type png)
 <use img/rf/10quest.png>
 Package pdftex.def Info: img/rf/10quest.png  used on input line 95.
 (pdftex.def)             Requested size: 256.07741pt x 204.1302pt.
- [43 <./img/rf/10quest.png>]
-<img/rf/alto-nivel.png, id=950, 644.4075pt x 543.02875pt>
+
+
+LaTeX Warning: Reference `sec:estado-arte' on page 43 undefined on input line 1
+04.
+
+[43 <./img/rf/10quest.png>]
+<img/rf/alto-nivel.png, id=545, 644.4075pt x 543.02875pt>
 File: img/rf/alto-nivel.png Graphic file (type png)
 <use img/rf/alto-nivel.png>
 Package pdftex.def Info: img/rf/alto-nivel.png  used on input line 113.
 (pdftex.def)             Requested size: 341.43437pt x 287.72928pt.
  [44 <./img/rf/alto-nivel.png>]
-<img/rf/registo.png, id=958, 885.3075pt x 593.21625pt>
+<img/rf/registo.png, id=555, 885.3075pt x 593.21625pt>
 File: img/rf/registo.png Graphic file (type png)
 <use img/rf/registo.png>
 Package pdftex.def Info: img/rf/registo.png  used on input line 130.
 (pdftex.def)             Requested size: 426.79135pt x 285.98065pt.
  [45 <./img/rf/registo.png>]
-<img/rf/gerir-formacoes.png, id=964, 1143.27126pt x 795.97375pt>
-File: img/rf/gerir-formacoes.png Graphic file (type png)
-<use img/rf/gerir-formacoes.png>
-Package pdftex.def Info: img/rf/gerir-formacoes.png  used on input line 146.
-(pdftex.def)             Requested size: 426.79135pt x 297.14127pt.
- [46 <./img/rf/gerir-formacoes.png>]
-<img/rf/gerir-quest.png, id=974, 1081.03876pt x 733.74126pt>
-File: img/rf/gerir-quest.png Graphic file (type png)
-<use img/rf/gerir-quest.png>
-Package pdftex.def Info: img/rf/gerir-quest.png  used on input line 171.
-(pdftex.def)             Requested size: 426.79135pt x 289.67348pt.
-
-[47 <./img/rf/gerir-quest.png>]
-<img/rf/gerir-concurso.png, id=980, 1081.03876pt x 733.74126pt>
-File: img/rf/gerir-concurso.png Graphic file (type png)
-<use img/rf/gerir-concurso.png>
-Package pdftex.def Info: img/rf/gerir-concurso.png  used on input line 197.
-(pdftex.def)             Requested size: 426.79135pt x 289.67348pt.
- [48 <./img/rf/gerir-concurso.png>]
-<img/rf/gerir-perguntas-tcg.png, id=986, 970.62625pt x 653.44125pt>
+<img/rf/gerir-perguntas-tcg.png, id=564, 1111.15125pt x 724.7075pt>
 File: img/rf/gerir-perguntas-tcg.png Graphic file (type png)
 <use img/rf/gerir-perguntas-tcg.png>
-Package pdftex.def Info: img/rf/gerir-perguntas-tcg.png  used on input line 211
+Package pdftex.def Info: img/rf/gerir-perguntas-tcg.png  used on input line 146
 .
-(pdftex.def)             Requested size: 426.79135pt x 287.32559pt.
- [49 <./img/rf/gerir-perguntas-tcg.png>]
-<img/rf/ajuda.png, id=993, 584.1825pt x 382.42876pt>
+(pdftex.def)             Requested size: 426.79135pt x 278.35529pt.
+
+
+LaTeX Warning: Reference `sec:TCG' on page 46 undefined on input line 152.
+
+
+LaTeX Warning: Reference `sec:TCG' on page 46 undefined on input line 154.
+
+[46 <./img/rf/gerir-perguntas-tcg.png>]
+<img/rf/gerir-formacoes.png, id=576, 1142.2675pt x 835.12pt>
+File: img/rf/gerir-formacoes.png Graphic file (type png)
+<use img/rf/gerir-formacoes.png>
+Package pdftex.def Info: img/rf/gerir-formacoes.png  used on input line 170.
+(pdftex.def)             Requested size: 426.79135pt x 312.02237pt.
+ [47 <./img/rf/gerir-formacoes.png>]
+<img/rf/gerir-quest.png, id=589, 1081.03876pt x 743.77875pt>
+File: img/rf/gerir-quest.png Graphic file (type png)
+<use img/rf/gerir-quest.png>
+Package pdftex.def Info: img/rf/gerir-quest.png  used on input line 196.
+(pdftex.def)             Requested size: 426.79135pt x 293.63617pt.
+
+[48 <./img/rf/gerir-quest.png>]
+<img/rf/gerir-concurso.png, id=597, 1081.03876pt x 733.74126pt>
+File: img/rf/gerir-concurso.png Graphic file (type png)
+<use img/rf/gerir-concurso.png>
+Package pdftex.def Info: img/rf/gerir-concurso.png  used on input line 217.
+(pdftex.def)             Requested size: 426.79135pt x 289.67348pt.
+ [49 <./img/rf/gerir-concurso.png>]
+<img/rf/ajuda.png, id=605, 584.1825pt x 382.42876pt>
 File: img/rf/ajuda.png Graphic file (type png)
 <use img/rf/ajuda.png>
-Package pdftex.def Info: img/rf/ajuda.png  used on input line 224.
+Package pdftex.def Info: img/rf/ajuda.png  used on input line 243.
 (pdftex.def)             Requested size: 426.79135pt x 279.40408pt.
- [50 <./img/rf/ajuda.png>] [51] [52])
-(./text/5-arquitectura.tex
+ [50 <./img/rf/ajuda.png>] [51] [52]) (./text/5-arquitectura.tex
 Cap\'{\i }tulo 5.
 [53
 
@@ -1819,7 +2293,20 @@ Cap\'{\i }tulo 8.
 
 ] [60]) (./text/9-conclusion.tex
 Cap\'{\i }tulo 9.
-) (./main.bbl [61
+)
+
+Package natbib Warning: Citation `neipatel' undefined on input line 257.
+
+
+Package natbib Warning: Citation `pg' undefined on input line 259.
+
+
+Package natbib Warning: Citation `impact' undefined on input line 260.
+
+
+Package natbib Warning: Citation `hubacademy' undefined on input line 261.
+
+(./main.bbl [61
 
 ]
 LaTeX Font Info:    Try loading font information for T1+cmtt on input line 6.
@@ -1918,28 +2405,53 @@ Anexo A.
 
 ]
 Anexo B.
-)) [68
+))
+
+Package natbib Warning: There were undefined citations.
+
+[68
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 282.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 282.
- (./main.aux)
+ (./main.aux
+
+Package natbib Warning: Citation(s) may have changed.
+(natbib)                Rerun to get citations correct.
+
+)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 282.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 282.
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 9FEC6D635025025D44ECA4F7597C1D26;2535.
+
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
+(rerunfilecheck)             After:  7BA43F31967D8F0194136048F1B68B7D;2535.
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 282.
  ) 
 Here is how much of TeX's memory you used:
- 39698 strings out of 492616
- 752991 string characters out of 6129480
- 874732 words of memory out of 5000000
- 42646 multiletter control sequences out of 15000+600000
+ 39650 strings out of 492616
+ 752367 string characters out of 6129480
+ 866522 words of memory out of 5000000
+ 42606 multiletter control sequences out of 15000+600000
  550254 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,14n,94p,1990b,543s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,14n,94p,1990b,537s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{glo:tags} has been referenced but does not exist,
  replaced by a fixed one
+
+pdfTeX warning (dest): name{glo:tcg} has been referenced but does not exist, re
+placed by a fixed one
 
 pdfTeX warning (dest): name{glo:backoffice} has been referenced but does not ex
 ist, replaced by a fixed one
@@ -1955,9 +2467,6 @@ st, replaced by a fixed one
 
 pdfTeX warning (dest): name{glo:lead} has been referenced but does not exist, r
 eplaced by a fixed one
-
-pdfTeX warning (dest): name{glo:tcg} has been referenced but does not exist, re
-placed by a fixed one
 
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</
 usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></u
@@ -1975,10 +2484,10 @@ ve/2019/texmf-dist/fonts/type1/public/cm-super/sfsl1095.pfb></usr/local/texlive
 /2019/texmf-dist/fonts/type1/public/cm-super/sfsx2488.pfb></usr/local/texlive/2
 019/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/201
 9/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on main.pdf (86 pages, 13777821 bytes).
+Output written on main.pdf (84 pages, 13782446 bytes).
 PDF statistics:
- 1235 PDF objects out of 1440 (max. 8388607)
- 987 compressed objects within 10 object streams
- 243 named destinations out of 1000 (max. 500000)
- 729 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 888 PDF objects out of 1000 (max. 8388607)
+ 645 compressed objects within 7 object streams
+ 241 named destinations out of 1000 (max. 500000)
+ 409 words of extra memory for PDF output out of 10000 (max. 10000000)
 

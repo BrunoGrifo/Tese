@@ -139,6 +139,30 @@ Depois de se efectuar um registo é enviado um mail de confirmação para o emai
 
 \newpage
 
+\subsection{Diagrama Gerir Perguntas TCG}
+\label{d:perguntastcg}
+\begin{figure}[ht!]
+	\begin{center}
+		\includegraphics[width=1\textwidth]{img/rf/gerir-perguntas-tcg}
+		\caption{Diagrama Gerir Perguntas TCG}
+		\label{fig:rf-gerir-perguntas-tcg}
+	\end{center}
+\end{figure}
+
+No \acrshort{tcg}, tal como referido no Capítulo \ref{sec:TCG}, a criação de questões é isolada da criação de formulários. Dito isto é necessário criar questões para que se possa ter conteúdos para as formações. 
+
+Aproveitando as funcionalidades do \acrshort{tcg} e  tendo em conta que esta abordagem traz uma serie de vantagens, referidas no Capítulo \ref{sec:TCG}, a plataforma a desenvolver irá seguir o mesmo modelo. 
+
+É ainda de notar que por uma questão de terminologia, na plataforma a desenvolver, as Perguntas TCG são equivalentes às questões no \acrshort{tcg}, pelo simples facto de não se confundir com elementos relacionados com os questionários.
+
+Na gestão de Perguntas TCG, um utilizador consegue listas todas as perguntas associadas à sua conta (i. e. criadas por ele) e pode também criar uma nova pergunta. O sistema efetua um pedido de todas essas perguntas ao \acrshort{tcg} e a partir daqui o utilizador consegue criar, eliminar, editar e pesquisarperguntas. As perguntas podem também ser importados e exportados através de uma \textit{spreadsheet}.
+
+Para um criar uma pergunta, o utilizador precisa de atribuir uma tag, nova ou existente, e introduzir a pergunta, as respotas e umas descrição, sendo esta ultima opcional. Cada pergunta tem que ter pelos menos duas respostas sendo estas compostas pela resposta e um anexo opcional que pode ser um ficheiro de som, imagem ou vídeo.
+
+
+
+\newpage
+
 \subsection{Diagrama Gerir Formações}
 \label{d:formacoes}
 \begin{figure}[ht!]
@@ -151,18 +175,19 @@ Depois de se efectuar um registo é enviado um mail de confirmação para o emai
 
 Praticamente todas as funcionalidades da gestão de formações já estão implementadas no \acrshort{tcg} por isso, muitas das funcionalidades irão recurar a à capacidade do \acrshort{tcg} através de pedidos REST e toda a informação relacionada com formações será também guardada na bade de dados do \acrshort{tcg}.
 
-Na gestão de formações um utilizador consegue listar todas as formações associadas à sua conta (i. e. criadas por ele) e pode também criar uma nova formação. O sistema efetua um pedido de todas essas formações ao \acrshort{tcg} e a partir daqui o utilizador consegue criar, eliminar, editar e pesquisar formações.
+Na gestão de formações um utilizador consegue listar todas as formações associadas à sua conta e pode também criar uma nova formação. O sistema efetua um pedido de todas essas formações ao \acrshort{tcg} e a partir daqui o utilizador consegue criar, eliminar, editar e pesquisar formações.
 
 Para criar uma formação o utilizador terá, numa primeira instância, de atribuir um nome e definir a periodicidade (i. e. preencher a data de inicio e fim, dias da semana, hora de envio e  duração/validade). 
 
-Numa segunda fase, o utilizador, através do caso de uso \textbf{RF - Definições da formação} consegue adicionar e gerir entradas. As definições da formação é onde o utilizar, através de \textit{tags} associa grupos de perguntas a grupos de pessoas. 
+Numa segunda fase, o utilizador, através do requisito \textbf{RF - Definições da formação} consegue adicionar e gerir entradas. As definições da formação é onde o utilizar, através de \textit{tags} associa grupos de perguntas a grupos de pessoas. 
 
 Numa entrada o utilizador terá de introduzir a \textit{tag} de utilizador(es), a \textit{tag} da(s) pergunta(s) e o número de perguntas dessa \textit{tag} que serão enviadas em cada \textit{quiz}(i. e. cada iteração) da formação.
 
 Por fim o utilizador pode partilhar a formação. As inscrições numa formação serão feitas através de uma \textit{landing page} que pode ser personalizada no requisito \textbf{RF - Partilhar} e enviadas para o email introduzido no mini formulário da \textit{landing page}. Este mail com o link para a formação, pode ser persolizado no requisito \textbf{RF - Notificações por E-mail}. 
 
+É de notar que, através do resquisito \textbf{RF - Adicionar novo utilizador final TCG}, sempre que um utilizador final se inscreve numa formação através da \textit{landing page}, o sistema, de forma automática, envia os dados para \acrshort{tcg} para que este utilizador possa começar a receber a formação por email. Outro requisito da responsabilidade do sistema é o \textbf{RF - Notificar utilizadores finais TCG}, que respeitando a peridicidade definida na criação do formação, envia a formação para todos os inscritos.
 
-\newpage
+
 
 \subsection{Diagrama Gerir Questionários}
 \label{d:quests}
@@ -177,18 +202,13 @@ Por fim o utilizador pode partilhar a formação. As inscrições numa formaçã
 Na gestão de questionários, à semelhança da gestão de formações, é feita uma listagens dos questionários e o utilizador tem a capacidade de criar, eliminhar, editar e pesquisar questionários.
 
 Na criação de um novo questionário, um utilizador, numa primeira fase 
-terá de criar um contundo de perguntas e gerar um serie de resultados. Cada resultado terá de ter obrigatóriamente uma \textit{tag} associada e um título e 
-caso o utilizador deseje uma imagem e/ou um link. As perguntas e resultados podem também ser importados e exportados numa \textit{spreadsheet}.
+terá de criar um contundo de perguntas e gerar um serie de resultados. Cada resultado terá de ter obrigatóriamente uma \textit{tag} associada e um título e caso o utilizador deseje uma imagem e/ou um link. As perguntas e resultados podem também ser importados e exportados numa \textit{spreadsheet}.
 
-Depois de terminar a primeira fase, podendo a qualquer momento voltar a essa fase, o utilizador já tem recursos para começar a criar o quesitonário (i. e. o sistema de pontuação através do caso de uso \textbf{RF - Criar sistema de pontuação}). Numa primeira instancia o utilizador terá de selecionar a pergunta pelo qual deseja começar o questionário. De seguida cria uma ou mais respostas e para cada uma delas é necessário associar uma pergunta que na iteração seguinte sejam apresentadas e se possa repetir este processo para conseguir criar um fluxo de perguntas. Para cada pergunta é atribuido um peso e para cada resposta são associadas \textit{tags} de resultados. Desta forma numa dada pergunta, as \textit{tags} da resposta selecionada serão pontuadas.
+Depois de terminar a primeira fase, podendo a qualquer momento voltar a essa fase, o utilizador já tem recursos para começar a criar o quesitonário (i. e. o sistema de pontuação através do requisito \textbf{RF - Criar sistema de pontuação}). Numa primeira instancia o utilizador terá de selecionar a pergunta pelo qual deseja começar o questionário. De seguida cria uma ou mais respostas e para cada uma delas é necessário associar uma pergunta que na iteração seguinte sejam apresentadas e se possa repetir este processo para conseguir criar um fluxo de perguntas. Para cada pergunta é atribuido um peso e para cada resposta são associadas \textit{tags} de resultados. Desta forma numa dada pergunta, as \textit{tags} da resposta selecionada serão pontuadas.
  A qualquer momento o utilizador, em vez de associar uma pergunta a uma resposta, pode decidir, naquele estado (i. e. numa resposta em especifico), terminar o questionário e apresentar o resultado ao utilizador final. 
 
+Através do requisito \textbf{RF - Adicionar novo utilizador final}, sempre que um utilizador final se inscreve num questionário através da \textit{landing page}, o sistema, de forma automática, guarda essa informação e recorrendo ao requisito \textbf{RF - Notificar utilizadores finais}, enviei o questionário para os utilizador final.
 
-FALAR DA PARTILHA E DOS REQUISITOS AUTOMATICOS.
-
-
-
-\newpage
 
 \subsection{Diagrama Gerir Concursos}
 \label{d:concursos}
@@ -201,21 +221,20 @@ FALAR DA PARTILHA E DOS REQUISITOS AUTOMATICOS.
 \end{figure}
 
 
-\newpage
+Na gestão de concursos, à semelhança da gestão de formações e questionários, é feita uma listagens dos concursos e o utilizador tem a capacidade de criar, eliminhar, editar e pesquisar questionários.
 
+Na criação de um concursos o utilizador terá de criar perguntas. Para cada pergunta o utilizador terá de introduzir pelo menos duas respostas e caso o desejo pode adicionar um anexo no formato de imagem. As perguntas e respostas podem também ser importados e exportados numa \textit{spreadsheet}.
 
-\subsection{Diagrama Gerir Perguntas TCG}
-\label{d:perguntastcg}
-\begin{figure}[ht!]
-	\begin{center}
-		\includegraphics[width=1\textwidth]{img/rf/gerir-perguntas-tcg}
-		\caption{Diagrama Gerir Perguntas TCG}
-		\label{fig:rf-gerir-perguntas-tcg}
-	\end{center}
-\end{figure}
+É importante referenciar que à semelhança da gestão de formações e questionários, é possível editar os conteudos (i. e. perguntas, questões, \textit{landing pages}, email etc) contudo, assim que um concurso é publicado e passa a estar no estado \textit{online}, as perguntas deixam de poder ser editaveis. 
 
+Os concursos, tal como os questionários têm sempre um estado que pode variar entre:
+\begin{itemize}
+	\item Rascunho - Utilizador não deu o concurso como conluído.
+	\item Aberto - Utilizador deu o concurso como conluído.
+	\item \textit{Online} - Utilizador gerou a \textit{landing page} para partilhar o concurso.
+	\item Fechado - Concurso chegou à data de fim.
+\end{itemize}
 
-\newpage
 
 \subsection{Diagrama Ajuda}
 \label{d:ajuda}
