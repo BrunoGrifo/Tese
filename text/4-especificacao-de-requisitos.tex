@@ -38,7 +38,16 @@ Outras entidades envolventes serão os responsáveis pela criação dos conteúd
 
 \section{Requisitos Não Funcionais}
 \label{rnf}
+\begin{itemize}
+	\item Segurança
+	\item Compatibilidade: browsers
+	\item Usabilidade: aprender em menos de 2 horas
+	\item Disponibilidade: 98
+	\item Desempenho: até 3 sec de resposta
+	\item Robustez: tolerar falhas de inputs invalidos no sistema e na bases de dados etc
+\end{itemize}
 
+https://www.devmedia.com.br/artigo-engenharia-de-software-3-requisitos-nao-funcionais/9525
 
 \section{Requisitos Funcionais}
 \label{rf}
@@ -57,7 +66,7 @@ Numa prima fase serão descritos os vários diagramas que representam todos os r
 
 Numa segunda fase serão analisados os graus de prioridade de cada requisito, consoante a sua importância para o projecto e por fim será feita uma descrição detalhada (i. e. especificação do requisito) de cada requisito através de casos de uso. É de notar que parte do grande trabalho da analise do grau de prioridade dos requisitos será imediato devido às decisões por parte do cliente.
 
-Desta forma será claro para o leitor, em especial para a equipa de desenvolvimento, o comportamento que o sistema terá cumprir. Os casos de uso serão detalhados consoante a seguindo estrutura:
+Desta forma será claro para o leitor, em especial para a equipa de desenvolvimento, o comportamento que o sistema terá de cumprir. Os casos de uso serão detalhados consoante a seguindo estrutura:
 
 \begin{itemize}
 	\item \textbf{ID:} ID do caso de uso.
@@ -89,6 +98,12 @@ Desta forma será claro para o leitor, em especial para a equipa de desenvolvime
 	\end{center}
 \end{figure}
 
+A 10.quest, tal como referido nos capítulos anteriores, é uma plataforma de inbound marketing que permite aos utilizadores criar formações, questionários, concursos e tratar a informação recolhida por cada um destes componentes. 
+Estes componentes poderão ser partilhados nas redes sociais (i. e. utilizando a API do Facebook, Instragam, Twitter e LinkedIn) através de \textit{landing pages}. Estas \textit{landing pages} terão um pequeno formulário que necessita das informações básicas ao utilizador final para que, automáticamente, as formações, questionários e concursos sejam enviados por mail para os inscritos, utilizando o sistema externo SendGrid.
+
+Tal como referido no Capítulo \ref{sec:estado-arte}, o \acrshort{tcg} é um produto desenvolvido pela 10.digital e actualmente no mercado. Algumas das funcionalidades fundamentais da plataforma a desenvolver já estão implementadas no \acrshort{tcg}  e por isso mesmo haverá uma interação com o mesmo para aproveitar todas estas funcionalidades necessárias.
+
+
 \newpage
 
 \subsection{Diagrama de alto nível}
@@ -100,6 +115,11 @@ Desta forma será claro para o leitor, em especial para a equipa de desenvolvime
 		\label{fig:rf-alto-nivel}
 	\end{center}
 \end{figure}
+
+Um utilizador para aceder a todas as funcionalidades da plataforma terá de primeiro realizar a autenticação através do caso de uso \textbf{RF - Registo}. Caso ainda não tenha uma conta registada terá de o fazer. Assim que a conta for criada é enviada uma notificação para o email do utilizador, recorrendo ao sistema externo SendGrid. Por questões de segunrança e confidencialidade dos dados, no acto do registo, a informação do utilizador será enviada e guardada na base de dados do \acrshort{tcg}, para que mais tarde todos os pedidos REST possam ser validados.
+
+Depois de um utilizador se autenticar, será direcionado para a página inicial. A partir daqui o utilizador conseguirá gerir questionários, formações, concuros e perguntas para as formações do \acrshort{tcg}; aceder às definições, actualizar o plano da conta, utilizar o suporte da plataforma e terminar sessão.
+Ainda na página inicial da plataforma serão exibidas algumas estatísticas relacionadas com as formações, questionários e concursos associados à conta do utilizador. 
 
 \newpage
 
