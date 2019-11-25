@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.10.10)  25 NOV 2019 05:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.10.10)  25 NOV 2019 17:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1740,7 +1740,7 @@ Cap\'{\i }tulo 4.
 [40
 
 ]
-Overfull \hbox (21.45497pt too wide) in paragraph at lines 50--51
+Overfull \hbox (21.45497pt too wide) in paragraph at lines 49--50
 []\T1/cmr/m/n/10.95 https://www.devmedia.com.br/artigo-engenharia-de-software-3
 -requisitos-nao-funcionais/9525 
  []
@@ -1748,86 +1748,78 @@ Overfull \hbox (21.45497pt too wide) in paragraph at lines 50--51
 <img/rf/legenda.png, id=927, 563.10374pt x 362.35374pt>
 File: img/rf/legenda.png Graphic file (type png)
 <use img/rf/legenda.png>
-Package pdftex.def Info: img/rf/legenda.png  used on input line 61.
+Package pdftex.def Info: img/rf/legenda.png  used on input line 60.
 (pdftex.def)             Requested size: 298.75264pt x 192.2456pt.
-[41]
-Overfull \hbox (23.36827pt too wide) in paragraph at lines 79--80
-[]\T1/cmr/bx/it/10.95 Could Have\T1/cmr/bx/n/10.95 : \T1/cmr/m/it/10.95 "Can we
- sa-cri-fice this task till de-a-dline? ^^U if \T1/cmr/bx/it/10.95 YES\T1/cmr/m
-/it/10.95 , it's \T1/cmr/bx/it/10.95 COULD\T1/cmr/m/it/10.95 "\T1/cmr/m/n/10.95
- [[]]. 
- []
-
-[42 <./img/rf/legenda.png>]
-<img/rf/10quest.png, id=944, 484.81125pt x 386.44376pt>
+[41] [42 <./img/rf/legenda.png>] [43]
+<img/rf/10quest.png, id=949, 484.81125pt x 386.44376pt>
 File: img/rf/10quest.png Graphic file (type png)
 <use img/rf/10quest.png>
-Package pdftex.def Info: img/rf/10quest.png  used on input line 96.
+Package pdftex.def Info: img/rf/10quest.png  used on input line 95.
 (pdftex.def)             Requested size: 256.07741pt x 204.1302pt.
- [43 <./img/rf/10quest.png>]
-<img/rf/alto-nivel.png, id=954, 644.4075pt x 543.02875pt>
+ [44 <./img/rf/10quest.png>]
+<img/rf/alto-nivel.png, id=958, 644.4075pt x 543.02875pt>
 File: img/rf/alto-nivel.png Graphic file (type png)
 <use img/rf/alto-nivel.png>
-Package pdftex.def Info: img/rf/alto-nivel.png  used on input line 114.
+Package pdftex.def Info: img/rf/alto-nivel.png  used on input line 113.
 (pdftex.def)             Requested size: 341.43437pt x 287.72928pt.
- [44 <./img/rf/alto-nivel.png>]
-<img/rf/registo.png, id=962, 885.3075pt x 593.21625pt>
+ [45 <./img/rf/alto-nivel.png>]
+<img/rf/registo.png, id=966, 885.3075pt x 593.21625pt>
 File: img/rf/registo.png Graphic file (type png)
 <use img/rf/registo.png>
-Package pdftex.def Info: img/rf/registo.png  used on input line 131.
+Package pdftex.def Info: img/rf/registo.png  used on input line 130.
 (pdftex.def)             Requested size: 426.79135pt x 285.98065pt.
- [45 <./img/rf/registo.png>]
-<img/rf/gerir-perguntas-tcg.png, id=968, 1111.15125pt x 724.7075pt>
+ [46 <./img/rf/registo.png>]
+<img/rf/gerir-perguntas-tcg.png, id=972, 1111.15125pt x 724.7075pt>
 File: img/rf/gerir-perguntas-tcg.png Graphic file (type png)
 <use img/rf/gerir-perguntas-tcg.png>
-Package pdftex.def Info: img/rf/gerir-perguntas-tcg.png  used on input line 147
+Package pdftex.def Info: img/rf/gerir-perguntas-tcg.png  used on input line 146
 .
 (pdftex.def)             Requested size: 426.79135pt x 278.35529pt.
- [46 <./img/rf/gerir-perguntas-tcg.png>]
-<img/rf/gerir-formacoes.png, id=980, 1142.2675pt x 835.12pt>
+ [47 <./img/rf/gerir-perguntas-tcg.png>]
+<img/rf/gerir-formacoes.png, id=984, 1142.2675pt x 835.12pt>
 File: img/rf/gerir-formacoes.png Graphic file (type png)
 <use img/rf/gerir-formacoes.png>
-Package pdftex.def Info: img/rf/gerir-formacoes.png  used on input line 171.
+Package pdftex.def Info: img/rf/gerir-formacoes.png  used on input line 170.
 (pdftex.def)             Requested size: 426.79135pt x 312.02237pt.
-
-[47 <./img/rf/gerir-formacoes.png>]
-<img/rf/gerir-quest.png, id=991, 1081.03876pt x 743.77875pt>
+ [48 <./img/rf/gerir-formacoes.png>]
+<img/rf/gerir-quest.png, id=995, 1081.03876pt x 743.77875pt>
 File: img/rf/gerir-quest.png Graphic file (type png)
 <use img/rf/gerir-quest.png>
-Package pdftex.def Info: img/rf/gerir-quest.png  used on input line 197.
+Package pdftex.def Info: img/rf/gerir-quest.png  used on input line 196.
 (pdftex.def)             Requested size: 426.79135pt x 293.63617pt.
- [48 <./img/rf/gerir-quest.png>]
-<img/rf/gerir-concurso.png, id=997, 1081.03876pt x 733.74126pt>
+ [49 <./img/rf/gerir-quest.png>]
+<img/rf/gerir-concurso.png, id=1002, 1081.03876pt x 733.74126pt>
 File: img/rf/gerir-concurso.png Graphic file (type png)
 <use img/rf/gerir-concurso.png>
-Package pdftex.def Info: img/rf/gerir-concurso.png  used on input line 218.
+Package pdftex.def Info: img/rf/gerir-concurso.png  used on input line 217.
 (pdftex.def)             Requested size: 426.79135pt x 289.67348pt.
- [49 <./img/rf/gerir-concurso.png>]
-<img/rf/ajuda.png, id=1004, 584.1825pt x 382.42876pt>
+
+[50 <./img/rf/gerir-concurso.png>]
+<img/rf/ajuda.png, id=1008, 584.1825pt x 382.42876pt>
 File: img/rf/ajuda.png Graphic file (type png)
 <use img/rf/ajuda.png>
-Package pdftex.def Info: img/rf/ajuda.png  used on input line 244.
+Package pdftex.def Info: img/rf/ajuda.png  used on input line 243.
 (pdftex.def)             Requested size: 426.79135pt x 279.40408pt.
- [50 <./img/rf/ajuda.png>] [51] [52])
+ [51 <./img/rf/ajuda.png>] [52] [53])
 (./text/5-arquitectura.tex
 Cap\'{\i }tulo 5.
-[53
+[54
 
-] [54]) (./text/6-implementacao.tex
+] [55]) (./text/6-implementacao.tex
 Cap\'{\i }tulo 6.
-[55
+[56
 
-] [56]) (./text/7-validacao.tex
+] [57]) (./text/7-validacao.tex
 Cap\'{\i }tulo 7.
-[57
+[58
 
-] [58]) (./text/8-produto-final.tex
+] [59]) (./text/8-produto-final.tex
 Cap\'{\i }tulo 8.
-[59
+[60
 
-] [60]) (./text/9-conclusion.tex
+] [61]) (./text/9-conclusion.tex
 Cap\'{\i }tulo 9.
-) (./main.bbl [61
+) (./main.bbl [62
 
 ]
 LaTeX Font Info:    Try loading font information for T1+cmtt on input line 6.
@@ -1868,7 +1860,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 107--113
 / / neilpatel . com / blog /
  []
 
-[62
+[63
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 122--127
@@ -1918,15 +1910,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 184--189
 hine _ learning _ 02 _ dt /
  []
 
-) [63] [64] [65
+) [64] [65] [66
 
-] (./text/10-appendices.tex [66] (./text/append/A.tex
+] (./text/10-appendices.tex [67] (./text/append/A.tex
 Anexo A.
-) (./text/append/B.tex [67
+) (./text/append/B.tex [68
 
 ]
 Anexo B.
-)) [68
+)) [69
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 283.
@@ -1939,9 +1931,9 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 283.
  ) 
 Here is how much of TeX's memory you used:
- 39704 strings out of 492616
- 753094 string characters out of 6129480
- 875781 words of memory out of 5000000
+ 39705 strings out of 492616
+ 753101 string characters out of 6129480
+ 875782 words of memory out of 5000000
  42651 multiletter control sequences out of 15000+600000
  550254 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1983,10 +1975,10 @@ ve/2019/texmf-dist/fonts/type1/public/cm-super/sfsl1095.pfb></usr/local/texlive
 /2019/texmf-dist/fonts/type1/public/cm-super/sfsx2488.pfb></usr/local/texlive/2
 019/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/201
 9/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on main.pdf (86 pages, 13808888 bytes).
+Output written on main.pdf (87 pages, 13810122 bytes).
 PDF statistics:
- 1252 PDF objects out of 1440 (max. 8388607)
- 1003 compressed objects within 11 object streams
- 244 named destinations out of 1000 (max. 500000)
+ 1256 PDF objects out of 1440 (max. 8388607)
+ 1006 compressed objects within 11 object streams
+ 245 named destinations out of 1000 (max. 500000)
  729 words of extra memory for PDF output out of 10000 (max. 10000000)
 
