@@ -40,7 +40,6 @@ Outras entidades envolventes serão os responsáveis pela criação dos conteúd
 \label{rnf}
 \begin{itemize}
 	\item Segurança
-	\item Compatibilidade: browsers
 	\item Usabilidade: aprender em menos de 2 horas
 	\item Disponibilidade: 98
 	\item Desempenho: até 3 sec de resposta
@@ -71,19 +70,20 @@ Desta forma será claro para o leitor, em especial para a equipa de desenvolvime
 \begin{itemize}
 	\item \textbf{ID:} ID do caso de uso.
 	\item \textbf{Ator:} Responsável pela realização do caso de uso.
-	\item \textbf{Prioridade:} 
+	\item \textbf{Prioridade:} Representa a prioridade do caso de uso baseada nas decisões do cliente, visão dos stakeholders e no funcionamento do sistema. As prioridades foram classificadas por:
 	\begin{itemize}
-		\item \textbf{\textit{Must Have}:} 
-		\item \textbf{\textit{Should Have}:}
-		\item \textbf{\textit{Could Have}:}
-		\item \textbf{\textit{Won't Have}:}
+		\item \textbf{\textit{Must Have}:} Como o próprio nome indica, os requisitos \textit{Must} são os requisitos com maior prioridade. \textit{"As a rule, product inception depends entirely on defining must-haves using such pointers as ‘required for launch’, ‘required for safety’, ‘required for validation’, ‘required to deliver a viable solution’, etc."}\cite{moscow}. Todos os requisitos categorizados como \textit{Must Have}, são mandatórios para a equipa de desenvolvimento visto que sem eles o projecto fica paralisado.\textit{ "Can we move forward with the project if this task is undone? – if \textbf{NO}, it’s \textbf{MUST}"}\cite{moscow}.
+		\item \textbf{\textit{Should Have}:} Os requisitos \textit{Sould} são requisitos que também têm uma elevada prioridade, ou por outras palavras, estão apenas um passo a baixo dos requisitos \textit{Must} .
+		Não são requisitos considerados vitais contudo adicionam valor significativo.\textit{ "Will we move forward with the project if this task is done a bit later? – if \textbf{YES}, it’s \textbf{SHOULD}"}\cite{moscow}.
+		\item \textbf{\textit{Could Have}:}\textit{ "Can we sacrifice this task till deadline? – if \textbf{YES}, it’s \textbf{COULD}"}\cite{moscow}.
+		\item \textbf{\textit{Won't Have}:}\textit{ "Can we back to it when things go better? – if \textbf{YES}, it’s \textbf{WON’T}"}\cite{moscow}.
 	\end{itemize}
-	\item \textbf{Descrição:}
-	\item \textbf{Pré-condições:}
-	\item \textbf{Fluxo Principal:}
-	\item \textbf{Fluso de Excepção:}
-	\item \textbf{Pós-condições:}
-	\item \textbf{Observações:}
+	\item \textbf{Descrição:} Uma breve contextualização do caso de uso.
+	\item \textbf{Pré-condições:} Conjunto de condições necessárias para realizar o caso de uso.
+	\item \textbf{Estimulo:} Casos de uso responsáveis pela ativação do caso de uso.
+	\item \textbf{Fluxo Principal:} Descrição detalhada de todos os passos para a realização do casos de uso.
+	\item \textbf{Fluso de Excepção:} Descrição detalhada do comportamento do sistema quando o caso de uso não for realizado com sucesso.
+	\item \textbf{Observações:} Observações adicionais, relevantes para o desfecho do caso de uso.
 \end{itemize}
 
 \newpage

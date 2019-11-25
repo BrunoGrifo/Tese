@@ -10,10 +10,6 @@
 \newblock {Akinator}.
 \newblock \url{https://pt.akinator.com}.
 
-\bibitem{id3_1}
-Anand Bahety.
-\newblock Extension and evaluation of id3 – decision tree algorithm.
-
 \bibitem{inbound_paper}
 Zlatko Bezhovski.
 \newblock Inbound marketing - a new concept in digital business.
@@ -136,6 +132,18 @@ Brian Halligan and Dharmesh Shah.
   \url{https://www.prismglobalmarketing.com/blog/what-is-inbound-marketing-4-components-inbound-methodology}.
 \newblock Accessed: 25.10.2019.
 
+\bibitem{moscow}
+{ProductPlan}.
+\newblock {Product Management: MoSCoW Prioritization}.
+\newblock \url{https://www.productplan.com/glossary/moscow-prioritization/}.
+\newblock Accessed: 15/11/2019.
+
+\bibitem{railsware}
+{Railsware}.
+\newblock {MoSCoW Method: How to Make the Best of Prioritization}.
+\newblock \url{https://railsware.com/blog/moscow-prioritization/}.
+\newblock Accessed: 15/11/2019.
+
 \bibitem{id3_2}
 {Sagarnil Das}.
 \newblock {ID3 algorithm}.
@@ -180,7 +188,7 @@ Brian Halligan and Dharmesh Shah.
 \newblock Accessed: 02/11/2019.
 
 \bibitem{travelpicker}
-{travelpicker}.
+{Travelpicker}.
 \newblock {We'll find your ideal holiday destination}.
 \newblock \url{http://travelpicker.com/}.
 
