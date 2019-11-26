@@ -38,15 +38,31 @@ Outras entidades envolventes serão os responsáveis pela criação dos conteúd
 
 \section{Requisitos Não Funcionais}
 \label{rnf}
+
+Nesta secção serão listados os requisitos não funcionais. Estes atributos dizem respeito aos atributos de qualidade da plataforma e foram idenficidados durante a fase de planetamento, adequando-se às necessidades do cliente e à natureza do produto. A lista de requisitos não funcionais é a seguinte:
+
 \begin{itemize}
-	\item Segurança
-	\item Usabilidade: aprender em menos de 2 horas
-	\item Disponibilidade: 98
-	\item Desempenho: até 3 sec de resposta
-	\item Robustez: tolerar falhas de inputs invalidos no sistema e na bases de dados etc
+	\item \textbf{RNF01 - Segurança}
+	\subitem - Um utilizador tem de estar autenticado para conseguir utilizar as funcionalidades da plataforma e apenas tem acesso a dados associados à sua conta. A comunicação com o \acrshort{tcg} será controlada com \textit{tokens}, para se controlar o acesso aos dados (i. e. um utilizador, autenticado ou não, não consegue efectuar pedidos de dados de outros utilizadores).
+	\subitem - Medição: Testes de segurança.
+	
+	\item \textbf{RNF02 - Usabilidade} 
+	\subitem - Um utilizador novo deve conseguir utilizar a plataforma (i. e. dominar todas as funcionalidades principais) em menos de 1 hora.
+	\subitem - Medição: Testes de usabilidade
+	
+	\item \textbf{RNF03 - Disponibilidade}
+	\subitem Sem contar com falhas de rede, o sistema deve garantir uma disponibilidade média, igual ou superior a 98\%.
+	\subitem - Medição: Arquitectura de Software.
+	
+	\item \textbf{RNF01 - Desempenho}
+	\subitem - A plataforma não deve demorar mais do que 4 segundos a executar um pedido efectuado pelo utilizador sendo que nos primeiros 2 segundos já deve mostrar alguma informação.
+	\subitem - Medição: Testes de stress.
+	
+	\item \textbf{RNF01 - Robustez}
+	\subitem - O sistema deve ser tolerante a falhas, erros e outras condições anormais. Eventos como falhas em pedidos à base de dados ou ao \acrshort{tcg}, \textit{inputs} inválidos, falhas de rede, dados inválidos etc., devem ser tratados de forma a não ter impacto negativo na plataforma.
+	\subitem - Medição: Testes de \textit{White Box} e \textit{Black Box}.
 \end{itemize}
 
-https://www.devmedia.com.br/artigo-engenharia-de-software-3-requisitos-nao-funcionais/9525
 
 \section{Requisitos Funcionais}
 \label{rf}
