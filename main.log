@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.10.10)  29 NOV 2019 17:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.10.10)  29 NOV 2019 18:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2062,34 +2062,30 @@ File: img/prototipos/16.png Graphic file (type png)
 <use img/prototipos/16.png>
 Package pdftex.def Info: img/prototipos/16.png  used on input line 126.
 (pdftex.def)             Requested size: 426.79135pt x 257.9268pt.
-File: img/prototipos/1.png Graphic file (type png)
-<use img/prototipos/1.png>
-Package pdftex.def Info: img/prototipos/1.png  used on input line 134.
-(pdftex.def)             Requested size: 426.79135pt x 264.80757pt.
-<img/prototipos/17.png, id=1216, 1043.9pt x 744.7825pt>
+<img/prototipos/17.png, id=1216, 1042.89626pt x 744.7825pt>
 File: img/prototipos/17.png Graphic file (type png)
 <use img/prototipos/17.png>
-Package pdftex.def Info: img/prototipos/17.png  used on input line 142.
-(pdftex.def)             Requested size: 426.79135pt x 304.4991pt.
+Package pdftex.def Info: img/prototipos/17.png  used on input line 135.
+(pdftex.def)             Requested size: 426.79135pt x 304.79457pt.
 <img/prototipos/18.png, id=1217, 1014.79124pt x 663.47874pt>
 File: img/prototipos/18.png Graphic file (type png)
 <use img/prototipos/18.png>
-Package pdftex.def Info: img/prototipos/18.png  used on input line 150.
+Package pdftex.def Info: img/prototipos/18.png  used on input line 143.
 (pdftex.def)             Requested size: 426.79135pt x 279.03375pt.
 <img/prototipos/19.png, id=1218, 1014.79124pt x 663.47874pt>
 File: img/prototipos/19.png Graphic file (type png)
 <use img/prototipos/19.png>
-Package pdftex.def Info: img/prototipos/19.png  used on input line 159.
+Package pdftex.def Info: img/prototipos/19.png  used on input line 152.
 (pdftex.def)             Requested size: 426.79135pt x 279.03375pt.
 <img/prototipos/20.png, id=1219, 1014.79124pt x 643.40375pt>
 File: img/prototipos/20.png Graphic file (type png)
 <use img/prototipos/20.png>
-Package pdftex.def Info: img/prototipos/20.png  used on input line 167.
+Package pdftex.def Info: img/prototipos/20.png  used on input line 160.
 (pdftex.def)             Requested size: 426.79135pt x 270.59097pt.
 <img/prototipos/21.png, id=1220, 1014.79124pt x 683.55376pt>
 File: img/prototipos/21.png Graphic file (type png)
 <use img/prototipos/21.png>
-Package pdftex.def Info: img/prototipos/21.png  used on input line 175.
+Package pdftex.def Info: img/prototipos/21.png  used on input line 168.
 (pdftex.def)             Requested size: 426.79135pt x 287.47653pt.
 )) [70
 
@@ -2098,9 +2094,9 @@ Package pdftex.def Info: img/prototipos/21.png  used on input line 175.
 /6.png> <./img/prototipos/7.png>] [74 <./img/prototipos/8.png> <./img/prototipo
 s/9.png>] [75 <./img/prototipos/10.png>] [76 <./img/prototipos/11.png>]
 [77 <./img/prototipos/12.png> <./img/prototipos/13.png>] [78 <./img/prototipos/
-14.png> <./img/prototipos/15.png>] [79 <./img/prototipos/16.png>] [80 <./img/pr
-ototipos/17.png> <./img/prototipos/18.png>] [81 <./img/prototipos/19.png> <./im
-g/prototipos/20.png>] [82 <./img/prototipos/21.png>]
+14.png> <./img/prototipos/15.png>] [79 <./img/prototipos/16.png> <./img/prototi
+pos/17.png>] [80 <./img/prototipos/18.png> <./img/prototipos/19.png>] [81 <./im
+g/prototipos/20.png> <./img/prototipos/21.png>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 283.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 283.
  (./main.aux)
@@ -2115,10 +2111,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 283.
  ) 
 Here is how much of TeX's memory you used:
- 39851 strings out of 492616
- 755892 string characters out of 6129480
+ 39854 strings out of 492616
+ 755930 string characters out of 6129480
  878847 words of memory out of 5000000
- 42737 multiletter control sequences out of 15000+600000
+ 42741 multiletter control sequences out of 15000+600000
  550254 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,14n,94p,1990b,539s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2140,6 +2136,9 @@ st, replaced by a fixed one
 pdfTeX warning (dest): name{glo:lead} has been referenced but does not exist, r
 eplaced by a fixed one
 
+pdfTeX warning (dest): name{figure.caption.95} has been referenced but does not
+ exist, replaced by a fixed one
+
 pdfTeX warning (dest): name{glo:tcg} has been referenced but does not exist, re
 placed by a fixed one
 
@@ -2159,10 +2158,10 @@ ve/2019/texmf-dist/fonts/type1/public/cm-super/sfsl1095.pfb></usr/local/texlive
 /2019/texmf-dist/fonts/type1/public/cm-super/sfsx2488.pfb></usr/local/texlive/2
 019/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/201
 9/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on main.pdf (100 pages, 14819003 bytes).
+Output written on main.pdf (99 pages, 14820920 bytes).
 PDF statistics:
- 1411 PDF objects out of 1440 (max. 8388607)
- 1105 compressed objects within 12 object streams
- 281 named destinations out of 1000 (max. 500000)
+ 1407 PDF objects out of 1440 (max. 8388607)
+ 1102 compressed objects within 12 object streams
+ 280 named destinations out of 1000 (max. 500000)
  842 words of extra memory for PDF output out of 10000 (max. 10000000)
 
