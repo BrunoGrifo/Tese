@@ -39,3 +39,4 @@
 \contentsline {chapter}{Anexos}{64}{section*.73}% 
 \contentsline {chapter}{\numberline {A}Projecto numa p\IeC {\'a}gina}{68}{Anexo.1.A}% 
 \contentsline {chapter}{\numberline {B}Requisitos Funcionais}{69}{Anexo.1.B}% 
+\contentsline {chapter}{\numberline {C}Prot\IeC {\'o}tipos}{70}{Anexo.1.C}% 
