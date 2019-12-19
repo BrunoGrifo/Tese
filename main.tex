@@ -154,6 +154,19 @@
 	\fancyhead[RO]{Conteúdo}
 }
 
+\fancypagestyle{refstyle}{
+	\fancyhead[LE]{Referências}
+	\fancyhead[RE]{}
+	\fancyhead[LO]{}
+	\fancyhead[RO]{Referências}
+}
+
+\fancypagestyle{figstyle}{
+	\fancyhead[LE]{Lista de Figuras}
+	\fancyhead[RE]{}
+	\fancyhead[LO]{}
+	\fancyhead[RO]{Lista de Figuras}
+}
 %\fancyhead[RE,LO]{\rightmark}
 \renewcommand{\headrulewidth}{0.4pt}
 
@@ -218,14 +231,14 @@
 % Make sure acronym don't appear in the ToC
 
 \glsunsetall
-\pagestyle{tocstyle}
+
 \tableofcontents
+\thispagestyle{tocstyle}
 \glsresetall
 
 \newpage
 
 \blankpage
-
 
 % List of acronyms
 \glsnogroupskiptrue
@@ -238,7 +251,7 @@
 \blankpage
 
 \listoffigures
-
+\thispagestyle{figstyle}
 \blankpage
 \listoftables
 
@@ -276,9 +289,9 @@
 
 
 \bibliographystyle{unsrt}%Used BibTeX style is unsrt
-\renewcommand{\bibname}{References}
+\renewcommand{\bibname}{Referências}
 \bibliography{references}
-
+\thispagestyle{refstyle}
 %\renewcommand\chaptername{Anexo}
 \renewcommand{\appendixtocname}{Anexos}
 \renewcommand{\appendixpagename}{Anexos}
