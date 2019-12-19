@@ -208,19 +208,19 @@ parent={},%
 %
 }%
 }%
-\ifglsentryexists{users}{}%
+\ifglsentryexists{user}{}%
 {%
-\gls@defglossaryentry{users}%
+\gls@defglossaryentry{user}%
 {%
-name={Utilizadores},%
-sort={Utilizadores},%
+name={Utilizador},%
+sort={Utilizador},%
 type={main},%
-first={Utilizadores},%
-firstplural={Utilizadoress},%
-text={Utilizadores},%
-plural={Utilizadoress},%
-description={Utilizador da plataforma em questão e/ou cliente(empresa)},%
-descriptionplural={Utilizador da plataforma em questão e/ou cliente(empresa)},%
+first={Utilizador},%
+firstplural={Utilizadors},%
+text={Utilizador},%
+plural={Utilizadors},%
+description={Utilizador da plataforma em questão e/ou cliente (empresa).},%
+descriptionplural={Utilizador da plataforma em questão e/ou cliente (empresa).},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -238,19 +238,19 @@ parent={},%
 %
 }%
 }%
-\ifglsentryexists{finalusers}{}%
+\ifglsentryexists{finaluser}{}%
 {%
-\gls@defglossaryentry{finalusers}%
+\gls@defglossaryentry{finaluser}%
 {%
-name={Utilizadores Finais},%
-sort={Utilizadores Finais},%
+name={Utilizador Final},%
+sort={Utilizador Final},%
 type={main},%
-first={Utilizadores Finais},%
-firstplural={Utilizadores Finaiss},%
-text={Utilizadores Finais},%
-plural={Utilizadores Finaiss},%
-description={Participantes de um concurso, Prospects, Leads ou Clientes},%
-descriptionplural={Participantes de um concurso, Prospects, Leads ou Clientes},%
+first={Utilizador Final},%
+firstplural={Utilizador Finals},%
+text={Utilizador Final},%
+plural={Utilizador Finals},%
+description={Prospects, Leads, Clientes ou Participantes de uma formação, concurso ou questionário.},%
+descriptionplural={Prospects, Leads, Clientes ou Participantes de uma formação, concurso ou questionário.},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -328,6 +328,36 @@ parent={},%
 %
 }%
 }%
+\ifglsentryexists{ceo}{}%
+{%
+\gls@defglossaryentry{ceo}%
+{%
+name={CEO},%
+sort={CEO},%
+type={acronym},%
+first={Chief executive officer\glsspace (CEO)},%
+firstplural={Chief executive officers\glsspace (CEOs)},%
+text={CEO},%
+plural={CEOs},%
+description={Chief executive officer},%
+descriptionplural={Chief executive officer\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Chief executive officer},%
+longplural={Chief executive officers},%
+short={CEO},%
+shortplural={CEOs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
 \ifglsentryexists{saas}{}%
 {%
 \gls@defglossaryentry{saas}%
@@ -360,4 +390,91 @@ parent={},%
 }%
 \ifglsentryexists{tcg}{}%
 {%
-\gls@defglossarye
+\gls@defglossaryentry{tcg}%
+{%
+name={TCG},%
+sort={TCG},%
+type={acronym},%
+first={The Company Gym\glsspace (TCG)},%
+firstplural={The Company Gyms\glsspace (TCGs)},%
+text={TCG},%
+plural={TCGs},%
+description={The Company Gym},%
+descriptionplural={The Company Gym\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={The Company Gym},%
+longplural={The Company Gyms},%
+short={TCG},%
+shortplural={TCGs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{api}{}%
+{%
+\gls@defglossaryentry{api}%
+{%
+name={API},%
+sort={API},%
+type={acronym},%
+first={Application Programming Interface\glsspace (API)},%
+firstplural={Application Programming Interfaces\glsspace (APIs)},%
+text={API},%
+plural={APIs},%
+description={Application Programming Interface},%
+descriptionplural={Application Programming Interface\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Application Programming Interface},%
+longplural={Application Programming Interfaces},%
+short={API},%
+shortplural={APIs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{DRF}{}%
+{%
+\gls@defglossaryentry{DRF}%
+{%
+name={API},%
+sort={API},%
+type={acronym},%
+first={Django Rest Framework\glsspace (API)},%
+firstplural={Django Rest Frameworks\glsspace (APIs)},%
+text={API},%
+plural={APIs},%
+description={Django Rest Framework},%
+descriptionplural={Django Rest Framework\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Django Rest Framework},%
+longplural={Django Rest Frameworks},%
+short={API},%
+shortplural={APIs},%
+counter={page},%
+parent={},%
+%
+}%
+}%

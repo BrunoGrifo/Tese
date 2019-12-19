@@ -18,6 +18,9 @@
 \usepackage{rotating}
 \usepackage{amssymb}
 \usepackage{xcolor}
+\usepackage{float}
+\usepackage{hyperref}
+\def\UrlBreaks{\do\/\do-}
 
 \usepackage{makecell}
 \usepackage{listings}
@@ -144,6 +147,13 @@
 \fancyhead[RO]{\sl{\nouppercase{\leftmark}}}
 
 
+\fancypagestyle{tocstyle}{
+	\fancyhead[LE]{Conteúdo}
+	\fancyhead[RE]{}
+	\fancyhead[LO]{}
+	\fancyhead[RO]{Conteúdo}
+}
+
 %\fancyhead[RE,LO]{\rightmark}
 \renewcommand{\headrulewidth}{0.4pt}
 
@@ -206,7 +216,9 @@
 \setlength{\parskip}{0em}
 
 % Make sure acronym don't appear in the ToC
+
 \glsunsetall
+\pagestyle{tocstyle}
 \tableofcontents
 \glsresetall
 
@@ -263,7 +275,7 @@
 %---------------------------------------------------------------------------------------
 
 
-%\bibliographystyle{unsrt}%Used BibTeX style is unsrt
+\bibliographystyle{unsrt}%Used BibTeX style is unsrt
 \renewcommand{\bibname}{References}
 \bibliography{references}
 

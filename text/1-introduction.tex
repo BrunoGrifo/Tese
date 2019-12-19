@@ -5,7 +5,7 @@ O presente documento expõe todo o trabalho desenvolvido ao longo do ano, no âm
 
 O estágio está a ser orientado pelo Professor Doutor Pedro Furtado, professor no Departamento de Engenharia Informática e pelo Engenheiro Pedro Beck, \acrshort{cto} na 10.digital.
 
-Este capítulo está organizado em 4 secções. Em primeiro lugar é descrito o contexto em que o projecto se enquadra. A segunda e terceira secção explica o motivo para a realização deste projecto e quais os seus objectivos, respetivamente. Por fim é feita uma descrição da estrutura escolhida para este documento.
+Este capítulo está organizado em 4 secções. Em primeiro lugar é descrito o contexto em que o projeto se enquadra. A segunda e terceira secção explica o motivo para a realização deste projeto e quais os seus objectivos, respetivamente. Por fim é feita uma descrição da estrutura escolhida para este documento.
 
 \section{Contexto}
 \label{subsec:contexto}
@@ -42,16 +42,16 @@ Mas estas ações esbarram cada vez mais em dois problemas principais: já quase
 Isto acontece com profissionais independentes, mas também com empresas. Eu, CEO da 10.digital, tenho cursos sobre estratégia digital. As pessoas que os subscrevem são potenciais interessados na minha empresa que vende estratégia digital: seja por serem potenciais clientes, seja por serem concorrentes, seja por serem potenciais colaboradores.
 
 Desta forma, investindo pouco tempo a criar conteúdos, consigo manter uma forma de contactar com as pessoas diariamente durante semanas, expondo-lhes a minha marca e analisando o que sabem ou não sobre o assunto.
-Posso propor-lhes outros conteúdos ou vender-lhes os meus serviços. A plataforma que estamos a desenvolver junta, assim, vários conceitos diferentes que podem ajudar a mudar o conhecimento que as empresas têm do mercado e a nutrir as leads, aumentando a sua capacidade de angariação de clientes com custos mais baixos e um método de ensino inovador para os seus clientes." (Pedro Girão, CEO na 10.digital).
+Posso propor-lhes outros conteúdos ou vender-lhes os meus serviços. A plataforma que estamos a desenvolver junta, assim, vários conceitos diferentes que podem ajudar a mudar o conhecimento que as empresas têm do mercado e a nutrir as leads, aumentando a sua capacidade de angariação de clientes com custos mais baixos e um método de ensino inovador para os seus clientes." (Pedro Girão, \acrfull{ceo} na 10.digital).
 
 
 
 \section{Objetivos}
 \label{subsec:objetivos}
 
-Os objectivos do projecto de estágio foram definidos pelo cliente, 10.digital. Este objectivo consiste no desenvolvimento de uma plataforma de inbound marketing, que segue um modelo \gls{b2b}. O modelo de negócio da plataforma pode ser obervado no Anexo \ref{a:bvm}. Nesta plataforma terá de ser desenvolvido um \gls{backoffice} que, de forma intuitiva, tenha a capacidade de:
+Os objectivos do projeto de estágio foram definidos pelo cliente, 10.digital. Este objectivo consiste no desenvolvimento de uma plataforma de inbound marketing, que segue um modelo \gls{b2b}. O modelo de negócio da plataforma pode ser obervado no Anexo \ref{a:bvm}. Nesta plataforma terá de ser desenvolvido um \gls{backoffice} que, de forma intuitiva, tenha a capacidade de:
 \begin{itemize}
-	\item[--] Criar questionários que, baseado nas respostas do utilizador final, apresente um resultado no fim do questionário. Neste sentido não só terá de ser aplicado ou desenvolvido um algoritmo para calculo do resultado final, descrito no Capítulo \ref{sec:requisitos}, como também terá de ser pensada uma forma intuitiva de o utilizador do \gls{backoffice} conseguir construir este mesmo questionário, sem que seja necessário quaisquer conhecimentos de programação por parte do mesmo.
+	\item[--] Criar questionários que, baseado nas respostas do \gls{finaluser}, apresente um resultado no fim do questionário. Neste sentido não só terá de ser aplicado ou desenvolvido um algoritmo para calculo do resultado final, descrito no Capítulo \ref{sec:requisitos}, como também terá de ser pensada uma forma intuitiva de o \gls{user} do \gls{backoffice} conseguir construir este mesmo questionário, sem que seja necessário quaisquer conhecimentos de programação por parte do mesmo.
 	\item[--] Criar formações baseadas numa aprendizagem por tentativa erro. \acrfull{tcg}\cite{tcg}, actualmente no mercado, é um produto desenvolvido pela 10.digital que tem este propósito (i. e. criação de formações baseadas numa aprendizagem por tentativa erro), tal como será descrito no Capítulo \ref{sec:estado-arte}, e por isso mesmo terá de ser desenvolvido uma \acrshort{api} de comunicação com o \acrshort{tcg}. Esta \acrshort{api} servirá para enviar as informações necessárias para a criação das formações e posteriormente, de forma gradual, receber os dados recolhidos por estas formações. 
 	\item[--] Criar concursos em formato de \textit{quiz}. As pessoas interessam-se, todos os dias, por milhares e milhares de eventos que decorrem nas mais diversas áreas (e. g. 	cinema, futebol, ténis, teatro, festivais, concertos, corridas de motos e automóveis, exposições, Web Summit's\cite{websummit}, visitas a museus, viagens...) e para além disso
 	vemos milhões de pessoas com despesas mensais fixas relacionadas, ou não, com hobbies (i. e. a subscrição mensal para jogar padel, para ir ao ginásio, para ir à piscina, à ioga e outras mil coisas como meter gasolina etc...). Neste sentido terá de ser possível criar concursos em forma de \textit{quiz}, em que as pessoas pagam uma pequena quantia, relativamente ao prémio que podem ganhar (e. g. "Mostra que sabes tudo sobre tecnologia e ganha 1 bilhete para o Web Summit"). No final de cada concurso, os participantes terão de receber a sua classificação, tal como os resultados das suas respostas.
@@ -67,7 +67,7 @@ Este relatório está dividido em 9 capítulos, organizados da seguinte forma:
 \begin{itemize}
 	 \item \textbf{Capítulo \ref{sec:estado-arte} - Estado de Arte: }Análise comparativa das soluções já existentes para recolha de dados em estratégias de inbound marketing.
 	
-	\item \textbf{Capítulo \ref{sec:abordagem} - Abordagem: }Metologia e ferramentas utilizadas, analise de riscos e, de forma superficial, o planeamento das fases do desenvolvimento do projecto.
+	\item \textbf{Capítulo \ref{sec:abordagem} - Abordagem: }Metologia e ferramentas utilizadas, analise de riscos e, de forma superficial, o planeamento das fases do desenvolvimento do projeto.
 	
 	\item \textbf{Capítulo \ref{sec:requisitos} - Especificação de Requisitos: }Levantamento, análise e documentação dos requisitos funcionais e não funcionais.
 	

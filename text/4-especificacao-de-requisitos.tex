@@ -1,13 +1,11 @@
 \chapter{Especificação de Requisitos}
 \label{sec:requisitos}
 
-
-
-O processo de especificação de requisitos é crucial para o desenvilvimento de um projecto de \textit{software}, devendo dar atenção tanto aos requisitos funcionais como aos requisitos não funcionais.
+O processo de especificação de requisitos é crucial para o desenvilvimento de um projeto de \textit{software}, devendo dar atenção tanto aos requisitos funcionais como aos requisitos não funcionais.
 
 Este capítulo apresenta os requisitos que foram identificados e analisados para a plataforma e define um conjunto de diretrizes que devem ser seguidas durante o desenvolvimento do projeto. Estes requisitios foram definidos e identificados com base em reuniões com o cliente e na analise de soluções, actualmente no mercado, que partilham funcionalidades semelhantes com a plataforma que vai ser desenvolvida
 
-Este capítulo divide-se em 3 secções. A secção \ref{requisitos:tiposutilizadores} identifica as principais partes envolventes no projecto (i. e. utilizadores e utilizadores finais). A secção \ref{rnf} e \ref{rf} descreve, detalhadamente, os requisitos não funcionais e funcionais, respectivamente. Por fim temos a secção \ref{prototipagem} que apresenta uma prototipagem de baixo nível, que com auxílio de breves descrições representa o fluxo da plataforma.
+Este capítulo divide-se em 3 secções. A secção \ref{requisitos:tiposutilizadores} identifica as principais partes envolventes no projeto (i. e. utilizadores e utilizadores finais). A secção \ref{rnf} e \ref{rf} descreve, detalhadamente, os requisitos não funcionais e funcionais, respectivamente. Por fim temos a secção \ref{prototipagem} que apresenta uma prototipagem de baixo nível, que com auxílio de breves descrições representa o fluxo da plataforma.
 
 
 \section{Tipos de Utilizadores}
@@ -18,12 +16,12 @@ O objectivo desta secção é identificar, não necessariamente um problema, mas
 
 \subsection{\textit{Skateholders}}
 
-As principais partes envolventes neste projecto são, o proprietário do produto, os utilizadores principais e os utilizadores secundários. Como resultado os tipos de utilizadores serão baseados num público considerado  ideal, especulações e dados reais.
+As principais partes envolventes neste projeto são, o proprietário do produto, os utilizadores principais e os utilizadores secundários. Como resultado os tipos de utilizadores serão baseados num público considerado  ideal, especulações e dados reais.
 
 
 \subsection{Proprietário do produto}
 
-O proprietário do produto é o Sr. Pedro Girão, CEO na 10.digital. Eu irei fazer o levantamento dos requisitos para o projeto que serão validados pelo proprietário do produto.
+O proprietário do produto é o Sr. Pedro Girão, \acrshort{ceo} na 10.digital. Eu irei fazer o levantamento dos requisitos para o projeto que serão validados pelo proprietário do produto.
 
 \subsection{Utilizadores primários}
 
@@ -79,7 +77,7 @@ Numa prima fase serão descritos os vários diagramas que representam todos os r
 	\end{center}
 \end{figure}
 
-Numa segunda fase serão analisados os graus de prioridade de cada requisito, consoante a sua importância para o projecto e por fim será feita uma descrição detalhada (i. e. especificação do requisito) de cada requisito através de casos de uso. É de notar que parte do grande trabalho da analise do grau de prioridade dos requisitos será imediato devido às decisões por parte do cliente.
+Numa segunda fase serão analisados os graus de prioridade de cada requisito, consoante a sua importância para o projeto e por fim será feita uma descrição detalhada (i. e. especificação do requisito) de cada requisito através de casos de uso. É de notar que parte do grande trabalho da analise do grau de prioridade dos requisitos será imediato devido às decisões por parte do cliente.
 
 Desta forma será claro para o leitor, em especial para a equipa de desenvolvimento, o comportamento que o sistema terá de cumprir. Os casos de uso serão detalhados consoante a seguindo estrutura:
 
@@ -88,11 +86,11 @@ Desta forma será claro para o leitor, em especial para a equipa de desenvolvime
 	\item \textbf{Ator:} Responsável pela realização do caso de uso.
 	\item \textbf{Prioridade:} Representa a prioridade do caso de uso baseada nas decisões do cliente, visão dos stakeholders e no funcionamento do sistema. As prioridades foram classificadas por:
 	\begin{itemize}
-		\item \textbf{\textit{Must Have}:} Como o próprio nome indica, os requisitos \textit{Must} são os requisitos com maior prioridade. \textit{"As a rule, product inception depends entirely on defining must-haves using such pointers as ‘required for launch’, ‘required for safety’, ‘required for validation’, ‘required to deliver a viable solution’, etc."}\cite{moscow}. Todos os requisitos categorizados como \textit{Must Have}, são mandatórios para a equipa de desenvolvimento visto que sem eles o projecto fica paralisado.\textit{ "Can we move forward with the project if this task is undone? – if \textbf{NO}, it’s \textbf{MUST}"}\cite{moscow}.
+		\item \textbf{\textit{Must Have}:} Como o próprio nome indica, os requisitos \textit{Must} são os requisitos com maior prioridade. \textit{"As a rule, product inception depends entirely on defining must-haves using such pointers as ‘required for launch’, ‘required for safety’, ‘required for validation’, ‘required to deliver a viable solution’, etc."}\cite{moscow}. Todos os requisitos categorizados como \textit{Must Have}, são mandatórios para a equipa de desenvolvimento visto que sem eles o projeto fica paralisado.\textit{ "Can we move forward with the project if this task is undone? – if \textbf{NO}, it’s \textbf{MUST}"}\cite{moscow}.
 		\item \textbf{\textit{Should Have}:} Os requisitos \textit{Sould} são requisitos que também têm uma elevada prioridade, ou por outras palavras, estão apenas um passo a baixo dos requisitos \textit{Must} .
 		Não são requisitos considerados vitais contudo adicionam valor significativo.\textit{ "Will we move forward with the project if this task is done a bit later? – if \textbf{YES}, it’s \textbf{SHOULD}"}\cite{moscow}.
 		\item \textbf{\textit{Could Have}:} Os requisits \textit{Could} são requisitos com menos importancia e impacto que os anteriores. Pode-se dizer, por outras palavras, que são requisitos \textit{Nice to have} e tipicamente só são implementados se houver tempo para tal. \textit{ "Can we sacrifice this task till deadline? – if \textbf{YES}, it’s \textbf{COULD}"}\cite{moscow}.
-		\item \textbf{\textit{Won't Have}:} Os requisitos\textit{Won't} são os requisitos com menor prioridade. Os requisitos categorizados com esta prioridade, tipicamente não são implementados no tempo estipulado para o projecto. Alguns requisitos são priorizados no futuro, outros nunca chegam a ser implementados. \textit{ "Can we back to it when things go better? – if \textbf{YES}, it’s \textbf{WON’T}"}\cite{moscow}.
+		\item \textbf{\textit{Won't Have}:} Os requisitos\textit{Won't} são os requisitos com menor prioridade. Os requisitos categorizados com esta prioridade, tipicamente não são implementados no tempo estipulado para o projeto. Alguns requisitos são priorizados no futuro, outros nunca chegam a ser implementados. \textit{ "Can we back to it when things go better? – if \textbf{YES}, it’s \textbf{WON’T}"}\cite{moscow}.
 	\end{itemize}
 	\item \textbf{Descrição:} Uma breve contextualização do caso de uso.
 	\item \textbf{Pré-condições:} Conjunto de condições necessárias para realizar o caso de uso.

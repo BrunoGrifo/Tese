@@ -1,0 +1,53 @@
+\babel@toc {portuguese}{}
+\contentsline {chapter}{\numberline {1}Introdu\IeC {\c c}\IeC {\~a}o}{1}{chapter.1}% 
+\contentsline {section}{\numberline {1.1}Contexto}{1}{section.1.1}% 
+\contentsline {section}{\numberline {1.2}Motiva\IeC {\c c}\IeC {\~a}o}{2}{section.1.2}% 
+\contentsline {section}{\numberline {1.3}Objetivos}{3}{section.1.3}% 
+\contentsline {section}{\numberline {1.4}Estrutura do documento}{4}{section.1.4}% 
+\contentsline {chapter}{\numberline {2}Estado de Arte}{6}{chapter.2}% 
+\contentsline {section}{\numberline {2.1}SurveyMonkey}{7}{section.2.1}% 
+\contentsline {section}{\numberline {2.2}Typeform}{13}{section.2.2}% 
+\contentsline {section}{\numberline {2.3}Google Form}{18}{section.2.3}% 
+\contentsline {section}{\numberline {2.4}\acrfull {tcg}}{23}{section.2.4}% 
+\contentsline {section}{\numberline {2.5}Question\IeC {\'a}rios}{33}{section.2.5}% 
+\contentsline {section}{\numberline {2.6}Plataformas de concursos}{34}{section.2.6}% 
+\contentsline {section}{\numberline {2.7}Discuss\IeC {\~a}o de funcionalidades}{34}{section.2.7}% 
+\contentsline {chapter}{\numberline {3}Abordagem}{38}{chapter.3}% 
+\contentsline {section}{\numberline {3.1}Metodologia}{38}{section.3.1}% 
+\contentsline {subsection}{\numberline {3.1.1}Intervenientes}{38}{subsection.3.1.1}% 
+\contentsline {subsection}{\numberline {3.1.2}Processo}{39}{subsection.3.1.2}% 
+\contentsline {section}{\numberline {3.2}Planeamento}{40}{section.3.2}% 
+\contentsline {chapter}{\numberline {4}Especifica\IeC {\c c}\IeC {\~a}o de Requisitos}{44}{chapter.4}% 
+\contentsline {section}{\numberline {4.1}Tipos de Utilizadores}{44}{section.4.1}% 
+\contentsline {subsection}{\numberline {4.1.1}\textit {Skateholders}}{44}{subsection.4.1.1}% 
+\contentsline {subsection}{\numberline {4.1.2}Propriet\IeC {\'a}rio do produto}{44}{subsection.4.1.2}% 
+\contentsline {subsection}{\numberline {4.1.3}Utilizadores prim\IeC {\'a}rios}{45}{subsection.4.1.3}% 
+\contentsline {subsection}{\numberline {4.1.4}Utilizadores secund\IeC {\'a}rios}{45}{subsection.4.1.4}% 
+\contentsline {section}{\numberline {4.2}Requisitos N\IeC {\~a}o Funcionais}{45}{section.4.2}% 
+\contentsline {section}{\numberline {4.3}Requisitos Funcionais}{46}{section.4.3}% 
+\contentsline {subsection}{\numberline {4.3.1}Diagrama de contexto}{48}{subsection.4.3.1}% 
+\contentsline {subsection}{\numberline {4.3.2}Diagrama de alto n\IeC {\'\i }vel}{49}{subsection.4.3.2}% 
+\contentsline {subsection}{\numberline {4.3.3}Diagrama Registo}{50}{subsection.4.3.3}% 
+\contentsline {subsection}{\numberline {4.3.4}Diagrama Gerir Perguntas TCG}{51}{subsection.4.3.4}% 
+\contentsline {subsection}{\numberline {4.3.5}Diagrama Gerir Forma\IeC {\c c}\IeC {\~o}es}{52}{subsection.4.3.5}% 
+\contentsline {subsection}{\numberline {4.3.6}Diagrama Gerir Question\IeC {\'a}rios}{53}{subsection.4.3.6}% 
+\contentsline {subsection}{\numberline {4.3.7}Diagrama Gerir Concursos}{54}{subsection.4.3.7}% 
+\contentsline {subsection}{\numberline {4.3.8}Diagrama Ajuda}{55}{subsection.4.3.8}% 
+\contentsline {section}{\numberline {4.4}Prototipagem}{56}{section.4.4}% 
+\contentsline {chapter}{\numberline {5}Arquitetura}{58}{chapter.5}% 
+\contentsline {section}{\numberline {5.1}Analise da Arquitectura}{58}{section.5.1}% 
+\contentsline {section}{\numberline {5.2}Analise de Riscos}{58}{section.5.2}% 
+\contentsline {chapter}{\numberline {6}Implementa\IeC {\c c}\IeC {\~a}o}{60}{chapter.6}% 
+\contentsline {section}{\numberline {6.1}Sprints}{60}{section.6.1}% 
+\contentsline {section}{\numberline {6.2}Ferramentas Utilizadas}{60}{section.6.2}% 
+\contentsline {section}{\numberline {6.3}Desafios na Implementa\IeC {\c c}\IeC {\~a}o}{60}{section.6.3}% 
+\contentsline {section}{\numberline {6.4}Produto Final}{60}{section.6.4}% 
+\contentsline {chapter}{\numberline {7}Valida\IeC {\c c}\IeC {\~a}o}{62}{chapter.7}% 
+\contentsline {chapter}{\numberline {8}Produto Final}{64}{chapter.8}% 
+\contentsline {chapter}{\numberline {9}Conclusion}{66}{chapter.9}% 
+\contentsline {chapter}{References}{68}{chapter*.75}% 
+\contentsline {chapter}{Anexos}{69}{section*.76}% 
+\contentsline {chapter}{\numberline {A}\textit {\gls {pop}}}{73}{Anexo.1.A}% 
+\contentsline {chapter}{\numberline {B}Estado de Arte Detalhado}{75}{Anexo.1.B}% 
+\contentsline {chapter}{\numberline {C}Casos de Uso}{76}{Anexo.1.C}% 
+\contentsline {chapter}{\numberline {D}Prot\IeC {\'o}tipos}{77}{Anexo.1.D}% 
