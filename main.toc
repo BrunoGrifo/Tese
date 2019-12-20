@@ -36,18 +36,25 @@
 \contentsline {section}{\numberline {4.4}Prototipagem}{56}{section.4.4}% 
 \contentsline {chapter}{\numberline {5}Arquitetura}{58}{chapter.5}% 
 \contentsline {section}{\numberline {5.1}Analise da Arquitectura}{58}{section.5.1}% 
-\contentsline {section}{\numberline {5.2}Analise de Riscos}{58}{section.5.2}% 
-\contentsline {chapter}{\numberline {6}Implementa\IeC {\c c}\IeC {\~a}o}{63}{chapter.6}% 
-\contentsline {section}{\numberline {6.1}Sprints}{63}{section.6.1}% 
-\contentsline {section}{\numberline {6.2}Ferramentas Utilizadas}{63}{section.6.2}% 
-\contentsline {section}{\numberline {6.3}Desafios na Implementa\IeC {\c c}\IeC {\~a}o}{63}{section.6.3}% 
-\contentsline {section}{\numberline {6.4}Produto Final}{63}{section.6.4}% 
-\contentsline {chapter}{\numberline {7}Valida\IeC {\c c}\IeC {\~a}o}{65}{chapter.7}% 
-\contentsline {chapter}{\numberline {8}Produto Final}{67}{chapter.8}% 
-\contentsline {chapter}{\numberline {9}Conclusion}{69}{chapter.9}% 
-\contentsline {chapter}{Refer\IeC {\^e}ncias}{71}{chapter*.80}% 
-\contentsline {chapter}{Anexos}{72}{section*.81}% 
-\contentsline {chapter}{\numberline {A}\textit {\gls {pop}}}{76}{Anexo.1.A}% 
-\contentsline {chapter}{\numberline {B}Estado de Arte Detalhado}{78}{Anexo.1.B}% 
-\contentsline {chapter}{\numberline {C}Casos de Uso}{79}{Anexo.1.C}% 
-\contentsline {chapter}{\numberline {D}Prot\IeC {\'o}tipos}{80}{Anexo.1.D}% 
+\contentsline {subsection}{\numberline {5.1.1}Restri\IeC {\c c}\IeC {\~o}es T\IeC {\'e}cnicas}{58}{subsection.5.1.1}% 
+\contentsline {subsection}{\numberline {5.1.2}Restri\IeC {\c c}\IeC {\~o}es de Neg\IeC {\'o}cio}{59}{subsection.5.1.2}% 
+\contentsline {subsection}{\numberline {5.1.3}\acrfull {mvc}}{59}{subsection.5.1.3}% 
+\contentsline {subsection}{\numberline {5.1.4}Modelo C4}{60}{subsection.5.1.4}% 
+\contentsline {subsection}{\numberline {5.1.5}Modelo Sequencial}{60}{subsection.5.1.5}% 
+\contentsline {subsection}{\numberline {5.1.6}Modelo de Dados}{60}{subsection.5.1.6}% 
+\contentsline {subsection}{\numberline {5.1.7}T\IeC {\'e}cnologias Utilizadas}{60}{subsection.5.1.7}% 
+\contentsline {section}{\numberline {5.2}Analise de Riscos}{60}{section.5.2}% 
+\contentsline {chapter}{\numberline {6}Implementa\IeC {\c c}\IeC {\~a}o}{64}{chapter.6}% 
+\contentsline {section}{\numberline {6.1}Sprints}{64}{section.6.1}% 
+\contentsline {section}{\numberline {6.2}Ferramentas Utilizadas}{64}{section.6.2}% 
+\contentsline {section}{\numberline {6.3}Desafios na Implementa\IeC {\c c}\IeC {\~a}o}{64}{section.6.3}% 
+\contentsline {section}{\numberline {6.4}Produto Final}{64}{section.6.4}% 
+\contentsline {chapter}{\numberline {7}Valida\IeC {\c c}\IeC {\~a}o}{66}{chapter.7}% 
+\contentsline {chapter}{\numberline {8}Produto Final}{68}{chapter.8}% 
+\contentsline {chapter}{\numberline {9}Conclusion}{70}{chapter.9}% 
+\contentsline {chapter}{Refer\IeC {\^e}ncias}{72}{chapter*.80}% 
+\contentsline {chapter}{Anexos}{74}{section*.81}% 
+\contentsline {chapter}{\numberline {A}\textit {\gls {pop}}}{78}{Anexo.1.A}% 
+\contentsline {chapter}{\numberline {B}Estado de Arte Detalhado}{80}{Anexo.1.B}% 
+\contentsline {chapter}{\numberline {C}Casos de Uso}{81}{Anexo.1.C}% 
+\contentsline {chapter}{\numberline {D}Prot\IeC {\'o}tipos}{82}{Anexo.1.D}% 

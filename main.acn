@@ -1,5 +1,7 @@
 \glossaryentry{TCG?\glossentry{tcg}|setentrycounter[]{page}\glsnumberformat}{vii}
 \glossaryentry{TCG?\glossentry{tcg}|setentrycounter[]{page}\glsnumberformat}{vii}
+\glossaryentry{MVC?\glossentry{mvc}|setentrycounter[]{page}\glsnumberformat}{viii}
+\glossaryentry{MVC?\glossentry{mvc}|setentrycounter[]{page}\glsnumberformat}{viii}
 \glossaryentry{CTO?\glossentry{cto}|setentrycounter[]{page}\glsnumberformat}{1}
 \glossaryentry{CEO?\glossentry{ceo}|setentrycounter[]{page}\glsnumberformat}{3}
 \glossaryentry{CEO?\glossentry{ceo}|setentrycounter[]{page}\glsnumberformat}{3}
@@ -47,3 +49,8 @@
 \glossaryentry{TCG?\glossentry{tcg}|setentrycounter[]{page}\glsnumberformat}{52}
 \glossaryentry{TCG?\glossentry{tcg}|setentrycounter[]{page}\glsnumberformat}{52}
 \glossaryentry{TCG?\glossentry{tcg}|setentrycounter[]{page}\glsnumberformat}{53}
+\glossaryentry{SaaS?\glossentry{saas}|setentrycounter[]{page}\glsnumberformat}{59}
+\glossaryentry{MVC?\glossentry{mvc}|setentrycounter[]{page}\glsnumberformat}{59}
+\glossaryentry{MVC?\glossentry{mvc}|setentrycounter[]{page}\glsnumberformat}{59}
+\glossaryentry{MVC?\glossentry{mvc}|setentrycounter[]{page}\glsnumberformat}{59}
+\glossaryentry{MVC?\glossentry{mvc}|setentrycounter[]{page}\glsnumberformat}{59}

@@ -478,3 +478,33 @@ parent={},%
 %
 }%
 }%
+\ifglsentryexists{mvc}{}%
+{%
+\gls@defglossaryentry{mvc}%
+{%
+name={MVC},%
+sort={MVC},%
+type={acronym},%
+first={\protect \textit {Model-View-Controller}\glsspace (MVC)},%
+firstplural={\protect \textit {Model-View-Controller}s\glsspace (MVCs)},%
+text={MVC},%
+plural={MVCs},%
+description={\textit {Model-View-Controller}},%
+descriptionplural={\textit {Model-View-Controller}\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={\protect \textit {Model-View-Controller}},%
+longplural={\protect \textit {Model-View-Controller}s},%
+short={MVC},%
+shortplural={MVCs},%
+counter={page},%
+parent={},%
+%
+}%
+}%

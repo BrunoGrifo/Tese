@@ -20,6 +20,12 @@ Zlatko Bezhovski.
 \newblock {Where is the best country for you to visit?}
 \newblock \url{https://www.chaseforadventure.com/where-should-i-travel-to/}.
 
+\bibitem{django}
+{Django}.
+\newblock {Python Web Framework}.
+\newblock \url{https://www.djangoproject.com/}.
+\newblock Accessed: 20/12/2019.
+
 \bibitem{driftwoodjournals}
 {Driftwood Journals}.
 \newblock {Discover your perfect travel destination}.
@@ -117,6 +123,12 @@ Brian Halligan and Dharmesh Shah.
 \newblock
   \url{https://blog.nextinymarketing.com/history-of-inbound-marketing-then-and-now}.
 \newblock Accessed: 13.10.2019.
+
+\bibitem{sql}
+{PostegreSQL}.
+\newblock {Base de Dados Relacional}.
+\newblock \url{https://www.postgresql.org/}.
+\newblock Accessed: 20/12/2019.
 
 \bibitem{pbr}
 {Powered by Research}.
