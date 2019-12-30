@@ -66,17 +66,13 @@ A estrutura de um projeto Django é muitas vezes descrito como um projeto \acrsh
 	\end{center}
 \end{figure}
 
-O componente \textbf{\textit{Model}} controla a organização e armazenamento dos dados. Não 
+O componente \textbf{Model} controla a organização e armazenamento dos dados. Este módulo representa os dados que são transferidos entre os componentes Controller e View mas não representa nenhuma lógica no que diz respeito ao que é representado na camada de apresentação.
+
+O componente \textbf{View} pode ser considerada a camada de apresentação. Este componente contém todas os ingredientes que constituem as interfaces do utilizador e controla a forma como a informação lhe é apresentada. Este modelo sabe como aceder ao modelo de dados que é apresentado ao utilizador contudo não sabe como o manipular nem o que significa.
+
+Por último temos o componente \textbf{Controller}.  Este componente atua entre os modelos View e Model reagindo a eventos na View e respondendo a estes pedidos manipulando os dados utilizando o componente Model e interagindo com o componente View para renderizar o \textit{output}.
 
 
-contains only the pure application data, it contains no logic describing how to present the data to a user.
-
-Model represents an object or JAVA POJO carrying data. It can also have logic to update controller if its data changes.
-
-The Model controls the organization and storage of data and may also define
-data-specific behavior
-
-The Model component corresponds to all the data-related logic that the user works with. This can represent either the data that is being transferred between the View and Controller components or any other business logic-related data.
 \subsection{Modelo C4}
 
 

@@ -37,6 +37,12 @@ Zlatko Bezhovski.
 \newblock {Facebook}.
 \newblock \url{https://www.facebook.com/}.
 
+\bibitem{gfg}
+{GeeksForGeeks}.
+\newblock {MVC Design Pattern}.
+\newblock \url{https://www.geeksforgeeks.org/mvc-design-pattern/}.
+\newblock Accessed: 29/12/2019.
+
 \bibitem{gaccount}
 {Google Account}.
 \newblock {Google Account}.
@@ -123,6 +129,11 @@ Brian Halligan and Dharmesh Shah.
 \newblock
   \url{https://blog.nextinymarketing.com/history-of-inbound-marketing-then-and-now}.
 \newblock Accessed: 13.10.2019.
+
+\bibitem{djangobook}
+Andrew Pinkham.
+\newblock {\em Django Unleashed}.
+\newblock Sams, 2015.
 
 \bibitem{sql}
 {PostegreSQL}.
@@ -215,6 +226,13 @@ Brian Halligan and Dharmesh Shah.
 {Travelpicker}.
 \newblock {We'll find your ideal holiday destination}.
 \newblock \url{http://travelpicker.com/}.
+
+\bibitem{tpmvc}
+{tutorialspoint}.
+\newblock {MVC Framework - Introduction}.
+\newblock
+  \url{https://www.tutorialspoint.com/mvc_framework/mvc_framework_introduction.htm}.
+\newblock Accessed: 29/12/2019.
 
 \bibitem{typeform}
 {Typeform}.
