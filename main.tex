@@ -141,11 +141,12 @@
  \pagestyle{fancy}
 \renewcommand{\chaptermark}[1]{\markboth{\MakeUppercase{#1}}{}}
  
-\fancyhead[LE]{\sl{\nouppercase{\chaptername~\thechapter}}}
-\fancyhead[RE]{}
-\fancyhead[LO]{}
-\fancyhead[RO]{\sl{\nouppercase{\leftmark}}}
-
+ \fancypagestyle{chapters}{
+	\fancyhead[LE]{\sl{\nouppercase{\chaptername~\thechapter}}}
+	\fancyhead[RE]{}
+	\fancyhead[LO]{}
+	\fancyhead[RO]{\sl{\nouppercase{\leftmark}}}
+}
 
 \fancypagestyle{tocstyle}{
 	\fancyhead[LE]{Conteúdo}
@@ -167,6 +168,21 @@
 	\fancyhead[LO]{}
 	\fancyhead[RO]{Lista de Figuras}
 }
+
+\fancypagestyle{tabstyle}{
+	\fancyhead[LE]{Lista de Tabelas}
+	\fancyhead[RE]{}
+	\fancyhead[LO]{}
+	\fancyhead[RO]{Lista de Tabelas}
+}
+
+\fancypagestyle{prototipos}{
+	\fancyhead[LE]{Protótipos}
+	\fancyhead[RE]{}
+	\fancyhead[LO]{}
+	\fancyhead[RO]{Protótipos}
+}
+
 %\fancyhead[RE,LO]{\rightmark}
 \renewcommand{\headrulewidth}{0.4pt}
 
@@ -231,9 +247,8 @@
 % Make sure acronym don't appear in the ToC
 
 \glsunsetall
-
+\pagestyle{tocstyle}
 \tableofcontents
-\thispagestyle{tocstyle}
 \glsresetall
 
 \newpage
@@ -250,11 +265,13 @@
 \newpage
 \blankpage
 
-\listoffigures
-\thispagestyle{figstyle}
-\blankpage
-\listoftables
 
+\pagestyle{figstyle}
+\listoffigures
+\blankpage
+
+\pagestyle{tabstyle}
+\listoftables
 \blankpage
 
 %Begin page numbering
@@ -265,7 +282,7 @@
 
 
 %------------------------------
-
+\pagestyle{chapters}
 \input{text/1-introduction}
 
 \input{text/2-estado-de-arte}
@@ -296,10 +313,10 @@
 %---------------------------------------------------------------------------------------
 
 
-\bibliographystyle{unsrt}%Used BibTeX style is unsrt
+%\bibliographystyle{unsrt}%Used BibTeX style is unsrt
+\pagestyle{refstyle}
 \renewcommand{\bibname}{Referências}
 \bibliography{references}
-\thispagestyle{refstyle}
 %\renewcommand\chaptername{Anexo}
 \renewcommand{\appendixtocname}{Anexos}
 \renewcommand{\appendixpagename}{Anexos}
@@ -307,6 +324,7 @@
 \addappheadtotoc
 \appendixtitletocoff
 \blankpage
+\pagestyle{plain}
 \begin{appendices}
 	\input{text/10-appendices}
 \end{appendices}

@@ -1,4 +1,5 @@
- \chapter{Arquitetura}
+
+\chapter{Arquitetura}
 \label{sec:arquitetura}
 
 A arquitectura é uma etapa fundamental em todos os projecto porque é aqui que se define a estrutura e comportamento do sistema na sua globalidade e nas diferentes componentes.
@@ -87,6 +88,15 @@ O diagrama de contentores apresenta um maior detalhe (i. e. relativamente ao dia
 
 Por último temo o diagrama de componentes aproxima um contentor individualmente e mostra todos os componentes que constituem esse contentor. Desta forma conseguimos perceber as principais funcionalidades do sistema. 
 
+
+\subsubsection{Diagrama de Contexto}
+
+Como foi referido no Catípulo \ref{sec:introducao} o 10.quest é uma plataforma de inbound marketing que consiste num \textit{backoffice} para criação de questionários, concursos e criação de formulário com o auxilio do \acrshort{tcg}.
+
+Como podemos ver na Figura \ref{fig:arq-contexto} o 10.quest interage com seis sistemas externos. O SendGrid
+
+\newpage
+
 \begin{figure}[ht!]
 	\begin{center}
 		\includegraphics[width=1\textwidth]{img/arq/diagrama-contexto}
@@ -95,6 +105,8 @@ Por último temo o diagrama de componentes aproxima um contentor individualmente
 	\end{center}
 \end{figure}
 
+\subsubsection{Diagrama de Contentores}
+
 \begin{figure}[ht!]
 	\begin{center}
 		\includegraphics[width=1\textwidth]{img/arq/diagrama-contentores}
@@ -102,6 +114,8 @@ Por último temo o diagrama de componentes aproxima um contentor individualmente
 		\label{fig:arq-contentores}
 	\end{center}
 \end{figure}
+
+\subsubsection{Diagrama de Componentes}
 
 \begin{figure}[ht!]
 	\begin{center}
