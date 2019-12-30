@@ -105,6 +105,13 @@ Brian Halligan and Dharmesh Shah.
 \newblock
   \url{https://www.insightvacations.com/blog/find-your-dream-travel-destination/}.
 
+\bibitem{ibmc4}
+{Kyle Brown}.
+\newblock {Document architectures by using the C4 model}.
+\newblock
+  \url{https://www.ibm.com/garage/method/practices/code/c4-model-for-software-architecture}.
+\newblock Accessed: 29/12/2019.
+
 \bibitem{linkedin}
 {LinkedIn}.
 \newblock {LinkedIn}.
@@ -192,6 +199,24 @@ Andrew Pinkham.
 \newblock
   \url{https://sefiks.com/2018/05/13/a-step-by-step-c4-5-decision-tree-example/}.
 \newblock Accessed: 02/11/2019.
+
+\bibitem{c4}
+{Simon Brown}.
+\newblock {C4 Model}.
+\newblock \url{https://c4model.com/}.
+\newblock Accessed: 29/12/2019.
+
+\bibitem{corediagrams}
+{Simon Brown}.
+\newblock {Core diagrams}.
+\newblock \url{https://c4model.com/#CoreDiagrams}.
+\newblock Accessed: 29/12/2019.
+
+\bibitem{infoc4}
+{Simon Brown}.
+\newblock {The C4 Model for Software Architecture}.
+\newblock \url{https://www.infoq.com/articles/C4-architecture-model/}.
+\newblock Accessed: 29/12/2019.
 
 \bibitem{surveymonkey}
 {SurveyMonkey}.

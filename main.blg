@@ -2,50 +2,50 @@ This is BibTeX, Version 0.99d (TeX Live 2019)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: main.aux
 The style file: plain.bst
-Illegal, another \bibstyle command---line 333 of file main.aux
+Illegal, another \bibstyle command---line 337 of file main.aux
  : \bibstyle
  :          {unsrt}
 I'm skipping whatever remains of this command
 Database file #1: references.bib
-You've used 42 entries,
+You've used 46 entries,
             2118 wiz_defined-function locations,
-            662 strings with 8380 characters,
-and the built_in function-call counts, 8974 in all, are:
-= -- 861
-> -- 300
+            676 strings with 8754 characters,
+and the built_in function-call counts, 9826 in all, are:
+= -- 945
+> -- 328
 < -- 1
-+ -- 128
-- -- 86
-* -- 234
-:= -- 1511
-add.period$ -- 146
-call.type$ -- 42
-change.case$ -- 167
++ -- 140
+- -- 94
+* -- 254
+:= -- 1655
+add.period$ -- 162
+call.type$ -- 46
+change.case$ -- 183
 chr.to.int$ -- 0
-cite$ -- 42
-duplicate$ -- 315
-empty$ -- 932
-format.name$ -- 86
-if$ -- 1975
+cite$ -- 46
+duplicate$ -- 343
+empty$ -- 1020
+format.name$ -- 94
+if$ -- 2163
 int.to.chr$ -- 0
-int.to.str$ -- 42
+int.to.str$ -- 46
 missing$ -- 5
-newline$ -- 233
-num.names$ -- 84
-pop$ -- 373
+newline$ -- 257
+num.names$ -- 92
+pop$ -- 413
 preamble$ -- 1
-purify$ -- 127
+purify$ -- 139
 quote$ -- 0
-skip$ -- 280
+skip$ -- 300
 stack$ -- 0
-substring$ -- 234
-swap$ -- 49
+substring$ -- 254
+swap$ -- 53
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 164
+type$ -- 180
 warning$ -- 0
-while$ -- 87
-width$ -- 44
-write$ -- 424
+while$ -- 95
+width$ -- 48
+write$ -- 468
 (There was 1 error message)
