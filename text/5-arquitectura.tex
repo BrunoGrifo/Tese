@@ -30,7 +30,7 @@ As restrições técnicas são decisões técnicas arquiteturais que devem ser s
 \newline
 \textbf{Título:} Base de Dados
 \newline
-\textbf{Descrição:} Os dados utilizados pela aplicação devem ser guardados numa base de dados, visto tratar-se de um grande volume de dados que tem de permanecer organizado. Relativamente aos dados do TCG foi imposto que os dados não sejam duplicados e que esta informação seja acedida através de pedidos HTTP/REST. PostegreSQL\cite{sql} é a base de dados relacional utilizada pela empresa e portanto será também utilizada no desenvolvimento deste projecto.
+\textbf{Descrição:} Os dados utilizados pela aplicação devem ser guardados numa base de dados, visto tratar-se de um grande volume de dados que tem de permanecer organizado. Relativamente aos dados do TCG foi imposto que os dados não sejam duplicados e que esta informação seja acedida através de pedidos\acrshort{https}/\acrshort{rest}. PostegreSQL\cite{sql} é a base de dados relacional utilizada pela empresa e portanto será também utilizada no desenvolvimento deste projecto.
 
 \textbf{Identificador: RT03}
 \newline
@@ -93,13 +93,16 @@ Por último temo o diagrama de componentes aproxima um contentor individualmente
 
 Como foi referido no Catípulo \ref{sec:introducao} o 10.quest é uma plataforma de inbound marketing que consiste num \textit{backoffice} para criação de questionários, concursos e criação de formulário com o auxilio do \acrshort{tcg}.
 
-Como podemos ver na Figura \ref{fig:arq-contexto} o 10.quest interage com seis sistemas externos. O SendGrid
+Como podemos ver na Figura \ref{fig:arq-contexto} o 10.quest interage com seis sistemas externos. O SendGrid\cite{sg} é um \acrshort{saas}, na \textit{cloud}, que fornece um serviço de entrega de emails. Este serviço permite enviar emails através de APIs flexíveis garantindo uma disponibilidade  de 99.999\% \cite{sguptime}. 
+O TCG, tal como foi referido no Capítulo \ref{sec:estado-arte}, é uma plataforma de criação de formações que tem como principal objectivo transformar PDFs numa aprendizagem baseada em tentativa erro. Algumas das funcionalidades do \acrshort{tcg} serão utilizadas pelo 10.quest.
+Para partilhar os questionários, concursos e formações o 10.quest irá utilizar as APIs do Facebook, LinkedIn, Twitter e Instagram.
+
 
 \newpage
 
 \begin{figure}[ht!]
 	\begin{center}
-		\includegraphics[width=1\textwidth]{img/arq/diagrama-contexto}
+		\includegraphics[width=0.9\textwidth]{img/arq/diagrama-contexto}
 		\caption{Diagrama de Contexto}
 		\label{fig:arq-contexto}
 	\end{center}
@@ -107,9 +110,16 @@ Como podemos ver na Figura \ref{fig:arq-contexto} o 10.quest interage com seis s
 
 \subsubsection{Diagrama de Contentores}
 
+Na Figura \ref{fig:arq-contentores} está representado o diagrama de contentores, onde se pode observar com mais detalhe a constiuição do sistema de software.
+
+Os utilizadores podem ser de dois tipos: o utilizador do backoffice que tem acesso a todas as funcionalidade da plataforma e o utilizador final que tem acesso a uma página web para participar nas formações, concursos e ou questionários.
+
+A aplicação web efectua os pedidos dos utilizadores, através de pedidos \acrshort{https}/\acrshort{rest} à API. A aplicação web será a camada de apresentação da API e ambos serão desenvolvidos em Django. A API será o contentor responsável por tratar de todos os pedidos efectuados pelos utilizadores do \textit{backoffice}. Para este efeito a API implementa um conjundo de funcionalidades, representadas na Figura \ref{fig:arq-componentes1}, que manipulam um conjunto de dados armazenados numa base de dados relacional PostgreSQL, para conseguir as informações necessárias.
+\newpage
+
 \begin{figure}[ht!]
 	\begin{center}
-		\includegraphics[width=1\textwidth]{img/arq/diagrama-contentores}
+		\includegraphics[width=0.9\textwidth]{img/arq/diagrama-contentores}
 		\caption{Diagrama de Contentores}
 		\label{fig:arq-contentores}
 	\end{center}
@@ -117,9 +127,11 @@ Como podemos ver na Figura \ref{fig:arq-contexto} o 10.quest interage com seis s
 
 \subsubsection{Diagrama de Componentes}
 
+sdfsdfsd
+
 \begin{figure}[ht!]
 	\begin{center}
-		\includegraphics[width=1\textwidth]{img/arq/diagrama-componentes}
+		\includegraphics[width=0.86\textwidth]{img/arq/diagrama-componentes}
 		\caption{Diagrama de Componentes}
 		\label{fig:arq-componentes}
 	\end{center}
@@ -127,15 +139,20 @@ Como podemos ver na Figura \ref{fig:arq-contexto} o 10.quest interage com seis s
 
 \begin{figure}[ht!]
 	\begin{center}
-		\includegraphics[width=1\textwidth]{img/arq/diagrama-componentes1}
+		\includegraphics[width=0.87\textwidth]{img/arq/diagrama-componentes1}
 		\caption{Diagrama Componentes da componente Funcionalidades}
 		\label{fig:arq-componentes1}
 	\end{center}
 \end{figure}
 
+\newpage
+
 \subsection{Modelo Sequencial}
 
 \subsection{Modelo de Dados}
+
+
+%  FALTA CAPITULO PARA DISCUSSÂO VALIDAÇÂO DA ARQUITECTURA. Escrever assim que todas as decisões estiveres feitas
 
 \subsection{Técnologias Utilizadas}
 
