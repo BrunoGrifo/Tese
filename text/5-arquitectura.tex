@@ -127,7 +127,12 @@ A aplicação web efectua os pedidos dos utilizadores, através de pedidos \acrs
 
 \subsubsection{Diagrama de Componentes}
 
-sdfsdfsd
+Na Figura \ref{fig:arq-componentes} é apresentado o diagrama de componentes e na Figura \ref{fig:arq-componentes1} são as presentados os componentes da API. 
+
+A autenticação é necessária para que os pedidos sejam aceites e mapeados pela API. Para isto a componente "Autenticação", permite ao utilizador efetuar a sua autenticação e verifica a autenticidade do mesmo, em cada pedido, através de tokens. Desta forma, caso o utilizador esteja autenticado os seus pedidos \acrshort{https}/\acrshort{rest} avançam para a componente API , que inclui todas as componente (i. e. funcionalidades) que dão resposta aos requisitos funcionais definidos para o projeto.
+
+A componente "Dados" permite às restantes componentes interagir com a base de dados, tanto para ler, como para escrever.
+
 
 \begin{figure}[ht!]
 	\begin{center}
@@ -156,8 +161,17 @@ sdfsdfsd
 
 \subsection{Técnologias Utilizadas}
 
+Grande parte das técnologias ainda estão por definir.
+
 \section{Analise de Riscos}
 \label{analiseriscos}
+
+
+
+
+
+
+
 %-------------------------------------------------------------------------------------------------
 \blankpage
 %-------------------------------------------------------------------------------------------------
