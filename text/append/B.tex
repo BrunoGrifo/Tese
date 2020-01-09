@@ -565,6 +565,7 @@ Por fim temos a listagem dos utilizadores finais que estão associados à forma�
 \section{involve.me}
 \label{involveme}
 
+
 "\textit{involve.me is a next-generation user engagement \& customer experience platform with a focus on digital marketers \& e-commerce.}"\cite{involve}.
 Esta plataforma foca-se também em recolher e analisar informações sobre os utilizadores finais.
 
@@ -702,3 +703,101 @@ No sumário de respostas é possível ver quais as respostas mais frequentes, co
 \end{figure}
 
 
+\subsection{Survey Anyplace}
+\label{surveyanyplaceM}
+
+
+
+O Survey Anyplace é uma plataforma online com foco na criação de \textit{surveys} e questionários interativos. O Survey Anyplace afirma proporcionar uma boa experiencia para o utilizador através de elementos interativos e funcionalidades de personalização. Esta plataforma permite também a analise dos dados recolhidos através dos questionários publicados. Apesar de não ser fornecido nenhum plano gratuito, o Survey Anyplace disponibiliza um trial de 6 dias que fornece acesso a grande parte das funcionalidades.
+
+Como podemos ver na Figura \ref{fig:sap-dash}, na página principal temos acesso aos questionários do utilizador. O utilizador a partir desta página consegue criar um novo questionário, editar e eliminar um questionário já existente. A partir daqui o utilizar consegue também aceder à sua conta onde pode atualizar/alterar as suas informações básicas(e. g. nome, email, idioma etc..). 
+
+
+\begin{figure}[ht!]
+	\begin{center}
+		\includegraphics[width=1\textwidth]{img/sap/dash}
+		\caption{Survey Anyplace - Página inicial}
+		\label{fig:sap-dash}
+	\end{center}
+\end{figure}
+
+Na Figura \ref{fig:sap-create} está representado o processo de criação de um questionário na plataforma. No exemplo estão apenas representados dois tipos de perguntas (i. e. escolha multipla de texto e de imagens), contudo outros géneros de perguntas podem ser adicionados como podemos ver na Figura \ref{fig:sap-type}. A plataforma permite anexar ficheiros às perguntas e respostas através de um link, redes sociais ou do dispositivo do utilizador, sendo que para as perguntas estes ficheiros podem ser imagens ou vídeos e para as respostas apenas são aceites imagens.
+
+Ainda na Figura \ref{fig:sap-create} podemos verificar que é possível atribuir uma pontuação a uma resposta, e de seguida associar a mesma a um resultado. Desta forma é criado um sistema de pontuação que baseado nas respostas do utilizador, irá apresentar o resultado com maior pontuação. Outras definições tais como permitir mais do que uma resposta, tornar uma pergunta mandatória, etc.. são acessíveis nesta página.
+
+\newpage
+
+\begin{figure}[ht!]
+	\begin{center}
+		\includegraphics[width=1\textwidth]{img/sap/create}
+		\caption{Survey Anyplace - Criar questionário}
+		\label{fig:sap-create}
+	\end{center}
+\end{figure}
+
+\begin{figure}[ht!]
+	\begin{center}
+		\includegraphics[width=1\textwidth]{img/sap/type}
+		\caption{Survey Anyplace - Tipo de pergunta}
+		\label{fig:sap-type}
+	\end{center}
+\end{figure}
+\pagebreak
+
+Na secção \textit{Design} encontra-se todas as funcionalidades relacionadas com a personalização do template, tal como podemos ver na Figura \ref{fig:sap-design}
+
+\begin{figure}[ht!]
+	\begin{center}
+		\includegraphics[width=1\textwidth]{img/sap/design}
+		\caption{Survey Anyplace - Personalização do questionário}
+		\label{fig:sap-design}
+	\end{center}
+\end{figure}
+
+O Survey Anyplace disponibiliza ainda uma série de funcionalidades extra para os questionários ( Figura \ref{fig:sap-extra} ). Algumas destas funcionalidades são importantes e visto que partilham um comportamente semelhante com a plataforma a desenvolver. Neste sentido algumas destas funcionalidades foram analisadas ao pormenor:
+\begin{itemize}
+	\item[--] \textbf{Condições lógicas} - Representado na Figura \ref{fig:sap-condicao} temos a implementação de uma condição lógica em que se duas condições se confirmárem então o utilizador será redirecionado para uma a pergunta definida. Esta e outras acções estão disponíveis dando ao utilizador possibilidade de, através de condições, criar um fluxo ou comportamento desejado.
+	\item[--] \textbf{Resultados} - Como foi referido anteriormente é possível adicionar resultados a respostas é nesta secção que os resultados podem ser criados. Representado na Figura \ref{fig:sap-outcome} temos a criação de um resultado. É ainda de notar que em adição ao sistema de pontuações pode-se adicionar condições lógicas aos resultados para restringir os mesmos às necessidades do utilizador.
+	\item[--] \textbf{Email} - Outra funcionalidade do Survey Anyplace é a possibilidade de enviar um email personalizado para um utilizador final. À semelhança da funcionalidade anterior pode-se adicionar condições lógicas aos templates para restringir os mesmos às necessidades do utilizador.
+\end{itemize}
+
+\newpage
+
+\begin{figure}[ht!]
+	\begin{center}
+		\includegraphics[width=1\textwidth]{img/sap/extra}
+		\caption{Survey Anyplace - Opções extra }
+		\label{fig:sap-extra}
+	\end{center}
+\end{figure}
+\mbox{}
+\begin{figure}[ht!]
+	\begin{center}
+		\includegraphics[width=1\textwidth]{img/sap/condicao}
+		\caption{Survey Anyplace - Condição lógica}
+		\label{fig:sap-condicao}
+	\end{center}
+\end{figure}
+
+\begin{figure}[ht!]
+	\begin{center}
+		\includegraphics[width=1\textwidth]{img/sap/outcome}
+		\caption{Survey Anyplace - Resultados possíveis}
+		\label{fig:sap-outcome}
+	\end{center}
+\end{figure}
+\newpage
+
+Na analise de resultados, representado na Figura \ref{fig:sap-results} o Survey Anyplace permite visualizar a percentagem de vezes que uma determinada resposta foi escolhida, para a respectiva pergunta. Tendo em conta que existem diversos de perguntas, pode ser visualmente mais agravável visualizar os dados de forma diferente e por isso é possível escolher o tipo de gráfico que queremos para visualizar a informação. 
+
+É também possível visualisar as os resultados (i. e. todas as respotas ) de um utilizador na secção \textit{Responses} e ainda apresentar os resultados em forma de apresentação na secção seguinda. Por último o Survey Anyplace fornece a possibilidade de descarregar os dados dos questionário. Esta informação pode ser decarregada através de um ficheiroformato CSV, XLS ou PDF.
+
+\newpage
+
+\begin{figure}[ht!]
+	\begin{center}
+		\includegraphics[width=1\textwidth]{img/sap/results}
+		\caption{Survey Anyplace - Condição lógica}
+		\label{fig:sap-results}
+	\end{center}
+\end{figure}
