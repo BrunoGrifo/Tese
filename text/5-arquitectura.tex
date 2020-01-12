@@ -225,9 +225,7 @@ Para uma melhor compreensão e visualização dos riscos associados ao projecto 
 	\centering
 \begin{tabular}{ | l | l | l | l |}
 	\hline
-	\tikz{\node[below left, inner sep=1pt] (def) {Probabilidade};%
-		\node[above right,inner sep=1pt] (abc) {Impacto};%
-		\draw (def.north west|-abc.north west) -- (def.south east-|abc.south east);}
+	\diagbox[width=15em]{Impacto}{Probabilidade}
 	& Baixo & Médio & Alto\\
 	\hline
 	Baixa & \cellcolor{green}\centering R01 & \cellcolor{yellow}R04& \cellcolor{orange}\\
