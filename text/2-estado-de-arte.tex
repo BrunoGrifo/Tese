@@ -1,37 +1,34 @@
 \chapter{Estado de Arte}
 \label{sec:estado-arte}
 
-Neste capítulo será feita a análise de algumas plataformas existentes para recolha de dados em estratégias de inbound marketing. Será também feita uma analise ao \acrshort{tcg}, que apesar de já estar no mercado, será integrado neste projeto. Tendo em conta que a plataforma a desenvolver irá utilizar as funcionalidades para criação de formações do \acrshort{tcg} e que a equipa do \acrlong{tcg} já fez o estudo de mercado antes do desenvolvimento do mesmo, e continua a fazer todos os dias, a analise de plataformas focadas em criação de formaçoes não será feita neste documento. 
+Neste capítulo será feita a comparação de algumas plataformas existentes para recolha de dados em estratégias de inbound marketing. Será também feita um resumo das funcionalidades do \acrshort{tcg}, que apesar de já estar no mercado, será integrado neste projeto. Tendo em conta que a plataforma a desenvolver irá utilizar as funcionalidades para criação de formações do \acrshort{tcg} e que a equipa do \acrlong{tcg} já fez o estudo de mercado antes do desenvolvimento do mesmo, e continua a fazer todos os dias, a analise de plataformas focadas em criação de formaçoes não será feita neste documento. Uma analise mais detalhadas de todas as plataformas estudadas encontra-se no Anexo \ref{a:ea}.
 
 A recolha de informação nos dias de hoje tem um grande impacto na forma como os negócios são feitos, principalmente na internet.
 
-Como referido no capítulo anterior, o objectivo deste estágio incide na criação de uma plataforma de inbound marketing que tem como principais objectivos conseguir criar concursos, questionários, formações e analisar, filtrar e segmentar os dados recolhidos. Neste sentido serão analisadas algumas das soluções existentes que, apesar algumas terem um propósito distinto, podem ser utilizadas em estratégias de inbound marketing e partilham funcionalidades semelhantes com o que vai ser desenvolvido. 
+Como referido no capítulo anterior, o objectivo deste estágio incide na criação de uma plataforma de inbound marketing que tem como principais objectivos conseguir criar concursos, questionários, formações e analisar, filtrar e segmentar os dados recolhidos. Neste sentido serão analisadas algumas das soluções existentes que, apesar de algumas terem um propósito distinto, podem ser utilizadas em estratégias de inbound marketing e partilham funcionalidades semelhantes com o que vai ser desenvolvido. 
 
 A recolha de informação nos dias de hoje tem um grande impacto na forma como os negócios são feitos, principalmente na internet. Seguindo uma das estratégias de inbound marketing, o método de recolha de dados será através de concursos, questionários e formações online e por isso mesmo algumas características associadas à experiência do utilizador, como por exemplo a personalização dos mesmos, serão também analisadas.
 
 %Rever o que está para baixo
 
-As plataformas SurveyMonkey\cite{surveymonkey}, Typeform\cite{typeform}, Google Forms\cite{googleform} são plataformas de criação de formulários, mas apesar de servirem um propósito distinto ao da plataforma a desenvolver, partilham funcionalidades semelhantes com as que vão ser desenvolvidas e por isso mesmo senão analisadas nesse sentido. Será também exposto o funcionamento do \acrshort{tcg} para melhor entendimento de como podem ser implementadas as funcionalidades e a \acrshort{api} do lado da plataforma a desenvolver. A integração do \acrshort{tcg} neste projeto, foi uma escolha da empresa (i. e. cliente), e por isso não serão analisadas plataformas concorrentes do \acrshort{tcg} na medida em que esse trabalho é feito pela equipa do \acrshort{tcg} e apenas serão feitas as mudanças necessárias no mesmo para o desenvolvimento da \acrshort{api} de comunicação. Por fim serão explorados e analisados algoritmos de decisão para a criação de questionários, tal como questionários online já existentes, que implementam algoritmos de decisão.
+As plataformas SurveyMonkey\cite{surveymonkey}, Typeform\cite{typeform}, Google Forms\cite{googleform} são plataformas de criação de formulários, mas apesar de servirem um propósito distinto ao da plataforma a desenvolver, partilham funcionalidades semelhantes com as que vão ser desenvolvidas e por isso mesmo senão analisadas nesse sentido. Será também exposto o funcionamento do \acrshort{tcg} para melhor entendimento de como podem ser implementadas as funcionalidades e a \acrshort{api} do lado da plataforma a desenvolver. A integração do \acrshort{tcg} neste projeto, foi uma escolha da empresa (i. e. cliente), e por isso não serão analisadas plataformas concorrentes do \acrshort{tcg} na medida em que esse trabalho é feito pela equipa do \acrshort{tcg} e apenas serão feitas as mudanças necessárias no mesmo para o desenvolvimento da \acrshort{api} de comunicação. Por ultimo serão analisadas as plataformas x x x que são algumas das serviços que podem concorrer directamente com o 10.quest (i. e. plataforma a desenvolver).
 
 Após a apresentação destas ferramentas será feita uma análise das vantagens e desvantagens de cada uma, assim como a comparação de funcionalidades.
 
-REVER A INTRODUÇÃO TODA
-
-\section{Formulários}
+\section{Plataformas de criação de formulários}
 \label{formulários}
 
 \subsection{SurveyMonkey}
 \label{surveyMonkeyM}
 
-O SurveyMonkey é uma plataforma \acrfull{saas} de criação de formulários online. Permite recolher informações do público alvo através de formulários e personalizar, segmentar e visualizar esta informação.
+O SurveyMonkey é uma plataforma \acrfull{saas} de criação de formulários online para estudo de mercado, analise de competidores, feedback de clientes e colaboradores, entre outros. Permite recolher informações do público alvo através de formulários e personalizar, segmentar e visualizar esta informação.
 
-
+As várias funcionalidades do SurveyMonkey foram desenhadas para ajudar os utilizadores a criar diferentes tipos de formulários e recolher os resultados em tempo real. Estes dados são depois analisados e reportados através de funcionalidades próprias do SurveyMonkey. Estes dados podem ainda ser exportados para satisfazer outras necessidades. 
 
 \subsection{Typeform}
 \label{typeformM}
 
-O Typeform é uma plataforma \acrshort{saas} de criação de formulários online. É uma empresa que afirma resolver o problema dos formulários e inquéritos aborrecidos e tem também como proposta de valor o facto de conseguir criar formulários e inquéritos sem ter que programar uma única linhad e código. Esta plataforma permite recolher informações do público alvo através de formulários e inquéritos personalizados e no final visualizar estes dados. 
-
+O Typeform é uma plataforma \acrshort{saas} de criação de formulários online. É uma empresa que afirma resolver o problema dos formulários e inquéritos aborrecidos e tem também como proposta de valor o facto de conseguir criar formulários e inquéritos sem ter que programar uma única linhad e código. Esta plataforma permite recolher informações do público alvo através de formulários e inquéritos personalizados, podendo no final visualizar estes dados. 
 
 
 \subsection{Google Form}
@@ -39,18 +36,57 @@ O Typeform é uma plataforma \acrshort{saas} de criação de formulários online
 
 O Google Form é uma aplicação de adminstração de inquéritos que está incluída no Google Drive office juntamente com o Google Docs\cite{gdocs}, Google Sheets e Google Slides\cite{gslides}. Esta ferramenta permite recolher informações do público alvo através de formulários e inquéritos personalizados e automaticamente exportar os dados para uma \textit{google sheet}.
 
+\subsection{Analise de concorrentes indirectos}
 
+Nesta secção serão analisadas e comparadas três das ferramentas líderes na criação de formulários online, listadas anteriormente. Como foi referido anteriormente, apesar do SurveyMonkey, Typeform e Google Form serem plataformas que não concorrem com 10.quest e têm um proposito distinto, partilham funcionalidades semelhantes com a plataforma que vai ser desenvolvida. Dito isto é importante perceber quais são estas funcionalidades e tentar perceber coma as prodemos aproveitar ou melhorar.
+
+Como podemos observar na analise da secção \ref{a:ea} em todas as plataformas/ferramentas é necessário criar uma conta para aceder a todas as funcionalides e em todas as plataformas analisadas é possível criar conta e iniciar sessão através de sistemas externos (\acrshort{api}). O Projeto a desenvolver segue um modelo \gls{b2b} e por isso mesmo não é de grande importancia implementar esse tipo de funcionalidades.
+
+O plataforma da Google fornece, no plano gratuito, todas as funcionalidades, ao contrário do SurveyMonkey e do Typeform, que, tal como se passará com a plataforma a desenvolver, para se ter acesso a todas as funcionalidades, ou pacotes de funcionalidades, terá de ser paga uma subscrição.
+
+Todas as platafomas permitem a criação de formulários do zero, e a plataforma da 10.digital não é excepção. Tal como foi definido na estratégia de negócio, os conteúdos que serão lançados nas formações, questionários e concursos não serão da autoridade da 10.digital, a menos que estejamos incluídos em algum projeto relacionado. Dito isto facilmente se decidiu que a plataforma a desenvolver terá, tal como todas as outras ferramentas analisadas, a funcionalidade de poder adicionar conteúdo previamente feito de forma rápido (i. e. adicionar um ficheiro com todo o conteúdo estruturado). 
+
+
+Tal como foi referido no capítulo \ref{sec:introducao}, secção \ref{subsec:contexto}, o inbound é uma estratégia de marketing que se foca em criar razões para os publico alvo vir até nós através da criação de conteúdo interessante, útil, relevante etc... Para manter esta procura por parte dos clientes é necessário haver valor ao longo da jornada e ideialmente proporcionar uma boa experiência ao utilizador. Nesta medida a personalização das formações, questionários e concursos é muito importante tanto a nível de conteúdo como estético e funcional para que o utilizador se sinta valorizado. Para tornar isto possível, tal como o SurveyMonkey, Typoform e Google Form, a plataforma a desenvolver terá algumas funcionalidades que lhe permitirá personalizar as perguntas para melhorar a experiência do utilizador final. 
+
+Como podémos ver na analise da secção \ref{a:ea} o SurveyMonkey e o Typeform implementam a funcionalidade da criação de um fluxo lógico, contudo sera funcionalidade será analisada mais à frente visto que será mais complexa e comparada com as plataformas directamente concorrentes.
+
+Antes de enviar/partilhar um formulário é sempre importante pré-visualizar e testar. Neste aspecto a platforma a desenvolver não é diferente. Será possível pré-visualizar as formações, questionários e concursos para verficar e validar os mesmos. 
+
+Por fim temos a analise e tratamento de dados que é um dos suportes daquilo que é o tripé do marketing digital. Como será de esperar a plataforma a desenvolver, tal como todas as restantes plataformas analisadas, não é um software dedicado à analise e tratamento de dados, na medida que terá limitações, contudo, terá as funcionalidades necessárias para satisfazer as necessidades do utilizador. A plataforma SurveyMonkey, neste aspecto, foi a única ferramenta que apresentou funcionalidades para além da análise básica conseguindo, de forma tímida, segmentar e comparar resultados, ao contrário do Typeform e do Google Form que apensas apresentam os resultados globais e por pergunta.
 
 \section{\acrfull{tcg}}
 \label{sec:TCGM}
 
 O \acrlong{tcg} é um produto actualmente no mercado, desenvolvido pela equipa da 10.digital, que tem como principal objectivo transformar PDFs numa aprendizagem baseada em tentativa erro.
 
- O \acrshort{tcg} nasceu de uma forte convicção de que perder apenas 2 minutos por dia numa formação tentativa erro é uma optima forma de aprender, poupando tempo e dinheiro às empresas. Inicialmente muito focado em formação interna, a equipa do \acrshort{tcg} foi-se apercebendo que existem muitos outros problemas (e. g. Consolidação de procedimentos, \textit{Onboarding} de novos colaboradores, Divulgação da cultura da empresa, Divulgação de informações técnicas a parceiros/clientes ...) para o qual a plataforma tem solução (e. g. Assimilação da cultura de empresa e do espírito das marcas, Simplificação do processo de acolhimento, Redução de custos em reuniões periódicas, Facilidade em divulgar aspectos técnicos, que de outra, forma demorariam mais tempo ...).\cite{tcginfo}
+ O \acrshort{tcg} nasceu de uma forte convicção de que perder apenas 2 minutos por dia numa formação tentativa erro é uma optima forma de aprender, poupando tempo e dinheiro às empresas. Inicialmente muito focado em formação interna, a equipa do \acrshort{tcg} foi-se apercebendo que existem muitos outros problemas (e. g. Consolidação de procedimentos, \textit{Onboarding} de novos colaboradores, Divulgação da cultura da empresa, Divulgação de informações técnicas a parceiros/clientes ...) para o qual a plataforma tem solução (e. g. Assimilação da cultura de empresa e do espírito das marcas, Simplificação do processo de acolhimento, Redução de custos em reuniões periódicas, Facilidade em divulgar aspectos técnicos, que de outra, forma demorariam mais tempo ...).\cite{tcginfo}. 
+ 
+ As principais funcionalidades do  \acrshort{tcg}  são as seguintes:
 
 
+\begin{itemize}
+	\item[--] Criação de formações 
+	\item[--] Tutoriais para as funcionalidades chave
+	\item[--] Algoritmo de gestão automática (i. e. sistema identifica as perguntas mais difíceis baseado nos resultados do utilizador final. As perguntas mais difíceis saem com mais frequencia e perguntas erradas saem no dia seguinte)
+	\item[--] Feedback dos utilizadores em cada pergunta
+	\item[--] \textit{Gamification}
+	\item[--] Analise detalhada dos resultados
+	\item[--] Compatível com dispositivos móveis
+\end{itemize}
 
-\section{involve.me}
+\section{Analise de concorrentes directos}
+
+Um dos objectivos do projecto é possibilitar aos utilizadores da plataforma conseguirem criar questionários que, baseado nas respostas do utilizador final, apresente um resultado no fim do mesmo, tal como referido no Capítulo \ref{subsec:objetivos}.
+
+O Akinator\cite{akinator} e o high5test\cite{5} são dois bons exemplos de aplicações que através de um questionário e baseado nas respostas do utilizador final, apresenta um resultado. Estas duas aplicações são bastante poderosas e utilizam algoritmos de decisão que os permitem tirar este tipo de conclusões. Nesta medida alguns algoritmos como o CART\cite{cart}, ID3\cite{id3}\cite{id3_2}\cite{cart} e C4.5\cite{cart}\cite{c4.5} foram brevemente estudados com intuito de serem aplicados nesta funcionalidade do projecto. Este tipo de algoritmos, não só são complexos como são algoritmos que necessitam de dados de treino. Tal como referido no Capítulo \ref{subsec:objetivos}, um dos requisitos definidos pelo cliente é que a criação destes questionário seja intuitiva e exequível por qualquer pessoa mesmo que esta não tenha quaisquer conhecimento em programação. Digo isto e somando o facto de que, em qualquer momento da criação dos questionário, não haverá dados de treino, a aplicação deste tipo de algoritmos não será possível.
+
+Dito isto foi pensado outras abordagens e determinou-se que um resultado semelhante (i. e. satisfazendo as necessidades do cliente) consegue ser alcançado com um sistema de pontuações. Nesta abordagem são atribuidos pesos a cada pergunta e consoante a resposta do utilizador o sistam vai pontuando os resultados possíveis para que no final possa ser apresentado o resultado com maior pontuação.
+
+Uma aplicação deste típo de questionário será, por exemplo: "Calcule o lugar ideal de para viajar nas suas férias". Actualmente, num formato semelhante (i. e. em formato \textit{quiz}) já existem alguns \textit{Websites}(e. g. Chase for Adventure\cite{chaseforadventure}, travelpicker\cite{travelpicker}, Insight Vacations\cite{insightvacations} e Driftwood Journals\cite{driftwoodjournals}) que satisfazem, de forma simplista, esta necessidade em especifico. Apesar de simples são exemplos que se conseguiriam replicar com a plataforma a desenvolver e que satisfazem as necessidades do cliente. Neste sentido foram analisadas plataformas mais poderosas, que se focam na construção de leads, e que conseguem o mesmo resultado.
+
+
+\subsection{involve.me}
 \label{involvemeM}
 
 %Não aceita multiplos resultados por resposta
@@ -58,8 +94,8 @@ O \acrlong{tcg} é um produto actualmente no mercado, desenvolvido pela equipa d
 %multichannel supporte
 %landiung page
 
-"\textit{involve.me is a next-generation user engagement \& customer experience platform with a focus on digital marketers \& e-commerce.}"\cite{involve}.
-Esta plataforma foca-se também em recolher e analisar informações sobre os utilizadores finais.
+"\textit{involve.me is a next-generation user engagement \& customer experience platform with a focus on digital marketers \& e-commerce.}"\cite{involve}. O involve-me é uma plataforma moderna que ajuda empresas a criar interações personalizadas ao longo da jornada dos clientes, aumentando a audiência e recolhando mais e melhores dados. Esta plataforma foca-se também na recolha e analise destes dados/informações sobre os utilizadores finais.
+
 
 \subsection{Survey Anyplace}
 \label{surveyanyplaceM}
@@ -69,7 +105,7 @@ Esta plataforma foca-se também em recolher e analisar informações sobre os ut
 %feature de ajuda no canto inferior direito -  multi channel
 
 
-O Survey Anyplace é uma plataforma online com foco na criação de \textit{surveys} e questionários interativos. O Survey Anyplace afirma proporcionar uma boa experiencia para o utilizador através de elementos interativos e funcionalidades de personalização. Esta plataforma permite também a analise dos dados recolhidos através dos questionários publicados.
+O Survey Anyplace é uma plataforma online com foco na criação de \textit{surveys} e questionários interativos. O Survey Anyplace afirma proporcionar uma boa experiência para o utilizador através de elementos interativos e funcionalidades de personalização. Esta plataforma permite também a analise dos dados recolhidos através dos questionários publicados.
 
 
 \subsection{Interact}
@@ -79,28 +115,7 @@ O Survey Anyplace é uma plataforma online com foco na criação de \textit{surv
 O Interact é uma das grandes plataformas de criação de questionários e geração de leads. Um dos grandes focus da empresa é a geração de leads e segmentação da audiência. " Interact is a tool for creating online quizzes that generate leads, segment your audience, and drive traffic to your website. "\cite{interact}.
 
 
-
-
-
-
-
-
-Um dos objectivos do projecto é possibilitar aos utilizadores da plataforma conseguirem criar questionários que, baseado nas respostas do utilizador final, apresente um resultado no fim do mesmo, tal como referido no Capítulo \ref{subsec:objetivos}.
-
-O Akinator\cite{akinator} e o high5test\cite{5} são dois bons exemplos de aplicações que através de um questionário e baseado nas respostas do utilizador final, apresenta um resultado. Estas duas aplicações são bastante poderosas e utilizam algoritmos de decisão que os permitem tirar este tipo de conclusões. Nesta medida alguns algoritmos como o CART\cite{cart}, ID3\cite{id3}\cite{id3_2}\cite{cart} e C4.5\cite{cart}\cite{c4.5} foram brevemente estudados com intuito de serem aplicados nesta funcionalidade do projecto. Este tipo de algoritmos, não só são complexos como são algoritmos que necessitam de dados de treino. Tal como referido no Capítulo \ref{subsec:objetivos}, um dos requisitos definidos pelo cliente é que a criação destes questionário seja intuitiva e exequível por qualquer pessoa mesmo que esta não tenha quaisquer conhecimento em programação. Digo isto e somando o facto de que, em qualquer momento da criação dos questionário, não haverá dados de treino, a aplicação deste tipo de algoritmos não será possível.
-
-Dito isto foi pensado outras abordagens e determinou-se que um resultado semelhante (i. e. satisfazendo as necessidades do cliente) consegue ser alcançado com um sistema de pontuações. Nesta abordagem são atribuidos pesos a cada pergunta e consoante a resposta do utilizador o sistam vai pontuando os resultados possíveis para que no final possa ser apresentado o resultado com maior pontuação.
-
-Uma aplicação deste típo de questionário será, por exemplo: "Calcule o lugar ideal de para viajar nas suas férias". Actualmente, num formato semelhante (i. e. em formato \textit{quiz}) já existem alguns \textit{Websites}(e. g. Chase for Adventure\cite{chaseforadventure}, travelpicker\cite{travelpicker}, Insight Vacations\cite{insightvacations} e Driftwood Journals\cite{driftwoodjournals}) que satisfazem, de forma simplista, esta necessidade em especifico. Apesar de simples são exemplos que se conseguiriam replicar com a plataforma a desenvolver e que satisfazem as necessidades do cliente. 
-
-\section{Concursos}
-https://www.shortstack.com/
-
-https://www.wishpond.com/
-
-https://www.tryinteract.com/
-
-\section{Discussão de funcionalidades}
+\subsection{Discussão de funcionalidades}
 \label{comparacao}
 
 
@@ -151,64 +166,105 @@ falar que não analisei a concorrencia do tcg porque esse trabalho já foi feito
 }
 
 
-
+\begin{itemize}
+	\item[--] Vários tipos de perguntas
+	\item[--] Templates de formulários
+	\item[--] Personalização das perguntas do formulário
+	\item[--] Pré-visualização dos formulários
+	\item[--] Fluxo lógico
+	\item[--] Resultados em tempo real
+	\item[--] Analise de resultados
+\end{itemize}
 
 \textcolor{red}{TABELA POR ACTUALIZAR. ACTUALIZAR ASSIM QUE ACABAR A ANALISE DAS FERRAMENTAS DE CRIAÇÃO DE CONCURSOS ONLINE}
-	\renewcommand{\arraystretch}{2}
+	
+	
+	
+	
+	
+\renewcommand{\arraystretch}{2}
 \setlength\arrayrulewidth{1pt}
 \begin{table}[!ht]  
 	\begin{center}
-	\begin{tabular}{|p{4cm}|p{0.1cm}|p{0.1cm}|p{0.1cm}|p{0.1cm}|}
-		\cline{2-5}
-		\multicolumn{1}{c|}{} & \hspace{0.2cm}\begin{sideways}SurveyMonkey\end{sideways} & \hspace{0.4cm}\begin{sideways}Typeform\end{sideways} & \hspace{0.2cm}\begin{sideways}Google Form\end{sideways} &\hspace{0.2cm}\begin{sideways} 10.quest\end{sideways}\\ \hline
-		  
-		
-			Plano Gratuito & \cellcolor{yellow!80}   & \cellcolor{yellow!80}  & \cellcolor{green!80} & \cellcolor{yellow!80}  \\ \hline
-		
-		Criar Formulário do zero & \cellcolor{green!80}  & \cellcolor{green!80}  & \cellcolor{green!80} & \cellcolor{green!80} \\ \hline
-		
-		Templates de formulários disponíveis& \cellcolor{green!80}  & \cellcolor{green!80} & \cellcolor{green!80} & ???? \\ \hline
-		
-		Adicionar conteúdo previamente feitos & \cellcolor{green!80}   & \cellcolor{red!80}  & \cellcolor{green!80} & \cellcolor{green!80}  \\ \hline
-		
-		Personalização do formulário &  &  &  &  \\ \hline
-		
-		Integração de sistemas externos &  &  &  &  \\ \hline
-		
-		Analise e segmentação de resultados &  &  &  &  \\ \hline
-		
-		Criar perfis de utilizador &  &  &  &  \\ \hline
-		
-		Partilha dos resultados &  &  &  &  \\ \hline
-		
-		Exportar os resultados &  &  &  &  \\ \hline
-		
-		Partilhar formulários nas redes sociais &  &  &  &  \\ \hline
-		
-		\textit{Landing Page} &  &  &  &  \\ \hline
-		
-		Fluxo Lógico &  &  &  &  \\ \hline
-		
-		Design responsivo para multiplos dispositivos &  &  &  &  \\ \hline
-		
-		Suporte dedicado &  &  &  &  \\ \hline
-		
-		Encriptação &  &  &  &  \\ \hline
-		
-		
-					
-	\end{tabular}
-\end{center}
-		\hspace{1.2cm}	\textcolor{red}{$\blacksquare$} Funcionalidade não implementada
-		
-	   \hspace{1.2cm}     \textcolor{yellow}{$\blacksquare$} Funcionalidade parcialmente implementada
-	   
-	    \hspace{1.2cm}     \textcolor{green}{$\blacksquare$} Funcionalidade totalmente implementada 
-	   \begin{center}
-\caption{Tabela de comparações de funcionalidades}
-\label{tab:comparacao1}
-\end{center}
+		\begin{tabular}{|p{4cm}|p{0.1cm}|p{0.1cm}|p{0.1cm}|p{0.1cm}|}
+			\cline{2-5}
+			\multicolumn{1}{c|}{} & \hspace{0.2cm}\begin{sideways}involve.me\end{sideways} & \hspace{0.4cm}\begin{sideways}Survey Anyplace\end{sideways} & \hspace{0.2cm}\begin{sideways}Interact\end{sideways} &\hspace{0.2cm}\begin{sideways} 10.quest\end{sideways}\\ \hline
+			
+			
+			Plano Gratuito & \cellcolor{yellow!80}   & \cellcolor{red!80}  & \cellcolor{red!80} & \cellcolor{yellow!80}  \\ \hline
+			
+			Criar questionário novo & \cellcolor{green!80}  & \cellcolor{green!80}  & \cellcolor{green!80} & \cellcolor{green!80} \\ \hline
+			
+			Templates de questionários disponíveis& \cellcolor{green!80}  & \cellcolor{green!80} & \cellcolor{green!80} & \cellcolor{red!80}  \\ \hline
+			
+			Adicionar conteúdo previamente feitos & \cellcolor{red!80}   & \cellcolor{red!80}  & \cellcolor{red!80} & \cellcolor{green!80}  \\ \hline
+			
+			Personalização do questionário & \cellcolor{green!80}  & \cellcolor{green!80}  & \cellcolor{green!80} & \cellcolor{green!80} \\ \hline
+			
+			Integração de sistemas externos & \cellcolor{green!80}  & \cellcolor{green!80} & \cellcolor{green!80} & \cellcolor{red!80}  \\ \hline
+			
+			Analise e segmentação de resultados & \cellcolor{green!80}  & \cellcolor{green!80}  & \cellcolor{green!80} & \cellcolor{green!80} \\ \hline
+			
+			Criar perfis de utilizador & \cellcolor{red!80}   & \cellcolor{red!80}  & \cellcolor{red!80} & \cellcolor{green!80}  \\ \hline
+			
+			
+			
+		\end{tabular}
+	\end{center}
+	\hspace{1.2cm}	\textcolor{red}{$\blacksquare$} Funcionalidade não implementada
+	
+	\hspace{1.2cm}     \textcolor{yellow}{$\blacksquare$} Funcionalidade parcialmente implementada (i. e. não satisfaz totalmente as necessidades do utilizador)
+	
+	\hspace{1.2cm}     \textcolor{green}{$\blacksquare$} Funcionalidade totalmente implementada 
+	\begin{center}
+		\caption{Tabela de comparações de funcionalidades}
+		\label{tab:comparacao1}
+	\end{center}
 \end{table}
+
+
+
+\renewcommand{\arraystretch}{2}
+\setlength\arrayrulewidth{1pt}
+\begin{table}[!ht]  
+	\begin{center}
+		\begin{tabular}{|p{4cm}|p{0.1cm}|p{0.1cm}|p{0.1cm}|p{0.1cm}|}
+			\cline{2-5}
+			\multicolumn{1}{c|}{} & \hspace{0.2cm}\begin{sideways}involve.me\end{sideways} & \hspace{0.4cm}\begin{sideways}Survey Anyplace\end{sideways} & \hspace{0.2cm}\begin{sideways}Interact\end{sideways} &\hspace{0.2cm}\begin{sideways} 10.quest\end{sideways}\\ \hline
+			
+			
+			Partilha dos resultados &\cellcolor{green!80}  & \cellcolor{green!80} & \cellcolor{green!80} & \cellcolor{green!80}  \\ \hline
+			
+			Exportar os resultados &  &  &  &  \\ \hline
+			
+			Partilhar questionários nas redes sociais &  &  &  &  \\ \hline
+			
+			\textit{Landing Page} &  &  &  &  \\ \hline
+			
+			Email Marketing &  &  &  &  \\ \hline
+			
+			Fluxo Lógico &  &  &  &  \\ \hline
+			
+			Design responsivo para multiplos dispositivos &  &  &  &  \\ \hline
+			
+			Suporte dedicado & \cellcolor{green!80}  & \cellcolor{green!80}  & \cellcolor{green!80} & \cellcolor{green!80} \\ \hline
+			
+			
+			
+			
+		\end{tabular}
+	\end{center}
+	\hspace{1.2cm}	\textcolor{red}{$\blacksquare$} Funcionalidade não implementada
+	
+	\hspace{1.2cm}     \textcolor{yellow}{$\blacksquare$} Funcionalidade parcialmente implementada
+	
+	\hspace{1.2cm}     \textcolor{green}{$\blacksquare$} Funcionalidade totalmente implementada 
+	\begin{center}
+		\caption{Tabela de comparações de funcionalidades}
+		\label{tab:comparacao1}
+	\end{center}
+\end{table}
+
 
 \newpage
 		
