@@ -54,10 +54,73 @@
 \BOOKMARK [0][-]{chapter.7}{Valida\347\343o}{}% 54
 \BOOKMARK [0][-]{chapter.8}{Produto Final}{}% 55
 \BOOKMARK [0][-]{chapter.9}{Conclusion}{}% 56
-\BOOKMARK [0][-]{chapter*.37}{Refer\352ncias}{}% 57
-\BOOKMARK [0][-]{section*.38}{Anexos}{}% 58
+\BOOKMARK [0][-]{chapter*.38}{Refer\352ncias}{}% 57
+\BOOKMARK [0][-]{section*.39}{Anexos}{}% 58
 \BOOKMARK [0][-]{Anexo.1.A}{pop}{}% 59
 \BOOKMARK [0][-]{Anexo.1.B}{Estado de Arte Detalhado}{}% 60
 \BOOKMARK [1][-]{section.1.B.1}{SurveyMonkey}{Anexo.1.B}% 61
 \BOOKMARK [1][-]{section.1.B.2}{Typeform}{Anexo.1.B}% 62
-\BOOKMARK [1][-]{section.1.B.3
+\BOOKMARK [1][-]{section.1.B.3}{Google Form}{Anexo.1.B}% 63
+\BOOKMARK [1][-]{section.1.B.4}{tcg}{Anexo.1.B}% 64
+\BOOKMARK [1][-]{section.1.B.5}{involve.me}{Anexo.1.B}% 65
+\BOOKMARK [2][-]{subsection.1.B.5.1}{Survey Anyplace}{section.1.B.5}% 66
+\BOOKMARK [2][-]{subsection.1.B.5.2}{Interact}{section.1.B.5}% 67
+\BOOKMARK [0][-]{Anexo.1.C}{Casos de Uso}{}% 68
+\BOOKMARK [1][-]{section.1.C.1}{Casos de Uso}{Anexo.1.C}% 69
+\BOOKMARK [2][-]{subsection.1.C.1.1}{RF01 - Login}{section.1.C.1}% 70
+\BOOKMARK [2][-]{subsection.1.C.1.2}{RF02 - Registo}{section.1.C.1}% 71
+\BOOKMARK [2][-]{subsection.1.C.1.3}{RF03 - Mail de confirma\347\343o}{section.1.C.1}% 72
+\BOOKMARK [2][-]{subsection.1.C.1.4}{RF04 - Lista de utilizadores}{section.1.C.1}% 73
+\BOOKMARK [2][-]{subsection.1.C.1.5}{RF05 - Gerir question\341rios}{section.1.C.1}% 74
+\BOOKMARK [2][-]{subsection.1.C.1.6}{RF06 - Criar question\341rio}{section.1.C.1}% 75
+\BOOKMARK [2][-]{subsection.1.C.1.7}{RF07 - Modelo de Notifica\347\365es}{section.1.C.1}% 76
+\BOOKMARK [2][-]{subsection.1.C.1.8}{RF08 - Landing Page}{section.1.C.1}% 77
+\BOOKMARK [2][-]{subsection.1.C.1.9}{RF09 - Notifica\347\365es por E-mail}{section.1.C.1}% 78
+\BOOKMARK [2][-]{subsection.1.C.1.10}{RF10 - Criar quest\365es}{section.1.C.1}% 79
+\BOOKMARK [2][-]{subsection.1.C.1.11}{RF11 - Criar resultados}{section.1.C.1}% 80
+\BOOKMARK [2][-]{subsection.1.C.1.12}{RF12 - Importar quest\365es}{section.1.C.1}% 81
+\BOOKMARK [2][-]{subsection.1.C.1.13}{RF13 - Exportar quest\365es}{section.1.C.1}% 82
+\BOOKMARK [2][-]{subsection.1.C.1.14}{RF14 - Criar sistema de pontua\347\365es}{section.1.C.1}% 83
+\BOOKMARK [2][-]{subsection.1.C.1.15}{RF15 - Mostrar lista de question\341rios do utilizador}{section.1.C.1}% 84
+\BOOKMARK [2][-]{subsection.1.C.1.16}{RF17 - Notificar utilizadores finais}{section.1.C.1}% 85
+\BOOKMARK [2][-]{subsection.1.C.1.17}{RF18 - Adicionar novo utilizador final}{section.1.C.1}% 86
+\BOOKMARK [2][-]{subsection.1.C.1.18}{RF19 - Gerir Forma\347\365es}{section.1.C.1}% 87
+\BOOKMARK [2][-]{subsection.1.C.1.19}{RF20 - Criar forma\347\343o}{section.1.C.1}% 88
+\BOOKMARK [2][-]{subsection.1.C.1.20}{RF21 - Definir periocidade}{section.1.C.1}% 89
+\BOOKMARK [2][-]{subsection.1.C.1.21}{RF22 - Registo de actividade}{section.1.C.1}% 90
+\BOOKMARK [2][-]{subsection.1.C.1.22}{RF23 - Enviar Notifica\347\343o}{section.1.C.1}% 91
+\BOOKMARK [2][-]{subsection.1.C.1.23}{RF24 - Defini\347\365es da forma\347\343o}{section.1.C.1}% 92
+\BOOKMARK [2][-]{subsection.1.C.1.24}{RF25 - Adicionar entrada de perguntas}{section.1.C.1}% 93
+\BOOKMARK [2][-]{subsection.1.C.1.25}{RF26 - Gerir entradas de perguntas}{section.1.C.1}% 94
+\BOOKMARK [2][-]{subsection.1.C.1.26}{RF27 - Mostrar lista de forma\347\365es do utilizador}{section.1.C.1}% 95
+\BOOKMARK [2][-]{subsection.1.C.1.27}{RF28 - Editar forma\347\343o}{section.1.C.1}% 96
+\BOOKMARK [2][-]{subsection.1.C.1.28}{RF29 - Adicionar novo utilizador final TCG}{section.1.C.1}% 97
+\BOOKMARK [2][-]{subsection.1.C.1.29}{RF30 - Notificar utilizadores finais TCG}{section.1.C.1}% 98
+\BOOKMARK [2][-]{subsection.1.C.1.30}{RF31 - Gerir concursos}{section.1.C.1}% 99
+\BOOKMARK [2][-]{subsection.1.C.1.31}{RF32 - Criar concurso}{section.1.C.1}% 100
+\BOOKMARK [2][-]{subsection.1.C.1.32}{RF33 - Criar perguntas}{section.1.C.1}% 101
+\BOOKMARK [2][-]{subsection.1.C.1.33}{RF34 - Introduzir respostas}{section.1.C.1}% 102
+\BOOKMARK [2][-]{subsection.1.C.1.34}{RF35 - Exportar perguntas}{section.1.C.1}% 103
+\BOOKMARK [2][-]{subsection.1.C.1.35}{RF36 - Importar perguntas}{section.1.C.1}% 104
+\BOOKMARK [2][-]{subsection.1.C.1.36}{RF37 - Mostrar lista de concursos do utilizador}{section.1.C.1}% 105
+\BOOKMARK [2][-]{subsection.1.C.1.37}{RF38 - Editar concurso}{section.1.C.1}% 106
+\BOOKMARK [2][-]{subsection.1.C.1.38}{RF39 - Gerir perguntas TCG}{section.1.C.1}% 107
+\BOOKMARK [2][-]{subsection.1.C.1.39}{RF40 - Importar perguntas TCG}{section.1.C.1}% 108
+\BOOKMARK [2][-]{subsection.1.C.1.40}{RF41 - Exportar pergunta TCG}{section.1.C.1}% 109
+\BOOKMARK [2][-]{subsection.1.C.1.41}{RF42 - Criar pergunta TCG}{section.1.C.1}% 110
+\BOOKMARK [2][-]{subsection.1.C.1.42}{RF43 - Introduzir respostas}{section.1.C.1}% 111
+\BOOKMARK [2][-]{subsection.1.C.1.43}{RF44 - Filtrar perguntas TCG}{section.1.C.1}% 112
+\BOOKMARK [2][-]{subsection.1.C.1.44}{RF45 - Mostrar lista de perguntas TCG}{section.1.C.1}% 113
+\BOOKMARK [2][-]{subsection.1.C.1.45}{RF46 - Editar pergunta TCG}{section.1.C.1}% 114
+\BOOKMARK [2][-]{subsection.1.C.1.46}{RF47 - Apagar pergunta TCG}{section.1.C.1}% 115
+\BOOKMARK [2][-]{subsection.1.C.1.47}{RF48 - Relat\363rios}{section.1.C.1}% 116
+\BOOKMARK [2][-]{subsection.1.C.1.48}{RF49 - Relat\363rio geral}{section.1.C.1}% 117
+\BOOKMARK [2][-]{subsection.1.C.1.49}{RF50 - Relat\363rio}{section.1.C.1}% 118
+\BOOKMARK [2][-]{subsection.1.C.1.50}{RF51 - Listar leads por perfil}{section.1.C.1}% 119
+\BOOKMARK [2][-]{subsection.1.C.1.51}{RF52 - Defini\347\365es}{section.1.C.1}% 120
+\BOOKMARK [2][-]{subsection.1.C.1.52}{RF53 - Actualizar plano}{section.1.C.1}% 121
+\BOOKMARK [2][-]{subsection.1.C.1.53}{RF54 - Ajuda}{section.1.C.1}% 122
+\BOOKMARK [2][-]{subsection.1.C.1.54}{RF55- Sair}{section.1.C.1}% 123
+\BOOKMARK [2][-]{subsection.1.C.1.55}{RF56 - Partilhar}{section.1.C.1}% 124
+\BOOKMARK [2][-]{subsection.1.C.1.56}{RF57 - Apagar forma\347\343o}{section.1.C.1}% 125
+\BOOKMARK [0][-]{Anexo.1.D}{Mockups}{}% 126
