@@ -1,4 +1,937 @@
 \chapter{Casos de Uso}
 \label{a:cu}
 
-BLABLABLA
+\section{Casos de Uso}
+
+\subsection{RF01 - Login}
+\begin{itemize}
+	\item[--] \textbf{ID:} 01
+	\item[--]  \textbf{Ator:} Utilizador.
+	\item[--]  \textbf{Prioridade:} \textit{Must have}.
+	\item[--]  \textbf{Descrição:} Efectuar .
+	\item[--]  \textbf{Pré-condições:} O utilizador necessita de ter uma conta registada na plataforma 10.quest.
+	\item[--]  \textbf{Estimulo:} O utilizador deseja efetuar autenticação ou RF02 - Registo.
+	\item[--]  \textbf{Fluxo Principal:} 
+			\subitem 1. O utilizador deseja entrar na plataforma.
+			\subitem 2. O utilizador pressiona o botão de \textit{login}.
+			\subitem 3. O utilizador introduz o nome de utilizador e a password.
+			\subitem 4. O 10.quest recebe validação das credenciais do utilizador.
+			\subitem 5. O 10.quest autentica o utilizador.
+			\subitem 6. O 10.quest disponibiliza as funcionalidades para utilizadores autenticados, consoante o plano.
+	\item[--]  \textbf{Fluxo de Excepção:} 
+			\subitem 4a. As credenciais introduzidas pelo utilizador não correspondem a nenhuma conta registada no sistema.
+			\subitem 4a1. O 10.quest informa o utilizador que as credênciais estão incorretas.
+\end{itemize}
+\newpage
+
+\subsection{RF02 - Registo}
+\begin{itemize}
+	\item[--] \textbf{ID:} 02
+	\item[--]  \textbf{Ator:} Utilizador.
+	\item[--]  \textbf{Prioridade:} \textit{Must Have}.
+	\item[--]  \textbf{Descrição:} O utilizador efectua o registo na plataforma 10.quest.
+	\item[--]  \textbf{Pré-condições:} O utilizador necessita de ter um Email válido.
+	\item[--]  \textbf{Estimulo:} O Utilizador deseja criar uma conta na plataforma 10.quest.
+	\item[--]  \textbf{Fluxo Principal:} 
+		\subitem 1. O utilizador deseja criar conta na plataforma 10.quest.
+		\subitem 2. O utilizador pressiona o botão de \textit{sign up}.
+		\subitem 3. O utilizador preenche os campos do nome da empresa onde trabalha, nome próprio, email, nome de utilizador e password.
+		\subitem 4. O 10.quest recebe validação de que os dados introduzidos são válidos.
+		\subitem 5. O 10.quest cria uma nova conta de utilizador.
+		\subitem 6. O 10.quest redireciona o utilizador para a página de \textit{login}.
+	\item[--]  \textbf{Fluxo de Excepção:} 
+			\subitem 4a. O email introduzido pelo utilizador corresponde ao email de uma conta já existente no sistema.
+			\subitem 4a1. O 10.quest notifica o utilizador que já existe uma conta registada com o mesmo email que foi introduzido.
+	\item[--]  \textbf{Observações:} 
+		\subitem O sistema considera os dados válidos se o Email introduzido não correspondem ao Email de uma conta já existente na plataforma 10.quest e TCG.
+		\subitem A informação é enviada para o TCG para ser criada uma conta nova do lado do TCG.
+\end{itemize}
+\newpage
+
+\subsection{RF03 - Mail de confirmação}
+\begin{itemize}
+	\item[--] \textbf{ID:} 03
+	\item[--]  \textbf{Ator:} 10.quest.
+	\item[--]  \textbf{Prioridade:} \textit{Must Have}.
+	\item[--]  \textbf{Descrição:} Um utilizador, depois de criar uma conta na plataforma 10.quest, recebe um mail de confirmação.
+	\item[--]  \textbf{Pré-condições:} O utilizador cria uma conta nova.
+	\item[--]  \textbf{Estimulo:} RF02 - Registo.
+	\item[--]  \textbf{Fluxo Principal:} 
+			\subitem 1. O 10.quest recebe validação de que os dados introduzidos são válidos.
+			\subitem 2. O 10.quest notifica o utilizador que irá receber um mail de confirmação.
+\end{itemize}
+\newpage
+
+\subsection{RF04 - Lista de utilizadores}
+\begin{itemize}
+	\item[--] \textbf{ID:} 04
+	\item[--]  \textbf{Ator:} 
+	\item[--]  \textbf{Prioridade:}
+	\item[--]  \textbf{Descrição:} 
+	\item[--]  \textbf{Pré-condições:} 
+	\item[--]  \textbf{Estimulo:}
+	\item[--]  \textbf{Fluxo Principal:} 
+		\subitem
+		\subitem
+		\subitem
+		\subitem
+	\item[--]  \textbf{Fluxo de Excepção:} 
+		\subitem
+		\subitem
+		\subitem
+		\subitem
+	\item[--]  \textbf{Observações:} 
+\end{itemize}
+\newpage
+
+\subsection{RF05 - Gerir questionários}
+\begin{itemize}
+	\item[--] \textbf{ID:} 05
+	\item[--]  \textbf{Ator:} Utilizador.
+	\item[--]  \textbf{Prioridade:} \textit{Must Have}.
+	\item[--]  \textbf{Descrição:} O utilizador deseja visualizar, criar, editar ou eliminar um questionário.
+	\item[--]  \textbf{Pré-condições:} O utilizador necessita de estar autenticado na plataforma 10.quest.
+	\item[--]  \textbf{Estimulo:} O utilizador deseja gerir os seus questionários.
+	\item[--]  \textbf{Fluxo Principal:} 
+		\subitem 1. O utilizador pressiona o botão Questionários.
+		\subitem 2. O 10.quest  \underline{lista todos os questionários do utilizador}.
+	\item[--]  \textbf{Fluxo de Excepção:} 
+		\subitem 2a. Não existe nenhum questionário associado à conta do utilizador.
+		\subitem 2a1. o 10.quest notifica o utilizador que não existem questionários para serem listados.
+	\item[--]  \textbf{Observações:} A forma como a platadorma 10.quest lista os questionários está descrito no caso de uso \underline{RF15 - Mostrar lista de questionários do utilizador}.
+\end{itemize}
+\newpage
+
+\subsection{RF06 - Criar questionário}
+\begin{itemize}
+	\item[--] \textbf{ID:} 06
+	\item[--]  \textbf{Ator:} Utilizador.
+	\item[--]  \textbf{Prioridade:} \textit{Must Have}.
+	\item[--]  \textbf{Descrição:} O utilizador cria um questionário novo.
+	\item[--]  \textbf{Pré-condições:} O utilizador necessita de estar autenticado na plataforma 10.quest.
+	\item[--]  \textbf{Estimulo:} RF05 - Gerir questionários.
+	\item[--]  \textbf{Fluxo Principal:} 
+		\subitem 1. O utilizador seleciona a opção de criar um novo questionário.
+		\subitem 2. O 10.quest redireciona o utilizador para a página da criação de um questionário onde o utilizador pode efectuar as \underline{operações desejadas}.
+	\item[--]  \textbf{Observações:} Depois da plataforma 10.quest redirecionar o utilizador para a página da criação de um questionário, este pode efectuar as \underline{operações desejadas}:
+		\subitem Criar novas questões (RF10 - Criar questões).
+		\subitem Criar resultados (RF11 - Criar resultados).
+		\subitem Importar questões através de uma spreadsheet (RF12 - Importar questões).
+		\subitem Exportar questões para uma spreadsheet (RF13 - Exportar questões).
+		\subitem Criar sistema de pontuação (RF14 - Criar sistema de pontuação).
+		\subitem Partilhar os questionários e/ou definir o template do E-mail (RF07 - Modelo de notificações).
+\end{itemize}
+\newpage
+
+\subsection{RF07 - Modelo de Notificações}
+\begin{itemize}
+	\item[--] \textbf{ID:} 07
+	\item[--]  \textbf{Ator:} Utilizador.
+	\item[--]  \textbf{Prioridade:} \textit{Must Have}.
+	\item[--]  \textbf{Descrição:} Secção da plataforma onde se define os templates para a Landing page e para os Emails.
+	\item[--]  \textbf{Pré-condições:} O utilizador necessita de estar autenticado na plataforma 10.quest.
+	\item[--]  \textbf{Estimulo:}  
+		\subitem RF06 - Criar questionário.
+		\subitem RF16 - Editar questionário.
+	\item[--]  \textbf{Fluxo Principal:} 
+		\subitem 1. O utilizador seleciona a secção do Modelo de Notificações.
+		\subitem 2. O utilizador efectua as \underline{operações desejadas}.
+	\item[--]  \textbf{Observações:} Depois do utilizador se encontrar na secção do modelo e notificações, este pode efectuar as \underline{operações desejadas}:
+		\subitem Definir o template da Landing Page (RF08 - Landing Page).
+		\subitem Definir o template do Email para ser enviado para os utilizadores finais (RF09 - Notificações por Email).
+\end{itemize}
+\newpage
+
+\subsection{RF08 - Landing Page}
+\begin{itemize}
+	\item[--] \textbf{ID:} 08
+	\item[--]  \textbf{Ator:} Utilizador.
+	\item[--]  \textbf{Prioridade:} \textit{Must Have}.
+	\item[--]  \textbf{Descrição:} Página de apresentação do questionário para converter um visitante numa lead.
+	\item[--]  \textbf{Pré-condições:} O utilizador necessita de estar autenticado na plataforma 10.quest.
+	\item[--]  \textbf{Estimulo:} RF07 - Modelo de Notificações.
+	\item[--]  \textbf{Fluxo Principal:} 
+		\subitem 1. O 10.quest mostra o template da landing page que está definida para o questionário.
+		\subitem 2. O utilizador \underline{altera os campos necessários} para a landing page.
+		\subitem 3. O utilizador grava as alterações.
+		\subitem 4. O 10.quest notifica o utilizador que as alterações foram guardadas com sucesso.
+	\item[--]  \textbf{Fluxo de Excepção:} 
+		\subitem 3a. O utilizador sai sem gravar as alterações.
+		\subitem 3b. O 10.quest não guarda as alterações efectuadas.
+	\item[--]  \textbf{Observações:} No lado direito da plataforma é apresentada uma pré-visualização da landing page para ajudar o utilizador a \underline{alterar os campos necessários} e verificar o resultado final:
+		\subitem Título da landing page.
+		\subitem Texto da landing page (i. e. conteudo que estará no corpo da landing page).
+		\subitem Imagem para o questionário e imagem da marca, que serão mostrados na landing page.
+		\subitem Cor para a landing page.
+	Do lado direito do ecrã será mostrado uma pré-visualização da landing page.
+\end{itemize}
+\newpage
+
+\subsection{RF09 - Notificações por E-mail}
+\begin{itemize}
+	\item[--] \textbf{ID:} 09
+	\item[--]  \textbf{Ator:} Utilizador.
+	\item[--]  \textbf{Prioridade:} \textit{Must Have}.
+	\item[--]  \textbf{Descrição:} Template do email que será enviado para os utilizadores finais.
+	\item[--]  \textbf{Pré-condições:} O utilizador necessita de estar autenticado na plataforma 10.quest.
+	\item[--]  \textbf{Estimulo:} RF07 - Modelo de Notificações.
+	\item[--]  \textbf{Fluxo Principal:} 
+	\subitem 1. O 10.quest mostra o template do email que está definido para o questionário.
+	\subitem 2a. O utilizador seleciona o template pré-definido.
+	\subitem 2b. O utilizador seleciona o template personalizado e \underline{alterar os campos necessários}.
+	\subitem 3. O utilizador grava as alterações.
+	\subitem 4. O 10.quest notifica o utilizador que as alterações foram guardadas com sucesso.
+	\item[--]  \textbf{Fluxo de Excepção:} 
+	\subitem 3a. O utilizador sai sem gravar as alterações.
+	\subitem 3b. O 10.quest não guarda as alterações efectuadas.
+	\item[--]  \textbf{Observações:} Caso o utilizador decida utilizar um template personalizado terá de \underline{alterar os campos necessários}:
+		\subitem Assunto do email.
+		\subitem Texto do email (i. e. conteudo que estará no corpo do email).
+		\subitem Imagem para o questionário e imagem da marca.
+		\subitem Cor para o template.
+	Do lado direito do ecrã será mostrado uma pré-visualização do email.
+\end{itemize}
+\newpage
+
+\subsection{RF10 - Criar questões}
+\begin{itemize}
+	\item[--] \textbf{ID:} 10
+	\item[--]  \textbf{Ator:} Utilizador.
+	\item[--]  \textbf{Prioridade:} \textit{Must Have}
+	\item[--]  \textbf{Descrição:} Criar as questões que irão aparecer no questionário.
+	\item[--]  \textbf{Pré-condições:} O utilizador necessita de estar autenticado na plataforma 10.quest.
+	\item[--]  \textbf{Estimulo:}  
+		\subitem RF06 - Criar questionário.
+		\subitem RF16 - Editar questionário.
+	\item[--]  \textbf{Fluxo Principal:} 
+		\subitem 1. O utilizdor introduz a questão a ser adicionada ao questionário.
+		\subitem 2. O utilizador carrega no botão para adicionar a questão ao questionátio.
+		\subitem 3. O 10.quest notifica o utilizador que a questão foi adicionada com sucesso.
+	\item[--]  \textbf{Observações:} O utilizador pode adicionar multiplas questões ao questionário.
+\end{itemize}
+\newpage
+
+\subsection{RF11 - Criar resultados}
+\begin{itemize}
+	\item[--] \textbf{ID:} 11
+	\item[--]  \textbf{Ator:} Utilizador.
+	\item[--]  \textbf{Prioridade:} \textit{Must Have}.
+	\item[--]  \textbf{Descrição:} Criar resultados para serem apresentados ao utilizador final.
+	\item[--]  \textbf{Pré-condições:} O utilizador necessita de estar autenticado na plataforma 10.quest.
+	\item[--]  \textbf{Estimulo:}  
+		\subitem RF06 - Criar questionário.
+		\subitem RF16 - Editar questionário.
+	\item[--]  \textbf{Fluxo Principal:} 
+		\subitem 1. O utilizador associa uma ou mais tags ao resultado.
+		\subitem 2. O utilizador introduz o título para o resultado.
+		\subitem 3. O utilizador carrega uma imagem para o resultado.
+		\subitem 4. O utilizador introduz o \underline{link} para o resultado.
+		\subitem 5. O utilizador associa uma ou mais tags de perfis de utilizador ao resultado.		
+	\item[--]  \textbf{Fluxo de Excepção:} 
+		\subitem 3a. O utilizador carrega uma ficheiro com formato inválido.
+		\subitem 3a1. O 10.quest notifica o utilizador que o formato carregado é inválido.
+		\subitem 4a. O utilizador introduz um link inválido.
+		\subitem 4a1. O 10.quest notifica o utilizador que o link carregado é inválido.
+	\item[--]  \textbf{Observações:} 
+	Quando o utilizador associa uma tag ao resultado, independentemente o tipo de tag, se a tag existir então esta é associda ao resultado, caso contrário é criada uma nova tag e posteriormente associada ao resultado.
+	
+	A introdução de um link e uma tag de perfil de utilizador a um resultado é opcional.	
+	
+\end{itemize}
+\newpage
+
+\subsection{RF12 - Importar questões}
+\begin{itemize}
+	\item[--] \textbf{ID:} 12
+	\item[--]  \textbf{Ator:} Utilizador.
+	\item[--]  \textbf{Prioridade:} \textit{Must Have}.
+	\item[--]  \textbf{Descrição:} Importar questões através de uma spreadsheet. 
+	\item[--]  \textbf{Pré-condições:} O utilizador necessita de estar autenticado na plataforma 10.quest.
+	\item[--]  \textbf{Estimulo:}  
+		\subitem RF06 - Criar questionário.
+		\subitem RF16 - Editar questionário.
+	\item[--]  \textbf{Fluxo Principal:} 
+		\subitem 1. O utilizador carrega no botão para importar questões.
+		\subitem 2. O utilizador carrega a spreadsheet (i. e. ficheiro com as questões) para a plataforma 10.quest.
+		\subitem 3. O 10.quest notifica o utilizador que as questões foram adicionadas com sucesso.
+	\item[--]  \textbf{Fluxo de Excepção:} 
+		\subitem 2a. O utilizador carrega um ficheiro com formato inválido.
+		\subitem 2a1. O 10.quest notifica o utilizador que o ficheiro carregado é inválido.
+		\subitem 2b. O utilizador carrega um ficheiro mas as questões mal formatadas (i. e. mal estruturadas).
+		\subitem 2b1. O 10.quest notifica o utilizador que as perguntas estão mal estruturadas e por isso não podem ser adicionadas ao questionário.
+	\item[--]  \textbf{Observações:} É fornecido um ficheiro exemplo para mostrar ao utilizador a estrutura em que as questões têm de ser escritas no ficheiro para ser aceite pela plataforma 10.quest com sucesso.
+\end{itemize}
+\newpage
+
+\subsection{RF13 - Exportar questões}
+\begin{itemize}
+	\item[--] \textbf{ID:} 13
+	\item[--]  \textbf{Ator:} Utilizador.
+	\item[--]  \textbf{Prioridade:} \textit{Must Have}.
+	\item[--]  \textbf{Descrição:} Exportar questões para uma spreadsheet.
+	\item[--]  \textbf{Pré-condições:} O utilizador necessita de estar autenticado na plataforma 10.quest.
+	\item[--]  \textbf{Estimulo:}  
+		\subitem RF06 - Criar questionário.
+		\subitem RF16 - Editar questionário.
+	\item[--]  \textbf{Fluxo Principal:} 
+		\subitem 1. O utilizador carrega no botão para exportar as questões associadas ao questionário.
+		\subitem 2. O 10.quest descarrega um ficheiro com todas as questões associadas ao questionário.
+	\item[--]  \textbf{Observações:} Caso não haja questões associadas ao questionário, o ficheiro descarregado estará vazio.
+\end{itemize}
+\newpage
+
+\subsection{RF14 - Criar sistema de pontuações}
+\begin{itemize}
+	\item[--] \textbf{ID:} 14
+	\item[--]  \textbf{Ator:} Utilizador.
+	\item[--]  \textbf{Prioridade:} \textit{Must Have}.
+	\item[--]  \textbf{Descrição:} Sistema que baseado nas respostas do utilizador final, irá decidir qual o resultado a ser apresentado.
+	\item[--]  \textbf{Pré-condições:}  O utilizador necessita de estar autenticado na plataforma 10.quest e o questiopnário terá de ter pelo menos um resultado e uma questão associada.
+	\item[--]  \textbf{Estimulo:}  
+		\subitem RF06 - Criar questionário.
+		\subitem RF16 - Editar questionário.
+	\item[--]  \textbf{Fluxo Principal:} 
+		\subitem 1. O utilizador seleciona a primeira pergunta do questionário.
+		\subitem 2. O utilizador cria pelo menos duas repostas para a pergunta.
+		\subitem 3. O utilizador atribui uma pontuação a cada resposta.
+		\subitem 4. O utilizador seleciona as tags (i. e. tags dos resultados) para cada resposta.
+		\subitem 5. O utilizador seleciona a proxima pergunta.
+	\item[--]  \textbf{Fluxo de Excepção:} 
+		\subitem 2a. O utilizador cria menos de duas respostas.
+		\subitem 2a1. O 10.quest notifica o utilizador que não criou respostas suficientes.
+	\item[--]  \textbf{Observações:} Os resultados associadas a cada tag, irão receber a pontuação adicionada à resposta caso esta seja selecionada e a tag esteja associada à resposta.
+\end{itemize}
+\newpage
+
+\subsection{RF15 - Mostrar lista de questionários do utilizador}
+\begin{itemize}
+	\item[--] \textbf{ID:} 15
+	\item[--]  \textbf{Ator:} Utilizador
+	\item[--]  \textbf{Prioridade:} \textit{Must Have}
+	\item[--]  \textbf{Descrição:} A plaforma 10.quest lista todos os questionários associados á conta do utilizador.
+	\item[--]  \textbf{Pré-condições:} O utilizador necessita de estar autenticado na plataforma 10.quest.
+	\item[--]  \textbf{Estimulo:} RF05 - Gerir questionários.
+	\item[--]  \textbf{Fluxo Principal:} 
+		\subitem 1. O 10.quest lista todos os questionários associados à conta do utilizador
+		\subitem 2. O utilizador pode selecionar um questionário e efectuar as \underline{operações desejadas}
+	\item[--]  \textbf{Fluxo de Excepção:} 
+		\subitem 1a. O utilizador não tem nenhum questionário associado à conta.
+		\subitem 1a1. O 10.quest notifica o utilizador que não existe nenhum questionário associado à conta do mesmo.
+	\item[--]  \textbf{Observações:} Depois de listados todos os questionários, o utilizador pode escolher um questionário e efectuar as \underline{operações desejadas}:
+		\subitem Filtrar os questionários por nome, data ou estado, definido na Secção \ref{d:concursos}.
+		\subitem Apagar questionário.
+		\subitem Pesquisar questionário por nome.
+		\subitem Editar questionário (RF16 - Editar questionário).
+\end{itemize}
+\newpage
+
+\subsection{RF17 - Notificar utilizadores finais}
+\begin{itemize}
+	\item[--] \textbf{ID:} 17
+	\item[--]  \textbf{Ator:} 10.quest
+	\item[--]  \textbf{Prioridade:} \textit{Must Have}
+	\item[--]  \textbf{Descrição:} Enviar email para um utilizador final (i. e. participante), assim que ele se inscreve na landing page.
+	\item[--]  \textbf{Pré-condições:} O utilizador final tem que submeter inscrição na landing page.
+	\item[--]  \textbf{Estimulo:} O utilizador final deseja participar no questionário.
+	\item[--]  \textbf{Fluxo Principal:} 
+		\subitem 1. O 10.quest envia um email para o contacto submetido na landing page com as informações sobre o questionário, definidas no (RF09 - Notificações por Email).
+\end{itemize}
+\newpage
+
+\subsection{RF18 - Adicionar novo utilizador final}
+\begin{itemize}
+	\item[--] \textbf{ID:} 
+	\item[--]  \textbf{Ator:} 
+	\item[--]  \textbf{Prioridade:} 
+	\item[--]  \textbf{Descrição:} 
+	\item[--]  \textbf{Pré-condições:} 
+	\item[--]  \textbf{Estimulo:}
+	\item[--]  \textbf{Fluxo Principal:} 
+	\subitem
+	\subitem
+	\subitem
+	\subitem
+	\item[--]  \textbf{Fluxo de Excepção:} 
+	\subitem
+	\subitem
+	\subitem
+	\subitem
+	\item[--]  \textbf{Observações:} 
+\end{itemize}
+\newpage
+
+\subsection{RF19 - Gerir Formações}
+\begin{itemize}
+	\item[--] \textbf{ID:} 19
+	\item[--]  \textbf{Ator:} Utilizador.
+	\item[--]  \textbf{Prioridade:} \textit{Must Have}.
+	\item[--]  \textbf{Descrição:} O utilizador deseja visualizar, criar, editar ou eliminar uma formação.
+	\item[--]  \textbf{Pré-condições:} O utilizador necessita de estar autenticado na plataforma 10.quest.
+	\item[--]  \textbf{Estimulo:} O utilizador deseja gerir as suas formações.
+	\item[--]  \textbf{Fluxo Principal:} 
+	\subitem 1. O utilizador pressiona o botão Formações.
+	\subitem 2. O 10.quest  \underline{lista todos as formações associadas à conta do utilizador}.
+	\item[--]  \textbf{Fluxo de Excepção:} 
+	\subitem 2a. Não existe nenhuma formação associada à conta do utilizador.
+	\subitem 2a1. o 10.quest notifica o utilizador que não existem formações para serem listados.
+	\item[--]  \textbf{Observações:} A forma como a platadorma 10.quest lista as formações está descrito no caso de uso \underline{RF15 - Mostrar lista de questionários do utilizador}.
+\end{itemize}
+\end{itemize}
+\newpage
+
+\subsection{RF20 - Criar formação}
+\begin{itemize}
+	\item[--] \textbf{ID:} 20
+	\item[--]  \textbf{Ator:} Utilizador.
+	\item[--]  \textbf{Prioridade:} \textit{Must Have}.
+	\item[--]  \textbf{Descrição:} O utilizador cria uma formação nova.
+	\item[--]  \textbf{Pré-condições:} O utilizador necessita de estar autenticado na plataforma 10.quest.
+	\item[--]  \textbf{Estimulo:} RF19 - Gerir formações.
+	\item[--]  \textbf{Fluxo Principal:} 
+		\subitem 1. O utilizador seleciona a opção de criar nova formação.
+		\subitem 2. O 10.quest redireciona o utilizador para a página da criação de uma formação onde o utilizador pode definir a periocidade (RF21 - Definir Periocidade).
+\end{itemize}
+\newpage
+
+\subsection{RF21 - Definir periocidade}
+\begin{itemize}
+	\item[--] \textbf{ID:} 
+	\item[--]  \textbf{Ator:} 
+	\item[--]  \textbf{Prioridade:} 
+	\item[--]  \textbf{Descrição:} 
+	\item[--]  \textbf{Pré-condições:} 
+	\item[--]  \textbf{Estimulo:}
+	\item[--]  \textbf{Fluxo Principal:} 
+	\subitem
+	\subitem
+	\subitem
+	\subitem
+	\item[--]  \textbf{Fluxo de Excepção:} 
+	\subitem
+	\subitem
+	\subitem
+	\subitem
+	\item[--]  \textbf{Observações:} 
+\end{itemize}
+\newpage
+
+\subsection{RF22 - Registo de actividade}
+\begin{itemize}
+	\item[--] \textbf{ID:} 
+	\item[--]  \textbf{Ator:} 
+	\item[--]  \textbf{Prioridade:} 
+	\item[--]  \textbf{Descrição:} 
+	\item[--]  \textbf{Pré-condições:} 
+	\item[--]  \textbf{Estimulo:}
+	\item[--]  \textbf{Fluxo Principal:} 
+	\subitem
+	\subitem
+	\subitem
+	\subitem
+	\item[--]  \textbf{Fluxo de Excepção:} 
+	\subitem
+	\subitem
+	\subitem
+	\subitem
+	\item[--]  \textbf{Observações:} 
+\end{itemize}
+\newpage
+
+\subsection{RF23 - Enviar Notificação}
+\begin{itemize}
+	\item[--] \textbf{ID:} 
+	\item[--]  \textbf{Ator:} 
+	\item[--]  \textbf{Prioridade:} 
+	\item[--]  \textbf{Descrição:} 
+	\item[--]  \textbf{Pré-condições:} 
+	\item[--]  \textbf{Estimulo:}
+	\item[--]  \textbf{Fluxo Principal:} 
+	\subitem
+	\subitem
+	\subitem
+	\subitem
+	\item[--]  \textbf{Fluxo de Excepção:} 
+	\subitem
+	\subitem
+	\subitem
+	\subitem
+	\item[--]  \textbf{Observações:} 
+\end{itemize}
+\newpage
+
+\subsection{RF24 - Definições da formação}
+\begin{itemize}
+	\item[--] \textbf{ID:} 
+	\item[--]  \textbf{Ator:} 
+	\item[--]  \textbf{Prioridade:} 
+	\item[--]  \textbf{Descrição:} 
+	\item[--]  \textbf{Pré-condições:} 
+	\item[--]  \textbf{Estimulo:}
+	\item[--]  \textbf{Fluxo Principal:} 
+	\item[--]  \textbf{Fluso de Excepção:} 
+	\item[--]  \textbf{Observações:} 
+\end{itemize}
+\newpage
+
+\subsection{RF25 - Adicionar entrada de perguntas}
+\begin{itemize}
+	\item[--] \textbf{ID:} 
+	\item[--]  \textbf{Ator:} 
+	\item[--]  \textbf{Prioridade:} 
+	\item[--]  \textbf{Descrição:} 
+	\item[--]  \textbf{Pré-condições:} 
+	\item[--]  \textbf{Estimulo:}
+	\item[--]  \textbf{Fluxo Principal:} 
+	\item[--]  \textbf{Fluso de Excepção:} 
+	\item[--]  \textbf{Observações:} 
+\end{itemize}
+\newpage
+
+\subsection{RF26 - Gerir entradas de perguntas}
+\begin{itemize}
+	\item[--] \textbf{ID:} 
+	\item[--]  \textbf{Ator:} 
+	\item[--]  \textbf{Prioridade:} 
+	\item[--]  \textbf{Descrição:} 
+	\item[--]  \textbf{Pré-condições:} 
+	\item[--]  \textbf{Estimulo:}
+	\item[--]  \textbf{Fluxo Principal:} 
+	\item[--]  \textbf{Fluso de Excepção:} 
+	\item[--]  \textbf{Observações:} 
+\end{itemize}
+\newpage
+
+\subsection{RF27 - Mostrar lista de formações do utilizador}
+\begin{itemize}
+	\item[--] \textbf{ID:} 
+	\item[--]  \textbf{Ator:} 
+	\item[--]  \textbf{Prioridade:} 
+	\item[--]  \textbf{Descrição:} 
+	\item[--]  \textbf{Pré-condições:} 
+	\item[--]  \textbf{Estimulo:}
+	\item[--]  \textbf{Fluxo Principal:} 
+	\item[--]  \textbf{Fluso de Excepção:} 
+	\item[--]  \textbf{Observações:} 
+\end{itemize}
+\newpage
+
+\subsection{RF28 - Editar formação}
+\begin{itemize}
+	\item[--] \textbf{ID:} 
+	\item[--]  \textbf{Ator:} 
+	\item[--]  \textbf{Prioridade:} 
+	\item[--]  \textbf{Descrição:} 
+	\item[--]  \textbf{Pré-condições:} 
+	\item[--]  \textbf{Estimulo:}
+	\item[--]  \textbf{Fluxo Principal:} 
+	\item[--]  \textbf{Fluso de Excepção:} 
+	\item[--]  \textbf{Observações:} 
+\end{itemize}
+\newpage
+
+\subsection{RF29 - Adicionar novo utilizador final TCG}
+\begin{itemize}
+	\item[--] \textbf{ID:} 
+	\item[--]  \textbf{Ator:} 
+	\item[--]  \textbf{Prioridade:} 
+	\item[--]  \textbf{Descrição:} 
+	\item[--]  \textbf{Pré-condições:} 
+	\item[--]  \textbf{Estimulo:}
+	\item[--]  \textbf{Fluxo Principal:} 
+	\item[--]  \textbf{Fluso de Excepção:} 
+	\item[--]  \textbf{Observações:} 
+\end{itemize}
+\newpage
+
+\subsection{RF30 - Notificar utilizadores finais TCG}
+\begin{itemize}
+\item[--] \textbf{ID:} 
+\item[--]  \textbf{Ator:} 
+\item[--]  \textbf{Prioridade:} 
+\item[--]  \textbf{Descrição:} 
+\item[--]  \textbf{Pré-condições:} 
+\item[--]  \textbf{Estimulo:}
+\item[--]  \textbf{Fluxo Principal:} 
+\item[--]  \textbf{Fluso de Excepção:} 
+\item[--]  \textbf{Observações:} 
+\end{itemize}
+\newpage
+
+\subsection{RF31 - Gerir concursos}
+\begin{itemize}
+	\item[--] \textbf{ID:} 
+	\item[--]  \textbf{Ator:} 
+	\item[--]  \textbf{Prioridade:} 
+	\item[--]  \textbf{Descrição:} 
+	\item[--]  \textbf{Pré-condições:} 
+	\item[--]  \textbf{Estimulo:}
+	\item[--]  \textbf{Fluxo Principal:} 
+	\item[--]  \textbf{Fluso de Excepção:} 
+	\item[--]  \textbf{Observações:} 
+\end{itemize}
+\newpage
+
+\subsection{RF32 - Criar concurso}
+\begin{itemize}
+	\item[--] \textbf{ID:} 
+	\item[--]  \textbf{Ator:} 
+	\item[--]  \textbf{Prioridade:} 
+	\item[--]  \textbf{Descrição:} 
+	\item[--]  \textbf{Pré-condições:} 
+	\item[--]  \textbf{Estimulo:}
+	\item[--]  \textbf{Fluxo Principal:} 
+	\item[--]  \textbf{Fluso de Excepção:} 
+	\item[--]  \textbf{Observações:} 
+\end{itemize}
+\newpage
+
+\subsection{RF33 - Criar perguntas}
+\begin{itemize}
+	\item[--] \textbf{ID:} 
+	\item[--]  \textbf{Ator:} 
+	\item[--]  \textbf{Prioridade:} 
+	\item[--]  \textbf{Descrição:} 
+	\item[--]  \textbf{Pré-condições:} 
+	\item[--]  \textbf{Estimulo:}
+	\item[--]  \textbf{Fluxo Principal:} 
+	\item[--]  \textbf{Fluso de Excepção:} 
+	\item[--]  \textbf{Observações:} 
+\end{itemize}
+\newpage
+
+\subsection{RF34 - Introduzir respostas}
+\begin{itemize}
+	\item[--] \textbf{ID:} 
+	\item[--]  \textbf{Ator:} 
+	\item[--]  \textbf{Prioridade:} 
+	\item[--]  \textbf{Descrição:} 
+	\item[--]  \textbf{Pré-condições:} 
+	\item[--]  \textbf{Estimulo:}
+	\item[--]  \textbf{Fluxo Principal:} 
+	\item[--]  \textbf{Fluso de Excepção:} 
+	\item[--]  \textbf{Observações:} 
+\end{itemize}
+\newpage
+
+\subsection{RF35 - Exportar perguntas}
+\begin{itemize}
+	\item[--] \textbf{ID:} 
+	\item[--]  \textbf{Ator:} 
+	\item[--]  \textbf{Prioridade:} 
+	\item[--]  \textbf{Descrição:} 
+	\item[--]  \textbf{Pré-condições:} 
+	\item[--]  \textbf{Estimulo:}
+	\item[--]  \textbf{Fluxo Principal:} 
+	\item[--]  \textbf{Fluso de Excepção:} 
+	\item[--]  \textbf{Observações:} 
+\end{itemize}
+\newpage
+
+\subsection{RF36 - Importar perguntas}
+\begin{itemize}
+	\item[--] \textbf{ID:} 
+	\item[--]  \textbf{Ator:} 
+	\item[--]  \textbf{Prioridade:} 
+	\item[--]  \textbf{Descrição:} 
+	\item[--]  \textbf{Pré-condições:} 
+	\item[--]  \textbf{Estimulo:}
+	\item[--]  \textbf{Fluxo Principal:} 
+	\item[--]  \textbf{Fluso de Excepção:} 
+	\item[--]  \textbf{Observações:} 
+\end{itemize}
+\newpage
+
+\subsection{RF37 - Mostrar lista de concursos do utilizador}
+\begin{itemize}
+	\item[--] \textbf{ID:} 
+	\item[--]  \textbf{Ator:} 
+	\item[--]  \textbf{Prioridade:} 
+	\item[--]  \textbf{Descrição:} 
+	\item[--]  \textbf{Pré-condições:} 
+	\item[--]  \textbf{Estimulo:}
+	\item[--]  \textbf{Fluxo Principal:} 
+	\item[--]  \textbf{Fluso de Excepção:} 
+	\item[--]  \textbf{Observações:} 
+\end{itemize}
+\newpage
+
+\subsection{RF38 - Editar concurso}
+\begin{itemize}
+	\item[--] \textbf{ID:} 
+	\item[--]  \textbf{Ator:} 
+	\item[--]  \textbf{Prioridade:} 
+	\item[--]  \textbf{Descrição:} 
+	\item[--]  \textbf{Pré-condições:} 
+	\item[--]  \textbf{Estimulo:}
+	\item[--]  \textbf{Fluxo Principal:} 
+	\item[--]  \textbf{Fluso de Excepção:} 
+	\item[--]  \textbf{Observações:} 
+\end{itemize}
+\newpage
+
+\subsection{RF39 - Gerir perguntas TCG}
+\begin{itemize}
+	\item[--] \textbf{ID:} 
+	\item[--]  \textbf{Ator:} 
+	\item[--]  \textbf{Prioridade:} 
+	\item[--]  \textbf{Descrição:} 
+	\item[--]  \textbf{Pré-condições:} 
+	\item[--]  \textbf{Estimulo:}
+	\item[--]  \textbf{Fluxo Principal:} 
+	\item[--]  \textbf{Fluso de Excepção:} 
+	\item[--]  \textbf{Observações:} 
+\end{itemize}
+\newpage
+
+\subsection{RF40 - Importar perguntas TCG}
+\begin{itemize}
+	\item[--] \textbf{ID:} 
+	\item[--]  \textbf{Ator:} 
+	\item[--]  \textbf{Prioridade:} 
+	\item[--]  \textbf{Descrição:} 
+	\item[--]  \textbf{Pré-condições:} 
+	\item[--]  \textbf{Estimulo:}
+	\item[--]  \textbf{Fluxo Principal:} 
+	\item[--]  \textbf{Fluso de Excepção:} 
+	\item[--]  \textbf{Observações:} 
+\end{itemize}
+\newpage
+
+\subsection{RF41 - Exportar pergunta TCG}
+\begin{itemize}
+	\item[--] \textbf{ID:} 
+	\item[--]  \textbf{Ator:} 
+	\item[--]  \textbf{Prioridade:} 
+	\item[--]  \textbf{Descrição:} 
+	\item[--]  \textbf{Pré-condições:} 
+	\item[--]  \textbf{Estimulo:}
+	\item[--]  \textbf{Fluxo Principal:} 
+	\item[--]  \textbf{Fluso de Excepção:} 
+	\item[--]  \textbf{Observações:} 
+\end{itemize}
+\newpage
+
+\subsection{RF42 - Criar pergunta TCG}
+\begin{itemize}
+	\item[--] \textbf{ID:} 
+	\item[--]  \textbf{Ator:} 
+	\item[--]  \textbf{Prioridade:} 
+	\item[--]  \textbf{Descrição:} 
+	\item[--]  \textbf{Pré-condições:} 
+	\item[--]  \textbf{Estimulo:}
+	\item[--]  \textbf{Fluxo Principal:} 
+	\item[--]  \textbf{Fluso de Excepção:} 
+	\item[--]  \textbf{Observações:} 
+\end{itemize}
+\newpage
+
+\subsection{RF43 - Introduzir respostas}
+\begin{itemize}
+	\item[--] \textbf{ID:} 
+	\item[--]  \textbf{Ator:} 
+	\item[--]  \textbf{Prioridade:} 
+	\item[--]  \textbf{Descrição:} 
+	\item[--]  \textbf{Pré-condições:} 
+	\item[--]  \textbf{Estimulo:}
+	\item[--]  \textbf{Fluxo Principal:} 
+	\item[--]  \textbf{Fluso de Excepção:} 
+	\item[--]  \textbf{Observações:} 
+\end{itemize}
+\newpage
+
+\subsection{RF44 - Filtrar perguntas TCG}
+\begin{itemize}
+	\item[--] \textbf{ID:} 
+	\item[--]  \textbf{Ator:} 
+	\item[--]  \textbf{Prioridade:} 
+	\item[--]  \textbf{Descrição:} 
+	\item[--]  \textbf{Pré-condições:} 
+	\item[--]  \textbf{Estimulo:}
+	\item[--]  \textbf{Fluxo Principal:} 
+	\item[--]  \textbf{Fluso de Excepção:} 
+	\item[--]  \textbf{Observações:} 
+\end{itemize}
+\newpage
+
+\subsection{RF45 - Mostrar lista de perguntas TCG}
+\begin{itemize}
+	\item[--] \textbf{ID:} 
+	\item[--]  \textbf{Ator:} 
+	\item[--]  \textbf{Prioridade:} 
+	\item[--]  \textbf{Descrição:} 
+	\item[--]  \textbf{Pré-condições:} 
+	\item[--]  \textbf{Estimulo:}
+	\item[--]  \textbf{Fluxo Principal:} 
+	\item[--]  \textbf{Fluso de Excepção:} 
+	\item[--]  \textbf{Observações:} 
+\end{itemize}
+\newpage
+
+\subsection{RF46 - Editar pergunta TCG}
+\begin{itemize}
+	\item[--] \textbf{ID:} 
+	\item[--]  \textbf{Ator:} 
+	\item[--]  \textbf{Prioridade:} 
+	\item[--]  \textbf{Descrição:} 
+	\item[--]  \textbf{Pré-condições:} 
+	\item[--]  \textbf{Estimulo:}
+	\item[--]  \textbf{Fluxo Principal:} 
+	\item[--]  \textbf{Fluso de Excepção:} 
+	\item[--]  \textbf{Observações:} 
+\end{itemize}
+\newpage
+
+\subsection{RF47 - Apagar pergunta TCG}
+\begin{itemize}
+	\item[--] \textbf{ID:} 
+	\item[--]  \textbf{Ator:} 
+	\item[--]  \textbf{Prioridade:} 
+	\item[--]  \textbf{Descrição:} 
+	\item[--]  \textbf{Pré-condições:} 
+	\item[--]  \textbf{Estimulo:}
+	\item[--]  \textbf{Fluxo Principal:} 
+	\item[--]  \textbf{Fluso de Excepção:} 
+	\item[--]  \textbf{Observações:} 
+\end{itemize}
+\newpage
+
+\subsection{RF48 - Relatórios}
+\begin{itemize}
+	\item[--] \textbf{ID:} 
+	\item[--]  \textbf{Ator:} 
+	\item[--]  \textbf{Prioridade:} 
+	\item[--]  \textbf{Descrição:} 
+	\item[--]  \textbf{Pré-condições:} 
+	\item[--]  \textbf{Estimulo:}
+	\item[--]  \textbf{Fluxo Principal:} 
+	\item[--]  \textbf{Fluso de Excepção:} 
+	\item[--]  \textbf{Observações:} 
+\end{itemize}
+\newpage
+
+\subsection{RF49 - Relatório geral}
+\begin{itemize}
+	\item[--] \textbf{ID:} 
+	\item[--]  \textbf{Ator:} 
+	\item[--]  \textbf{Prioridade:} 
+	\item[--]  \textbf{Descrição:} 
+	\item[--]  \textbf{Pré-condições:} 
+	\item[--]  \textbf{Estimulo:}
+	\item[--]  \textbf{Fluxo Principal:} 
+	\item[--]  \textbf{Fluso de Excepção:} 
+	\item[--]  \textbf{Observações:} 
+\end{itemize}
+\newpage
+
+\subsection{RF50 - Relatório}
+\begin{itemize}
+	\item[--] \textbf{ID:} 
+	\item[--]  \textbf{Ator:} 
+	\item[--]  \textbf{Prioridade:} 
+	\item[--]  \textbf{Descrição:} 
+	\item[--]  \textbf{Pré-condições:} 
+	\item[--]  \textbf{Estimulo:}
+	\item[--]  \textbf{Fluxo Principal:} 
+	\item[--]  \textbf{Fluso de Excepção:} 
+	\item[--]  \textbf{Observações:} 
+\end{itemize}
+\newpage
+
+\subsection{RF51 - Listar leads por perfil}
+\begin{itemize}
+	\item[--] \textbf{ID:} 
+	\item[--]  \textbf{Ator:} 
+	\item[--]  \textbf{Prioridade:} 
+	\item[--]  \textbf{Descrição:} 
+	\item[--]  \textbf{Pré-condições:} 
+	\item[--]  \textbf{Estimulo:}
+	\item[--]  \textbf{Fluxo Principal:} 
+	\item[--]  \textbf{Fluso de Excepção:} 
+	\item[--]  \textbf{Observações:} 
+\end{itemize}
+\newpage
+
+\subsection{RF52 - Definições}
+\begin{itemize}
+	\item[--] \textbf{ID:} 
+	\item[--]  \textbf{Ator:} 
+	\item[--]  \textbf{Prioridade:} 
+	\item[--]  \textbf{Descrição:} 
+	\item[--]  \textbf{Pré-condições:} 
+	\item[--]  \textbf{Estimulo:}
+	\item[--]  \textbf{Fluxo Principal:} 
+	\item[--]  \textbf{Fluso de Excepção:} 
+	\item[--]  \textbf{Observações:} 
+\end{itemize}
+\newpage
+
+\subsection{RF53 - Actualizar plano}
+\begin{itemize}
+	\item[--] \textbf{ID:} 
+	\item[--]  \textbf{Ator:} 
+	\item[--]  \textbf{Prioridade:} 
+	\item[--]  \textbf{Descrição:} 
+	\item[--]  \textbf{Pré-condições:} 
+	\item[--]  \textbf{Estimulo:}
+	\item[--]  \textbf{Fluxo Principal:} 
+	\item[--]  \textbf{Fluso de Excepção:} 
+	\item[--]  \textbf{Observações:} 
+\end{itemize}
+\newpage
+
+\subsection{RF54 - Ajuda}
+\begin{itemize}
+	\item[--] \textbf{ID:} 
+	\item[--]  \textbf{Ator:} 
+	\item[--]  \textbf{Prioridade:} 
+	\item[--]  \textbf{Descrição:} 
+	\item[--]  \textbf{Pré-condições:} 
+	\item[--]  \textbf{Estimulo:}
+	\item[--]  \textbf{Fluxo Principal:} 
+	\item[--]  \textbf{Fluso de Excepção:} 
+	\item[--]  \textbf{Observações:} 
+\end{itemize}
+\newpage
+
+\subsection{RF55- Sair}
+\begin{itemize}
+	\item[--] \textbf{ID:} 
+	\item[--]  \textbf{Ator:} 
+	\item[--]  \textbf{Prioridade:} 
+	\item[--]  \textbf{Descrição:} 
+	\item[--]  \textbf{Pré-condições:} 
+	\item[--]  \textbf{Estimulo:}
+	\item[--]  \textbf{Fluxo Principal:} 
+	\item[--]  \textbf{Fluso de Excepção:} 
+	\item[--]  \textbf{Observações:} 
+\end{itemize}
+\newpage
+
+\subsection{RF56 - Partilhar}
+\begin{itemize}
+	\item[--] \textbf{ID:} 
+	\item[--]  \textbf{Ator:} 
+	\item[--]  \textbf{Prioridade:} 
+	\item[--]  \textbf{Descrição:} 
+	\item[--]  \textbf{Pré-condições:} 
+	\item[--]  \textbf{Estimulo:}
+	\item[--]  \textbf{Fluxo Principal:} 
+	\item[--]  \textbf{Fluso de Excepção:} 
+	\item[--]  \textbf{Observações:} 
+\end{itemize}
+\newpage
+
+\subsection{RF57 - Apagar formação}
+\begin{itemize}
+	\item[--] \textbf{ID:} 
+	\item[--]  \textbf{Ator:} 
+	\item[--]  \textbf{Prioridade:} 
+	\item[--]  \textbf{Descrição:} 
+	\item[--]  \textbf{Pré-condições:} 
+	\item[--]  \textbf{Estimulo:}
+	\item[--]  \textbf{Fluxo Principal:} 
+	\item[--]  \textbf{Fluso de Excepção:} 
+	\item[--]  \textbf{Observações:} 
+\end{itemize}
+\newpage
+
