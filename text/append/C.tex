@@ -135,6 +135,8 @@
 		\subitem RF16 - Editar questionário.
 		\subitem RF21 - Definir Periocidade.
 		\subitem RF28 - Editar formação.
+		\subitem RF32 - Criar concurso.
+		\subitem RF38 - Editar concurso.
 	\item[--]  \textbf{Fluxo Principal:} 
 		\subitem 1. O utilizador seleciona a secção do Modelo de Notificações.
 		\subitem 2. O utilizador efectua as \underline{operações desejadas}.
@@ -209,7 +211,7 @@
 		\subitem 1. O utilizdor introduz a questão a ser adicionada ao questionário.
 		\subitem 2. O utilizador carrega no botão para adicionar a questão ao questionátio.
 		\subitem 3. O 10.quest notifica o utilizador que a questão foi adicionada com sucesso.
-	\item[--]  \textbf{Observações:} O utilizador pode adicionar multiplas questões ao questionário.
+	\item[--]  \textbf{Observações:} O utilizador pode adicionar multiplas questões ao questionário. As questões são adicionadas em formato de lista e por isso para apagar uma questão basta carregar na cruz que se segue à questão.
 \end{itemize}
 \newpage
 
@@ -259,8 +261,8 @@
 	\item[--]  \textbf{Fluxo de Excepção:} 
 		\subitem 2a. O utilizador carrega um ficheiro com formato inválido.
 		\subitem 2a1. O 10.quest notifica o utilizador que o ficheiro carregado é inválido.
-		\subitem 2b. O utilizador carrega um ficheiro mas as questões mal formatadas (i. e. mal estruturadas).
-		\subitem 2b1. O 10.quest notifica o utilizador que as perguntas estão mal estruturadas e por isso não podem ser adicionadas ao questionário.
+		\subitem 2b. O utilizador carrega um ficheiro mas as questões estão mal formatadas (i. e. mal estruturadas).
+		\subitem 2b1. O 10.quest notifica o utilizador que as questões estão mal estruturadas e por isso não podem ser adicionadas ao questionário.
 	\item[--]  \textbf{Observações:} É fornecido um ficheiro exemplo para mostrar ao utilizador a estrutura em que as questões têm de ser escritas no ficheiro para ser aceite pela plataforma 10.quest com sucesso.
 \end{itemize}
 \newpage
@@ -310,7 +312,7 @@
 	\item[--] \textbf{ID:} 15
 	\item[--]  \textbf{Ator:} Utilizador
 	\item[--]  \textbf{Prioridade:} \textit{Must Have}
-	\item[--]  \textbf{Descrição:} A plaforma 10.quest lista todos os questionários associados á conta do utilizador.
+	\item[--]  \textbf{Descrição:} A plaforma 10.quest lista todos os questionários associados à conta do utilizador.
 	\item[--]  \textbf{Pré-condições:} O utilizador necessita de estar autenticado na plataforma 10.quest.
 	\item[--]  \textbf{Estimulo:} RF05 - Gerir questionários.
 	\item[--]  \textbf{Fluxo Principal:} 
@@ -326,6 +328,32 @@
 		\subitem Editar questionário (RF16 - Editar questionário).
 \end{itemize}
 \newpage
+
+
+\subsection{RF16 - Editar questionário}
+	\item[--] \textbf{ID:} 16
+	\item[--]  \textbf{Ator:} Utilizador.
+	\item[--]  \textbf{Prioridade:} \textit{Must Have}.
+	\item[--]  \textbf{Descrição:} Efetuar uma das \underline{operações desejadas}.
+	\item[--]  \textbf{Pré-condições:} O utilizador necessita de estar autenticado na plataforma 10.quest e ter pelo menos um questionário criado.
+	\item[--]  \textbf{Estimulo:} RF15 - Mostrar lista de questionários do utilizador.
+	\item[--]  \textbf{Fluxo Principal:} 
+		\subitem 1. O utilizador seleciona um questionário e efetua as \underline{operações desejadas}.
+	\item[--]  \textbf{Fluxo de Excepção:} 
+		\subitem 1a. O 10.quest não consegue efetuar o pedido à API do TCG devido a uma falha na conexão.
+		\subitem 1a1. O 10.quest notifica o utilizador que ocorreu uma falha na conexão.
+		\subitem 1b. O serviço do TCG (API) está indisponível.
+		\subitem 1b1. O 10.quest notifica o utilizador que o serviço do TCG está temporariamente indisponível. 
+	\item[--]  \textbf{Observações:} Depois do 10.quest listar todos os questionários e o utilizador escolher o questionário que pretende editar, pode efetuar as \underline{operações desejadas}:
+		\subitem Criar ou apagar questões (RF10 - Criar questões).
+		\subitem Alterar modelo de notificações (RF07 - Modelo de notificações).
+		\subitem Criar ou apagar resultados (RF11 - Criar resultados).
+		\subitem Alterar sistema de pontuação (RF14 - Criar sistema de pontuação).
+		\subitem Importar questões (RF12 - Importar questões).
+		\subitem Exportar questões (RF13 - Exportar questões)
+
+\newpage
+
 
 \subsection{RF17 - Notificar utilizadores finais}
 \begin{itemize}
@@ -493,375 +521,346 @@
 
 \subsection{RF25 - Adicionar entrada de perguntas}
 \begin{itemize}
-	\item[--] \textbf{ID:} 
-	\item[--]  \textbf{Ator:} 
-	\item[--]  \textbf{Prioridade:} 
-	\item[--]  \textbf{Descrição:} 
-	\item[--]  \textbf{Pré-condições:} 
-	\item[--]  \textbf{Estimulo:}
+	\item[--] \textbf{ID:} 25
+	\item[--]  \textbf{Ator:} Utilizador
+	\item[--]  \textbf{Prioridade:} \textit{Must Have}
+	\item[--]  \textbf{Descrição:} Adicionar utilizadores finais e perguntas a uma formação
+	\item[--]  \textbf{Pré-condições:} O utilizador necessita de estar autenticado na plataforma 10.quest e a formação deve estar criada.
+	\item[--]  \textbf{Estimulo:} RF24 - Definições da formação.
 	\item[--]  \textbf{Fluxo Principal:} 
-	\subitem
-	\subitem
-	\subitem
-	\subitem
+		\subitem 1. O utilizador seleciona a(s) tag(s) de utilizador que pretende que recebam a formação.
+		\subitem 2. O utilizador seleciona a(s) tag(s) de perguntas que quer que os utilizadores definidos no passo anterior recebam.
+		\subitem 3. O utilizador define o número de perguntas, com as tags definidas no passo anterior, que os utilizadores finais definidos no primeiro passo vão receber.
+		\subitem 4. O utilizador carrega no botão para adicionar entrada.
+		\subitem 5. O 10.quest envia a informação para o TCG para ser adicionada à formação.
 	\item[--]  \textbf{Fluxo de Excepção:} 
-	\subitem
-	\subitem
-	\subitem
-	\subitem
+		\subitem 5a. O 10.quest não consegue efetuar o pedido à API do TCG devido a uma falha na conexão.
+		\subitem 5a1. O 10.quest notifica o utilizador que ocorreu uma falha na conexão.
+		\subitem 5b. O serviço do TCG (API) está indisponível.
+		\subitem 5b1. O 10.quest notifica o utilizador que o serviço do TCG está temporariamente indisponível. 
 	\item[--]  \textbf{Observações:} 
 \end{itemize}
 \newpage
 
 \subsection{RF26 - Gerir entradas de perguntas}
 \begin{itemize}
-	\item[--] \textbf{ID:} 
-	\item[--]  \textbf{Ator:} 
-	\item[--]  \textbf{Prioridade:} 
-	\item[--]  \textbf{Descrição:} 
-	\item[--]  \textbf{Pré-condições:} 
-	\item[--]  \textbf{Estimulo:}
+	\item[--] \textbf{ID:} 26
+	\item[--]  \textbf{Ator:} Utilizador
+	\item[--]  \textbf{Prioridade:} \textit{Must Have}
+	\item[--]  \textbf{Descrição:} Eliminar, pesquisar ou anterar o estado de uma entrada.
+	\item[--]  \textbf{Pré-condições:} O utilizador necessita de estar autenticado na plataforma 10.quest e a formação deve estar criada.
+	\item[--]  \textbf{Estimulo:} RF24 - Definições da formação.
 	\item[--]  \textbf{Fluxo Principal:} 
-	\subitem
-	\subitem
-	\subitem
-	\subitem
+		\subitem 1. O utilizador efetua as \underline{operações desejadas} para gerir as entradas da formação.
 	\item[--]  \textbf{Fluxo de Excepção:} 
-	\subitem
-	\subitem
-	\subitem
-	\subitem
-	\item[--]  \textbf{Observações:} 
+		\subitem 1a. O 10.quest não consegue efetuar o pedido à API do TCG devido a uma falha na conexão.
+		\subitem 1a1. O 10.quest notifica o utilizador que ocorreu uma falha na conexão.
+		\subitem 1b. O serviço do TCG (API) está indisponível.
+		\subitem 1b1. O 10.quest notifica o utilizador que o serviço do TCG está temporariamente indisponível. 
+	\item[--]  \textbf{Observações:} As \underline{operações} que o utilizador pode efetuar para gerir uma entrada de perguntas são: 
+		\subitem Eliminar uma entrada.
+		\subitem Pesquisar uma entrada.
+		\subitem Alterar estado da entrada.
 \end{itemize}
 \newpage
 
 \subsection{RF27 - Mostrar lista de formações do utilizador}
 \begin{itemize}
-	\item[--] \textbf{ID:} 
-	\item[--]  \textbf{Ator:} 
-	\item[--]  \textbf{Prioridade:} 
-	\item[--]  \textbf{Descrição:} 
-	\item[--]  \textbf{Pré-condições:} 
-	\item[--]  \textbf{Estimulo:}
+	\item[--] \textbf{ID:} 27
+	\item[--]  \textbf{Ator:} Utilizador
+	\item[--]  \textbf{Prioridade:} \textit{Must Have}
+	\item[--]  \textbf{Descrição:} A plaforma 10.quest lista todos as formações associadas à conta do utilizador.
+	\item[--]  \textbf{Pré-condições:} O utilizador necessita de estar autenticado na plataforma 10.quest.
+	\item[--]  \textbf{Estimulo:} RF19 - Gerir formações.
 	\item[--]  \textbf{Fluxo Principal:} 
-	\subitem
-	\subitem
-	\subitem
-	\subitem
+		\subitem 1. O 10.quest efetua um pedido da lista de formações associados à conta do utilizador, ao TCG.
+		\subitem 2. O 10.quest lista todos as formações associados à conta do utilizador.
+		\subitem 3. O utilizador pode selecionar um questionário e efectuar as \underline{operações desejadas}
 	\item[--]  \textbf{Fluxo de Excepção:} 
-	\subitem
-	\subitem
-	\subitem
-	\subitem
-	\item[--]  \textbf{Observações:} 
+		\subitem 1a. O 10.quest não consegue efetuar o pedido à API do TCG devido a uma falha na conexão.
+		\subitem 1a1. O 10.quest notifica o utilizador que ocorreu uma falha na conexão.
+		\subitem 1b. O serviço do TCG (API) está indisponível.
+		\subitem 1b1. O 10.quest notifica o utilizador que o serviço do TCG está temporariamente indisponível. 
+		\subitem 2a. O utilizador não tem nenhuma formação associado à conta.
+		\subitem 2a1. O 10.quest informa o utilizador que não existe nenhuma formação associada à conta do mesmo.
+	\item[--]  \textbf{Observações:} Depois de listadas todas as formações, o utilizador pode escolher uma formação e efectuar as \underline{operações desejadas}:
+		\subitem Apagar uma formação (RF57 - Apagar formação).
+		\subitem Pesquisar formação por nome.
+		\subitem Editar formação (RF28 - Editar formação).
 \end{itemize}
 \newpage
 
 \subsection{RF28 - Editar formação}
 \begin{itemize}
-	\item[--] \textbf{ID:} 
-	\item[--]  \textbf{Ator:} 
-	\item[--]  \textbf{Prioridade:} 
-	\item[--]  \textbf{Descrição:} 
-	\item[--]  \textbf{Pré-condições:} 
-	\item[--]  \textbf{Estimulo:}
+	\item[--] \textbf{ID:} 28
+	\item[--]  \textbf{Ator:} Utilizador.
+	\item[--]  \textbf{Prioridade:} \textit{Must Have}.
+	\item[--]  \textbf{Descrição:} Efetuar uma das \underline{operações desejadas}.
+	\item[--]  \textbf{Pré-condições:} O utilizador necessita de estar autenticado na plataforma 10.quest e ter pelo menos uma formação criada.
+	\item[--]  \textbf{Estimulo:} RF27 - Mostrar lista de formações do utilizador.
 	\item[--]  \textbf{Fluxo Principal:} 
-	\subitem
-	\subitem
-	\subitem
-	\subitem
+		\subitem 1. O utilizador seleciona uma formação e efetua as \underline{operações desejadas}.
 	\item[--]  \textbf{Fluxo de Excepção:} 
-	\subitem
-	\subitem
-	\subitem
-	\subitem
-	\item[--]  \textbf{Observações:} 
+		\subitem 1a. O 10.quest não consegue efetuar o pedido à API do TCG devido a uma falha na conexão.
+		\subitem 1a1. O 10.quest notifica o utilizador que ocorreu uma falha na conexão.
+		\subitem 1b. O serviço do TCG (API) está indisponível.
+		\subitem 1b1. O 10.quest notifica o utilizador que o serviço do TCG está temporariamente indisponível. 
+	\item[--]  \textbf{Observações:} Depois do 10.quest listar todas as formações e o utilizador escolher a formação que pretende editar, pode efetuar as \underline{operações desejadas}:
+		\subitem Alterar a Periocidade (RF21 - Definir periocidade).
+		\subitem Alterar modelo de notificações (RF07 - Modelo de notificações).
+		\subitem Ver o registo de atividade (RF22 - Registo de atividade).
+		\subitem Alterar definições da formação (RF24 - Definições da formação).
+		\subitem Enviar notificação para os utilizadores finais caso tenho efetuado alguma alteração na formação (RF23 - Enviar notificação).
 \end{itemize}
 \newpage
 
 \subsection{RF29 - Adicionar novo utilizador final TCG}
 \begin{itemize}
-	\item[--] \textbf{ID:} 
-	\item[--]  \textbf{Ator:} 
-	\item[--]  \textbf{Prioridade:} 
-	\item[--]  \textbf{Descrição:} 
-	\item[--]  \textbf{Pré-condições:} 
-	\item[--]  \textbf{Estimulo:}
+	\item[--] \textbf{ID:} 29
+	\item[--]  \textbf{Ator:} 10.quest.
+	\item[--]  \textbf{Prioridade:} \textit{Must Have}.
+	\item[--]  \textbf{Descrição:} Adicionar utilizador final a uma formação assim que ele se inscreve na landing page da formação.
+	\item[--]  \textbf{Pré-condições:} O utilizador final tem que submeter inscrição na landing page.
+	\item[--]  \textbf{Estimulo:} O utilizador final deseja receber uma formação.
 	\item[--]  \textbf{Fluxo Principal:} 
-	\subitem
-	\subitem
-	\subitem
-	\subitem
+	\subitem 1. O 10.quest recebe as informações que o utilizador final introduziu no formulário da landing page.
+	\subitem 2. O 10.quest envia a informação para o TCG para o utilizador final ser adicionado à formação.
 	\item[--]  \textbf{Fluxo de Excepção:} 
-	\subitem
-	\subitem
-	\subitem
-	\subitem
-	\item[--]  \textbf{Observações:} 
+	\subitem 2a. O 10.quest não consegue efetuar o pedido à API do TCG devido a uma falha na conexão.
+	\subitem 2a1. O 10.quest notifica o utilizador que ocorreu uma falha na conexão.
+	\subitem 2b. O serviço do TCG (API) está indisponível.
+	\subitem 2b1. O 10.quest notifica o utilizador que o serviço do TCG está temporariamente indisponível. 
 \end{itemize}
 \newpage
 
 \subsection{RF30 - Notificar utilizadores finais TCG}
 \begin{itemize}
-	\item[--] \textbf{ID:} 
-	\item[--]  \textbf{Ator:} 
-	\item[--]  \textbf{Prioridade:} 
-	\item[--]  \textbf{Descrição:} 
-	\item[--]  \textbf{Pré-condições:} 
-	\item[--]  \textbf{Estimulo:}
+	\item[--] \textbf{ID:} 30
+	\item[--]  \textbf{Ator:} 10.quest.
+	\item[--]  \textbf{Prioridade:} \textit{Must Have}.
+	\item[--]  \textbf{Descrição:} Enviar email para um utilizador final (i. e. participante), assim que ele se inscreve na landing page.
+	\item[--]  \textbf{Pré-condições:} O utilizador final tem que submeter inscrição na landing page.
+	\item[--]  \textbf{Estimulo:} O utilizador final deseja receber uma formação.
 	\item[--]  \textbf{Fluxo Principal:} 
-	\subitem
-	\subitem
-	\subitem
-	\subitem
-	\item[--]  \textbf{Fluxo de Excepção:} 
-	\subitem
-	\subitem
-	\subitem
-	\subitem
-	\item[--]  \textbf{Observações:} 
+	\subitem 1. O 10.quest envia um email periodico para o contacto submetido na landing page com a formação. As informações que são enviadas no mail são definidas no RF09 - Notificações por Email.
 \end{itemize}
 \newpage
 
 \subsection{RF31 - Gerir concursos}
 \begin{itemize}
-	\item[--] \textbf{ID:} 
-	\item[--]  \textbf{Ator:} 
-	\item[--]  \textbf{Prioridade:} 
-	\item[--]  \textbf{Descrição:} 
-	\item[--]  \textbf{Pré-condições:} 
-	\item[--]  \textbf{Estimulo:}
+	\item[--] \textbf{ID:} 31
+	\item[--]  \textbf{Ator:} Utilizador
+	\item[--]  \textbf{Prioridade:} \textit{Could Have}
+	\item[--]  \textbf{Descrição:} O utilizador deseja visualizar, criar, editar ou eliminar um concurso.
+	\item[--]  \textbf{Pré-condições:} O utilizador necessita de estar autenticado na plataforma 10.quest.
+	\item[--]  \textbf{Estimulo:} O utilizador deseja gerir os seus concursos.
 	\item[--]  \textbf{Fluxo Principal:} 
-	\subitem
-	\subitem
-	\subitem
-	\subitem
+	\subitem 1. O utilizador pressiona o botão Concursos.
+	\subitem 2. O 10.quest  \underline{lista todos os concursos do utilizador}.
 	\item[--]  \textbf{Fluxo de Excepção:} 
-	\subitem
-	\subitem
-	\subitem
-	\subitem
-	\item[--]  \textbf{Observações:} 
+	\subitem 2a. Não existe nenhum concurso associado à conta do utilizador.
+	\subitem 2a1. o 10.quest informa o utilizador que não existem concursos para serem listados.
+	\item[--]  \textbf{Observações:} A forma como a platadorma 10.quest lista os concursos está descrito no caso de uso \underline{RF37 - Mostrar lista de concursos do utilizador}.
 \end{itemize}
 \newpage
 
 \subsection{RF32 - Criar concurso}
 \begin{itemize}
-	\item[--] \textbf{ID:} 
-	\item[--]  \textbf{Ator:} 
-	\item[--]  \textbf{Prioridade:} 
-	\item[--]  \textbf{Descrição:} 
-	\item[--]  \textbf{Pré-condições:} 
-	\item[--]  \textbf{Estimulo:}
+	\item[--] \textbf{ID:} 32
+	\item[--]  \textbf{Ator:} Utilizador.
+	\item[--]  \textbf{Prioridade:} \textit{Could Have}.
+	\item[--]  \textbf{Descrição:} O utilizador cria um concurso novo.
+	\item[--]  \textbf{Pré-condições:} O utilizador necessita de estar autenticado na plataforma 10.quest.
+	\item[--]  \textbf{Estimulo:} RF31 - Gerir concursos.
 	\item[--]  \textbf{Fluxo Principal:} 
-	\subitem
-	\subitem
-	\subitem
-	\subitem
-	\item[--]  \textbf{Fluxo de Excepção:} 
-	\subitem
-	\subitem
-	\subitem
-	\subitem
-	\item[--]  \textbf{Observações:} 
+	\subitem 1. O utilizador seleciona a opção de criar um novo concurso.
+	\subitem 2. O 10.quest redireciona o utilizador para a página da criação de um concurso onde o utilizador pode efectuar as \underline{operações desejadas}.
+	\item[--]  \textbf{Observações:} Depois da plataforma 10.quest redirecionar o utilizador para a página da criação de um concurso, este pode efectuar as \underline{operações desejadas}:
+	\subitem Criar novas perguntas (RF33 - Criar perguntas).
+	\subitem Importar perguntas através de uma spreadsheet (RF36 - Importar perguntas).
+	\subitem Exportar perguntas para uma spreadsheet (RF35 - Exportar perguntas).
+	\subitem Partilhar os questionários e/ou definir o template do E-mail (RF07 - Modelo de notificações).
 \end{itemize}
 \newpage
 
 \subsection{RF33 - Criar perguntas}
 \begin{itemize}
-	\item[--] \textbf{ID:} 
-	\item[--]  \textbf{Ator:} 
-	\item[--]  \textbf{Prioridade:} 
-	\item[--]  \textbf{Descrição:} 
-	\item[--]  \textbf{Pré-condições:} 
-	\item[--]  \textbf{Estimulo:}
+	\item[--] \textbf{ID:} 33
+	\item[--]  \textbf{Ator:} Utilizador.
+	\item[--]  \textbf{Prioridade:} \textit{Could Have}.
+	\item[--]  \textbf{Descrição:} Criar perguntas para serem apresentados ao utilizador final.
+	\item[--]  \textbf{Pré-condições:} O utilizador necessita de estar autenticado na plataforma 10.quest e de ter pelo menos um concurso criado.
+	\item[--]  \textbf{Estimulo:}  
+	\subitem RF32 - Criar concurso.
+	\subitem RF38 - Editar concurso.
 	\item[--]  \textbf{Fluxo Principal:} 
-	\subitem
-	\subitem
-	\subitem
-	\subitem
-	\item[--]  \textbf{Fluxo de Excepção:} 
-	\subitem
-	\subitem
-	\subitem
-	\subitem
-	\item[--]  \textbf{Observações:} 
+	\subitem 1. O utilizador introduz a pergunta.
+	\subitem 2. O utilizador introduz as respostas.
+	\item[--]  \textbf{Observações:} O utilizador tem obrigatoriamente que introduzir pelo menos duas respostas e indicar qual das respostas a correcta. Há um campo especifico para introduzir a resposta correcta.
 \end{itemize}
 \newpage
 
 \subsection{RF34 - Introduzir respostas}
 \begin{itemize}
-	\item[--] \textbf{ID:} 
-	\item[--]  \textbf{Ator:} 
-	\item[--]  \textbf{Prioridade:} 
-	\item[--]  \textbf{Descrição:} 
-	\item[--]  \textbf{Pré-condições:} 
-	\item[--]  \textbf{Estimulo:}
+	\item[--] \textbf{ID:} 34
+	\item[--]  \textbf{Ator:} Utilizador.
+	\item[--]  \textbf{Prioridade:} \textit{Could Have}.
+	\item[--]  \textbf{Descrição:} Criar respostas para serem adicionadas às perguntas do concurso.
+	\item[--]  \textbf{Pré-condições:} O utilizador necessita de estar autenticado na plataforma 10.quest e de ter pelo menos um concurso criado.
+	\item[--]  \textbf{Estimulo:} RF33 - Criar perguntas.
 	\item[--]  \textbf{Fluxo Principal:} 
-	\subitem
-	\subitem
-	\subitem
-	\subitem
+	\subitem 1. O utilizador introduz o texto da resposta.
+	\subitem 2. O utilizador carrega e adiciona um \underline{anexo} à resposta.
 	\item[--]  \textbf{Fluxo de Excepção:} 
-	\subitem
-	\subitem
-	\subitem
-	\subitem
-	\item[--]  \textbf{Observações:} 
+	\subitem 2a. O utilizador carrega uma ficheiro com formato inválido.
+	\subitem 2a1. O 10.quest notifica o utilizador que o formato carregado é inválido.
+	\item[--]  \textbf{Observações:} O carregamento de um anexo é opcional. O anexo carregado pode ser em formato audio, imagem ou vídeo.
 \end{itemize}
 \newpage
 
 \subsection{RF35 - Exportar perguntas}
 \begin{itemize}
-	\item[--] \textbf{ID:} 
-	\item[--]  \textbf{Ator:} 
-	\item[--]  \textbf{Prioridade:} 
-	\item[--]  \textbf{Descrição:} 
-	\item[--]  \textbf{Pré-condições:} 
-	\item[--]  \textbf{Estimulo:}
+	\item[--] \textbf{ID:} 35
+	\item[--]  \textbf{Ator:} Utilizador.
+	\item[--]  \textbf{Prioridade:} \textit{Could Have}.
+	\item[--]  \textbf{Descrição:} Exportar perguntas para uma spreadsheet.
+	\item[--]  \textbf{Pré-condições:} O utilizador necessita de estar autenticado na plataforma 10.quest e ter pelo menos um concurso criado.
+	\item[--]  \textbf{Estimulo:}  
+	\subitem RF32 - Criar concurso.
+	\subitem RF38 - Editar concurso.
 	\item[--]  \textbf{Fluxo Principal:} 
-	\subitem
-	\subitem
-	\subitem
-	\subitem
-	\item[--]  \textbf{Fluxo de Excepção:} 
-	\subitem
-	\subitem
-	\subitem
-	\subitem
-	\item[--]  \textbf{Observações:} 
+	\subitem 1. O utilizador carrega no botão para exportar as perguntas associadas ao concurso.
+	\subitem 2. O 10.quest descarrega um ficheiro com todas as perguntas associadas ao concurso.
+	\item[--]  \textbf{Observações:} Caso não haja perguntas associadas ao concurso, o ficheiro descarregado estará vazio.
 \end{itemize}
 \newpage
 
 \subsection{RF36 - Importar perguntas}
 \begin{itemize}
-	\item[--] \textbf{ID:} 
-	\item[--]  \textbf{Ator:} 
-	\item[--]  \textbf{Prioridade:} 
-	\item[--]  \textbf{Descrição:} 
-	\item[--]  \textbf{Pré-condições:} 
-	\item[--]  \textbf{Estimulo:}
+	\item[--] \textbf{ID:} 36
+	\item[--]  \textbf{Ator:} Utilizador.
+	\item[--]  \textbf{Prioridade:} \textit{Could Have}.
+	\item[--]  \textbf{Descrição:} Importar perguntas através de uma spreadsheet. 
+	\item[--]  \textbf{Pré-condições:} O utilizador necessita de estar autenticado na plataforma 10.quest e de ter pelo menos um concurso criado.
+	\item[--]  \textbf{Estimulo:}  
+	\subitem RF32 - Criar concurso.
+	\subitem RF38 - Editar concurso.
 	\item[--]  \textbf{Fluxo Principal:} 
-	\subitem
-	\subitem
-	\subitem
-	\subitem
+	\subitem 1. O utilizador carrega no botão para importar perguntas.
+	\subitem 2. O utilizador carrega a spreadsheet (i. e. ficheiro com as questões) para a plataforma 10.quest.
+	\subitem 3. O 10.quest notifica o utilizador que as perguntas foram adicionadas com sucesso.
 	\item[--]  \textbf{Fluxo de Excepção:} 
-	\subitem
-	\subitem
-	\subitem
-	\subitem
-	\item[--]  \textbf{Observações:} 
+	\subitem 2a. O utilizador carrega um ficheiro com formato inválido.
+	\subitem 2a1. O 10.quest notifica o utilizador que o ficheiro carregado é inválido.
+	\subitem 2b. O utilizador carrega um ficheiro mas as perguntas estão mal formatadas (i. e. mal estruturadas).
+	\subitem 2b1. O 10.quest notifica o utilizador que as perguntas estão mal estruturadas e por isso não podem ser adicionadas ao concurso.
+	\item[--]  \textbf{Observações:} É fornecido um ficheiro exemplo para mostrar ao utilizador a estrutura em que as perguntas têm de ser escritas no ficheiro para ser aceite pela plataforma 10.quest com sucesso.
 \end{itemize}
 \newpage
 
 \subsection{RF37 - Mostrar lista de concursos do utilizador}
 \begin{itemize}
-	\item[--] \textbf{ID:} 
-	\item[--]  \textbf{Ator:} 
-	\item[--]  \textbf{Prioridade:} 
-	\item[--]  \textbf{Descrição:} 
-	\item[--]  \textbf{Pré-condições:} 
-	\item[--]  \textbf{Estimulo:}
+	\item[--] \textbf{ID:} 37
+	\item[--]  \textbf{Ator:} Utilizador.
+	\item[--]  \textbf{Prioridade:} \textit{Must Have}.
+	\item[--]  \textbf{Descrição:} A plaforma 10.quest lista todos os concursos associados à conta do utilizador.
+	\item[--]  \textbf{Pré-condições:} O utilizador necessita de estar autenticado na plataforma 10.quest.
+	\item[--]  \textbf{Estimulo:} RF31 - Gerir concursos.
 	\item[--]  \textbf{Fluxo Principal:} 
-	\subitem
-	\subitem
-	\subitem
-	\subitem
+	\subitem 1. O 10.quest lista todos os concursos associados à conta do utilizador.
+	\subitem 2. O utilizador pode selecionar um concurso e efectuar as \underline{operações desejadas}
 	\item[--]  \textbf{Fluxo de Excepção:} 
-	\subitem
-	\subitem
-	\subitem
-	\subitem
-	\item[--]  \textbf{Observações:} 
+	\subitem 1a. O utilizador não tem nenhum concurso associado à conta.
+	\subitem 1a1. O 10.quest informa o utilizador que não existe nenhum concurso  associado à conta do mesmo.
+	\item[--]  \textbf{Observações:} Depois de listados todos os questionários, o utilizador pode escolher um concurso e efectuar as \underline{operações desejadas}:
+	\subitem Filtrar os questionários por nome, data ou estado, definido na Secção \ref{d:concursos}.
+	\subitem Apagar concurso.
+	\subitem Pesquisar concurso por nome.
+	\subitem Editar concurso (RF38 - Editar concurso).
 \end{itemize}
 \newpage
 
 \subsection{RF38 - Editar concurso}
 \begin{itemize}
-	\item[--] \textbf{ID:} 
-	\item[--]  \textbf{Ator:} 
-	\item[--]  \textbf{Prioridade:} 
-	\item[--]  \textbf{Descrição:} 
-	\item[--]  \textbf{Pré-condições:} 
-	\item[--]  \textbf{Estimulo:}
+	\item[--] \textbf{ID:} 38
+	\item[--]  \textbf{Ator:} Utilizador.
+	\item[--]  \textbf{Prioridade:} \textit{Could Have}.
+	\item[--]  \textbf{Descrição:} Efetuar uma das \underline{operações desejadas}.
+	\item[--]  \textbf{Pré-condições:} O utilizador necessita de estar autenticado na plataforma 10.quest e ter pelo menos um concurso criado.
+	\item[--]  \textbf{Estimulo:} RF37 - Mostrar lista de concursos do utilizador.
 	\item[--]  \textbf{Fluxo Principal:} 
-	\subitem
-	\subitem
-	\subitem
-	\subitem
-	\item[--]  \textbf{Fluxo de Excepção:} 
-	\subitem
-	\subitem
-	\subitem
-	\subitem
-	\item[--]  \textbf{Observações:} 
+		\subitem 1. O utilizador seleciona um concurso e efetua as \underline{operações desejadas}.
+	\item[--]  \textbf{Observações:} Depois do 10.quest listar todos os concursos e o utilizador escolher o concurso que pretende editar, pode efetuar as \underline{operações desejadas}:
+		\subitem Criar ou apagar perguntas (RF33 - Criar perguntas).
+		\subitem Alterar modelo de notificações (RF07 - Modelo de notificações).
+		\subitem Importar perguntas (RF36 - Importar perguntas).
+		\subitem Exportar perguntas (RF35 - Exportar perguntas)
 \end{itemize}
 \newpage
 
 \subsection{RF39 - Gerir perguntas TCG}
 \begin{itemize}
-	\item[--] \textbf{ID:} 
-	\item[--]  \textbf{Ator:} 
-	\item[--]  \textbf{Prioridade:} 
-	\item[--]  \textbf{Descrição:} 
-	\item[--]  \textbf{Pré-condições:} 
-	\item[--]  \textbf{Estimulo:}
+	\item[--] \textbf{ID:} 39
+	\item[--]  \textbf{Ator:} Utilizador.
+	\item[--]  \textbf{Prioridade:} \textit{Must Have}.
+	\item[--]  \textbf{Descrição:} O utilizador deseja visualizar, criar, editar ou eliminar uma pergunta do TCG.
+	\item[--]  \textbf{Pré-condições:} O utilizador necessita de estar autenticado na plataforma 10.quest.
+	\item[--]  \textbf{Estimulo:} O utilizador deseja gerir as suas perguntas do TCG.
 	\item[--]  \textbf{Fluxo Principal:} 
-	\subitem
-	\subitem
-	\subitem
-	\subitem
+	\subitem 1. O utilizador pressiona o botão Perguntas TCG.
+	\subitem 2. O 10.quest efetua um pedido da lista de perguntas TCG ao TCG, associadas à conta do utilizador.
+	\subitem 3. O 10.quest  \underline{lista todas as perguntas do TCG, do utilizador}.
 	\item[--]  \textbf{Fluxo de Excepção:} 
-	\subitem
-	\subitem
-	\subitem
-	\subitem
-	\item[--]  \textbf{Observações:} 
+	\subitem 2a. O 10.quest não consegue efetuar o pedido à API do TCG devido a uma falha na conexão.
+	\subitem 2a1. O 10.quest notifica o utilizador que ocorreu uma falha na conexão.
+	\subitem 2b. O serviço do TCG (API) está indisponível.
+	\subitem 2b1. O 10.quest notifica o utilizador que o serviço do TCG está temporariamente indisponível. 
+	\subitem 3a. Não existe nenhuma pergunta TCG associada à conta do utilizador.
+	\subitem 3a1. o 10.quest informa o utilizador que não existem perguntas TCG para serem listadas.
+	\item[--]  \textbf{Observações:} A forma como a platadorma 10.quest lista os questionários está descrito no caso de uso \underline{RF45 - Mostrar lista de perguntas TCG}.
 \end{itemize}
 \newpage
 
 \subsection{RF40 - Importar perguntas TCG}
 \begin{itemize}
-	\item[--] \textbf{ID:} 
-	\item[--]  \textbf{Ator:} 
-	\item[--]  \textbf{Prioridade:} 
-	\item[--]  \textbf{Descrição:} 
-	\item[--]  \textbf{Pré-condições:} 
-	\item[--]  \textbf{Estimulo:}
+	\item[--] \textbf{ID:} 40
+	\item[--]  \textbf{Ator:} Utilizador.
+	\item[--]  \textbf{Prioridade:} \textit{Must Have}.
+	\item[--]  \textbf{Descrição:} Importar perguntas TCG através de uma spreadsheet. 
+	\item[--]  \textbf{Pré-condições:} O utilizador necessita de estar autenticado na plataforma 10.quest.
+	\item[--]  \textbf{Estimulo:}  RF39 - Gerir perguntas TCG.
 	\item[--]  \textbf{Fluxo Principal:} 
-	\subitem
-	\subitem
-	\subitem
-	\subitem
+		\subitem 1. O utilizador carrega no botão para importar perguntas TCG.
+		\subitem 2. O utilizador carrega a spreadsheet (i. e. ficheiro com as perguntas TCG) para a plataforma 10.quest.
+		\subitem 3. O 10.quest envia as perguntas TCG para o TCG para serem adicionadas e associadas à conta do utilizador.
+		\subitem 4. O 10.quest notifica o utilizador que as perguntas TCG foram adicionadas com sucesso.
 	\item[--]  \textbf{Fluxo de Excepção:} 
-	\subitem
-	\subitem
-	\subitem
-	\subitem
-	\item[--]  \textbf{Observações:} 
+		\subitem 2a. O utilizador carrega um ficheiro com formato inválido.
+		\subitem 2a1. O 10.quest notifica o utilizador que o ficheiro carregado é inválido.
+		\subitem 2b. O utilizador carrega um ficheiro mas as perguntas TCG estão mal formatadas (i. e. mal estruturadas).
+		\subitem 2b1. O 10.quest notifica o utilizador que as perguntas TCG  estão mal estruturadas e por isso não podem ser adicionadas ao questionário.
+		\subitem 3a. O 10.quest não consegue efetuar o pedido à API do TCG devido a uma falha na conexão.
+		\subitem 3a1. O 10.quest notifica o utilizador que ocorreu uma falha na conexão.
+		\subitem 3b. O serviço do TCG (API) está indisponível.
+		\subitem 3b1. O 10.quest notifica o utilizador que o serviço do TCG está temporariamente indisponível. 
+	\item[--]  \textbf{Observações:} É fornecido um ficheiro exemplo para mostrar ao utilizador a estrutura em que as perguntas TCG  têm de ser escritas no ficheiro para ser aceite pela plataforma 10.quest com sucesso.
 \end{itemize}
 \newpage
 
 \subsection{RF41 - Exportar pergunta TCG}
 \begin{itemize}
-	\item[--] \textbf{ID:} 
-	\item[--]  \textbf{Ator:} 
-	\item[--]  \textbf{Prioridade:} 
-	\item[--]  \textbf{Descrição:} 
-	\item[--]  \textbf{Pré-condições:} 
-	\item[--]  \textbf{Estimulo:}
+	\item[--] \textbf{ID:} 13
+	\item[--]  \textbf{Ator:} Utilizador.
+	\item[--]  \textbf{Prioridade:} \textit{Must Have}.
+	\item[--]  \textbf{Descrição:} Exportar questões para uma spreadsheet.
+	\item[--]  \textbf{Pré-condições:} O utilizador necessita de estar autenticado na plataforma 10.quest.
+	\item[--]  \textbf{Estimulo:}  
+	\subitem RF06 - Criar questionário.
+	\subitem RF16 - Editar questionário.
 	\item[--]  \textbf{Fluxo Principal:} 
-	\subitem
-	\subitem
-	\subitem
-	\subitem
-	\item[--]  \textbf{Fluxo de Excepção:} 
-	\subitem
-	\subitem
-	\subitem
-	\subitem
-	\item[--]  \textbf{Observações:} 
+	\subitem 1. O utilizador carrega no botão para exportar as questões associadas ao questionário.
+	\subitem 2. O 10.quest descarrega um ficheiro com todas as questões associadas ao questionário.
+	\item[--]  \textbf{Observações:} Caso não haja questões associadas ao questionário, o ficheiro descarregado estará vazio.
 \end{itemize}
 \newpage
 
