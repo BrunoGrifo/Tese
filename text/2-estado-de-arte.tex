@@ -11,7 +11,7 @@ A recolha de informação nos dias de hoje tem um grande impacto na forma como o
 
 %Rever o que está para baixo
 
-As plataformas SurveyMonkey\cite{surveymonkey}, Typeform\cite{typeform}, Google Forms\cite{googleform} são plataformas de criação de formulários, mas apesar de servirem um propósito distinto ao da plataforma a desenvolver, partilham funcionalidades semelhantes com as que vão ser desenvolvidas e por isso mesmo senão analisadas nesse sentido. Será também exposto o funcionamento do \acrshort{tcg} para melhor entendimento de como podem ser implementadas as funcionalidades e a \acrshort{api} do lado da plataforma a desenvolver. A integração do \acrshort{tcg} neste projeto, foi uma escolha da empresa (i. e. cliente), e por isso não serão analisadas plataformas concorrentes do \acrshort{tcg} na medida em que esse trabalho é feito pela equipa do \acrshort{tcg} e apenas serão feitas as mudanças necessárias no mesmo para o desenvolvimento da \acrshort{api} de comunicação. Por ultimo serão analisadas as plataformas x x x que são algumas das serviços que podem concorrer directamente com o 10.quest (i. e. plataforma a desenvolver).
+As plataformas SurveyMonkey\cite{surveymonkey}, Typeform\cite{typeform}, Google Forms\cite{googleform} são plataformas de criação de formulários, mas apesar de servirem um propósito distinto ao da plataforma a desenvolver, partilham funcionalidades semelhantes com as que vão ser desenvolvidas e por isso mesmo senão analisadas nesse sentido. Será também exposto o funcionamento do \acrshort{tcg} para melhor entendimento de como podem ser implementadas as funcionalidades e a \acrshort{api} do lado da plataforma a desenvolver. A integração do \acrshort{tcg} neste projeto, foi uma escolha da empresa (i. e. cliente), e por isso não serão analisadas plataformas concorrentes do \acrshort{tcg} na medida em que esse trabalho é feito pela equipa do \acrshort{tcg} e apenas serão feitas as mudanças necessárias no mesmo para o desenvolvimento da \acrshort{api} de comunicação. Por ultimo serão analisadas as plataformas involve.me, Survey Anyplace e Interact que são algumas das serviços que podem concorrer directamente com o 10.quest (i. e. plataforma a desenvolver).
 
 Após a apresentação destas ferramentas será feita uma análise das vantagens e desvantagens de cada uma, assim como a comparação de funcionalidades.
 
@@ -118,68 +118,24 @@ O Interact é uma das grandes plataformas de criação de questionários e gera�
 \subsection{Discussão de funcionalidades}
 \label{comparacao}
 
+Nas tabelas \ref{tab:comparacao1} e \ref{tab:comparacao2} encontra-se a comparação entre as plataformas analisadas no Anexo \ref{a:ea}, baseada numa lista de funcionalidades.
+
+Como vimos na analise efetuada no Anexo \ref{a:ea}, em todas as plataformas/ferramentas é necessário criar uma conta para aceder a todas as funcionalidades, contudo apenas o involve.me e o 10.quest fornecem um plano gratuito que apenas dá acesso a algumas funcionalidades. As restantes plataformas apenas disponibilizam um plano trail de 6 e 15 dias e para aceder a todas as funcionalidades, tal como no involve.me e no 10.quest é necessário subscrever um plano pago.
+
+Todas as ferramentas analisadas disponibilizam uma serie de templates excepto o 10.quest que, para um futuro próximo não terá essa funcionalidade. Todas as ferramentas permitem a criação de questionário do zero e todas elas possuem ferramentas de personalização dos questionários.
+
+De entre todas as plataformas analisadas o 10.quest é a unica que permite importar conteúdo previamente feito. É de notar que as questões importadas para a plataforma através desta funcionalidade, tendo em conta que esse processo é feito através de uma spreadsheet, ficheiros de imagens ou vídeo terão de ser adicionados posteriormente.
+
+Cada plataforma tem a seu método de criar um fluxo lógico ou sistema de pontuações para conseguir calcular o resultado final de acordo com as respostas do utilizador final. O involve.me desmonstrou ser a ferramenta mais fraca visto que apenas se pode associar um resultado possível a uma resposta. O Survey Anyplace e o 10.quest demonstram ser as plataformas com maior capacidade de implementar estas funcionalidades visto que ambos implementa um sistema de pontuações e ambos conseguem criar um fluxo lógico. O Interact consegue associar resultados a respostas contudo todas as ligações valem o mesmo e por isso mesmo o calculo do resultado final não é tão preciso. 
+
+Depois de terminado um questionário é necessário pré-visualizar o mesmo para verificar se tudo ficou como desejado e tal como em todas as plataformas analisadas, o 10.quest terá essa funcionalidade. 
+
+Para partilhar os questionários, o Survey Anyplace fica um pouco atrás de todas as outras plataformas visto que não implementa a partilha dos questionários nas redes sociais, dentro da plataforma. Apesar disso o Survey Anyplace gera um link para ser partilhado, tal como em todas as plataformas restantes, e possibilita a integração do questionário noutro website. Por decisão do cliente o 10.quest não permite ser embebido noutros websites.  Outras maneiras de partilhar os questionários será através da inscrição em landing pages e os questionários serão automáticamente enviados para o contacto introduzido na inscrição da landing page. As unicas plataformas que implementam e automatizam este processo são o Interact e o 10.quest. 
+
+Na secção de recolha e analise de dados a 10.quest destaca-se. A 10.quest é unica plataforma que apresenta estatisticas globais que satisfazem as necessidades do utilizador. É também a unica plataforma que tem capacidade de associar as tags dos questionários a utilizadores finais e assim criar perfis de utilizador conseguindo segmentar leads qualificadas. À semelhaça da plataforma Interact o 10.quest mostra o túnel de conversão na analise de dados e gera um gráfico temporal de eventos que ajuda a perceber as tendências e as taxas de conversão ao longo do tempo.
+ 
 
 
-
-%STATS
-% Overall stats
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Nas Tabelas \ref{tab:comparacao1} e \ref{tab:comparacao} encontra-se a comparação entre as ferramentas analisadas nos secções \ref{surveyMonkey}, \ref{typeform} e \ref{googleform}, baseada numa lista de funcionalidades.
-
-Como vimos anteriormente em todas as plataformas/ferramentas é necessário criar uma conta para aceder a todas as funcionalides e em todas as plataformas analisadas é possível criar conta e iniciar sessão através de sistemas externos (\acrshort{api}). O Projeto a desenvolver segue um modelo \gls{b2b} e por isso mesmo não é de grande importancia implementar esse tipo de funcionalidades pelo que, devido à sua relevância, não foi referido na Tabela \ref{tab:comparacao}.
-
-O plataforma da Google fornece, no plano gratuito, todas as funcionalidades, ao contrário de todas as outras ferramentas analisadas anteriormente, que, tal como se passará com a plataforma a desenvolver, para se ter acesso a todas as funcionalidades, ou pacotes de funcionalidades, terá de ser paga uma subscrição. \textcolor{red}{DEMO? a definir com o cliente ou com quem trata dessas coisas}
-
-Todas as platafomas permitem a criação de formulários do zero, e a plataforma da 10.digital não é excepção. Tal como foi definido na estratégia de negócio, os conteúdos que serão lançados nas formações, questionários e concursos não serão da autoridade da 10.digital, a menos que estejamos incluídos em algum projeto relacionado. Dito isto facilmente se decidiu que a plataforma a desenvolver terá, tal como todas as outras ferramentas analisadas, a funcionalidade de poder adicionar conteúdo previamente feito de forma rápido (i. e. adicionar um ficheiro com todo o conteúdo estruturado). 
-
-
-Tal como foi referido no capítulo \ref{sec:introducao}, secção \ref{subsec:contexto}, o inbound é uma estratégia de marketing que se foca em criar razões para os publico alvo vir até nós através da criação de conteúdo interessante, útil, relevante etc... Para manter esta procura por parte dos clientes é necessário haver valor ao longo da jornada e ideialmente proporcionar uma boa experiência ao utilizador. Nesta medida a personalização das formações, questionários e concursos é muito importante tanto a nível de conteúdo como estético e funcional para que o utilizador se sinta valorizado. Para tornar isto possível, tal como o SurveyMonkey e o Typoform, a plataforma a desenvolver será a algumas funcionalidades que lhe permitirá criar vários tipos de pergunta e estéticamente melhorar a experiência do utilizador final.
-
-
-%Antes de enviar/partilhar um formulário é sempre importante pré-visualizar e testar. Neste aspecto a platforma a desenvolver não é diferente e em relação ao envio de formulários, ao contrário de todas as outras ferramentas será possível definir uma rotina, podendo enviar formulários todos os dias, semanas ou meses, a uma hora a definir.
-
-Por fim temos a analise e tratamento de dados que é um dos suportes daquilo que é o tripé do marketing digital. Como será de esperar a plataforma a desenvolver, tal como todas as restantes plataformas analisadas, não é um software dedicado à analise e tratamento de dados, na medida que terá limitações, contudo, ao contrário do Typeform e do Google Form, terá as funcionalidades necessárias para satisfazer as necessidades do utilizador. Analisando mais em detalhe a plataforma SurveyMonkey, que das ferramentas analisadadas, foi a única que apresentou capacidade de filtrar e segmentar os dados recolhidos, será necessário perceber que funcionalidades podemos melhorar e o que podemos acrescentar. Outro aspecto onde a plataforma da 10.digital se pode destacar será na possibilidade da criação de perfis de utilizador através da utilização de \textit{tags}. 
-\textcolor{red}{ FALTA FALAR NA PARTILHA DE DADOS}
-
-\textcolor{red}{
-10.digital dá para dar feedback a cada pergunta.
-falar que não analisei a concorrencia do tcg porque esse trabalho já foi feito pela equipa do TCG.
-}
-
-
-\begin{itemize}
-	\item[--] Vários tipos de perguntas
-	\item[--] Templates de formulários
-	\item[--] Personalização das perguntas do formulário
-	\item[--] Pré-visualização dos formulários
-	\item[--] Fluxo lógico
-	\item[--] Resultados em tempo real
-	\item[--] Analise de resultados
-\end{itemize}
-
-\textcolor{red}{TABELA POR ACTUALIZAR. ACTUALIZAR ASSIM QUE ACABAR A ANALISE DAS FERRAMENTAS DE CRIAÇÃO DE CONCURSOS ONLINE}
-	
-	
-	
 	
 	
 \renewcommand{\arraystretch}{2}
@@ -191,6 +147,8 @@ falar que não analisei a concorrencia do tcg porque esse trabalho já foi feito
 			\multicolumn{1}{c|}{} & \hspace{0.2cm}\begin{sideways}involve.me\end{sideways} & \hspace{0.4cm}\begin{sideways}Survey Anyplace\end{sideways} & \hspace{0.2cm}\begin{sideways}Interact\end{sideways} &\hspace{0.2cm}\begin{sideways} 10.quest\end{sideways}\\ \hline
 			
 			
+			Plataforma SaaS  &\cellcolor{green!80}  & \cellcolor{green!80} & \cellcolor{green!80} & \cellcolor{green!80}  \\ \hline
+			
 			Plano Gratuito & \cellcolor{yellow!80}   & \cellcolor{red!80}  & \cellcolor{red!80} & \cellcolor{yellow!80}  \\ \hline
 			
 			Criar questionário novo & \cellcolor{green!80}  & \cellcolor{green!80}  & \cellcolor{green!80} & \cellcolor{green!80} \\ \hline
@@ -200,10 +158,7 @@ falar que não analisei a concorrencia do tcg porque esse trabalho já foi feito
 			Adicionar conteúdo previamente feitos & \cellcolor{red!80}   & \cellcolor{red!80}  & \cellcolor{red!80} & \cellcolor{green!80}  \\ \hline
 			
 			Personalização do questionário & \cellcolor{green!80}  & \cellcolor{green!80}  & \cellcolor{green!80} & \cellcolor{green!80} \\ \hline
-			
-			Integração de sistemas externos & \cellcolor{green!80}  & \cellcolor{green!80} & \cellcolor{green!80} & \cellcolor{red!80}  \\ \hline
-			
-			Analise e segmentação de resultados & \cellcolor{green!80}  & \cellcolor{green!80}  & \cellcolor{green!80} & \cellcolor{green!80} \\ \hline
+		
 			
 			Criar perfis de utilizador & \cellcolor{red!80}   & \cellcolor{red!80}  & \cellcolor{red!80} & \cellcolor{green!80}  \\ \hline
 			
@@ -232,20 +187,28 @@ falar que não analisei a concorrencia do tcg porque esse trabalho já foi feito
 			\cline{2-5}
 			\multicolumn{1}{c|}{} & \hspace{0.2cm}\begin{sideways}involve.me\end{sideways} & \hspace{0.4cm}\begin{sideways}Survey Anyplace\end{sideways} & \hspace{0.2cm}\begin{sideways}Interact\end{sideways} &\hspace{0.2cm}\begin{sideways} 10.quest\end{sideways}\\ \hline
 			
+					
+			Pré-visualização dos questionários &\cellcolor{green!80}  & \cellcolor{green!80} & \cellcolor{green!80} & \cellcolor{green!80}  \\ \hline
 			
-			Partilha dos resultados &\cellcolor{green!80}  & \cellcolor{green!80} & \cellcolor{green!80} & \cellcolor{green!80}  \\ \hline
+			Exportar os resultados &\cellcolor{green!80}  & \cellcolor{green!80} & \cellcolor{green!80} & \cellcolor{green!80}  \\ \hline
 			
-			Exportar os resultados &  &  &  &  \\ \hline
+			Integração de sistemas externos & \cellcolor{green!80}  & \cellcolor{green!80} & \cellcolor{green!80} & \cellcolor{red!80}  \\ \hline
 			
-			Partilhar questionários nas redes sociais &  &  &  &  \\ \hline
+			Partilhar questionários nas redes sociais &\cellcolor{green!80}  & \cellcolor{yellow!80} & \cellcolor{green!80} & \cellcolor{green!80}  \\ \hline
 			
-			\textit{Landing Page} &  &  &  &  \\ \hline
+			Estado dos questionários &\cellcolor{green!80}  & \cellcolor{red!80} & \cellcolor{red!80} & \cellcolor{green!80}  \\ \hline
 			
-			Email Marketing &  &  &  &  \\ \hline
+			\textit{Landing Page}  &\cellcolor{red!80}  & \cellcolor{red!80} & \cellcolor{green!80} & \cellcolor{green!80}  \\ \hline
 			
-			Fluxo Lógico &  &  &  &  \\ \hline
+			Email Marketing &\cellcolor{red!80}  & \cellcolor{green!80} & \cellcolor{green!80} & \cellcolor{green!80}  \\ \hline
 			
-			Design responsivo para multiplos dispositivos &  &  &  &  \\ \hline
+			Fluxo Lógico/Sistema de pontuação &\cellcolor{yellow!80}  & \cellcolor{green!80} & \cellcolor{green!80} & \cellcolor{green!80}  \\ \hline
+			
+			Design responsivo para multiplos dispositivos & \cellcolor{green!80}  & \cellcolor{green!80} & \cellcolor{green!80} & \cellcolor{green!80}  \\ \hline
+			
+			Analise e segmentação de resultados & \cellcolor{green!80}  & \cellcolor{green!80}  & \cellcolor{green!80} & \cellcolor{green!80} \\ \hline
+			
+			Estatísticas gerais & \cellcolor{yellow!80}  & \cellcolor{red!80}  & \cellcolor{red!80} & \cellcolor{green!80} \\ \hline
 			
 			Suporte dedicado & \cellcolor{green!80}  & \cellcolor{green!80}  & \cellcolor{green!80} & \cellcolor{green!80} \\ \hline
 			
@@ -261,55 +224,10 @@ falar que não analisei a concorrencia do tcg porque esse trabalho já foi feito
 	\hspace{1.2cm}     \textcolor{green}{$\blacksquare$} Funcionalidade totalmente implementada 
 	\begin{center}
 		\caption{Tabela de comparações de funcionalidades}
-		\label{tab:comparacao1}
+		\label{tab:comparacao2}
 	\end{center}
 \end{table}
 
-
-\newpage
-		
-
-		\renewcommand{\arraystretch}{2.5}
-		\setlength\arrayrulewidth{1.5pt}
-	\begin{table}[!ht]  
-		\begin{center}
-		\begin{tabular}{|p{4cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|}
-			\cline{2-5}
-			\multicolumn{1}{c|}{} & \hspace{0.6cm}\begin{sideways}SurveyMonkey.\end{sideways} & \hspace{0.6cm}\begin{sideways}Typeform\end{sideways} & \hspace{0.6cm}\begin{sideways}Google Form\end{sideways} &\hspace{0.6cm}\begin{sideways} 10.digital\end{sideways}\\ \hline
-			
-		
-				\textit{Drag and Drop} & \cellcolor{green!80}   & \cellcolor{red!80}  & \cellcolor{red!80} & \cellcolor{red!80} \\ \hline
-				
-			% Recomendações de perguntas& \cellcolor{green!80}  & \cellcolor{green!80}  & \cellcolor{blue!25} & \cellcolor{blue!25}  \\ \hline
-			Personalização do formulário& \cellcolor{green!80}    & \cellcolor{green!80}   & \cellcolor{yellow!80} & \cellcolor{green!80}   \\ \hline
-			
-			 Pré-visualização do formulário& \cellcolor{green!80}  & \cellcolor{green!80}  & \cellcolor{green!80} & \cellcolor{green!80} \\ \hline
-			 
-			 	Deixar \textit{feedback} sobre as perguntas do formulário& \cellcolor{red!80}    & \cellcolor{red!80}   & \cellcolor{red!80} & \cellcolor{green!80}   \\ \hline
-			
-			 Integração de sistemas externos& \cellcolor{red!80}   & \cellcolor{green!80} & \cellcolor{yellow!80}  & ????  \\ \hline
-			
-			Envio do formulário de forma periódica & \cellcolor{red!80}   & \cellcolor{red!80}  & \cellcolor{red!80} & \cellcolor{green!80} \\ \hline
-			
-			 Analise de resultados & \cellcolor{green!80}   & \cellcolor{yellow!80} & \cellcolor{yellow!80} & \cellcolor{green!80}  \\ \hline
-			
-			Partilha dos resultados & \cellcolor{green!80}   & \cellcolor{green!80}   & \cellcolor{green!80}  & ???? \\ \hline
-			
-			Exportar os resultados & \cellcolor{green!80}   & \cellcolor{green!80}   & \cellcolor{green!80}  & \cellcolor{green!80}  \\ \hline
-			
-			
-		\end{tabular}
-	\end{center}
-\hspace{1.2cm}	\textcolor{red}{$\blacksquare$} Funcionalidade não implementada
-
-\hspace{1.2cm}     \textcolor{yellow}{$\blacksquare$} Funcionalidade parcialmente implementada
-
-\hspace{1.2cm}     \textcolor{green}{$\blacksquare$} Funcionalidade totalmente implementada 
-\begin{center}
-	\caption{Tabela de comparações de funcionalidades}
-	\label{tab:comparacao}
-\end{center}
-	\end{table}
 
 
 %-------------------------------------------------------------------------------------------------

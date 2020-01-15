@@ -97,7 +97,7 @@
 		\subitem 2. O 10.quest  \underline{lista todos os questionários do utilizador}.
 	\item[--]  \textbf{Fluxo de Excepção:} 
 		\subitem 2a. Não existe nenhum questionário associado à conta do utilizador.
-		\subitem 2a1. o 10.quest notifica o utilizador que não existem questionários para serem listados.
+		\subitem 2a1. o 10.quest informa o utilizador que não existem questionários para serem listados.
 	\item[--]  \textbf{Observações:} A forma como a platadorma 10.quest lista os questionários está descrito no caso de uso \underline{RF15 - Mostrar lista de questionários do utilizador}.
 \end{itemize}
 \newpage
@@ -133,6 +133,8 @@
 	\item[--]  \textbf{Estimulo:}  
 		\subitem RF06 - Criar questionário.
 		\subitem RF16 - Editar questionário.
+		\subitem RF21 - Definir Periocidade.
+		\subitem RF28 - Editar formação.
 	\item[--]  \textbf{Fluxo Principal:} 
 		\subitem 1. O utilizador seleciona a secção do Modelo de Notificações.
 		\subitem 2. O utilizador efectua as \underline{operações desejadas}.
@@ -316,7 +318,7 @@
 		\subitem 2. O utilizador pode selecionar um questionário e efectuar as \underline{operações desejadas}
 	\item[--]  \textbf{Fluxo de Excepção:} 
 		\subitem 1a. O utilizador não tem nenhum questionário associado à conta.
-		\subitem 1a1. O 10.quest notifica o utilizador que não existe nenhum questionário associado à conta do mesmo.
+		\subitem 1a1. O 10.quest informa o utilizador que não existe nenhum questionário associado à conta do mesmo.
 	\item[--]  \textbf{Observações:} Depois de listados todos os questionários, o utilizador pode escolher um questionário e efectuar as \underline{operações desejadas}:
 		\subitem Filtrar os questionários por nome, data ou estado, definido na Secção \ref{d:concursos}.
 		\subitem Apagar questionário.
@@ -373,9 +375,8 @@
 	\subitem 2. O 10.quest  \underline{lista todos as formações associadas à conta do utilizador}.
 	\item[--]  \textbf{Fluxo de Excepção:} 
 	\subitem 2a. Não existe nenhuma formação associada à conta do utilizador.
-	\subitem 2a1. o 10.quest notifica o utilizador que não existem formações para serem listados.
+	\subitem 2a1. o 10.quest informa o utilizador que não existem formações para serem listados.
 	\item[--]  \textbf{Observações:} A forma como a platadorma 10.quest lista as formações está descrito no caso de uso \underline{RF15 - Mostrar lista de questionários do utilizador}.
-\end{itemize}
 \end{itemize}
 \newpage
 
@@ -395,81 +396,98 @@
 
 \subsection{RF21 - Definir periocidade}
 \begin{itemize}
-	\item[--] \textbf{ID:} 
-	\item[--]  \textbf{Ator:} 
-	\item[--]  \textbf{Prioridade:} 
-	\item[--]  \textbf{Descrição:} 
-	\item[--]  \textbf{Pré-condições:} 
+	\item[--] \textbf{ID:} 21
+	\item[--]  \textbf{Ator:} Utilizador.
+	\item[--]  \textbf{Prioridade:} \textit{Must Have}
+	\item[--]  \textbf{Descrição:} Definir periocidade de uma formação (i. e. de quanto em quanto tempo a formação é enviada) e a duração da mesma.
+	\item[--]  \textbf{Pré-condições:} O utilizador necessita de estar autenticado na plataforma 10.quest.
 	\item[--]  \textbf{Estimulo:}
+		\subitem RF20 - Criar Formação.
+		\subitem RF28 - Editar formação.
 	\item[--]  \textbf{Fluxo Principal:} 
-	\subitem
-	\subitem
-	\subitem
-	\subitem
+		\subitem 1. O utilizador introduz o nome da formação
+		\subitem 2. O utilizador seleciona a data de inicio da formação
+		\subitem 3. O utilizador seleciona a data de fim da formação
+		\subitem 4. O utilizador seleciona os dias da semana em que a formação é enviada para os utilizadores finais.
+		\subitem 5. O utilizador seleciona a hora do dia em que a formação é enviada para os utilizadores finais.
+		\subitem 6. O utilizador seleciona a duração da formação.
+		\subitem 7. O 10.quest envia a informação para o TCG para que a informação seja criada a formação.
 	\item[--]  \textbf{Fluxo de Excepção:} 
-	\subitem
-	\subitem
-	\subitem
-	\subitem
-	\item[--]  \textbf{Observações:} 
+		\subitem 7a. O 10.quest não consegue enviar a informação para o TCG devido a uma falha na conexão.
+		\subitem 7a1. O 10.quest notifica o utilizador que ocorreu uma falha na conexão.
+		\subitem 7b. O serviço do TCG (API) está indisponível.
+		\subitem 7b1. O 10.quest notifica o utilizador que o serviço do TCG está temporariamente indisponível. 
+	\item[--]  \textbf{Observações:} A duração de uma formação tem de ser igual ou menor ao menor intervalo de dias da semana selecionados para enviar a formação.
 \end{itemize}
 \newpage
 
 \subsection{RF22 - Registo de actividade}
 \begin{itemize}
-	\item[--] \textbf{ID:} 
-	\item[--]  \textbf{Ator:} 
-	\item[--]  \textbf{Prioridade:} 
-	\item[--]  \textbf{Descrição:} 
-	\item[--]  \textbf{Pré-condições:} 
+	\item[--] \textbf{ID:} 22
+	\item[--]  \textbf{Ator:} Utilizador.
+	\item[--]  \textbf{Prioridade:} \textit{Should Have}.
+	\item[--]  \textbf{Descrição:} Histórico de participação nas formações.
+	\item[--]  \textbf{Pré-condições:} O utilizador necessita de estar autenticado na plataforma 10.quest.
 	\item[--]  \textbf{Estimulo:}
+		\subitem RF21 - Definir Periocidade.
+		\subitem RF28 - Editar formação.
 	\item[--]  \textbf{Fluxo Principal:} 
-	\subitem
-	\subitem
-	\subitem
-	\subitem
+		\subitem 1. O utilizador carrega no botão de registo de atividade.
+		\subitem 2. O 10.quest redireciona o utilizador, numa nova janela, para uma página com o registo de actividade.
 	\item[--]  \textbf{Fluxo de Excepção:} 
-	\subitem
-	\subitem
-	\subitem
-	\subitem
-	\item[--]  \textbf{Observações:} 
+		\subitem 2a. O 10.quest não consegue efetuar o pedido à API do TCG devido a uma falha na conexão.
+		\subitem 2a1. O 10.quest notifica o utilizador que ocorreu uma falha na conexão.
+		\subitem 2b. O serviço do TCG (API) está indisponível.
+		\subitem 2b1. O 10.quest notifica o utilizador que o serviço do TCG está temporariamente indisponível. 
+	\item[--]  \textbf{Observações:} O registo de atividade apresenta, por cada entrada:
+		\subitem ID do registo.
+		\subitem Nome do utilizador.
+		\subitem Tag(s) do utilizador.
+		\subitem Data e hora do envio.
+		\subitem Número de questões.
+		\subitem URL.
+		\subitem Estado (i. e. se foi feito ou não).
+		\subitem Detalhes.
 \end{itemize}
 \newpage
 
 \subsection{RF23 - Enviar Notificação}
 \begin{itemize}
-	\item[--] \textbf{ID:} 
-	\item[--]  \textbf{Ator:} 
-	\item[--]  \textbf{Prioridade:} 
-	\item[--]  \textbf{Descrição:} 
-	\item[--]  \textbf{Pré-condições:} 
+	\item[--] \textbf{ID:} 23
+	\item[--]  \textbf{Ator:} Utilizador.
+	\item[--]  \textbf{Prioridade:} \textit{Must Have}.
+	\item[--]  \textbf{Descrição:} Enviar Email para todos os utilizadores finais (i. e. participantes) associados à formação.
+	\item[--]  \textbf{Pré-condições:} O utilizador necessita de estar autenticado na plataforma 10.quest.
 	\item[--]  \textbf{Estimulo:}
+		\subitem RF21 - Definir Periocidade.
+		\subitem RF28 - Editar formação.
 	\item[--]  \textbf{Fluxo Principal:} 
-	\subitem
-	\subitem
-	\subitem
-	\subitem
+		\subitem 1. O utilizador carrega no botão para enviar notificação.
+		\subitem 2. O 10.quest efetua pedido ao TCG para enviar as notificações.
 	\item[--]  \textbf{Fluxo de Excepção:} 
-	\subitem
-	\subitem
-	\subitem
-	\subitem
-	\item[--]  \textbf{Observações:} 
+		\subitem 2a. O 10.quest não consegue efetuar o pedido à API do TCG devido a uma falha na conexão.
+		\subitem 2a1. O 10.quest notifica o utilizador que ocorreu uma falha na conexão.
+		\subitem 2b. O serviço do TCG (API) está indisponível.
+		\subitem 2b1. O 10.quest notifica o utilizador que o serviço do TCG está temporariamente indisponível. 
 \end{itemize}
 \newpage
 
 \subsection{RF24 - Definições da formação}
 \begin{itemize}
-	\item[--] \textbf{ID:} 
-	\item[--]  \textbf{Ator:} 
-	\item[--]  \textbf{Prioridade:} 
-	\item[--]  \textbf{Descrição:} 
-	\item[--]  \textbf{Pré-condições:} 
+	\item[--] \textbf{ID:} 24
+	\item[--]  \textbf{Ator:} Utilizador.
+	\item[--]  \textbf{Prioridade:} \textit{Must Have}.
+	\item[--]  \textbf{Descrição:} Definir utilizadores finais e perguntas associadas à formação.
+	\item[--]  \textbf{Pré-condições:} O utilizador necessita de estar autenticado na plataforma 10.quest e a formação deve estar criada.
 	\item[--]  \textbf{Estimulo:}
+	\subitem RF21 - Definir Periocidade.
+	\subitem RF28 - Editar formação.
 	\item[--]  \textbf{Fluxo Principal:} 
-	\item[--]  \textbf{Fluso de Excepção:} 
-	\item[--]  \textbf{Observações:} 
+	\subitem 1a. O utilizador adiciona uma nova entrada de perguntas.
+	\subitem 1. O utilizador efectua as \underline{operações desejadas} relativamente às entradas de perguntas.
+	\item[--]  \textbf{Observações:} As \underline{operações desejadas} que o utilizador pode efetuar nas entradas são as seguintes:
+		\subitem Adicionar utilizadores finais e perguntas (RF25 - Adicionar entrada de perguntas).
+		\subitem Gerir utilizadores finais e perguntas (RF26 - Gerir entradas de perguntas).
 \end{itemize}
 \newpage
 
@@ -482,7 +500,15 @@
 	\item[--]  \textbf{Pré-condições:} 
 	\item[--]  \textbf{Estimulo:}
 	\item[--]  \textbf{Fluxo Principal:} 
-	\item[--]  \textbf{Fluso de Excepção:} 
+	\subitem
+	\subitem
+	\subitem
+	\subitem
+	\item[--]  \textbf{Fluxo de Excepção:} 
+	\subitem
+	\subitem
+	\subitem
+	\subitem
 	\item[--]  \textbf{Observações:} 
 \end{itemize}
 \newpage
@@ -496,7 +522,15 @@
 	\item[--]  \textbf{Pré-condições:} 
 	\item[--]  \textbf{Estimulo:}
 	\item[--]  \textbf{Fluxo Principal:} 
-	\item[--]  \textbf{Fluso de Excepção:} 
+	\subitem
+	\subitem
+	\subitem
+	\subitem
+	\item[--]  \textbf{Fluxo de Excepção:} 
+	\subitem
+	\subitem
+	\subitem
+	\subitem
 	\item[--]  \textbf{Observações:} 
 \end{itemize}
 \newpage
@@ -510,7 +544,15 @@
 	\item[--]  \textbf{Pré-condições:} 
 	\item[--]  \textbf{Estimulo:}
 	\item[--]  \textbf{Fluxo Principal:} 
-	\item[--]  \textbf{Fluso de Excepção:} 
+	\subitem
+	\subitem
+	\subitem
+	\subitem
+	\item[--]  \textbf{Fluxo de Excepção:} 
+	\subitem
+	\subitem
+	\subitem
+	\subitem
 	\item[--]  \textbf{Observações:} 
 \end{itemize}
 \newpage
@@ -524,7 +566,15 @@
 	\item[--]  \textbf{Pré-condições:} 
 	\item[--]  \textbf{Estimulo:}
 	\item[--]  \textbf{Fluxo Principal:} 
-	\item[--]  \textbf{Fluso de Excepção:} 
+	\subitem
+	\subitem
+	\subitem
+	\subitem
+	\item[--]  \textbf{Fluxo de Excepção:} 
+	\subitem
+	\subitem
+	\subitem
+	\subitem
 	\item[--]  \textbf{Observações:} 
 \end{itemize}
 \newpage
@@ -538,22 +588,38 @@
 	\item[--]  \textbf{Pré-condições:} 
 	\item[--]  \textbf{Estimulo:}
 	\item[--]  \textbf{Fluxo Principal:} 
-	\item[--]  \textbf{Fluso de Excepção:} 
+	\subitem
+	\subitem
+	\subitem
+	\subitem
+	\item[--]  \textbf{Fluxo de Excepção:} 
+	\subitem
+	\subitem
+	\subitem
+	\subitem
 	\item[--]  \textbf{Observações:} 
 \end{itemize}
 \newpage
 
 \subsection{RF30 - Notificar utilizadores finais TCG}
 \begin{itemize}
-\item[--] \textbf{ID:} 
-\item[--]  \textbf{Ator:} 
-\item[--]  \textbf{Prioridade:} 
-\item[--]  \textbf{Descrição:} 
-\item[--]  \textbf{Pré-condições:} 
-\item[--]  \textbf{Estimulo:}
-\item[--]  \textbf{Fluxo Principal:} 
-\item[--]  \textbf{Fluso de Excepção:} 
-\item[--]  \textbf{Observações:} 
+	\item[--] \textbf{ID:} 
+	\item[--]  \textbf{Ator:} 
+	\item[--]  \textbf{Prioridade:} 
+	\item[--]  \textbf{Descrição:} 
+	\item[--]  \textbf{Pré-condições:} 
+	\item[--]  \textbf{Estimulo:}
+	\item[--]  \textbf{Fluxo Principal:} 
+	\subitem
+	\subitem
+	\subitem
+	\subitem
+	\item[--]  \textbf{Fluxo de Excepção:} 
+	\subitem
+	\subitem
+	\subitem
+	\subitem
+	\item[--]  \textbf{Observações:} 
 \end{itemize}
 \newpage
 
@@ -566,7 +632,15 @@
 	\item[--]  \textbf{Pré-condições:} 
 	\item[--]  \textbf{Estimulo:}
 	\item[--]  \textbf{Fluxo Principal:} 
-	\item[--]  \textbf{Fluso de Excepção:} 
+	\subitem
+	\subitem
+	\subitem
+	\subitem
+	\item[--]  \textbf{Fluxo de Excepção:} 
+	\subitem
+	\subitem
+	\subitem
+	\subitem
 	\item[--]  \textbf{Observações:} 
 \end{itemize}
 \newpage
@@ -580,7 +654,15 @@
 	\item[--]  \textbf{Pré-condições:} 
 	\item[--]  \textbf{Estimulo:}
 	\item[--]  \textbf{Fluxo Principal:} 
-	\item[--]  \textbf{Fluso de Excepção:} 
+	\subitem
+	\subitem
+	\subitem
+	\subitem
+	\item[--]  \textbf{Fluxo de Excepção:} 
+	\subitem
+	\subitem
+	\subitem
+	\subitem
 	\item[--]  \textbf{Observações:} 
 \end{itemize}
 \newpage
@@ -594,7 +676,15 @@
 	\item[--]  \textbf{Pré-condições:} 
 	\item[--]  \textbf{Estimulo:}
 	\item[--]  \textbf{Fluxo Principal:} 
-	\item[--]  \textbf{Fluso de Excepção:} 
+	\subitem
+	\subitem
+	\subitem
+	\subitem
+	\item[--]  \textbf{Fluxo de Excepção:} 
+	\subitem
+	\subitem
+	\subitem
+	\subitem
 	\item[--]  \textbf{Observações:} 
 \end{itemize}
 \newpage
@@ -608,7 +698,15 @@
 	\item[--]  \textbf{Pré-condições:} 
 	\item[--]  \textbf{Estimulo:}
 	\item[--]  \textbf{Fluxo Principal:} 
-	\item[--]  \textbf{Fluso de Excepção:} 
+	\subitem
+	\subitem
+	\subitem
+	\subitem
+	\item[--]  \textbf{Fluxo de Excepção:} 
+	\subitem
+	\subitem
+	\subitem
+	\subitem
 	\item[--]  \textbf{Observações:} 
 \end{itemize}
 \newpage
@@ -622,7 +720,15 @@
 	\item[--]  \textbf{Pré-condições:} 
 	\item[--]  \textbf{Estimulo:}
 	\item[--]  \textbf{Fluxo Principal:} 
-	\item[--]  \textbf{Fluso de Excepção:} 
+	\subitem
+	\subitem
+	\subitem
+	\subitem
+	\item[--]  \textbf{Fluxo de Excepção:} 
+	\subitem
+	\subitem
+	\subitem
+	\subitem
 	\item[--]  \textbf{Observações:} 
 \end{itemize}
 \newpage
@@ -636,7 +742,15 @@
 	\item[--]  \textbf{Pré-condições:} 
 	\item[--]  \textbf{Estimulo:}
 	\item[--]  \textbf{Fluxo Principal:} 
-	\item[--]  \textbf{Fluso de Excepção:} 
+	\subitem
+	\subitem
+	\subitem
+	\subitem
+	\item[--]  \textbf{Fluxo de Excepção:} 
+	\subitem
+	\subitem
+	\subitem
+	\subitem
 	\item[--]  \textbf{Observações:} 
 \end{itemize}
 \newpage
@@ -650,7 +764,15 @@
 	\item[--]  \textbf{Pré-condições:} 
 	\item[--]  \textbf{Estimulo:}
 	\item[--]  \textbf{Fluxo Principal:} 
-	\item[--]  \textbf{Fluso de Excepção:} 
+	\subitem
+	\subitem
+	\subitem
+	\subitem
+	\item[--]  \textbf{Fluxo de Excepção:} 
+	\subitem
+	\subitem
+	\subitem
+	\subitem
 	\item[--]  \textbf{Observações:} 
 \end{itemize}
 \newpage
@@ -664,7 +786,15 @@
 	\item[--]  \textbf{Pré-condições:} 
 	\item[--]  \textbf{Estimulo:}
 	\item[--]  \textbf{Fluxo Principal:} 
-	\item[--]  \textbf{Fluso de Excepção:} 
+	\subitem
+	\subitem
+	\subitem
+	\subitem
+	\item[--]  \textbf{Fluxo de Excepção:} 
+	\subitem
+	\subitem
+	\subitem
+	\subitem
 	\item[--]  \textbf{Observações:} 
 \end{itemize}
 \newpage
@@ -678,7 +808,15 @@
 	\item[--]  \textbf{Pré-condições:} 
 	\item[--]  \textbf{Estimulo:}
 	\item[--]  \textbf{Fluxo Principal:} 
-	\item[--]  \textbf{Fluso de Excepção:} 
+	\subitem
+	\subitem
+	\subitem
+	\subitem
+	\item[--]  \textbf{Fluxo de Excepção:} 
+	\subitem
+	\subitem
+	\subitem
+	\subitem
 	\item[--]  \textbf{Observações:} 
 \end{itemize}
 \newpage
@@ -692,7 +830,15 @@
 	\item[--]  \textbf{Pré-condições:} 
 	\item[--]  \textbf{Estimulo:}
 	\item[--]  \textbf{Fluxo Principal:} 
-	\item[--]  \textbf{Fluso de Excepção:} 
+	\subitem
+	\subitem
+	\subitem
+	\subitem
+	\item[--]  \textbf{Fluxo de Excepção:} 
+	\subitem
+	\subitem
+	\subitem
+	\subitem
 	\item[--]  \textbf{Observações:} 
 \end{itemize}
 \newpage
@@ -706,7 +852,15 @@
 	\item[--]  \textbf{Pré-condições:} 
 	\item[--]  \textbf{Estimulo:}
 	\item[--]  \textbf{Fluxo Principal:} 
-	\item[--]  \textbf{Fluso de Excepção:} 
+	\subitem
+	\subitem
+	\subitem
+	\subitem
+	\item[--]  \textbf{Fluxo de Excepção:} 
+	\subitem
+	\subitem
+	\subitem
+	\subitem
 	\item[--]  \textbf{Observações:} 
 \end{itemize}
 \newpage
@@ -720,7 +874,15 @@
 	\item[--]  \textbf{Pré-condições:} 
 	\item[--]  \textbf{Estimulo:}
 	\item[--]  \textbf{Fluxo Principal:} 
-	\item[--]  \textbf{Fluso de Excepção:} 
+	\subitem
+	\subitem
+	\subitem
+	\subitem
+	\item[--]  \textbf{Fluxo de Excepção:} 
+	\subitem
+	\subitem
+	\subitem
+	\subitem
 	\item[--]  \textbf{Observações:} 
 \end{itemize}
 \newpage
@@ -734,7 +896,15 @@
 	\item[--]  \textbf{Pré-condições:} 
 	\item[--]  \textbf{Estimulo:}
 	\item[--]  \textbf{Fluxo Principal:} 
-	\item[--]  \textbf{Fluso de Excepção:} 
+	\subitem
+	\subitem
+	\subitem
+	\subitem
+	\item[--]  \textbf{Fluxo de Excepção:} 
+	\subitem
+	\subitem
+	\subitem
+	\subitem
 	\item[--]  \textbf{Observações:} 
 \end{itemize}
 \newpage
@@ -748,7 +918,15 @@
 	\item[--]  \textbf{Pré-condições:} 
 	\item[--]  \textbf{Estimulo:}
 	\item[--]  \textbf{Fluxo Principal:} 
-	\item[--]  \textbf{Fluso de Excepção:} 
+	\subitem
+	\subitem
+	\subitem
+	\subitem
+	\item[--]  \textbf{Fluxo de Excepção:} 
+	\subitem
+	\subitem
+	\subitem
+	\subitem
 	\item[--]  \textbf{Observações:} 
 \end{itemize}
 \newpage
@@ -762,7 +940,15 @@
 	\item[--]  \textbf{Pré-condições:} 
 	\item[--]  \textbf{Estimulo:}
 	\item[--]  \textbf{Fluxo Principal:} 
-	\item[--]  \textbf{Fluso de Excepção:} 
+	\subitem
+	\subitem
+	\subitem
+	\subitem
+	\item[--]  \textbf{Fluxo de Excepção:} 
+	\subitem
+	\subitem
+	\subitem
+	\subitem
 	\item[--]  \textbf{Observações:} 
 \end{itemize}
 \newpage
@@ -776,7 +962,15 @@
 	\item[--]  \textbf{Pré-condições:} 
 	\item[--]  \textbf{Estimulo:}
 	\item[--]  \textbf{Fluxo Principal:} 
-	\item[--]  \textbf{Fluso de Excepção:} 
+	\subitem
+	\subitem
+	\subitem
+	\subitem
+	\item[--]  \textbf{Fluxo de Excepção:} 
+	\subitem
+	\subitem
+	\subitem
+	\subitem
 	\item[--]  \textbf{Observações:} 
 \end{itemize}
 \newpage
@@ -790,7 +984,15 @@
 	\item[--]  \textbf{Pré-condições:} 
 	\item[--]  \textbf{Estimulo:}
 	\item[--]  \textbf{Fluxo Principal:} 
-	\item[--]  \textbf{Fluso de Excepção:} 
+	\subitem
+	\subitem
+	\subitem
+	\subitem
+	\item[--]  \textbf{Fluxo de Excepção:} 
+	\subitem
+	\subitem
+	\subitem
+	\subitem
 	\item[--]  \textbf{Observações:} 
 \end{itemize}
 \newpage
@@ -804,7 +1006,15 @@
 	\item[--]  \textbf{Pré-condições:} 
 	\item[--]  \textbf{Estimulo:}
 	\item[--]  \textbf{Fluxo Principal:} 
-	\item[--]  \textbf{Fluso de Excepção:} 
+	\subitem
+	\subitem
+	\subitem
+	\subitem
+	\item[--]  \textbf{Fluxo de Excepção:} 
+	\subitem
+	\subitem
+	\subitem
+	\subitem
 	\item[--]  \textbf{Observações:} 
 \end{itemize}
 \newpage
@@ -818,8 +1028,16 @@
 	\item[--]  \textbf{Pré-condições:} 
 	\item[--]  \textbf{Estimulo:}
 	\item[--]  \textbf{Fluxo Principal:} 
-	\item[--]  \textbf{Fluso de Excepção:} 
-	\item[--]  \textbf{Observações:} 
+	\subitem
+	\subitem
+	\subitem
+	\subitem
+	\item[--]  \textbf{Fluxo de Excepção:} 
+	\subitem
+	\subitem
+	\subitem
+	\subitem
+	\item[--]  \textbf{Observações:}  
 \end{itemize}
 \newpage
 
@@ -832,7 +1050,15 @@
 	\item[--]  \textbf{Pré-condições:} 
 	\item[--]  \textbf{Estimulo:}
 	\item[--]  \textbf{Fluxo Principal:} 
-	\item[--]  \textbf{Fluso de Excepção:} 
+	\subitem
+	\subitem
+	\subitem
+	\subitem
+	\item[--]  \textbf{Fluxo de Excepção:} 
+	\subitem
+	\subitem
+	\subitem
+	\subitem
 	\item[--]  \textbf{Observações:} 
 \end{itemize}
 \newpage
@@ -846,7 +1072,15 @@
 	\item[--]  \textbf{Pré-condições:} 
 	\item[--]  \textbf{Estimulo:}
 	\item[--]  \textbf{Fluxo Principal:} 
-	\item[--]  \textbf{Fluso de Excepção:} 
+	\subitem
+	\subitem
+	\subitem
+	\subitem
+	\item[--]  \textbf{Fluxo de Excepção:} 
+	\subitem
+	\subitem
+	\subitem
+	\subitem
 	\item[--]  \textbf{Observações:} 
 \end{itemize}
 \newpage
@@ -860,7 +1094,15 @@
 	\item[--]  \textbf{Pré-condições:} 
 	\item[--]  \textbf{Estimulo:}
 	\item[--]  \textbf{Fluxo Principal:} 
-	\item[--]  \textbf{Fluso de Excepção:} 
+	\subitem
+	\subitem
+	\subitem
+	\subitem
+	\item[--]  \textbf{Fluxo de Excepção:} 
+	\subitem
+	\subitem
+	\subitem
+	\subitem
 	\item[--]  \textbf{Observações:} 
 \end{itemize}
 \newpage
@@ -874,7 +1116,15 @@
 	\item[--]  \textbf{Pré-condições:} 
 	\item[--]  \textbf{Estimulo:}
 	\item[--]  \textbf{Fluxo Principal:} 
-	\item[--]  \textbf{Fluso de Excepção:} 
+	\subitem
+	\subitem
+	\subitem
+	\subitem
+	\item[--]  \textbf{Fluxo de Excepção:} 
+	\subitem
+	\subitem
+	\subitem
+	\subitem
 	\item[--]  \textbf{Observações:} 
 \end{itemize}
 \newpage
@@ -888,7 +1138,15 @@
 	\item[--]  \textbf{Pré-condições:} 
 	\item[--]  \textbf{Estimulo:}
 	\item[--]  \textbf{Fluxo Principal:} 
-	\item[--]  \textbf{Fluso de Excepção:} 
+	\subitem
+	\subitem
+	\subitem
+	\subitem
+	\item[--]  \textbf{Fluxo de Excepção:} 
+	\subitem
+	\subitem
+	\subitem
+	\subitem
 	\item[--]  \textbf{Observações:} 
 \end{itemize}
 \newpage
@@ -902,7 +1160,15 @@
 	\item[--]  \textbf{Pré-condições:} 
 	\item[--]  \textbf{Estimulo:}
 	\item[--]  \textbf{Fluxo Principal:} 
-	\item[--]  \textbf{Fluso de Excepção:} 
+	\subitem
+	\subitem
+	\subitem
+	\subitem
+	\item[--]  \textbf{Fluxo de Excepção:} 
+	\subitem
+	\subitem
+	\subitem
+	\subitem
 	\item[--]  \textbf{Observações:} 
 \end{itemize}
 \newpage
@@ -916,7 +1182,15 @@
 	\item[--]  \textbf{Pré-condições:} 
 	\item[--]  \textbf{Estimulo:}
 	\item[--]  \textbf{Fluxo Principal:} 
-	\item[--]  \textbf{Fluso de Excepção:} 
+	\subitem
+	\subitem
+	\subitem
+	\subitem
+	\item[--]  \textbf{Fluxo de Excepção:} 
+	\subitem
+	\subitem
+	\subitem
+	\subitem
 	\item[--]  \textbf{Observações:} 
 \end{itemize}
 \newpage
@@ -930,7 +1204,15 @@
 	\item[--]  \textbf{Pré-condições:} 
 	\item[--]  \textbf{Estimulo:}
 	\item[--]  \textbf{Fluxo Principal:} 
-	\item[--]  \textbf{Fluso de Excepção:} 
+	\subitem
+	\subitem
+	\subitem
+	\subitem
+	\item[--]  \textbf{Fluxo de Excepção:} 
+	\subitem
+	\subitem
+	\subitem
+	\subitem
 	\item[--]  \textbf{Observações:} 
 \end{itemize}
 \newpage
