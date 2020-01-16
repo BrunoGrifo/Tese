@@ -1,9 +1,9 @@
 \chapter{Especificação de Requisitos}
 \label{sec:requisitos}
 
-O processo de especificação de requisitos é crucial para o desenvilvimento de um projeto de \textit{software}, devendo dar atenção tanto aos requisitos funcionais como aos requisitos não funcionais.
+O processo de especificação de requisitos é crucial para o desenvolvimento de um projeto de \textit{software}, devendo dar atenção tanto aos requisitos funcionais como aos requisitos não funcionais.
 
-Este capítulo apresenta os requisitos que foram identificados e analisados para a plataforma e define um conjunto de diretrizes que devem ser seguidas durante o desenvolvimento do projeto. Estes requisitios foram definidos e identificados com base em reuniões com o cliente e na analise de soluções, actualmente no mercado, que partilham funcionalidades semelhantes com a plataforma que vai ser desenvolvida
+Este capítulo apresenta os requisitos que foram identificados e analisados para a plataforma e define um conjunto de diretrizes que devem ser seguidas durante o desenvolvimento do projeto. Estes requisitos foram definidos e identificados com base em reuniões com o cliente e na análise de soluções, actualmente no mercado, que partilham funcionalidades semelhantes com a plataforma que vai ser desenvolvida
 
 Este capítulo divide-se em 3 secções. A secção \ref{requisitos:tiposutilizadores} identifica as principais partes envolventes no projeto (i. e. utilizadores e utilizadores finais). A secção \ref{rnf} e \ref{rf} descreve, detalhadamente, os requisitos não funcionais e funcionais, respectivamente. Por fim temos a secção \ref{prototipagem} que apresenta uma prototipagem de baixo nível, que com auxílio de breves descrições representa o fluxo da plataforma.
 
@@ -14,7 +14,7 @@ Este capítulo divide-se em 3 secções. A secção \ref{requisitos:tiposutiliza
 O objectivo desta secção é identificar, não necessariamente um problema, mas sim, através de uma estratégia de inbound marketing, uma forma de melhorar a experiência dos utilizadores proporcionando-lhes conteúdo que eles valorizam. Para melhor entender as necessidades do software é necessário fazer um estudo e tentar identificar os tipos de utilizadores finais, os seus comportamentos e fluxos de trabalho.
 
 
-\subsection{\textit{Skateholders}}
+\subsection{\textit{Stakeholders}}
 
 As principais partes envolventes neste projeto são, o proprietário do produto, os utilizadores principais e os utilizadores secundários. Como resultado os tipos de utilizadores serão baseados num público considerado  ideal, especulações e dados reais.
 
@@ -25,7 +25,7 @@ O proprietário do produto é o Sr. Pedro Girão, \acrshort{ceo} na 10.digital. 
 
 \subsection{Utilizadores primários}
 
-Os responsáveis por utilizar o \textit{backoffice} e os participantes das formações, questionários e concursos da plataforma de inbound marketing serão utilizadores principais. Serão estes utilizadores que vão utilizar o back office da plataforma que fornece uma série de funcionalidades como criar os formações questionários e concursos, com o conteúdo que lhes será fornecido, e alguns filtros para segmentar os dados recolhidos e conseguir criar perfis de utilizador. Nestas actividades participarão prospects, leads ou costumers.
+Os responsáveis por utilizar o \textit{backoffice} e os participantes das formações, questionários e concursos da plataforma de inbound marketing serão utilizadores principais. Serão estes utilizadores que vão utilizar o back office da plataforma que fornece uma série de funcionalidades como criar os formações questionários e concursos, com o conteúdo que lhes será fornecido, e alguns filtros para segmentar os dados recolhidos e conseguir criar perfis de utilizador. Nestas actividades participarão prospects, leads ou customers.
 
 
 \subsection{Utilizadores secundários}
@@ -37,7 +37,7 @@ Outras entidades envolventes serão os responsáveis pela criação dos conteúd
 \section{Requisitos Não Funcionais}
 \label{rnf}
 
-Nesta secção serão listados os requisitos não funcionais. Estes atributos dizem respeito aos atributos de qualidade da plataforma e foram idenficidados durante a fase de planetamento, adequando-se às necessidades do cliente e à natureza do produto. A lista de requisitos não funcionais é a seguinte:
+Nesta secção serão listados os requisitos não funcionais. Estes atributos dizem respeito aos atributos de qualidade da plataforma e foram identificados durante a fase de planeamento, adequando-se às necessidades do cliente e à natureza do produto. A lista de requisitos não funcionais é a seguinte:
 
 \begin{itemize}
 	\item \textbf{RNF01 - Segurança}
@@ -65,9 +65,9 @@ Nesta secção serão listados os requisitos não funcionais. Estes atributos di
 \section{Requisitos Funcionais}
 \label{rf}
 
-Nesta secção serão analisados e destalhados todos os requisitos funcionais da plataforma.
+Nesta secção serão analisados e detalhados todos os requisitos funcionais da plataforma.
 
-Numa prima fase serão descritos os vários diagramas que representam todos os requisitos funcionais do sistema, seguindo a legenda da Figura \ref{fig:rf-legenda}. Estes diagramas têm como principal objectivo contextualizar e dar uma visão global de todos os requisitos do sistema. É ainda de notar que para diminuir a complexidade e facilitar a compreensão dos diagramas, os requisitos de menor dimensão que não justificam a criação de um caso de uso estão nos diagramas para complementar alguns casos de uso (i. e. requisitos de maior relevância) contudo estão identificados com uma cor diferente. Desta forma é possível focarmo-nos apenas nos requisitos de maior relevância.
+Numa primeira fase serão descritos os vários diagramas que representam todos os requisitos funcionais do sistema, seguindo a legenda da Figura \ref{fig:rf-legenda}. Estes diagramas têm como principal objectivo contextualizar e dar uma visão global de todos os requisitos do sistema. É ainda de notar que para diminuir a complexidade e facilitar a compreensão dos diagramas, os requisitos de menor dimensão que não justificam a criação de um caso de uso estão nos diagramas para complementar alguns casos de uso (i. e. requisitos de maior relevância) contudo estão identificados com uma cor diferente. Desta forma é possível focarmo-nos apenas nos requisitos de maior relevância.
 
 \begin{figure}[ht!]
 	\begin{center}
@@ -77,9 +77,9 @@ Numa prima fase serão descritos os vários diagramas que representam todos os r
 	\end{center}
 \end{figure}
 
-Numa segunda fase serão analisados os graus de prioridade de cada requisito, consoante a sua importância para o projeto e por fim será feita uma descrição detalhada (i. e. especificação do requisito) de cada requisito através de casos de uso. É de notar que parte do grande trabalho da analise do grau de prioridade dos requisitos será imediato devido às decisões por parte do cliente.
+Numa segunda fase serão analisados os graus de prioridade de cada requisito, consoante a sua importância para o projeto e por fim será feita uma descrição detalhada (i. e. especificação do requisito) de cada requisito através de casos de uso. É de notar que parte do grande trabalho da análise do grau de prioridade dos requisitos será imediato devido às decisões por parte do cliente.
 
-Desta forma será claro para o leitor, em especial para a equipa de desenvolvimento, o comportamento que o sistema terá de cumprir. Os casos de uso serão detalhados consoante a seguindo estrutura:
+Desta forma será claro para o leitor, em especial para a equipa de desenvolvimento, o comportamento que o sistema terá de cumprir. Os casos de uso serão detalhados consoante a seguinte estrutura:
 
 \begin{itemize}
 	\item \textbf{ID:} ID do caso de uso.
@@ -87,16 +87,16 @@ Desta forma será claro para o leitor, em especial para a equipa de desenvolvime
 	\item \textbf{Prioridade:} Representa a prioridade do caso de uso baseada nas decisões do cliente, visão dos stakeholders e no funcionamento do sistema. As prioridades foram classificadas por:
 	\begin{itemize}
 		\item \textbf{\textit{Must Have}:} Como o próprio nome indica, os requisitos \textit{Must} são os requisitos com maior prioridade. \textit{"As a rule, product inception depends entirely on defining must-haves using such pointers as ‘required for launch’, ‘required for safety’, ‘required for validation’, ‘required to deliver a viable solution’, etc."}\cite{moscow}. Todos os requisitos categorizados como \textit{Must Have}, são mandatórios para a equipa de desenvolvimento visto que sem eles o projeto fica paralisado.\textit{ "Can we move forward with the project if this task is undone? – if \textbf{NO}, it’s \textbf{MUST}"}\cite{moscow}.
-		\item \textbf{\textit{Should Have}:} Os requisitos \textit{Sould} são requisitos que também têm uma elevada prioridade, ou por outras palavras, estão apenas um passo a baixo dos requisitos \textit{Must} .
+		\item \textbf{\textit{Should Have}:} Os requisitos \textit{Should} são requisitos que também têm uma elevada prioridade, ou por outras palavras, estão apenas um passo abaixo dos requisitos \textit{Must} .
 		Não são requisitos considerados vitais contudo adicionam valor significativo.\textit{ "Will we move forward with the project if this task is done a bit later? – if \textbf{YES}, it’s \textbf{SHOULD}"}\cite{moscow}.
-		\item \textbf{\textit{Could Have}:} Os requisits \textit{Could} são requisitos com menos importancia e impacto que os anteriores. Pode-se dizer, por outras palavras, que são requisitos \textit{Nice to have} e tipicamente só são implementados se houver tempo para tal. \textit{ "Can we sacrifice this task till deadline? – if \textbf{YES}, it’s \textbf{COULD}"}\cite{moscow}.
-		\item \textbf{\textit{Won't Have}:} Os requisitos\textit{Won't} são os requisitos com menor prioridade. Os requisitos categorizados com esta prioridade, tipicamente não são implementados no tempo estipulado para o projeto. Alguns requisitos são priorizados no futuro, outros nunca chegam a ser implementados. \textit{ "Can we back to it when things go better? – if \textbf{YES}, it’s \textbf{WON’T}"}\cite{moscow}.
+		\item \textbf{\textit{Could Have}:} Os requisitos \textit{Could} são requisitos com menos importancia e impacto que os anteriores. Pode-se dizer, por outras palavras, que são requisitos \textit{Nice to have} e tipicamente só são implementados se houver tempo para tal. \textit{ "Can we sacrifice this task till deadline? – if \textbf{YES}, it’s \textbf{COULD}"}\cite{moscow}.
+		\item \textbf{\textit{Won't Have}:} Os requisitos \textit{Won't} são os requisitos com menor prioridade. Os requisitos categorizados com esta prioridade, tipicamente não são implementados no tempo estipulado para o projeto. Alguns requisitos são priorizados no futuro, outros nunca chegam a ser implementados. \textit{ "Can we back to it when things go better? – if \textbf{YES}, it’s \textbf{WON’T}"}\cite{moscow}.
 	\end{itemize}
 	\item \textbf{Descrição:} Uma breve contextualização do caso de uso.
 	\item \textbf{Pré-condições:} Conjunto de condições necessárias para realizar o caso de uso.
-	\item \textbf{Estimulo:} Casos de uso responsáveis pela ativação do caso de uso.
+	\item \textbf{Estímulo:} Casos de uso responsáveis pela ativação do caso de uso.
 	\item \textbf{Fluxo Principal:} Descrição detalhada de todos os passos para a realização do casos de uso.
-	\item \textbf{Fluso de Excepção:} Descrição detalhada do comportamento do sistema quando o caso de uso não for realizado com sucesso.
+	\item \textbf{Fluxo de Excepção:} Descrição detalhada do comportamento do sistema quando o caso de uso não for realizado com sucesso.
 	\item \textbf{Observações:} Observações adicionais, relevantes para o desfecho do caso de uso.
 \end{itemize}
 
@@ -113,7 +113,7 @@ Desta forma será claro para o leitor, em especial para a equipa de desenvolvime
 \end{figure}
 
 A 10.quest, tal como referido nos capítulos anteriores, é uma plataforma de inbound marketing que permite aos utilizadores criar formações, questionários, concursos e tratar a informação recolhida por cada um destes componentes. 
-Estes componentes poderão ser partilhados nas redes sociais (i. e. utilizando a API do Facebook, Instragam, Twitter e LinkedIn) através de \textit{landing pages}. Estas \textit{landing pages} terão um pequeno formulário que necessita das informações básicas ao utilizador final para que, automáticamente, as formações, questionários e concursos sejam enviados por mail para os inscritos, utilizando o sistema externo SendGrid.
+Estes componentes poderão ser partilhados nas redes sociais (i. e. utilizando a API do Facebook, Instagram, Twitter e LinkedIn) através de \textit{landing pages}. Estas \textit{landing pages} terão um pequeno formulário que necessita das informações básicas ao utilizador final para que, automaticamente, as formações, questionários e concursos sejam enviados por mail para os inscritos, utilizando o sistema externo SendGrid.
 
 Tal como referido no Capítulo \ref{sec:estado-arte}, o \acrshort{tcg} é um produto desenvolvido pela 10.digital e actualmente no mercado. Algumas das funcionalidades fundamentais da plataforma a desenvolver já estão implementadas no \acrshort{tcg}  e por isso mesmo haverá uma interação com o mesmo para aproveitar todas estas funcionalidades necessárias.
 
@@ -130,9 +130,9 @@ Tal como referido no Capítulo \ref{sec:estado-arte}, o \acrshort{tcg} é um pro
 	\end{center}
 \end{figure}
 
-Um utilizador para aceder a todas as funcionalidades da plataforma terá de primeiro realizar a autenticação ()\textbf{RF - Registo}). Caso ainda não tenha uma conta registada terá de o fazer. Assim que a conta for criada é enviada uma notificação para o email do utilizador, recorrendo ao sistema externo SendGrid. Por questões de segunrança e confidencialidade dos dados, no acto do registo, a informação do utilizador será enviada e guardada na base de dados do \acrshort{tcg}, para que mais tarde todos os pedidos REST possam ser validados.
+Um utilizador para aceder a todas as funcionalidades da plataforma terá de primeiro realizar a autenticação ()\textbf{RF - Registo}). Caso ainda não tenha uma conta registada terá de o fazer. Assim que a conta for criada é enviada uma notificação para o email do utilizador, recorrendo ao sistema externo SendGrid. Por questões de segurança e confidencialidade dos dados, no acto do registo, a informação do utilizador será enviada e guardada na base de dados do \acrshort{tcg}, para que mais tarde todos os pedidos REST possam ser validados.
 
-Depois de um utilizador se autenticar, será direcionado para a página inicial. A partir daqui o utilizador conseguirá gerir questionários, formações, concuros e perguntas para as formações do \acrshort{tcg}; aceder às definições, actualizar o plano da conta, utilizar o suporte da plataforma e terminar sessão.
+Depois de um utilizador se autenticar, será direcionado para a página inicial. A partir daqui o utilizador conseguirá gerir questionários, formações, concursos e perguntas para as formações do \acrshort{tcg}; aceder às definições, actualizar o plano da conta, utilizar o suporte da plataforma e terminar sessão.
 Ainda na página inicial da plataforma serão exibidas algumas estatísticas relacionadas com as formações, questionários e concursos associados à conta do utilizador. 
 
 \newpage
@@ -169,9 +169,9 @@ Aproveitando as funcionalidades do \acrshort{tcg} e  tendo em conta que esta abo
 
 É ainda de notar que por uma questão de terminologia, na plataforma a desenvolver, as Perguntas TCG são equivalentes às questões no \acrshort{tcg}, pelo simples facto de não se confundir com elementos relacionados com os questionários.
 
-Na gestão de Perguntas TCG, um utilizador consegue listas todas as perguntas (\textbf{RF45 - Mostrar lista de perguntas TCG}) associadas à sua conta (i. e. criadas por ele) e pode também criar uma nova pergunta (\textbf{RF42 - Criar pergunta TCG}). O sistema efetua um pedido de todas essas perguntas ao \acrshort{tcg} e a partir daqui o utilizador consegue criar, eliminar (\textbf{RF47 - Apagar pergunta TCG}), editar (\textbf{RF46 - Editar pergunta TCG}) e pesquisar perguntas. As perguntas podem também ser importados e exportados através de uma \textit{spreadsheet}.
+Na gestão de Perguntas TCG, um utilizador consegue listar todas as perguntas (\textbf{RF45 - Mostrar lista de perguntas TCG}) associadas à sua conta (i. e. criadas por ele) e pode também criar uma nova pergunta (\textbf{RF42 - Criar pergunta TCG}). O sistema efetua um pedido de todas essas perguntas ao \acrshort{tcg} e a partir daqui o utilizador consegue criar, eliminar (\textbf{RF47 - Apagar pergunta TCG}), editar (\textbf{RF46 - Editar pergunta TCG}) e pesquisar perguntas. As perguntas podem também ser importados e exportados através de uma \textit{spreadsheet}.
 
-Para um criar uma pergunta (\textbf{RF42}), o utilizador precisa de atribuir uma tag, nova ou existente, e introduzir a pergunta, as respotas e uma descrição, sendo esta ultima opcional. Cada pergunta tem que ter pelos menos duas respostas sendo estas compostas pela resposta e um anexo opcional que pode ser um ficheiro de som, imagem ou vídeo.
+Para um criar uma pergunta (\textbf{RF42}), o utilizador precisa de atribuir uma tag, nova ou existente, e introduzir a pergunta, as respostas e uma descrição, sendo esta última opcional. Cada pergunta tem que ter pelos menos duas respostas sendo estas compostas pela resposta e um anexo opcional que pode ser um ficheiro de som, imagem ou vídeo.
 
 
 
@@ -187,19 +187,19 @@ Para um criar uma pergunta (\textbf{RF42}), o utilizador precisa de atribuir uma
 	\end{center}
 \end{figure}
 
-Praticamente todas as funcionalidades da gestão de formações já estão implementadas no \acrshort{tcg} por isso, muitas das funcionalidades irão recurar a à capacidade do \acrshort{tcg} através de pedidos REST e toda a informação relacionada com formações será também guardada na bade de dados do \acrshort{tcg}.
+Praticamente todas as funcionalidades da gestão de formações já estão implementadas no \acrshort{tcg} por isso, muitas das funcionalidades irão recorrer à capacidade do \acrshort{tcg} através de pedidos REST e toda a informação relacionada com formações será também guardada na base de dados do \acrshort{tcg}.
 
 Na gestão de formações um utilizador consegue listar todas as formações associadas à sua conta (\textbf{RF27 - Mostrar lista de formações do utilizador}) e pode também criar uma nova formação (\textbf{RF20 - Criar formação}). O sistema efetua um pedido de todas essas formações ao \acrshort{tcg} e a partir daqui o utilizador consegue criar, eliminar, editar e pesquisar formações.
 
-Para criar uma formação (\textbf{RF20}) o utilizador terá, numa primeira instância, de atribuir um nome e definir a periodicidade (i. e. preencher a data de inicio e fim, dias da semana, hora de envio e  duração/validade) (\textbf{RF21 - Definir periocidade}). 
+Para criar uma formação (\textbf{RF20}) o utilizador terá, numa primeira instância, de atribuir um nome e definir a periodicidade (i. e. preencher a data de início e fim, dias da semana, hora de envio e  duração/validade) (\textbf{RF21 - Definir periodicidade}). 
 
-Numa segunda fase, o utilizador, através do requisito \textbf{RF - Definições da formação} consegue adicionar e gerir entradas (\textbf{RF25 - Adicionar entrada de perguntas} e \textbf{RF26 - Gerir entradas de perghuntas}, respectivamente). As definições da formação (\textbf{RF24 - Definições da formação}) é onde o utilizar, através de \textit{tags} associa grupos de perguntas a grupos de pessoas. 
+Numa segunda fase, o utilizador, através do requisito \textbf{RF - Definições da formação} consegue adicionar e gerir entradas (\textbf{RF25 - Adicionar entrada de perguntas} e \textbf{RF26 - Gerir entradas de perguntas}, respectivamente). As definições da formação (\textbf{RF24 - Definições da formação}) é onde o utilizar, através de \textit{tags} associa grupos de perguntas a grupos de pessoas. 
 
 Numa entrada o utilizador terá de introduzir a \textit{tag} de utilizador(es), a \textit{tag} da(s) pergunta(s) e o número de perguntas dessa \textit{tag} que serão enviadas em cada \textit{quiz}(i. e. cada iteração) da formação.
 
-Por fim o utilizador pode partilhar a formação (\textbf{RF56 - Partilhar}). As inscrições numa formação serão feitas através de uma \textit{landing page} que pode ser personalizada no requisito \textbf{RF08 - Landing Page} e enviadas para o email introduzido no mini formulário da \textit{landing page}. Este mail com o link para a formação, pode ser persolizado no requisito \textbf{RF09 - Notificações por E-mail}. 
+Por fim o utilizador pode partilhar a formação (\textbf{RF56 - Partilhar}). As inscrições numa formação serão feitas através de uma \textit{landing page} que pode ser personalizada no requisito \textbf{RF08 - Landing Page} e enviadas para o email introduzido no mini formulário da \textit{landing page}. Este mail com o link para a formação, pode ser personalizado no requisito \textbf{RF09 - Notificações por E-mail}. 
 
-É de notar que, através do resquisito \textbf{RF29 - Adicionar novo utilizador final TCG}, sempre que um utilizador final se inscreve numa formação através da \textit{landing page}, o sistema, de forma automática, envia os dados para \acrshort{tcg} para que este utilizador possa começar a receber a formação por email. Outro requisito da responsabilidade do sistema é o \textbf{RF30 - Notificar utilizadores finais TCG}, que respeitando a peridicidade definida na criação do formação, envia a formação para todos os inscritos.
+É de notar que, através do requisito \textbf{RF29 - Adicionar novo utilizador final TCG}, sempre que um utilizador final se inscreve numa formação através da \textit{landing page}, o sistema, de forma automática, envia os dados para \acrshort{tcg} para que este utilizador possa começar a receber a formação por email. Outro requisito da responsabilidade do sistema é o \textbf{RF30 - Notificar utilizadores finais TCG}, que respeitando a periodicidade definida na criação do formação, envia a formação para todos os inscritos.
 
 
 
@@ -213,11 +213,11 @@ Por fim o utilizador pode partilhar a formação (\textbf{RF56 - Partilhar}). As
 	\end{center}
 \end{figure}
 
-Na gestão de questionários, à semelhança da gestão de formações, é feita uma listagens dos questionários (\textbf{RF15 - Mostrar lista de questionários do utilizafor}) e o utilizador tem a capacidade de criar (\textbf{RF06 - Criar quesitonártio}), eliminhar, editar (\textbf{RF16 - Editar questionário}) e pesquisar questionários.
+Na gestão de questionários, à semelhança da gestão de formações, é feita uma listagem dos questionários (\textbf{RF15 - Mostrar lista de questionários do utilizador}) e o utilizador tem a capacidade de criar (\textbf{RF06 - Criar questionário}), eliminar, editar (\textbf{RF16 - Editar questionário}) e pesquisar questionários.
 
-Na criação de um novo questionário (\textbf{RF06}), um utilizador, numa primeira fase terá de criar um conjundo de questões (\textbf{RF10 - Criar questões}) e gerar um serie de resultados (\textbf{RF11 - Criar resultados}). Cada resultado terá de ter obrigatóriamente uma \textit{tag} associada e um título e caso o utilizador deseje uma imagem e/ou um link. As perguntas e resultados podem também ser importados e exportados numa \textit{spreadsheet}.
+Na criação de um novo questionário (\textbf{RF06}), um utilizador, numa primeira fase terá de criar um conjunto de questões (\textbf{RF10 - Criar questões}) e gerar um série de resultados (\textbf{RF11 - Criar resultados}). Cada resultado terá de ter obrigatoriamente uma \textit{tag} associada e um título e caso o utilizador deseje uma imagem e/ou um link. As perguntas e resultados podem também ser importados e exportados numa \textit{spreadsheet}.
 
-Depois de terminar a primeira fase, podendo a qualquer momento voltar a essa fase, o utilizador já tem recursos para começar a criar o quesitonário (i. e. o sistema de pontuação através do requisito \textbf{RF14 - Criar sistema de pontuação}). Numa primeira instancia o utilizador terá de selecionar a pergunta pelo qual deseja começar o questionário. De seguida cria uma ou mais respostas e para cada uma delas é necessário associar uma pergunta que na iteração seguinte sejam apresentadas e se possa repetir este processo para conseguir criar um fluxo de perguntas. Para cada pergunta é atribuido um peso e para cada resposta são associadas \textit{tags} de resultados. Desta forma numa dada pergunta, as \textit{tags} da resposta selecionada serão pontuadas. A qualquer momento o utilizador, em vez de associar uma pergunta a uma resposta, pode decidir, naquele estado (i. e. numa resposta em especifico), terminar o questionário e apresentar o resultado ao utilizador final.
+Depois de terminar a primeira fase, podendo a qualquer momento voltar a essa fase, o utilizador já tem recursos para começar a criar o questionário (i. e. o sistema de pontuação através do requisito \textbf{RF14 - Criar sistema de pontuação}). Numa primeira instância o utilizador terá de selecionar a pergunta pelo qual deseja começar o questionário. De seguida cria uma ou mais respostas e para cada uma delas é necessário associar uma pergunta que na iteração seguinte sejam apresentadas e se possa repetir este processo para conseguir criar um fluxo de perguntas. Para cada pergunta é atribuído um peso e para cada resposta são associadas \textit{tags} de resultados. Desta forma numa dada pergunta, as \textit{tags} da resposta selecionada serão pontuadas. A qualquer momento o utilizador, em vez de associar uma pergunta a uma resposta, pode decidir, naquele estado (i. e. numa resposta em específico), terminar o questionário e apresentar o resultado ao utilizador final.
 
 Através do requisito \textbf{RF18 - Adicionar novo utilizador final}, sempre que um utilizador final se inscreve num questionário através da \textit{landing page}, o sistema, de forma automática, guarda essa informação e recorrendo ao requisito \textbf{RF17 - Notificar utilizadores finais}, enviei o questionário para os utilizador final.
 
@@ -233,16 +233,16 @@ Através do requisito \textbf{RF18 - Adicionar novo utilizador final}, sempre qu
 \end{figure}
 
 
-Na gestão de concursos, à semelhança da gestão de formações e questionários, é feita uma listagens dos concursos (\textbf{RF37 - Mostrar lista de concursos do utilizar}) e o utilizador tem a capacidade de criar (\textbf{RF32 - Criar concurso}), eliminhar, editar (\textbf{RF38 - Editar concurso}) e pesquisar questionários.
+Na gestão de concursos, à semelhança da gestão de formações e questionários, é feita uma listagem dos concursos (\textbf{RF37 - Mostrar lista de concursos do utilizador}) e o utilizador tem a capacidade de criar (\textbf{RF32 - Criar concurso}), eliminar, editar (\textbf{RF38 - Editar concurso}) e pesquisar questionários.
 
 Na criação de um concurso (\textbf{RF32}) o utilizador terá de criar perguntas (\textbf{RF33 - Criar perguntas}). Para cada pergunta o utilizador terá de introduzir pelo menos duas respostas (\textbf{RF34 - Introduzir respostas}) e caso o desejo pode adicionar um anexo no formato de imagem. As perguntas e respostas podem também ser importados e exportados numa \textit{spreadsheet} (\textbf{RF36 - Importar perguntas} e \textbf{RF35 - Exportar perguntas}, respectivamente).
 
-É importante refêrenciar que à semelhança da gestão de formações e questionários, é possível editar os conteudos (i. e. perguntas, questões, \textit{landing pages}, email etc) contudo, assim que um concurso é publicado e passa a estar no estado \textit{online}, as perguntas deixam de poder ser editáveis. 
+É importante referenciar que à semelhança da gestão de formações e questionários, é possível editar os conteúdos (i. e. perguntas, questões, \textit{landing pages}, email etc) contudo, assim que um concurso é publicado e passa a estar no estado \textit{online}, as perguntas deixam de poder ser editáveis. 
 
 Os concursos, tal como os questionários têm sempre um estado que pode variar entre:
 \begin{itemize}
-	\item Rascunho - Utilizador não deu o concurso como conluído.
-	\item Aberto - Utilizador deu o concurso como conluído.
+	\item Rascunho - Utilizador não deu o concurso como concluído.
+	\item Aberto - Utilizador deu o concurso como concluído.
 	\item \textit{Online} - Utilizador gerou a \textit{landing page} para partilhar o concurso.
 	\item Fechado - Concurso chegou à data de fim.
 \end{itemize}
@@ -259,7 +259,7 @@ Os concursos, tal como os questionários têm sempre um estado que pode variar e
 \end{figure}
 
 
-O utilizar poderá, se assim o pretender, utilizar o suporte da plataforma. Em caso de dúvida ou exclarecimentos, enviar uma mensagem directa para a 10.digital. 
+O utilizador poderá, se assim o pretender, utilizar o suporte da plataforma. Em caso de dúvida ou esclarecimentos, enviar uma mensagem direta para a 10.digital. 
 
 Para enviar uma mensagem é necessário introduzir o nome, email, mensagem e, caso o utilizador deseje, um ou mais anexos.
 
@@ -275,13 +275,13 @@ Para enviar uma mensagem é necessário introduzir o nome, email, mensagem e, ca
 	\end{center}
 \end{figure}
 
-Assim que uma formação, questionário ou concurso terminar, ou a qualquer momento, um utilizador pode gerar o relatório de dados. A secção de dados da plataforma mostra os resultados gerais sobre as formações questionátios e concursos (\textbf{RF49 - Relatório geral}). 
+Assim que uma formação, questionário ou concurso terminar, ou a qualquer momento, um utilizador pode gerar o relatório de dados. A secção de dados da plataforma mostra os resultados gerais sobre as formações questionários e concursos (\textbf{RF49 - Relatório geral}). 
 
 O utilizador pode gerar um relatório (\textbf{RF50 - Relatório}) para um questionário onde será exposto o resultados do mesmo. Será mostrado um gráfico de conversão de tipos de utilizadores finais e uma secção onde se pode calcular a taxa de conversão. Serão também mostrados os resultados do questionário e as respostas por pergunta. Pode ser ainda visto no final um gráfico temporal de eventos.
 
-Para os relatórios de concursos será exposto uma tabela com as classificações de cada participante e para os relatórios de uma formação será feito um pedido ao TCG para returnar o relatório relativo à formação selecionada.
+Para os relatórios de concursos será exposto uma tabela com as classificações de cada participante e para os relatórios de uma formação será feito um pedido ao TCG para retornar o relatório relativo à formação selecionada.
 
-Por fim, na secção de dados (i. e. relatórios) o utilizar pode navegar a lista de leads (\textbf{RF51 - Listar Leads por perfil}) que vão participando nas suas formações, questionários e concursos. Esta lista terá todos os utilizadores finais listados que são considerados leads e é possível filtrar os mesmos por tags (i. e. criar um perfil de utilizador). Pada cada utilizador serão apresentados os dados pessoais que eles vão fornecendo ao longo da jornada (e. g. nome, mail etc...)
+Por fim, na secção de dados (i. e. relatórios) o utilizador pode navegar a lista de leads (\textbf{RF51 - Listar Leads por perfil}) que vão participando nas suas formações, questionários e concursos. Esta lista terá todos os utilizadores finais listados que são considerados leads e é possível filtrar os mesmos por tags (i. e. criar um perfil de utilizador). Para cada utilizador serão apresentados os dados pessoais que eles vão fornecendo ao longo da jornada (e. g. nome, email etc...)
 
 
 
@@ -289,7 +289,7 @@ Por fim, na secção de dados (i. e. relatórios) o utilizar pode navegar a list
 \section{Mockups}
 \label{prototipagem}
 
-A criação de mockups ou protótipos de baixa fidelidade, teve como principal objetivo representar a plataforma (i. e. todos os requisitos funcionais) de forma estática. Esta secção foi importante para conseguir visualizar a plataforma como um todo, facilitanto a implementação, e também teve um papel importante na verificação dos requisitos levantados, satisfazendo todos os casos de uso descritos no Anexo \ref{a:cu}. Todos os mockups realizados encontram-se descritos no Anexo \ref{a:prototipos}.
+A criação de mockups/protótipos de baixa fidelidade, teve como principal objetivo representar a plataforma (i. e. todos os requisitos funcionais) de forma estática. Esta secção foi importante para conseguir visualizar a plataforma como um todo, facilitando a implementação, e também teve um papel importante na verificação dos requisitos levantados, satisfazendo todos os casos de uso descritos no Anexo \ref{a:cu}. Todos os mockups realizados encontram-se descritos no Anexo \ref{a:prototipos}.
 
 
 %-------------------------------------------------------------------------------------------------

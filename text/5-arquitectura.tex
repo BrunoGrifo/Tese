@@ -4,18 +4,18 @@
 
 A arquitectura é uma etapa fundamental em todos os projecto porque é aqui que se define a estrutura e comportamento do sistema na sua globalidade e nas diferentes componentes.
 
-Neste capítulo está exposta a arquitectura do 10.quest que servirá de \textit{guideline} para a implementação do projecto. Serão apresentadas diferentes prespectivas para analisar os diferentes aspectos do sistema. É de notar que as componentes a desenvolver pela restante equipa de desenvolvimento não será analisada e apenas será apresentada de forma superficial para fazer a ligação às componentes a desenvolver no ambito do estágio curricular.
-Este capítulo é também uma exposição das decisões arquitecturais efectuadas no primeiro semestre, respeitando as restrições técnicas e de negócios.
+Neste capítulo está exposta a arquitectura do 10.quest que servirá de \textit{guideline} para a implementação do projecto. Serão apresentadas diferentes prespectivas para analisar os diferentes aspectos do sistema. É de notar que as componentes a desenvolver pela restante equipa de desenvolvimento não será analisada e apenas será apresentada de forma superficial para fazer a ligação às componentes a desenvolver no âmbito do estágio curricular.
+Este capítulo é também uma exposição das decisões arquiteturais efectuadas no primeiro semestre, respeitando as restrições técnicas e de negócios.
 
-Por fim será feita uma analise dos riscos envolvidos no desenvolvimento do projecto, o seu impacto e probabilidade de ocurrência e o respectivo plano de mitigação
-
-
+Por fim será feita uma análise dos riscos envolvidos no desenvolvimento do projecto, o seu impacto e probabilidade de ocorrência e o respectivo plano de mitigação
 
 
-\section{Analise da Arquitectura}
+
+
+\section{Análise da Arquitectura}
 \label{analisearq}
 
-Na analise da arquitectura serão apresentadas as restrições do projecto, que têm um impacto directo nas decisões de arquitectura, as diferentes prespectivas de arquitetura e as técnologias utilizadas.
+Na análise da arquitectura serão apresentadas as restrições do projecto, que têm um impacto directo nas decisões de arquitectura, as diferentes perspectivas de arquitetura e as tecnologias utilizadas.
 
 \subsection{Restrições Técnicas}
 As restrições técnicas são decisões técnicas arquiteturais que devem ser satisfeitas. O Sistema a desenvolver deve respeitar as seguintes restrições:
@@ -30,13 +30,13 @@ As restrições técnicas são decisões técnicas arquiteturais que devem ser s
 \newline
 \textbf{Título:} Base de Dados
 \newline
-\textbf{Descrição:} Os dados utilizados pela aplicação devem ser guardados numa base de dados, visto tratar-se de um grande volume de dados que tem de permanecer organizado. Relativamente aos dados do TCG foi imposto que os dados não sejam duplicados e que esta informação seja acedida através de pedidos\acrshort{https}/\acrshort{rest}. PostegreSQL\cite{sql} é a base de dados relacional utilizada pela empresa e portanto será também utilizada no desenvolvimento deste projecto.
+\textbf{Descrição:} Os dados utilizados pela aplicação devem ser guardados numa base de dados, visto tratar-se de um grande volume de dados que tem de permanecer organizado. Relativamente aos dados do TCG foi imposto que os dados não sejam duplicados e que esta informação seja acedida através de pedidos \acrshort{https}/\acrshort{rest}. PostgreSQL\cite{sql} é a base de dados relacional utilizada pela empresa e portanto será também utilizada no desenvolvimento deste projecto.
 
 \textbf{Identificador: RT03}
 \newline
 \textbf{Título:} Framework Django\cite{django}
 \newline
-\textbf{Descrição:} A Framework Django é a técnologia utilizada pela empresa para desenvolver aplicações \textit{web} e \textit{\acrshort{saas}}. O uso desta técnologia foi imposta pelo \textit{Product Owner}.
+\textbf{Descrição:} A Framework Django é a técnologia utilizada pela empresa para desenvolver aplicações \textit{web} e \textit{\acrshort{saas}}. O uso desta tecnologia foi imposta pelo \textit{Product Owner}.
 
 \textbf{Identificador: RT04}
 \newline
@@ -45,19 +45,19 @@ As restrições técnicas são decisões técnicas arquiteturais que devem ser s
 \textbf{Descrição:} Todas as funcionalidades do sistema devem estar disponíveis através da plataforma web.
 
 \subsection{Restrições de Negócio}
-Nesta secção estão descritas as restrições de negócio, que podem ser entendidas com barreiras que a organização deve lutar para executar a sua estratégia. Estas restrições seguintes foram impostas pelo \textit{Product Owner} e devem ser satisfeitas na arquitectura do sistema:
+Nesta secção estão descritas as restrições de negócio, que podem ser entendidas como barreiras que a organização deve lutar para executar a sua estratégia. Estas restrições seguintes foram impostas pelo \textit{Product Owner} e devem ser satisfeitas na arquitectura do sistema:
 
 \textbf{Identificador: RN01}
 \newline
 \textbf{Título:} Programa de Desenvolvimento
 \newline
-\textbf{Descrição:} O produto deve estar concluido e validado até dia 15 de Junho.
+\textbf{Descrição:} O produto deve estar concluído e validado até dia 15 de Junho.
 
 
 
 \subsection{\acrfull{mvc}}
 
-A estrutura de um projeto Django é muitas vezes descrito como um projeto \acrshort{mvc}. Como podemos ver na Figura \ref{fig:arq-mvc}, o modelo \acrshort{mvc} é uma arquitectura de sowftare que separa a aplicação em três componentes lógicos principais. Por outras palavras este modelo separa a apresentação dos dados, da lógica que trata das \textit{interfaces} do utilizador, facilitando a programação das diferentes funcionalidades, \textit{debugging} e os testes das mesmas.
+A estrutura de um projeto Django é muitas vezes descrito como um projeto \acrshort{mvc}. Como podemos ver na Figura \ref{fig:arq-mvc}, o modelo \acrshort{mvc} é uma arquitectura de software que separa a aplicação em três componentes lógicos principais. Por outras palavras este modelo separa a apresentação dos dados, da lógica que trata das \textit{interfaces} do utilizador, facilitando a programação das diferentes funcionalidades, \textit{debugging} e os testes das mesmas.
 
 \begin{figure}[ht!]
 	\begin{center}
@@ -76,22 +76,22 @@ Por último temos o componente \textbf{Controller}.  Este componente atua entre 
 
 \subsection{Modelo C4}
 
-Nesta secção encontra-se representada e descrita toda a arquitetura da plataforma 10.quest,  influênciada pelos objetivos de negócio, \textit{stakeholders}, requisitos e restrições técnica e de negócio, apresentados anteriormente.
+Nesta secção encontra-se representada e descrita toda a arquitetura da plataforma 10.quest,  influenciada pelos objetivos de negócio, \textit{stakeholders}, requisitos e restrições técnica e de negócio, apresentados anteriormente.
 
 Foram utilizados três diagramas para representar a arquitectura do sistema, utilizando o \textbf{modelo C4}\cite{c4}: diagrama de contexto, diagrama de contentores, diagrama de componentes e o diagrama de classes.
 
 Os diferentes diagramas representam diferentes perspectivas e níveis de abstração e foram feitos com o intuito de facilitar a compreensão da arquitetura permitindo à equipa de desenvolvimento visualizar os diferentes níveis de granularidade. 
 
-O diagrama de contexto mostra a relação entre o sistema que vai ser desenvolvido e outros agentes como por exemplo utilizadores e sistemas externos.  Este é o diagrama com maior nível de abstração e é bom para sublinhar as dependencias externas que a equipa de desenvolvimento tem que integrar no sistema. 
+O diagrama de contexto mostra a relação entre o sistema que vai ser desenvolvido e outros agentes como por exemplo utilizadores e sistemas externos.  Este é o diagrama com maior nível de abstração e é bom para sublinhar as dependências externas que a equipa de desenvolvimento tem que integrar no sistema. 
 
-O diagrama de contentores apresenta um maior detalhe (i. e. relativamente ao diagrama de contexto) e motras os diferentes contentores que constituem o sistema (e. g. bases de dados, aplicações, microserviços etc...). Neste diagrama são também definidas algumas decisões arquitecturais. 
+O diagrama de contentores apresenta um maior detalhe (i. e. relativamente ao diagrama de contexto) e mostra os diferentes contentores que constituem o sistema (e. g. bases de dados, aplicações, microserviços etc...). Neste diagrama são também definidas algumas decisões arquiteturais. 
 
-Por último temo o diagrama de componentes aproxima um contentor individualmente e mostra todos os componentes que constituem esse contentor. Desta forma conseguimos perceber as principais funcionalidades do sistema. 
+Por último temos o diagrama de componentes aproxima um contentor individualmente e mostra todos os componentes que constituem esse contentor. Desta forma conseguimos perceber as principais funcionalidades do sistema. 
 
 
 \subsubsection{Diagrama de Contexto}
 
-Como foi referido no Catípulo \ref{sec:introducao} o 10.quest é uma plataforma de inbound marketing que consiste num \textit{backoffice} para criação de questionários, concursos e criação de formulário com o auxilio do \acrshort{tcg}.
+Como foi referido no Catípulo \ref{sec:introducao} o 10.quest é uma plataforma de inbound marketing que consiste num \textit{backoffice} para criação de questionários, concursos e criação de formulário com o auxílio do \acrshort{tcg}.
 
 Como podemos ver na Figura \ref{fig:arq-contexto} o 10.quest interage com seis sistemas externos. O SendGrid\cite{sg} é um \acrshort{saas}, na \textit{cloud}, que fornece um serviço de entrega de emails. Este serviço permite enviar emails através de APIs flexíveis garantindo uma disponibilidade  de 99.999\% \cite{sguptime}. 
 O TCG, tal como foi referido no Capítulo \ref{sec:estado-arte}, é uma plataforma de criação de formações que tem como principal objectivo transformar PDFs numa aprendizagem baseada em tentativa erro. Algumas das funcionalidades do \acrshort{tcg} serão utilizadas pelo 10.quest.
@@ -110,11 +110,11 @@ Para partilhar os questionários, concursos e formações o 10.quest irá utiliz
 
 \subsubsection{Diagrama de Contentores}
 
-Na Figura \ref{fig:arq-contentores} está representado o diagrama de contentores, onde se pode observar com mais detalhe a constiuição do sistema de software.
+Na Figura \ref{fig:arq-contentores} está representado o diagrama de contentores, onde se pode observar com mais detalhe a constituição do sistema de software.
 
 Os utilizadores podem ser de dois tipos: o utilizador do backoffice que tem acesso a todas as funcionalidade da plataforma e o utilizador final que tem acesso a uma página web para participar nas formações, concursos e ou questionários.
 
-A aplicação web efectua os pedidos dos utilizadores, através de pedidos \acrshort{https}/\acrshort{rest} à API. A aplicação web será a camada de apresentação da API e ambos serão desenvolvidos em Django. A API será o contentor responsável por tratar de todos os pedidos efectuados pelos utilizadores do \textit{backoffice}. Para este efeito a API implementa um conjundo de funcionalidades, representadas na Figura \ref{fig:arq-componentes1}, que manipulam um conjunto de dados armazenados numa base de dados relacional PostgreSQL, para conseguir as informações necessárias.
+A aplicação web efetua os pedidos dos utilizadores, através de pedidos \acrshort{https}/\acrshort{rest} à API. A aplicação web será a camada de apresentação da API e ambos serão desenvolvidos em Django. A API será o contentor responsável por tratar de todos os pedidos efetuados pelos utilizadores do \textit{backoffice}. Para este efeito a API implementa um conjunto de funcionalidades, representadas na Figura \ref{fig:arq-componentes1}, que manipulam um conjunto de dados armazenados numa base de dados relacional PostgreSQL, para conseguir as informações necessárias.
 \newpage
 
 \begin{figure}[ht!]
@@ -159,14 +159,14 @@ A componente "Dados" permite às restantes componentes interagir com a base de d
 
 %  FALTA CAPITULO PARA DISCUSSÂO VALIDAÇÂO DA ARQUITECTURA. Escrever assim que todas as decisões estiveres feitas
 
-\subsection{Técnologias Utilizadas}
+\subsection{Tecnologias Utilizadas}
 
-Grande parte das técnologias ainda estão por definir.
+Grande parte das tecnologias ainda estão por definir. 
 
-\section{Analise de Riscos}
+\section{Análise de Riscos}
 \label{analiseriscos}
 
-Antes de se inicializar a fase de desenvolvimento do projeto é importante realizar uma analise aos possíveis riscos associados ao projeto. Desta forma é importante antecipar/identificar os diferentes riscos que contribuem para o insucesso do projeto para que se possam criar estratégias de mitigação de maneira a minizar o impacto de cada risco. Os diferetes riscos serão classificados tendo em conta o seu impacto e a sua probabilidade.
+Antes de se inicializar a fase de desenvolvimento do projeto é importante realizar uma análise aos possíveis riscos associados ao projeto. Desta forma é importante antecipar/identificar os diferentes riscos que contribuem para o insucesso do projeto para que se possam criar estratégias de mitigação de maneira a minimizar o impacto de cada risco. Os diferentes riscos serão classificados tendo em conta o seu impacto e a sua probabilidade.
 
 \begin{itemize}
 	\item[--] \textbf{Probabilidade}
@@ -185,7 +185,7 @@ De seguida serão listados todos os riscos associados ao projeto e respectivo pl
 \begin{itemize}
 	\item[--] \textbf{ID}: R01
 	\item[--] \textbf{Descrição}: Não se pode garantir uma disponibilidade de 100\% em todos os sistemas externos (e. g. APIs offline) sendo que em algumas ocasiões o sistema pode ter algumas funcionalidades indisponíveis.
-	\item[--] \textbf{Estratégia de Mitigação}: Quando um serviço externo está temporariamente indisponível, apesar algumas funcionalidades também indisponíveis, o sistema deve tratar os pedidos do utilizador de forma a afetar a experiencia do utilizador, ou no pior dos casos para reduzir o impacto no mesmo.
+	\item[--] \textbf{Estratégia de Mitigação}: Quando um serviço externo está temporariamente indisponível, apesar algumas funcionalidades também indisponíveis, o sistema deve tratar os pedidos do utilizador de forma a afetar a experiência do utilizador, ou no pior dos casos para reduzir o impacto no mesmo.
 	\item[--] \textbf{Probabilidade}: Baixa
 	\item[--] \textbf{Impacto}: Baixo
 \end{itemize}
@@ -194,7 +194,7 @@ De seguida serão listados todos os riscos associados ao projeto e respectivo pl
 \begin{itemize}
 	\item[--] \textbf{ID}: R02
 	\item[--] \textbf{Descrição}: A falta de experiência por parte do aluno na implementação de métodos ou serviços de pagamentos põe em causa a boa implementação do mesmo e pode comprometer uma das principais funcionalidades do produto final.
-	\item[--] \textbf{Estratégia de Mitigação}: Deve ser feita uma análise cuidada dos métodos ou serviços de pagamentos disponíveis para integrar com a técnologia de desenvolvimento da plataforma e de seguida deve ser lida a documentação com atenção para garantir uma boa implementação da mesma.
+	\item[--] \textbf{Estratégia de Mitigação}: Deve ser feita uma análise cuidada dos métodos ou serviços de pagamentos disponíveis para integrar com a tecnologia de desenvolvimento da plataforma e de seguida deve ser lida a documentação com atenção para garantir uma boa implementação da mesma.
 	\item[--] \textbf{Probabilidade}: Alta
 	\item[--] \textbf{Impacto}: Alto
 \end{itemize}
@@ -202,8 +202,8 @@ De seguida serão listados todos os riscos associados ao projeto e respectivo pl
 \textbf{R03 - Adaptação a novas tecnologias }
 \begin{itemize}
 	\item[--] \textbf{ID}: R03
-	\item[--] \textbf{Descrição}: A não familiarização, por parte do aluno, com as principais técnologias que irão ser utilizadas na desenvolvimento do projeto, pode criar atrasos implementaçãodevido à fala de experiância e/ou substimação do tempo definido para cada tarefa, comprometendo a implementação de algumas funcionalidades.
-	\item[--] \textbf{Estratégia de Mitigação}: Para além das horas definidas no planeamento do projecto, o aluno terá ed dispensar horas extra de modo a conseguir concluir a implementação e validação de todas as funcionalidades.
+	\item[--] \textbf{Descrição}: A não familiarização, por parte do aluno, com as principais tecnologias que irão ser utilizadas na desenvolvimento do projeto, pode criar atrasos implementação devido à falta de experiência e/ou subestimação do tempo definido para cada tarefa, comprometendo a implementação de algumas funcionalidades.
+	\item[--] \textbf{Estratégia de Mitigação}: Para além das horas definidas no planeamento do projeto, o aluno terá de dispensar horas extra de modo a conseguir concluir a implementação e validação de todas as funcionalidades.
 	\item[--] \textbf{Probabilidade}: Média
 	\item[--] \textbf{Impacto}: Médio
 \end{itemize}
