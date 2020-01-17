@@ -15,6 +15,12 @@ Zlatko Bezhovski.
 \newblock Inbound marketing - a new concept in digital business.
 \newblock {\em Annalen der Physik}, pages 27--34, 2015.
 
+\bibitem{f3}
+{Capterra}.
+\newblock {Survey Anyplace}.
+\newblock \url{https://www.capterra.com/p/127434/Survey-Anyplace/#features}.
+\newblock Accessed: 15/01/2020.
+
 \bibitem{chaseforadventure}
 {Chase for Adventure}.
 \newblock {Where is the best country for you to visit?}
@@ -37,11 +43,38 @@ Zlatko Bezhovski.
 \newblock {Facebook}.
 \newblock \url{https://www.facebook.com/}.
 
+\bibitem{f1}
+{FinancesOnline}.
+\newblock {Funcionalidades do Survey Anyplace}.
+\newblock \url{https://reviews.financesonline.com/p/surveyanyplace/}.
+\newblock Accessed: 15/01/2020.
+
+\bibitem{smf3}
+{FinancesOnline}.
+\newblock {Funcionalidades do SurveyMonkey}.
+\newblock \url{https://reviews.financesonline.com/p/surveymonkey/}.
+\newblock Accessed: 11/01/2020.
+
 \bibitem{gfg}
 {GeeksForGeeks}.
 \newblock {MVC Design Pattern}.
 \newblock \url{https://www.geeksforgeeks.org/mvc-design-pattern/}.
 \newblock Accessed: 29/12/2019.
+
+\bibitem{smf2}
+{GetApp}.
+\newblock {Funcionalidades do SurveyMonkey}.
+\newblock
+  \url{https://www.getapp.com/customer-management-software/a/surveymonkey/features/}.
+\newblock Accessed: 11/01/2020.
+
+\bibitem{f2}
+{GetApp}.
+\newblock {Survey Anyplace Pricing, Features, Reviews and Comparison of
+  Alternatives}.
+\newblock
+  \url{https://www.getapp.com/customer-management-software/a/survey-anyplace/#q=survey%20anyplace&ac=listing}.
+\newblock Accessed: 15/01/2020.
 
 \bibitem{gaccount}
 {Google Account}.
@@ -110,6 +143,12 @@ Brian Halligan and Dharmesh Shah.
 \newblock {Interact Website}.
 \newblock \url{https://www.tryinteract.com/}.
 \newblock Accessed: 11/01/2020.
+
+\bibitem{f4}
+{involve.me}.
+\newblock {Funcionalidades do involve.me}.
+\newblock \url{https://www.involve.me/features/}.
+\newblock Accessed: 15/01/2020.
 
 \bibitem{involve}
 {involve.me}.
@@ -219,7 +258,7 @@ Andrew Pinkham.
 \newblock Accessed: 29/12/2019.
 
 \bibitem{sg}
-{SengGrid}.
+{SendGrid}.
 \newblock {SendGrid}.
 \newblock \url{https://sendgrid.com/}.
 \newblock Accessed:29/12/2019.
@@ -241,6 +280,18 @@ Andrew Pinkham.
 \newblock {The C4 Model for Software Architecture}.
 \newblock \url{https://www.infoq.com/articles/C4-architecture-model/}.
 \newblock Accessed: 29/12/2019.
+
+\bibitem{f5}
+{Survey Anyplace}.
+\newblock {Funcionalidades do Survey Anyplace}.
+\newblock \url{https://surveyanyplace.com/features/}.
+\newblock Accessed: 15/01/2020.
+
+\bibitem{surveyA}
+{Survey Anyplace}.
+\newblock {Survey Anyplace}.
+\newblock \url{https://surveyanyplace.com/}.
+\newblock Accessed:11/01/2020.
 
 \bibitem{surveymonkey}
 {SurveyMonkey}.
