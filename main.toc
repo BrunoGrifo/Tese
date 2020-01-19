@@ -21,108 +21,115 @@
 \contentsline {subsection}{\numberline {3.1.1}Intervenientes}{14}{subsection.3.1.1}% 
 \contentsline {subsection}{\numberline {3.1.2}Processo}{15}{subsection.3.1.2}% 
 \contentsline {section}{\numberline {3.2}Planeamento}{16}{section.3.2}% 
-\contentsline {chapter}{\numberline {4}Especifica\IeC {\c c}\IeC {\~a}o de Requisitos}{20}{chapter.4}% 
-\contentsline {section}{\numberline {4.1}Tipos de Utilizadores}{20}{section.4.1}% 
-\contentsline {subsection}{\numberline {4.1.1}\textit {Stakeholders}}{20}{subsection.4.1.1}% 
-\contentsline {subsection}{\numberline {4.1.2}Propriet\IeC {\'a}rio do produto}{20}{subsection.4.1.2}% 
-\contentsline {subsection}{\numberline {4.1.3}Utilizadores prim\IeC {\'a}rios}{21}{subsection.4.1.3}% 
-\contentsline {subsection}{\numberline {4.1.4}Utilizadores secund\IeC {\'a}rios}{21}{subsection.4.1.4}% 
-\contentsline {section}{\numberline {4.2}Requisitos N\IeC {\~a}o Funcionais}{21}{section.4.2}% 
-\contentsline {section}{\numberline {4.3}Requisitos Funcionais}{22}{section.4.3}% 
-\contentsline {subsection}{\numberline {4.3.1}Diagrama de contexto}{24}{subsection.4.3.1}% 
-\contentsline {subsection}{\numberline {4.3.2}Diagrama de alto n\IeC {\'\i }vel}{25}{subsection.4.3.2}% 
-\contentsline {subsection}{\numberline {4.3.3}Diagrama Registo}{26}{subsection.4.3.3}% 
-\contentsline {subsection}{\numberline {4.3.4}Diagrama Gerir Perguntas TCG}{27}{subsection.4.3.4}% 
-\contentsline {subsection}{\numberline {4.3.5}Diagrama Gerir Forma\IeC {\c c}\IeC {\~o}es}{28}{subsection.4.3.5}% 
-\contentsline {subsection}{\numberline {4.3.6}Diagrama Gerir Question\IeC {\'a}rios}{29}{subsection.4.3.6}% 
-\contentsline {subsection}{\numberline {4.3.7}Diagrama Gerir Concursos}{30}{subsection.4.3.7}% 
-\contentsline {subsection}{\numberline {4.3.8}Diagrama Ajuda}{31}{subsection.4.3.8}% 
-\contentsline {subsection}{\numberline {4.3.9}Diagrama Relat\IeC {\'o}rios}{32}{subsection.4.3.9}% 
-\contentsline {section}{\numberline {4.4}Mockups}{33}{section.4.4}% 
-\contentsline {chapter}{\numberline {5}Arquitetura}{35}{chapter.5}% 
-\contentsline {section}{\numberline {5.1}An\IeC {\'a}lise da Arquitectura}{35}{section.5.1}% 
-\contentsline {subsection}{\numberline {5.1.1}Restri\IeC {\c c}\IeC {\~o}es T\IeC {\'e}cnicas}{35}{subsection.5.1.1}% 
-\contentsline {subsection}{\numberline {5.1.2}Restri\IeC {\c c}\IeC {\~o}es de Neg\IeC {\'o}cio}{36}{subsection.5.1.2}% 
-\contentsline {subsection}{\numberline {5.1.3}\acrfull {mvc}}{36}{subsection.5.1.3}% 
-\contentsline {subsection}{\numberline {5.1.4}Modelo C4}{37}{subsection.5.1.4}% 
-\contentsline {subsubsection}{Diagrama de Contexto}{37}{section*.31}% 
-\contentsline {subsubsection}{Diagrama de Contentores}{38}{section*.33}% 
-\contentsline {subsubsection}{Diagrama de Componentes}{39}{section*.35}% 
-\contentsline {subsection}{\numberline {5.1.5}Tecnologias Utilizadas}{41}{subsection.5.1.5}% 
-\contentsline {section}{\numberline {5.2}An\IeC {\'a}lise de Riscos}{41}{section.5.2}% 
-\contentsline {chapter}{\numberline {6}Implementa\IeC {\c c}\IeC {\~a}o}{45}{chapter.6}% 
-\contentsline {section}{\numberline {6.1}Sprints}{45}{section.6.1}% 
-\contentsline {section}{\numberline {6.2}Ferramentas Utilizadas}{45}{section.6.2}% 
-\contentsline {section}{\numberline {6.3}Desafios na Implementa\IeC {\c c}\IeC {\~a}o}{45}{section.6.3}% 
-\contentsline {section}{\numberline {6.4}Produto Final}{45}{section.6.4}% 
-\contentsline {chapter}{\numberline {7}Valida\IeC {\c c}\IeC {\~a}o}{47}{chapter.7}% 
-\contentsline {chapter}{\numberline {8}Produto Final}{49}{chapter.8}% 
-\contentsline {chapter}{\numberline {9}Conclusion}{51}{chapter.9}% 
-\contentsline {chapter}{Refer\IeC {\^e}ncias}{53}{chapter*.39}% 
-\contentsline {chapter}{Anexos}{55}{section*.40}% 
-\contentsline {chapter}{\numberline {A}\textit {\gls {pop}}}{59}{Anexo.1.A}% 
-\contentsline {chapter}{\numberline {B}Estado de Arte Detalhado}{61}{Anexo.1.B}% 
-\contentsline {section}{\numberline {B.1}SurveyMonkey}{61}{section.1.B.1}% 
-\contentsline {section}{\numberline {B.2}Typeform}{67}{section.1.B.2}% 
-\contentsline {section}{\numberline {B.3}Google Form}{72}{section.1.B.3}% 
-\contentsline {section}{\numberline {B.4}\acrfull {tcg}}{77}{section.1.B.4}% 
-\contentsline {section}{\numberline {B.5}involve.me}{87}{section.1.B.5}% 
-\contentsline {subsection}{\numberline {B.5.1}Survey Anyplace}{94}{subsection.1.B.5.1}% 
-\contentsline {subsection}{\numberline {B.5.2}Interact}{100}{subsection.1.B.5.2}% 
-\contentsline {chapter}{\numberline {C}Casos de Uso}{110}{Anexo.1.C}% 
-\contentsline {section}{\numberline {C.1}Casos de Uso}{110}{section.1.C.1}% 
-\contentsline {subsection}{\numberline {C.1.1}RF01 - Login}{110}{subsection.1.C.1.1}% 
-\contentsline {subsection}{\numberline {C.1.2}RF02 - Registo}{111}{subsection.1.C.1.2}% 
-\contentsline {subsection}{\numberline {C.1.3}RF03 - Mail de confirma\IeC {\c c}\IeC {\~a}o}{112}{subsection.1.C.1.3}% 
-\contentsline {subsection}{\numberline {C.1.4}RF05 - Gerir question\IeC {\'a}rios}{113}{subsection.1.C.1.4}% 
-\contentsline {subsection}{\numberline {C.1.5}RF06 - Criar question\IeC {\'a}rio}{114}{subsection.1.C.1.5}% 
-\contentsline {subsection}{\numberline {C.1.6}RF07 - Modelo de Notifica\IeC {\c c}\IeC {\~o}es}{115}{subsection.1.C.1.6}% 
-\contentsline {subsection}{\numberline {C.1.7}RF08 - Landing Page}{116}{subsection.1.C.1.7}% 
-\contentsline {subsection}{\numberline {C.1.8}RF09 - Notifica\IeC {\c c}\IeC {\~o}es por E-mail}{117}{subsection.1.C.1.8}% 
-\contentsline {subsection}{\numberline {C.1.9}RF10 - Criar quest\IeC {\~o}es}{118}{subsection.1.C.1.9}% 
-\contentsline {subsection}{\numberline {C.1.10}RF11 - Criar resultados}{119}{subsection.1.C.1.10}% 
-\contentsline {subsection}{\numberline {C.1.11}RF12 - Importar quest\IeC {\~o}es}{120}{subsection.1.C.1.11}% 
-\contentsline {subsection}{\numberline {C.1.12}RF13 - Exportar quest\IeC {\~o}es}{121}{subsection.1.C.1.12}% 
-\contentsline {subsection}{\numberline {C.1.13}RF14 - Criar sistema de pontua\IeC {\c c}\IeC {\~o}es}{122}{subsection.1.C.1.13}% 
-\contentsline {subsection}{\numberline {C.1.14}RF15 - Mostrar lista de question\IeC {\'a}rios do utilizador}{123}{subsection.1.C.1.14}% 
-\contentsline {subsection}{\numberline {C.1.15}RF16 - Editar question\IeC {\'a}rio}{124}{subsection.1.C.1.15}% 
-\contentsline {subsection}{\numberline {C.1.16}RF17 - Notificar utilizadores finais}{125}{subsection.1.C.1.16}% 
-\contentsline {subsection}{\numberline {C.1.17}RF19 - Gerir Forma\IeC {\c c}\IeC {\~o}es}{126}{subsection.1.C.1.17}% 
-\contentsline {subsection}{\numberline {C.1.18}RF20 - Criar forma\IeC {\c c}\IeC {\~a}o}{127}{subsection.1.C.1.18}% 
-\contentsline {subsection}{\numberline {C.1.19}RF21 - Definir periodicidade}{128}{subsection.1.C.1.19}% 
-\contentsline {subsection}{\numberline {C.1.20}RF22 - Registo de atividade}{129}{subsection.1.C.1.20}% 
-\contentsline {subsection}{\numberline {C.1.21}RF23 - Enviar Notifica\IeC {\c c}\IeC {\~a}o}{130}{subsection.1.C.1.21}% 
-\contentsline {subsection}{\numberline {C.1.22}RF24 - Defini\IeC {\c c}\IeC {\~o}es da forma\IeC {\c c}\IeC {\~a}o}{131}{subsection.1.C.1.22}% 
-\contentsline {subsection}{\numberline {C.1.23}RF25 - Adicionar entrada de perguntas}{132}{subsection.1.C.1.23}% 
-\contentsline {subsection}{\numberline {C.1.24}RF26 - Gerir entradas de perguntas}{133}{subsection.1.C.1.24}% 
-\contentsline {subsection}{\numberline {C.1.25}RF27 - Mostrar lista de forma\IeC {\c c}\IeC {\~o}es do utilizador}{134}{subsection.1.C.1.25}% 
-\contentsline {subsection}{\numberline {C.1.26}RF28 - Editar forma\IeC {\c c}\IeC {\~a}o}{135}{subsection.1.C.1.26}% 
-\contentsline {subsection}{\numberline {C.1.27}RF29 - Adicionar novo utilizador final TCG}{136}{subsection.1.C.1.27}% 
-\contentsline {subsection}{\numberline {C.1.28}RF30 - Notificar utilizadores finais TCG}{137}{subsection.1.C.1.28}% 
-\contentsline {subsection}{\numberline {C.1.29}RF31 - Gerir concursos}{138}{subsection.1.C.1.29}% 
-\contentsline {subsection}{\numberline {C.1.30}RF32 - Criar concurso}{139}{subsection.1.C.1.30}% 
-\contentsline {subsection}{\numberline {C.1.31}RF33 - Criar perguntas}{140}{subsection.1.C.1.31}% 
-\contentsline {subsection}{\numberline {C.1.32}RF34 - Introduzir respostas}{141}{subsection.1.C.1.32}% 
-\contentsline {subsection}{\numberline {C.1.33}RF35 - Exportar perguntas}{142}{subsection.1.C.1.33}% 
-\contentsline {subsection}{\numberline {C.1.34}RF36 - Importar perguntas}{143}{subsection.1.C.1.34}% 
-\contentsline {subsection}{\numberline {C.1.35}RF37 - Mostrar lista de concursos do utilizador}{144}{subsection.1.C.1.35}% 
-\contentsline {subsection}{\numberline {C.1.36}RF38 - Editar concurso}{145}{subsection.1.C.1.36}% 
-\contentsline {subsection}{\numberline {C.1.37}RF39 - Gerir perguntas TCG}{146}{subsection.1.C.1.37}% 
-\contentsline {subsection}{\numberline {C.1.38}RF40 - Importar perguntas TCG}{147}{subsection.1.C.1.38}% 
-\contentsline {subsection}{\numberline {C.1.39}RF41 - Exportar pergunta TCG}{148}{subsection.1.C.1.39}% 
-\contentsline {subsection}{\numberline {C.1.40}RF42 - Criar pergunta TCG}{149}{subsection.1.C.1.40}% 
-\contentsline {subsection}{\numberline {C.1.41}RF44 - Filtrar perguntas TCG}{150}{subsection.1.C.1.41}% 
-\contentsline {subsection}{\numberline {C.1.42}RF45 - Mostrar lista de perguntas TCG}{151}{subsection.1.C.1.42}% 
-\contentsline {subsection}{\numberline {C.1.43}RF46 - Editar pergunta TCG}{152}{subsection.1.C.1.43}% 
-\contentsline {subsection}{\numberline {C.1.44}RF47 - Apagar pergunta TCG}{153}{subsection.1.C.1.44}% 
-\contentsline {subsection}{\numberline {C.1.45}RF48 - Relat\IeC {\'o}rios}{154}{subsection.1.C.1.45}% 
-\contentsline {subsection}{\numberline {C.1.46}RF49 - Relat\IeC {\'o}rio geral}{155}{subsection.1.C.1.46}% 
-\contentsline {subsection}{\numberline {C.1.47}RF50 - Relat\IeC {\'o}rio}{156}{subsection.1.C.1.47}% 
-\contentsline {subsection}{\numberline {C.1.48}RF51 - Listar leads por perfil}{157}{subsection.1.C.1.48}% 
-\contentsline {subsection}{\numberline {C.1.49}RF52 - Defini\IeC {\c c}\IeC {\~o}es}{158}{subsection.1.C.1.49}% 
-\contentsline {subsection}{\numberline {C.1.50}RF53 - Actualizar plano}{159}{subsection.1.C.1.50}% 
-\contentsline {subsection}{\numberline {C.1.51}RF54 - Ajuda}{160}{subsection.1.C.1.51}% 
-\contentsline {subsection}{\numberline {C.1.52}RF55- Sair}{161}{subsection.1.C.1.52}% 
-\contentsline {subsection}{\numberline {C.1.53}RF56 - Partilhar}{162}{subsection.1.C.1.53}% 
-\contentsline {subsection}{\numberline {C.1.54}RF57 - Apagar forma\IeC {\c c}\IeC {\~a}o}{163}{subsection.1.C.1.54}% 
-\contentsline {chapter}{\numberline {D}Mockups}{164}{Anexo.1.D}% 
+\contentsline {chapter}{\numberline {4}Especifica\IeC {\c c}\IeC {\~a}o de Requisitos}{21}{chapter.4}% 
+\contentsline {section}{\numberline {4.1}Tipos de Utilizadores}{21}{section.4.1}% 
+\contentsline {subsection}{\numberline {4.1.1}\textit {Stakeholders}}{21}{subsection.4.1.1}% 
+\contentsline {subsection}{\numberline {4.1.2}Propriet\IeC {\'a}rio do produto}{21}{subsection.4.1.2}% 
+\contentsline {subsection}{\numberline {4.1.3}Utilizadores prim\IeC {\'a}rios}{22}{subsection.4.1.3}% 
+\contentsline {subsection}{\numberline {4.1.4}Utilizadores secund\IeC {\'a}rios}{22}{subsection.4.1.4}% 
+\contentsline {section}{\numberline {4.2}Requisitos N\IeC {\~a}o Funcionais}{22}{section.4.2}% 
+\contentsline {section}{\numberline {4.3}Requisitos Funcionais}{23}{section.4.3}% 
+\contentsline {subsection}{\numberline {4.3.1}Diagrama de contexto}{25}{subsection.4.3.1}% 
+\contentsline {subsection}{\numberline {4.3.2}Diagrama de alto n\IeC {\'\i }vel}{26}{subsection.4.3.2}% 
+\contentsline {subsection}{\numberline {4.3.3}Diagrama Registo}{27}{subsection.4.3.3}% 
+\contentsline {subsection}{\numberline {4.3.4}Diagrama Gerir Perguntas TCG}{28}{subsection.4.3.4}% 
+\contentsline {subsection}{\numberline {4.3.5}Diagrama Gerir Forma\IeC {\c c}\IeC {\~o}es}{29}{subsection.4.3.5}% 
+\contentsline {subsection}{\numberline {4.3.6}Diagrama Gerir Question\IeC {\'a}rios}{30}{subsection.4.3.6}% 
+\contentsline {subsection}{\numberline {4.3.7}Diagrama Gerir Concursos}{31}{subsection.4.3.7}% 
+\contentsline {subsection}{\numberline {4.3.8}Diagrama Ajuda}{32}{subsection.4.3.8}% 
+\contentsline {subsection}{\numberline {4.3.9}Diagrama Relat\IeC {\'o}rios}{33}{subsection.4.3.9}% 
+\contentsline {section}{\numberline {4.4}Mockups}{34}{section.4.4}% 
+\contentsline {chapter}{\numberline {5}Arquitetura}{36}{chapter.5}% 
+\contentsline {section}{\numberline {5.1}An\IeC {\'a}lise da Arquitectura}{36}{section.5.1}% 
+\contentsline {subsection}{\numberline {5.1.1}Restri\IeC {\c c}\IeC {\~o}es T\IeC {\'e}cnicas}{36}{subsection.5.1.1}% 
+\contentsline {subsection}{\numberline {5.1.2}Restri\IeC {\c c}\IeC {\~o}es de Neg\IeC {\'o}cio}{37}{subsection.5.1.2}% 
+\contentsline {subsection}{\numberline {5.1.3}\acrfull {mvc}}{37}{subsection.5.1.3}% 
+\contentsline {subsection}{\numberline {5.1.4}Modelo C4}{38}{subsection.5.1.4}% 
+\contentsline {subsubsection}{Diagrama de Contexto}{38}{section*.31}% 
+\contentsline {subsubsection}{Diagrama de Contentores}{39}{section*.33}% 
+\contentsline {subsubsection}{Diagrama de Componentes}{40}{section*.35}% 
+\contentsline {subsection}{\numberline {5.1.5}Tecnologias Utilizadas}{42}{subsection.5.1.5}% 
+\contentsline {section}{\numberline {5.2}An\IeC {\'a}lise de Riscos}{42}{section.5.2}% 
+\contentsline {chapter}{\numberline {6}Implementa\IeC {\c c}\IeC {\~a}o}{46}{chapter.6}% 
+\contentsline {section}{\numberline {6.1}Sprints}{46}{section.6.1}% 
+\contentsline {section}{\numberline {6.2}Ferramentas Utilizadas}{46}{section.6.2}% 
+\contentsline {section}{\numberline {6.3}Desafios na Implementa\IeC {\c c}\IeC {\~a}o}{46}{section.6.3}% 
+\contentsline {section}{\numberline {6.4}Produto Final}{46}{section.6.4}% 
+\contentsline {chapter}{\numberline {7}Valida\IeC {\c c}\IeC {\~a}o}{48}{chapter.7}% 
+\contentsline {chapter}{\numberline {8}Produto Final}{50}{chapter.8}% 
+\contentsline {chapter}{\numberline {9}Conclusion}{52}{chapter.9}% 
+\contentsline {chapter}{Refer\IeC {\^e}ncias}{54}{chapter*.39}% 
+\contentsline {chapter}{Anexos}{56}{section*.40}% 
+\contentsline {chapter}{\numberline {A}\textit {\gls {pop}}}{60}{Anexo.1.A}% 
+\contentsline {chapter}{\numberline {B}Estado de Arte Detalhado}{62}{Anexo.1.B}% 
+\contentsline {section}{\numberline {B.1}SurveyMonkey}{62}{section.1.B.1}% 
+\contentsline {section}{\numberline {B.2}Typeform}{68}{section.1.B.2}% 
+\contentsline {section}{\numberline {B.3}Google Form}{73}{section.1.B.3}% 
+\contentsline {section}{\numberline {B.4}\acrfull {tcg}}{78}{section.1.B.4}% 
+\contentsline {section}{\numberline {B.5}involve.me}{88}{section.1.B.5}% 
+\contentsline {subsection}{\numberline {B.5.1}Survey Anyplace}{95}{subsection.1.B.5.1}% 
+\contentsline {subsection}{\numberline {B.5.2}Interact}{101}{subsection.1.B.5.2}% 
+\contentsline {chapter}{\numberline {C}Casos de Uso}{111}{Anexo.1.C}% 
+\contentsline {section}{\numberline {C.1}Casos de Uso}{111}{section.1.C.1}% 
+\contentsline {subsection}{\numberline {C.1.1}RF01 - Login}{111}{subsection.1.C.1.1}% 
+\contentsline {subsection}{\numberline {C.1.2}RF02 - Registo}{112}{subsection.1.C.1.2}% 
+\contentsline {subsection}{\numberline {C.1.3}RF03 - Mail de confirma\IeC {\c c}\IeC {\~a}o}{113}{subsection.1.C.1.3}% 
+\contentsline {subsection}{\numberline {C.1.4}RF05 - Gerir question\IeC {\'a}rios}{114}{subsection.1.C.1.4}% 
+\contentsline {subsection}{\numberline {C.1.5}RF06 - Criar question\IeC {\'a}rio}{115}{subsection.1.C.1.5}% 
+\contentsline {subsection}{\numberline {C.1.6}RF07 - Modelo de Notifica\IeC {\c c}\IeC {\~o}es}{116}{subsection.1.C.1.6}% 
+\contentsline {subsection}{\numberline {C.1.7}RF08 - Landing Page}{117}{subsection.1.C.1.7}% 
+\contentsline {subsection}{\numberline {C.1.8}RF09 - Notifica\IeC {\c c}\IeC {\~o}es por E-mail}{118}{subsection.1.C.1.8}% 
+\contentsline {subsection}{\numberline {C.1.9}RF10 - Criar quest\IeC {\~o}es}{119}{subsection.1.C.1.9}% 
+\contentsline {subsection}{\numberline {C.1.10}RF11 - Criar resultados}{120}{subsection.1.C.1.10}% 
+\contentsline {subsection}{\numberline {C.1.11}RF12 - Importar quest\IeC {\~o}es}{121}{subsection.1.C.1.11}% 
+\contentsline {subsection}{\numberline {C.1.12}RF13 - Exportar quest\IeC {\~o}es}{122}{subsection.1.C.1.12}% 
+\contentsline {subsection}{\numberline {C.1.13}RF14 - Criar sistema de pontua\IeC {\c c}\IeC {\~o}es}{123}{subsection.1.C.1.13}% 
+\contentsline {subsection}{\numberline {C.1.14}RF15 - Mostrar lista de question\IeC {\'a}rios do utilizador}{124}{subsection.1.C.1.14}% 
+\contentsline {subsection}{\numberline {C.1.15}RF16 - Editar question\IeC {\'a}rio}{125}{subsection.1.C.1.15}% 
+\contentsline {subsection}{\numberline {C.1.16}RF17 - Notificar utilizadores finais}{126}{subsection.1.C.1.16}% 
+\contentsline {subsection}{\numberline {C.1.17}RF19 - Gerir Forma\IeC {\c c}\IeC {\~o}es}{127}{subsection.1.C.1.17}% 
+\contentsline {subsection}{\numberline {C.1.18}RF20 - Criar forma\IeC {\c c}\IeC {\~a}o}{128}{subsection.1.C.1.18}% 
+\contentsline {subsection}{\numberline {C.1.19}RF21 - Definir periodicidade}{129}{subsection.1.C.1.19}% 
+\contentsline {subsection}{\numberline {C.1.20}RF22 - Registo de atividade}{130}{subsection.1.C.1.20}% 
+\contentsline {subsection}{\numberline {C.1.21}RF23 - Enviar Notifica\IeC {\c c}\IeC {\~a}o}{131}{subsection.1.C.1.21}% 
+\contentsline {subsection}{\numberline {C.1.22}RF24 - Defini\IeC {\c c}\IeC {\~o}es da forma\IeC {\c c}\IeC {\~a}o}{132}{subsection.1.C.1.22}% 
+\contentsline {subsection}{\numberline {C.1.23}RF25 - Adicionar entrada de perguntas}{133}{subsection.1.C.1.23}% 
+\contentsline {subsection}{\numberline {C.1.24}RF26 - Gerir entradas de perguntas}{134}{subsection.1.C.1.24}% 
+\contentsline {subsection}{\numberline {C.1.25}RF27 - Mostrar lista de forma\IeC {\c c}\IeC {\~o}es do utilizador}{135}{subsection.1.C.1.25}% 
+\contentsline {subsection}{\numberline {C.1.26}RF28 - Editar forma\IeC {\c c}\IeC {\~a}o}{136}{subsection.1.C.1.26}% 
+\contentsline {subsection}{\numberline {C.1.27}RF29 - Adicionar novo utilizador final TCG}{137}{subsection.1.C.1.27}% 
+\contentsline {subsection}{\numberline {C.1.28}RF30 - Notificar utilizadores finais TCG}{138}{subsection.1.C.1.28}% 
+\contentsline {subsection}{\numberline {C.1.29}RF31 - Gerir concursos}{139}{subsection.1.C.1.29}% 
+\contentsline {subsection}{\numberline {C.1.30}RF32 - Criar concurso}{140}{subsection.1.C.1.30}% 
+\contentsline {subsection}{\numberline {C.1.31}RF33 - Criar perguntas}{141}{subsection.1.C.1.31}% 
+\contentsline {subsection}{\numberline {C.1.32}RF34 - Introduzir respostas}{142}{subsection.1.C.1.32}% 
+\contentsline {subsection}{\numberline {C.1.33}RF35 - Exportar perguntas}{143}{subsection.1.C.1.33}% 
+\contentsline {subsection}{\numberline {C.1.34}RF36 - Importar perguntas}{144}{subsection.1.C.1.34}% 
+\contentsline {subsection}{\numberline {C.1.35}RF37 - Mostrar lista de concursos do utilizador}{145}{subsection.1.C.1.35}% 
+\contentsline {subsection}{\numberline {C.1.36}RF38 - Editar concurso}{146}{subsection.1.C.1.36}% 
+\contentsline {subsection}{\numberline {C.1.37}RF39 - Gerir perguntas TCG}{147}{subsection.1.C.1.37}% 
+\contentsline {subsection}{\numberline {C.1.38}RF40 - Importar perguntas TCG}{148}{subsection.1.C.1.38}% 
+\contentsline {subsection}{\numberline {C.1.39}RF41 - Exportar pergunta TCG}{149}{subsection.1.C.1.39}% 
+\contentsline {subsection}{\numberline {C.1.40}RF42 - Criar pergunta TCG}{150}{subsection.1.C.1.40}% 
+\contentsline {subsection}{\numberline {C.1.41}RF44 - Filtrar perguntas TCG}{151}{subsection.1.C.1.41}% 
+\contentsline {subsection}{\numberline {C.1.42}RF45 - Mostrar lista de perguntas TCG}{152}{subsection.1.C.1.42}% 
+\contentsline {subsection}{\numberline {C.1.43}RF46 - Editar pergunta TCG}{153}{subsection.1.C.1.43}% 
+\contentsline {subsection}{\numberline {C.1.44}RF47 - Apagar pergunta TCG}{154}{subsection.1.C.1.44}% 
+\contentsline {subsection}{\numberline {C.1.45}RF48 - Relat\IeC {\'o}rios}{155}{subsection.1.C.1.45}% 
+\contentsline {subsection}{\numberline {C.1.46}RF49 - Relat\IeC {\'o}rio geral}{156}{subsection.1.C.1.46}% 
+\contentsline {subsection}{\numberline {C.1.47}RF50 - Relat\IeC {\'o}rio}{157}{subsection.1.C.1.47}% 
+\contentsline {subsection}{\numberline {C.1.48}RF51 - Listar leads por perfil}{158}{subsection.1.C.1.48}% 
+\contentsline {subsection}{\numberline {C.1.49}RF52 - Defini\IeC {\c c}\IeC {\~o}es}{159}{subsection.1.C.1.49}% 
+\contentsline {subsection}{\numberline {C.1.50}RF53 - Actualizar plano}{160}{subsection.1.C.1.50}% 
+\contentsline {subsection}{\numberline {C.1.51}RF54 - Ajuda}{161}{subsection.1.C.1.51}% 
+\contentsline {subsection}{\numberline {C.1.52}RF55- Sair}{162}{subsection.1.C.1.52}% 
+\contentsline {subsection}{\numberline {C.1.53}RF56 - Partilhar}{163}{subsection.1.C.1.53}% 
+\contentsline {subsection}{\numberline {C.1.54}RF57 - Apagar forma\IeC {\c c}\IeC {\~a}o}{164}{subsection.1.C.1.54}% 
+\contentsline {chapter}{\numberline {D}Mockups}{165}{Anexo.1.D}% 
+\contentsline {section}{\numberline {D.1}Interfaces do utilizador}{165}{section.1.D.1}% 
+\contentsline {subsection}{\numberline {D.1.1}Autentica\IeC {\c c}\IeC {\~a}o}{165}{subsection.1.D.1.1}% 
+\contentsline {subsection}{\numberline {D.1.2}P\IeC {\'a}gina Inicial}{167}{subsection.1.D.1.2}% 
+\contentsline {subsection}{\numberline {D.1.3}Question\IeC {\'a}rios}{168}{subsection.1.D.1.3}% 
+\contentsline {subsection}{\numberline {D.1.4}Concursos}{172}{subsection.1.D.1.4}% 
+\contentsline {subsection}{\numberline {D.1.5}Forma\IeC {\c c}\IeC {\~o}es}{173}{subsection.1.D.1.5}% 
+\contentsline {subsection}{\numberline {D.1.6}Defini\IeC {\c c}\IeC {\~o}es e Plano de funcionalidades}{174}{subsection.1.D.1.6}% 
