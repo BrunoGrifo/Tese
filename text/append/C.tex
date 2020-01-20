@@ -1038,7 +1038,7 @@
 	\item[--]  \textbf{Pré-condições:} O utilizador necessita de estar autenticado na plataforma 10.quest e tem que ter dados recolhidos dos questionários, formações ou concursos.
 	\item[--]  \textbf{Estímulo:} RF48 - Relatórios.
 	\item[--]  \textbf{Fluxo Principal:} 
-		\subitem 1. O utilizador a formação, questionário ou concurso para o qual quer gerar um relatório.
+		\subitem 1. O utilizador gera a formação, questionário ou concurso para o qual quer gerar um relatório.
 		\subitem 2. O 10.quest gera o relatório.
 		\subitem 3. O 10.quest apresenta os resultados.
 	\item[--]  \textbf{Fluxo de Excepção:} 
@@ -1047,6 +1047,7 @@
 		\subitem 2b. O serviço do TCG (API) está indisponível.
 		\subitem 2b1. O 10.quest notifica o utilizador que o serviço do TCG está temporariamente indisponível. 
 	\item[--]  \textbf{Observações:} No passo 2, caso o utilizador queira gerar um relatório de para uma formação, é feito um pedido ao TCG e o mesmo retorna o relatório da formação em questão.
+	Caso o utilizador deseje gerar o relatório para um questionário, será apresentado um resumo dos resultados mais populares, um gráfico que mostra a conversão dos vários tipos de utilizadores finais, um resumo de todas as respostas por pergunta, a lista de todos os resultados e ainda um gráfico temporal de eventos (i. e. eventos que ocorrem ao longo do tempo e respectiva conversão). A funcionalidade para gerar o gráfico temporal de eventos tem prioridade \textit{could have}.
 \end{itemize}
 \newpage
 
