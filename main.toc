@@ -131,5 +131,6 @@
 \contentsline {subsection}{\numberline {D.1.2}P\IeC {\'a}gina Inicial}{167}{subsection.1.D.1.2}% 
 \contentsline {subsection}{\numberline {D.1.3}Question\IeC {\'a}rios}{168}{subsection.1.D.1.3}% 
 \contentsline {subsection}{\numberline {D.1.4}Concursos}{172}{subsection.1.D.1.4}% 
-\contentsline {subsection}{\numberline {D.1.5}Forma\IeC {\c c}\IeC {\~o}es}{173}{subsection.1.D.1.5}% 
-\contentsline {subsection}{\numberline {D.1.6}Defini\IeC {\c c}\IeC {\~o}es e Plano de funcionalidades}{174}{subsection.1.D.1.6}% 
+\contentsline {subsection}{\numberline {D.1.5}Forma\IeC {\c c}\IeC {\~o}es}{174}{subsection.1.D.1.5}% 
+\contentsline {subsection}{\numberline {D.1.6}Relat\IeC {\'o}rios}{180}{subsection.1.D.1.6}% 
+\contentsline {subsection}{\numberline {D.1.7}Defini\IeC {\c c}\IeC {\~o}es e Plano de funcionalidades}{183}{subsection.1.D.1.7}% 
