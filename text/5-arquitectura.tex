@@ -2,9 +2,9 @@
 \chapter{Arquitetura}
 \label{sec:arquitetura}
 
-A arquitectura é uma etapa fundamental em todos os projecto porque é aqui que se define a estrutura e comportamento do sistema na sua globalidade e nas diferentes componentes.
+A arquitectura é uma etapa fundamental em todos os projetos porque é aqui que se define a estrutura e comportamento do sistema na sua globalidade e nas diferentes componentes.
 
-Neste capítulo está exposta a arquitectura do 10.quest que servirá de \textit{guideline} para a implementação do projecto. Serão apresentadas diferentes prespectivas para analisar os diferentes aspectos do sistema. É de notar que as componentes a desenvolver pela restante equipa de desenvolvimento não será analisada e apenas será apresentada de forma superficial para fazer a ligação às componentes a desenvolver no âmbito do estágio curricular.
+Neste capítulo está exposta a arquitetura do 10.quest que servirá de \textit{guideline} para a implementação do projeto. Serão apresentadas diferentes perspetivas para analisar os diferentes aspetos do sistema. É de notar que as componentes a desenvolver pela restante equipa de desenvolvimento não serão analisadas e apenas serão apresentadas de forma superficial para fazer a ligação às componentes a desenvolver no âmbito do estágio curricular.
 Este capítulo é também uma exposição das decisões arquiteturais efectuadas no primeiro semestre, respeitando as restrições técnicas e de negócios.
 
 Por fim será feita uma análise dos riscos envolvidos no desenvolvimento do projecto, o seu impacto e probabilidade de ocorrência e o respectivo plano de mitigação
@@ -12,10 +12,10 @@ Por fim será feita uma análise dos riscos envolvidos no desenvolvimento do pro
 
 
 
-\section{Análise da Arquitectura}
+\section{Análise da Arquitetura}
 \label{analisearq}
 
-Na análise da arquitectura serão apresentadas as restrições do projecto, que têm um impacto directo nas decisões de arquitectura, as diferentes perspectivas de arquitetura e as tecnologias utilizadas.
+Na análise da arquitetura serão apresentadas as restrições do projecto, que têm um impacto directo nas decisões de arquitetura, nas diferentes perspetivas de arquitetura e nas tecnologias utilizadas.
 
 \subsection{Restrições Técnicas}
 As restrições técnicas são decisões técnicas arquiteturais que devem ser satisfeitas. O Sistema a desenvolver deve respeitar as seguintes restrições:
@@ -24,7 +24,7 @@ As restrições técnicas são decisões técnicas arquiteturais que devem ser s
 \newline
 \textbf{Título:} Arquitectura REST
 \newline
-\textbf{Descrição:} A comunicação entre a plataforma a desenvolver e o TCG deve seguir uma arquitectura REST.
+\textbf{Descrição:} A comunicação entre a plataforma a desenvolver e o TCG deve seguir uma arquitetura REST.
 
 \textbf{Identificador: RT02}
 \newline
@@ -45,7 +45,7 @@ As restrições técnicas são decisões técnicas arquiteturais que devem ser s
 \textbf{Descrição:} Todas as funcionalidades do sistema devem estar disponíveis através da plataforma web.
 
 \subsection{Restrições de Negócio}
-Nesta secção estão descritas as restrições de negócio, que podem ser entendidas como barreiras que a organização deve lutar para executar a sua estratégia. Estas restrições seguintes foram impostas pelo \textit{Product Owner} e devem ser satisfeitas na arquitectura do sistema:
+Nesta secção estão descritas as restrições de negócio, que podem ser entendidas como barreiras pelas quais a organização deve lutar para executar a sua estratégia. Estas restrições, que apresento em seguida foram impostas pelo \textit{Product Owner} e devem ser satisfeitas na arquitectura do sistema:
 
 \textbf{Identificador: RN01}
 \newline
@@ -78,23 +78,23 @@ Por último temos o componente \textbf{Controller}.  Este componente atua entre 
 
 Nesta secção encontra-se representada e descrita toda a arquitetura da plataforma 10.quest,  influenciada pelos objetivos de negócio, \textit{stakeholders}, requisitos e restrições técnica e de negócio, apresentados anteriormente.
 
-Foram utilizados três diagramas para representar a arquitectura do sistema, utilizando o \textbf{modelo C4}\cite{c4}: diagrama de contexto, diagrama de contentores, diagrama de componentes e o diagrama de classes.
+Foram utilizados três diagramas para representar a arquitetura do sistema, utilizando o \textbf{modelo C4}\cite{c4}: diagrama de contexto, diagrama de contentores, diagrama de componentes e o diagrama de classes.
 
-Os diferentes diagramas representam diferentes perspectivas e níveis de abstração e foram feitos com o intuito de facilitar a compreensão da arquitetura permitindo à equipa de desenvolvimento visualizar os diferentes níveis de granularidade. 
+Os diferentes diagramas representam diferentes perspetivas e níveis de abstração e foram feitos com o intuito de facilitar a compreensão da arquitetura permitindo à equipa de desenvolvimento visualizar os diferentes níveis de granularidade. 
 
-O diagrama de contexto mostra a relação entre o sistema que vai ser desenvolvido e outros agentes como por exemplo utilizadores e sistemas externos.  Este é o diagrama com maior nível de abstração e é bom para sublinhar as dependências externas que a equipa de desenvolvimento tem que integrar no sistema. 
+O diagrama de contexto mostra a relação entre o sistema que vai ser desenvolvido e outros agentes como, por exemplo, utilizadores e sistemas externos.  Este é o diagrama com maior nível de abstração e é bom para sublinhar as dependências externas que a equipa de desenvolvimento tem que integrar no sistema. 
 
 O diagrama de contentores apresenta um maior detalhe (i. e. relativamente ao diagrama de contexto) e mostra os diferentes contentores que constituem o sistema (e. g. bases de dados, aplicações, microserviços etc...). Neste diagrama são também definidas algumas decisões arquiteturais. 
 
-Por último temos o diagrama de componentes aproxima um contentor individualmente e mostra todos os componentes que constituem esse contentor. Desta forma conseguimos perceber as principais funcionalidades do sistema. 
+Por último temos o diagrama de componentes que aproxima um contentor individualmente e mostra todos os componentes que constituem esse contentor. Desta forma conseguimos perceber as principais funcionalidades do sistema. 
 
 
 \subsubsection{Diagrama de Contexto}
 
-Como foi referido no Catípulo \ref{sec:introducao} o 10.quest é uma plataforma de inbound marketing que consiste num \textit{backoffice} para criação de questionários, concursos e criação de formulário com o auxílio do \acrshort{tcg}.
+Como foi referido no Capítulo \ref{sec:introducao} o 10.quest é uma plataforma de inbound marketing que consiste num \textit{backoffice} para criação de questionários, concursos e criação de formulário com o auxílio do \acrshort{tcg}.
 
 Como podemos ver na Figura \ref{fig:arq-contexto} o 10.quest interage com seis sistemas externos. O SendGrid\cite{sg} é um \acrshort{saas}, na \textit{cloud}, que fornece um serviço de entrega de emails. Este serviço permite enviar emails através de APIs flexíveis garantindo uma disponibilidade  de 99.999\% \cite{sguptime}. 
-O TCG, tal como foi referido no Capítulo \ref{sec:estado-arte}, é uma plataforma de criação de formações que tem como principal objectivo transformar PDFs numa aprendizagem baseada em tentativa erro. Algumas das funcionalidades do \acrshort{tcg} serão utilizadas pelo 10.quest.
+O TCG, tal como foi referido no Capítulo \ref{sec:estado-arte}, é uma plataforma de criação de formações que tem como principal objectivo, transmitir conhecimento através de uma técnica de aprendizagem baseada em tentativa e erro Algumas das funcionalidades do \acrshort{tcg} serão utilizadas pelo 10.quest.
 Para partilhar os questionários, concursos e formações o 10.quest irá utilizar as APIs do Facebook, LinkedIn, Twitter e Instagram.
 
 
@@ -127,7 +127,7 @@ A aplicação web efetua os pedidos dos utilizadores, através de pedidos \acrsh
 
 \subsubsection{Diagrama de Componentes}
 
-Na Figura \ref{fig:arq-componentes} é apresentado o diagrama de componentes e na Figura \ref{fig:arq-componentes1} são as presentados os componentes da API. 
+Na Figura \ref{fig:arq-componentes} é apresentado o diagrama de componentes e na Figura \ref{fig:arq-componentes1} são apresentados os componentes da API. 
 
 A autenticação é necessária para que os pedidos sejam aceites e mapeados pela API. Para isto a componente "Autenticação", permite ao utilizador efetuar a sua autenticação e verifica a autenticidade do mesmo, em cada pedido, através de tokens. Desta forma, caso o utilizador esteja autenticado os seus pedidos \acrshort{https}/\acrshort{rest} avançam para a componente API , que inclui todas as componente (i. e. funcionalidades) que dão resposta aos requisitos funcionais definidos para o projeto.
 

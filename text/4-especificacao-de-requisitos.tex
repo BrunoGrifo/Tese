@@ -219,9 +219,12 @@ Na gestão de questionários, à semelhança da gestão de formações, é feita
 
 Na criação de um novo questionário (\textbf{RF06}), um utilizador, numa primeira fase terá de criar um conjunto de questões (\textbf{RF10 - Criar questões}) e gerar um série de resultados (\textbf{RF11 - Criar resultados}). Cada resultado terá de ter obrigatoriamente uma \textit{tag} associada e um título e caso o utilizador deseje uma imagem e/ou um link. As perguntas e resultados podem também ser importados e exportados numa \textit{spreadsheet}.
 
-Depois de terminar a primeira fase, podendo a qualquer momento voltar a essa fase, o utilizador já tem recursos para começar a construir o questionário (i. e. o sistema de pontuação através do requisito \textbf{RF14 - Criar sistema de pontuação}). Numa primeira instância o utilizador terá de selecionar a pergunta pelo qual deseja começar o questionário. De seguida cria uma ou mais respostas e para cada uma delas é necessário associar uma pergunta que na iteração seguinte sejam apresentadas e se possa repetir este processo para conseguir criar um fluxo de perguntas. Para cada pergunta é atribuído um peso e para cada resposta são associadas \textit{tags} de resultados. Desta forma numa dada pergunta, as \textit{tags} da resposta selecionada serão pontuadas. A qualquer momento o utilizador, em vez de associar uma pergunta a uma resposta, pode decidir, naquele estado (i. e. numa resposta em específico), terminar o questionário e apresentar o resultado ao utilizador final.
+Depois de terminar a primeira fase, podendo a qualquer momento voltar a essa fase, o utilizador já tem recursos para começar a construir o questionário (i. e. o sistema de pontuação através do requisito \textbf{RF14 - Criar sistema de pontuação}). Numa primeira instância o utilizador terá de selecionar a pergunta pelo qual deseja começar o questionário.
+De seguida cria uma ou mais respostas possíveis e para cada uma destas respostas é necessário indicar a pergunta que se segue, caso a respectiva resposta seja escolhida. Desta forma o utilizador consegue criar um fluxo de perguntas.
+%De seguida cria uma ou mais respostas e para cada uma delas é necessário associar uma pergunta que na iteração seguinte sejam apresentadas e se possa repetir este processo para conseguir criar um fluxo de perguntas.
+ Para cada pergunta é atribuído um peso e para cada resposta são associadas \textit{tags} de resultados. Desta forma numa dada pergunta, as \textit{tags} da resposta selecionada serão pontuadas. A qualquer momento o utilizador, em vez de associar uma pergunta a uma resposta, pode decidir, naquele estado (i. e. numa resposta em específico), terminar o questionário e apresentar o resultado ao utilizador final.
 
-Através do requisito \textbf{RF18 - Adicionar novo utilizador final}, sempre que um utilizador final se inscreve num questionário através da \textit{landing page}, o sistema, de forma automática, guarda essa informação e recorrendo ao requisito \textbf{RF17 - Notificar utilizadores finais}, enviei o questionário para os utilizador final.
+Através do requisito \textbf{RF18 - Adicionar novo utilizador final}, sempre que um utilizador final se inscreve num questionário através da \textit{landing page}, o sistema, de forma automática, guarda essa informação e recorrendo ao requisito \textbf{RF17 - Notificar utilizadores finais}, envia o questionário para o utilizador final.
 
 
 \subsection{Diagrama Gerir Concursos}
@@ -243,8 +246,8 @@ Na criação de um concurso (\textbf{RF32}) o utilizador terá de criar pergunta
 
 Os concursos, tal como os questionários têm sempre um estado que pode variar entre:
 \begin{itemize}
-	\item Rascunho - Utilizador não deu o concurso como concluído.
-	\item Aberto - Utilizador deu o concurso como concluído.
+	\item Rascunho - Utilizador não deu o lançamento do concurso como concluído.
+	\item Aberto - Utilizador deu o lançamento do concurso como concluído.
 	\item \textit{Online} - Utilizador gerou a \textit{landing page} para partilhar o concurso.
 	\item Fechado - Concurso chegou à data de fim.
 \end{itemize}
@@ -277,13 +280,13 @@ Para enviar uma mensagem é necessário introduzir o nome, email, mensagem e, ca
 	\end{center}
 \end{figure}
 
-Assim que uma formação, questionário ou concurso terminar, ou a qualquer momento, um utilizador pode gerar o relatório de dados. A secção de dados da plataforma mostra os resultados gerais sobre as formações questionários e concursos (\textbf{RF49 - Relatório geral}). 
+Assim que uma formação, questionário ou concurso terminar, ou a qualquer momento, um utilizador pode gerar o relatório de dados. A secção de dados da plataforma mostra os resultados gerais sobre as formações, questionários e concursos (\textbf{RF49 - Relatório geral}). 
 
-O utilizador pode gerar um relatório (\textbf{RF50 - Relatório}) para um questionário onde será exposto o resultados do mesmo. Será mostrado um gráfico de conversão de tipos de utilizadores finais e uma secção onde se pode calcular a taxa de conversão. Serão também mostrados os resultados do questionário e as respostas por pergunta. Pode ser ainda visto no final um gráfico temporal de eventos.
+O utilizador pode gerar um relatório (\textbf{RF50 - Relatório}) para um questionário onde será exposto o resultados do mesmo. Será mostrado um gráfico de conversão de tipos de utilizadores finais e uma secção onde se pode calcular a taxa de conversão. Serão também mostrados os resultados do questionário e as respostas por pergunta. Pode ser ainda visto, no final, um gráfico temporal de eventos.
 
-Para os relatórios de concursos será exposto uma tabela com as classificações de cada participante e para os relatórios de uma formação será feito um pedido ao TCG para retornar o relatório relativo à formação selecionada.
+Para os relatórios de concursos será exposta uma tabela com as classificações de cada participante e para os relatórios de uma formação será feito um pedido ao TCG para retornar o relatório relativo à formação selecionada.
 
-Por fim, na secção de dados (i. e. relatórios) o utilizador pode navegar a lista de leads (\textbf{RF51 - Listar Leads por perfil}) que vão participando nas suas formações, questionários e concursos. Esta lista terá todos os utilizadores finais listados que são considerados leads e é possível filtrar os mesmos por tags (i. e. criar um perfil de utilizador). Para cada utilizador serão apresentados os dados pessoais que eles vão fornecendo ao longo da jornada (e. g. nome, email etc...)
+Por fim, na secção de dados (i. e. relatórios) o utilizador pode navegar na lista de leads (\textbf{RF51 - Listar Leads por perfil}) que vão participando nas suas formações, questionários e concursos. Esta lista terá todos os utilizadores finais listados que são considerados leads e é possível filtrar os mesmos por tags (i. e. criar um perfil de utilizador). Para cada utilizador serão apresentados os dados pessoais que eles vão fornecendo ao longo da jornada (e. g. nome, email etc...)
 
 
 
