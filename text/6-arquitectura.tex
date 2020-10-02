@@ -168,18 +168,21 @@ Nesta secção é apresentado o diagrama conceitual que representa a base de dad
 Com este diagrama, represetado na Figura \ref{fig:arq-er} conseguimos perceber são as entidades e como se relacionam entre si dentro do sistema.
 
 \begin{itemize}
-	\item[--] \textbf{CampaignAnswerRecordPreview}: 
-		\subitem \underline{}
-		\subitem \underline{}
-	\item[--] \textbf{CampaignAnswerRecord}: 
-		\subitem \underline{}
-		\subitem \underline{}
-	\item[--] \textbf{CampaignLinkGenerator}: 
-		\subitem \underline{}
-		\subitem \underline{}
-	\item[--] \textbf{Submission}: 
-		\subitem \underline{}
-		\subitem \underline{}
+	\item[--] \textbf{CampaignAnswerRecordPreview}: Esta entidade representa um registo efectuado por um utilizador da plataforma em modo de visualização. Guarda qual a resposta escolhida a uma determinada pergunta. Está directamente relacionada com:
+		\subitem \underline{CampaignQuiz}: Um registo está associado a uma campanha
+		\subitem \underline{Question}: Um registo está associado a uma pergunta.
+		\subitem \underline{Answer}: Um registo guarda qual a resposta que foi escolhida pelo utilizador da plataforma.
+	\item[--] \textbf{CampaignAnswerRecord}: Esta entidade representa um registo efectuado por uma \textit{lead}. Guarda qual a resposta escolhida a uma determinada pergunta. Está directamente relacionada com:
+		\subitem \underline{Lead}: Um registo está associado a uma \textit{lead}.
+		\subitem \underline{Question}: Um registo está associada a uma pergunta.
+		\subitem \underline{Answer}: Um registo guarda qual a resposta que foi escolhida pela \textit{lead}.
+	\item[--] \textbf{CampaignLinkGenerator}: Esta entidade representa o link de acesso a uma campanha. Está directamente relacionado com:
+		\subitem \underline{Campaign}: Um link está associado a uma campanha.
+		\subitem \underline{Lead}: Um link está associado a uma \textit{lead} através de uma hash, para o link ser único e se poder identificar quem efectuou a submissão.
+	\item[--] \textbf{Submission}: Esta entidade representa uma submissão num questionário de personalidade ou concurso efectuada por um participante (i.e. lead).
+		\subitem \underline{Lead}: Uma submissão é efectuada por uma \textit{lead}.
+		\subitem \underline{Campaign}: Uma submissão está associada a uma campanha.
+		\subitem \underline{Result}: Uma submissão pode estar associada a um resultado.
 	\item[--] \textbf{Lead}: Esta entidade representa a informação associada às \textit{leads}. Está directamente relacionada com:
 		\subitem \underline{Campaign}: Uma lead partipica em uma ou mais campanhas.
 		\subitem \underline{Tag}: Uma lead têm multiplas tags associadas para traçar um pefil de personalidade.
@@ -241,8 +244,6 @@ Com este diagrama, represetado na Figura \ref{fig:arq-er} conseguimos perceber s
 		\subitem \underline{Lead}: Os participantes de uma campanha tornam-se \textit{leads}.
 		\subitem \underline{CampaignLinkGenerator}: Uma campanha tem um link.
 		\subitem \underline{Submission}: Uma submissão tem uma campanha associada.
-		\subitem \underline{CampaignAnswerRecord}: Um registo de uma resposta a uma pergunta tem uma campanha associada.
-		\subitem \underline{CampaignAnswerRecordPreview}: Um registo de uma resposta a uma pergunta, em modo de visualização, tem uma campanha associada.
 		\subitem \underline{CampaignType}: Uma campanha pode ser do tipo: concurso, questionário de personalidade ou formação.
 		\subitem \underline{CampaignStatus}: Uma campanha passa por várias estados: rascunho, completa, online e terminada.
 	\item[--] \textbf{Plan}: Esta entidade representa os planos da plataforma. Está diretamente relacionado com:

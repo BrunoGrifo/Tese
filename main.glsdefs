@@ -556,4 +556,45 @@ symbolplural={\relax },%
 user1={},%
 user2={},%
 user3={},%
-user4={
+user4={},%
+user5={},%
+user6={},%
+long={\protect \textit {Experience Company}},%
+longplural={\protect \textit {Experience Company}s},%
+short={EX.CO},%
+shortplural={EX.COs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{web}{}%
+{%
+\gls@defglossaryentry{web}%
+{%
+name={WEB},%
+sort={WEB},%
+type={acronym},%
+first={\protect \textit {World Wide Web}\glsspace (WEB)},%
+firstplural={\protect \textit {World Wide Web}s\glsspace (WEBs)},%
+text={WEB},%
+plural={WEBs},%
+description={\textit {World Wide Web}},%
+descriptionplural={\textit {World Wide Web}\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={\protect \textit {World Wide Web}},%
+longplural={\protect \textit {World Wide Web}s},%
+short={WEB},%
+shortplural={WEBs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
