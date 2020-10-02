@@ -78,7 +78,7 @@ Por último temos o componente \textbf{Controller}.  Este componente atua entre 
 
 Nesta secção encontra-se representada e descrita toda a arquitetura da plataforma 10.quest,  influenciada pelos objetivos de negócio, \textit{stakeholders}, requisitos e restrições técnica e de negócio, apresentados anteriormente.
 
-Foram utilizados três diagramas para representar a arquitetura do sistema, utilizando o \textbf{modelo C4}\cite{c4}: diagrama de contexto, diagrama de contentores, diagrama de componentes e o diagrama de classes.
+Foram utilizados três diagramas para representar a arquitetura do sistema, utilizando o \textbf{modelo C4}\cite{c4}: diagrama de contexto, diagrama de contentores e o diagrama de componentes.
 
 Os diferentes diagramas representam diferentes perspetivas e níveis de abstração e foram feitos com o intuito de facilitar a compreensão da arquitetura permitindo à equipa de desenvolvimento visualizar os diferentes níveis de granularidade. 
 
@@ -152,10 +152,121 @@ A componente "Dados" permite às restantes componentes interagir com a base de d
 
 \newpage
 
-%\subsection{Modelo Sequencial}
 
-%\subsection{Modelo de Dados}
+\subsection{Diagrama Entidade Relacionamento}
 
+Nesta secção é apresentado o diagrama conceitual que representa a base de dados do projecto desenvolvido. De seguida é dada uma breve descrição de todas as classes presentes na Figura \ref{fig:arq-er}. 
+
+\begin{figure}[ht!]
+	\begin{center}
+		\includegraphics[width=0.87\textwidth]{img/arq/er}
+		\caption{Diagrama Entidade Relacionamento - Modelo Conceitual}
+		\label{fig:arq-er}
+	\end{center}
+\end{figure}
+
+Com este diagrama, represetado na Figura \ref{fig:arq-er} conseguimos perceber são as entidades e como se relacionam entre si dentro do sistema.
+
+\begin{itemize}
+	\item[--] \textbf{CampaignAnswerRecordPreview}: 
+		\subitem \underline{}
+		\subitem \underline{}
+	\item[--] \textbf{CampaignAnswerRecord}: 
+		\subitem \underline{}
+		\subitem \underline{}
+	\item[--] \textbf{CampaignLinkGenerator}: 
+		\subitem \underline{}
+		\subitem \underline{}
+	\item[--] \textbf{Submission}: 
+		\subitem \underline{}
+		\subitem \underline{}
+	\item[--] \textbf{Lead}: Esta entidade representa a informação associada às \textit{leads}. Está directamente relacionada com:
+		\subitem \underline{Campaign}: Uma lead partipica em uma ou mais campanhas.
+		\subitem \underline{Tag}: Uma lead têm multiplas tags associadas para traçar um pefil de personalidade.
+	\item[--] \textbf{MailTemplate}: Esta entidade representa a informação que é enviada no mail para os participantes das campanhas. Está directamente relacionada com:
+		\subitem \underline{Campaign}: Um \textit{template} de mail representa informação associada a uma campanha.
+	\item[--] \textbf{ExcelImportExport}: Esta entidade controla o carregamento de ficheiros excel na plataforma para garantir a integridade dos dados. Está directamente relacionada com:
+		\subitem \underline{Account}: Um registo desta entidade está associada a uma conta de empresa.
+		\subitem \underline{ExcelInformationType}: O tipo de ficheiro excel identifica o tipo de informação que é carregado.
+	\item[--] \textbf{ExcelInformationType}: Esta entidade representa o tipo do ficheiro excel. Os ficheiros excel podem ser do tipo: perguntas de questionários de personalidade, resultados de questionários de personalidade ou perguntas de formação.
+	\item[--] \textbf{UserProfile}: Esta entidade representa a conta de um utilizador da plataforma. Está diretamente relacionada com:
+		\subitem \underline{User}: Esta conta está associada a uma entidade que guarda os dados de registo e permissões do utilizador.
+		\subitem \underline{Account}: Esta conta está associada a uma conta de empresa.
+		\subitem \underline{Role}: Esta conta tem uma função sobre a conta da empresa que pode ser de administrador ou colaborador. Dependendo da função têm permissões diferentes.
+	\item[--] \textbf{Account}: Esta entidade representa a conta da empresa, da plataforma. Está diretamente relacionada com:
+		\subitem \underline{Plan}: Uma conta subscreve um plano.
+		\subitem \underline{VAT}: Uma conta sofre o imposto do respectivo país.
+	\item[--] \textbf{LeadTagAssociation}: Esta entidade guarda a data em que uma determinada tag foi associada a uma \textit{lead}. Está directamente relacionada com:
+		\subitem \underline{Tag}
+		\subitem \underline{Lead}
+	\item[--] \textbf{Result}: Esta entidade representa um resultado de um questionário de personalidade. Está directamente relacionado com:
+		\subitem \underline{TCGQuiz}: Um resultado está associado a um questionário de personalidade.
+		\subitem \underline{ContentMultimediaFile}: Um resultado pode ter uma imagem ou vídeo.
+		\subitem \underline{Tag}: Um resultado pode ter multiplas tags, que vão ser associadas a um participante (i.e. \textit{lead}) caso saia ao mesmo.
+	\item[--] \textbf{TCGAnswer}: Esta entidade representa uma resposta a uma pergunta de uma formação. Está directamente relacionado com:
+		\subitem \underline{TCGQuestion}: Uma resposta pertence a uma pergunta.
+		\subitem \underline{ContentMultimediaFile}: Uma resposta pode ter uma imagem ou vídeo.
+	\item[--] \textbf{Answer}: Esta entidade representa uma resposta a uma pergunta de um questionário de personalidade. Está directamente relacionado com:
+		\subitem \underline{Question}: Uma resposta pertence a uma pergunta.
+		\subitem \underline{ContentMultimediaFile}: Uma resposta pode ter uma imagem ou vídeo.
+	\item[--] \textbf{TCGQuetionEntry}: Esta entidade representa uma entrada de perguntas de formação. Está directamente relacinada com:
+		\subitem \underline{TCGQuiz}: Uma entrada tem uma formação associada.
+		\subitem \underline{Tag}: Uma entrada tem uma ou mais tags associadas. As tags representam as perguntas associadas à entrada (i.e as perguntas com as tags correspondentes).
+	\item[--] \textbf{TCGQuestion}: Esta entidade representa uma pergunta de uma formação. Está diretamente associado com:
+		\subitem \underline{Account}: Uma pergunta de uma formação está associada a uma conta de empresa.
+		\subitem \underline{Tag}: Uma pergunta pode ter multimas tags associadas.
+		\subitem \underline{ContentMultimediaFile}: Uma pergunta pode ter uma imagem ou video associado.
+	\item[--] \textbf{Question}: Esta entidade representa uma pergunta de um questionário de personalidade. Está diretamente associado com:
+		\subitem \underline{CampaignQuiz}: Uma pergunta percente a uma questionário de personalidade.
+		\subitem \underline{Answer}: Uma pergunta tem entre 2 a 4 respostas.
+		\subitem \underline{ContentMultimediaFile}: Uma pergunta pode ter uma imagem ou vídeo.
+		\subitem \underline{CampaignAnswerRecord}: Registo de resposta a uma pergunta.
+		\subitem \underline{CampaignAnswerRecordPreview}: Registo de resposta a uma pergunta em modo de visualização.
+	\item[--] \textbf{LandingPageAcesses}: Esta entidade guada o registo de acessos à página de apresentação. Está diretamente relacionado com:
+		\subitem \underline{LandingPageLinkGenerator}: Um acesso é feito através do acesso ao link da página de apresentação.
+	\item[--] \textbf{LandingPageLinkGenerator}: Esta entidade representa o link da pagina de apresentação. 
+	\item[--] \textbf{LandingPage}: Esta entidade representa a página de apresentação da campanha. Está diretamente relacionada com:
+		\subitem \underline{Campaign}: Uma pagina de apresentação, apresenta uma campanha.
+		\subitem \underline{ContentMultimediaFile}: Uma pagina de apresentação pode ter uma imagem ou vídeo.
+	\item[--] \textbf{Payment}: Esta entidade representa o registo de todos os pagamentos efectuados. Está diretamente relacionada com:
+		\subitem \underline{Account}: O Pagamento é efectuado por uma determinada conta.
+		\subitem \underline{Plan}: O Pagamento corresponde a um determinado plano.
+	\item[--] \textbf{TCGQuizTracker}: Esta entidade guarda o identificador da campanha, da base de dados do The CompanyGym.
+	\item[--] \textbf{Campaign}: Esta entidade representa uma campanha.  Está diretamente relacionada com:
+		\subitem \underline{Tag}: Uma campanha pode ter multiplas tags associadas.
+		\subitem \underline{Account}: Uma campanha está associada a uma conta de empresa.
+		\subitem \underline{LandingPage}: Uma campanha tem uma \textit{Landing Page}.
+		\subitem \underline{LandingPageLinkGenerator}: Link de acesso à respectiva \textit{Landing Page}. 
+		\subitem \underline{MailTemplate}: Uma campanha pode ter um template personalizado de mail.
+		\subitem \underline{Lead}: Os participantes de uma campanha tornam-se \textit{leads}.
+		\subitem \underline{CampaignLinkGenerator}: Uma campanha tem um link.
+		\subitem \underline{Submission}: Uma submissão tem uma campanha associada.
+		\subitem \underline{CampaignAnswerRecord}: Um registo de uma resposta a uma pergunta tem uma campanha associada.
+		\subitem \underline{CampaignAnswerRecordPreview}: Um registo de uma resposta a uma pergunta, em modo de visualização, tem uma campanha associada.
+		\subitem \underline{CampaignType}: Uma campanha pode ser do tipo: concurso, questionário de personalidade ou formação.
+		\subitem \underline{CampaignStatus}: Uma campanha passa por várias estados: rascunho, completa, online e terminada.
+	\item[--] \textbf{Plan}: Esta entidade representa os planos da plataforma. Está diretamente relacionado com:
+		\subitem \underline{Account}: Uma conta subscreve um plano.
+		\subitem \underline{Payment}: Um pagamento têm um plano associado.
+	\item[--] \textbf{Tag}: Esta entidade representa uma tag. Estas tags são associadas a outras entidades para traçar caracteristicas da mesma:
+		\subitem \underline{Account}: Uma tag está associada a uma conta de empresa.
+		\subitem \underline{Campaign}: Uma campanha pode ter multiplas tags que serão associadas mais tarde aos participantes da mesma.
+		\subitem \underline{Result}: Um resultado pode ter multiplas tags que serão associadas aos participantes a quem saia o mesmo.
+		\subitem \underline{TCGQuestion}: Uma pergunta de uma formação pode ter multiplas tags associadas.
+		\subitem \underline{TCGQuestionEntry}: Uma entrada de perguntas de formação, pode ter multiplas tags que representam as perguntas que têm essas mesmas tags associadas.
+		\subitem \underline{Answer}: Um resultado pode ter multiplas tags associadas. As tags das respostas são associadas aos participantes (i.e.\textit{leads}) dos questionários de personalidade e utilizadas para calcular o resultado final.
+		\subitem \underline{Lead}: Uma \textit{lead} pode ter multiplas tags associadas que permite traçar perfis de personalidade.
+	\item[--] \textbf{VAT}: VAT (\textit{Value Added Tax}) representa o imposto correspondente a cada país.
+	\item[--] \textbf{ContentMultimediaFile}: Esta entidade representa o conteudo multimédia carregador pelos utilizadores na plataforma. Está diretamente relacionado com:
+		\subitem \underline{Account}: Um conteúdo multimédia está associado a uma conta de empresa.
+		\subitem \underline{ContentMultimediaFileType}: Um conteúdo multimédia por ser uma imagem ou um vídeo.
+	\item[--] \textbf{ContentMultimediaFileType}: Esta entidade representa o tipo de ficheiro multimédia. Estes tipos podem ser:  Imagem ou Video.
+	\item[--] \textbf{CampainStatus}: Esta entidade representa o estado das campanhas. Estes estados podem ser: Rascunho, Completo, Online e Terminado.
+	\item[--] \textbf{Role}: Esta entidade representa o tipo de função de um utilizador da plataforma. Estas funções podem ser Administrador ou Colaborador.
+	\item[--] \textbf{LeadType}: Esta entidade representa o tipo de \textit{Lead}. Nem sempre os participantes terminam a participação nas campanhas e portanto uma \textit{Lead} pode ser do tipo: Qualificada ou Não Qualificada.
+	\item[--] \textbf{CampaignType}: Esta entidade representa o tipo da campanha. As campanhas podem ser do tipo: Questionários de Personalidade, Concursos ou Formações. 
+	\item[--] \textbf{WeekDays}: Esta entidade representa o dia da semana. A tabela na base de dados apenas tem 7 entradas, uma para cada dia da semana.
+\end{itemize}
 
 %  FALTA CAPITULO PARA DISCUSSÂO VALIDAÇÂO DA ARQUITECTURA. Escrever assim que todas as decisões estiveres feitas
 
