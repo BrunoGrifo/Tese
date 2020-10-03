@@ -112,8 +112,8 @@ Desta forma será claro para o leitor, mas em especial para a equipa de desenvol
 	\end{center}
 \end{figure}
 
-A 10.quest, tal como referido nos capítulos anteriores, é uma plataforma de inbound marketing que permite aos utilizadores criar formações, questionários, concursos e tratar a informação recolhida por cada um destes componentes. 
-Estes componentes poderão ser partilhados nas redes sociais (i. e. utilizando a API do Facebook, Instagram, Twitter e LinkedIn) através de \textit{landing pages}. Estas \textit{landing pages} terão um pequeno formulário que necessita das informações básicas ao utilizador final para que, automaticamente, as formações, questionários e concursos sejam enviados por mail para os inscritos, utilizando o sistema externo SendGrid.
+A 10.quest, tal como referido nos capítulos anteriores, é uma plataforma de inbound marketing que permite aos utilizadores criar campanhas e tratar a informação recolhida nas mesmas. 
+Estas campanhas poderão ser partilhados nas redes sociais (i. e. utilizando a API do Facebook, Instagram e Twitter) através de \textit{landing pages}. Estas \textit{landing pages} terão um pequeno formulário que necessita das informações básicas ao utilizador final para que, automaticamente, as formações, questionários e concursos sejam enviados por mail para os inscritos, utilizando o sistema externo SendGrid.
 
 Tal como referido no Capítulo \ref{sec:estado-arte}, o \acrshort{tcg} é um produto desenvolvido pela 10.digital e encontra-se atualmente no mercado. Algumas das funcionalidades fundamentais da plataforma a desenvolver já estão implementadas no \acrshort{tcg}  e por isso mesmo haverá uma integração com o mesmo para aproveitar todas estas funcionalidades necessárias.
 
@@ -132,8 +132,8 @@ Tal como referido no Capítulo \ref{sec:estado-arte}, o \acrshort{tcg} é um pro
 
 Um utilizador para aceder a todas as funcionalidades da plataforma terá de primeiro realizar a autenticação (\textbf{RF01 - Login}). Caso ainda não tenha uma conta registada terá de o fazer. Assim que a conta for criada é enviada uma notificação para o email do utilizador, recorrendo ao sistema externo SendGrid. Por questões de segurança e confidencialidade dos dados, no acto do registo, a informação do utilizador será enviada e guardada na base de dados do \acrshort{tcg}, para que mais tarde todos os pedidos REST possam ser validados.
 
-Depois de um utilizador se autenticar, será direcionado para a página inicial. A partir daqui o utilizador conseguirá gerir questionários, formações, concursos e perguntas para as formações do \acrshort{tcg}; aceder às definições, atualizar o plano da conta, utilizar o suporte da plataforma e terminar sessão.
-Ainda na página inicial da plataforma serão exibidas algumas estatísticas relacionadas com as formações, questionários e concursos associados à conta do utilizador. 
+Depois de um utilizador se autenticar, será direcionado para a página inicial. A partir daqui o utilizador tem acesso à sua lista de campanhas (i. e. questionários, formações e concursos) podendo gerir as mesmas; aceder às definições, atualizar o plano da conta, utilizar o suporte da plataforma e terminar sessão.
+Ainda na página inicial da plataforma, onde se encontram listados todos os tipos de campanhas do utilizador da plataforma, será exibido o estado de cada campanha e data de termino, se for o caso, para ajudar o utilizador a perceber de forma rápida o estado das mesmas.
 
 \newpage
 
@@ -149,7 +149,7 @@ Ainda na página inicial da plataforma serão exibidas algumas estatísticas rel
 
 Para se efetuar um registo é necessário introduzir o nome da empresa, nome do utilizador, email, \textit{username} e \textit{password}. De seguida é enviado um mail de validação para o email associado à conta.
 
-Depois de validada a conta do utilizador, o utilizador consegue efetuar o \textit{login} na plataforma.
+Depois de validada a conta do utilizador, este consegue efetuar o \textit{login} na plataforma.
 
 
 
