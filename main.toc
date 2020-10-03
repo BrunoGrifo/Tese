@@ -36,7 +36,7 @@
 \contentsline {subsection}{\numberline {4.3.1}Diagrama de contexto}{28}{subsection.4.3.1}% 
 \contentsline {subsection}{\numberline {4.3.2}Diagrama de alto n\IeC {\'\i }vel}{29}{subsection.4.3.2}% 
 \contentsline {subsection}{\numberline {4.3.3}Diagrama Registo}{30}{subsection.4.3.3}% 
-\contentsline {subsection}{\numberline {4.3.4}Diagrama Gerir Perguntas TCG}{31}{subsection.4.3.4}% 
+\contentsline {subsection}{\numberline {4.3.4}Diagrama Gerir Perguntas de Forma\IeC {\c c}\IeC {\~a}o}{31}{subsection.4.3.4}% 
 \contentsline {subsection}{\numberline {4.3.5}Diagrama Gerir Forma\IeC {\c c}\IeC {\~o}es}{32}{subsection.4.3.5}% 
 \contentsline {subsection}{\numberline {4.3.6}Diagrama Gerir Question\IeC {\'a}rios}{33}{subsection.4.3.6}% 
 \contentsline {subsection}{\numberline {4.3.7}Diagrama Gerir Concursos}{34}{subsection.4.3.7}% 

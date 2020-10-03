@@ -155,25 +155,23 @@ Depois de validada a conta do utilizador, este consegue efetuar o \textit{login}
 
 \newpage
 
-\subsection{Diagrama Gerir Perguntas TCG}
+\subsection{Diagrama Gerir Perguntas de Formação}
 \label{d:perguntastcg}
 \begin{figure}[ht!]
 	\begin{center}
 		\includegraphics[width=1\textwidth]{img/rf/gerir-perguntas-tcg}
-		\caption{Diagrama Gerir Perguntas TCG}
+		\caption{Diagrama Gerir Perguntas de Formação}
 		\label{fig:rf-gerir-perguntas-tcg}
 	\end{center}
 \end{figure}
 
-No \acrshort{tcg}, tal como referido no Capítulo \ref{sec:TCG}, a criação de questões é isolada da criação de formulários. Dito isto, é necessário criar questões para que se possa ter conteúdos para as formações. 
+No \acrshort{tcg}, tal como referido no anexo \ref{sec:TCG}, a criação de questões é isolada da criação de formações. Esta abordagem traz uma série de vantagens, referidas no Capítulo \ref{sec:TCG}, e neste sentido, este será o modelo seguido. Dito isto, é necessário primeiro criar questões para que se possa ter conteúdos para as formações. 
 
-Aproveitando as funcionalidades do \acrshort{tcg} e  tendo em conta que esta abordagem traz uma série de vantagens, referidas no Capítulo \ref{sec:TCG}, a plataforma a desenvolver irá seguir o mesmo modelo. 
+É ainda de notar que por uma questão de terminologia, na plataforma a desenvolver, as Perguntas de Formação são equivalentes às questões no \acrshort{tcg}, pelo simples facto de não se confundir com elementos relacionados com os questionários de personalidade.
 
-É ainda de notar que por uma questão de terminologia, na plataforma a desenvolver, as Perguntas TCG são equivalentes às questões no \acrshort{tcg}, pelo simples facto de não se confundir com elementos relacionados com os questionários.
+Na gestão de perguntas de formação, um utilizador consegue listar todas as perguntas (\textbf{RF45 - Mostrar lista de perguntas de formação}) associadas à sua conta (i. e. criadas por ele) e pode também criar uma nova pergunta (\textbf{RF42 - Criar pergunta de formação}). Para editar uma pergunta (\textbf{RF46 - Editar pergunta de formação}) é necessário aceder à mesma através da lista, sendo que é possível organizar e pesquisar por nome ou tag, e é ainda possível selecionar multiplas perguntas de formação para eleminar (\textbf{RF47 - Apagar pergunta de formação}). As perguntas podem também ser importadas e exportadas através de uma \textit{spreadsheet}.
 
-Na gestão de Perguntas TCG, um utilizador consegue listar todas as perguntas (\textbf{RF45 - Mostrar lista de perguntas TCG}) associadas à sua conta (i. e. criadas por ele) e pode também criar uma nova pergunta (\textbf{RF42 - Criar pergunta TCG}). O sistema efetua um pedido de todas essas perguntas ao \acrshort{tcg} e a partir daqui o utilizador consegue criar, eliminar (\textbf{RF47 - Apagar pergunta TCG}), editar (\textbf{RF46 - Editar pergunta TCG}) e pesquisar perguntas. As perguntas podem também ser importadas e exportados através de uma \textit{spreadsheet}.
-
-Para um criar uma pergunta (\textbf{RF42}), o utilizador precisa de atribuir uma tag, nova ou existente, e introduzir a pergunta, as respostas e uma descrição, sendo esta última opcional. Cada pergunta tem que ter pelos menos duas respostas sendo estas compostas pela resposta e um anexo opcional que pode ser um ficheiro de som, imagem ou vídeo.
+Para um criar uma pergunta (\textbf{RF42}), o utilizador precisa de atribuir uma tag, nova ou existente, introduzir a pergunta e as respostas. Cada pergunta tem que ter obrigatoriamente uma resposta certa e pelo menos uma resposta errada, sendo estas compostas pela resposta e um anexo opcional que pode ser uma imagem ou vídeo.
 
 
 
@@ -189,15 +187,11 @@ Para um criar uma pergunta (\textbf{RF42}), o utilizador precisa de atribuir uma
 	\end{center}
 \end{figure}
 
-Praticamente todas as funcionalidades da gestão de formações já estão implementadas no \acrshort{tcg} por isso, muitas das funcionalidades irão recorrer à capacidade do \acrshort{tcg} através de pedidos REST uma vez que toda a informação relacionada com formações será também guardada na base de dados do \acrshort{tcg}.
+Quase todas as funcionalidades necessárias para a gestão de formações já estão implementadas no \acrshort{tcg}. Neste sentido terá que ser apenas garantido um conjunto de requisitos que permita ao utilizador reuniar as condições necessárias para utilizar as capacidades do TCG através de pedidos REST. Isto implica ter uma interface completa no lado do 10.quest e selecionar quais os dados a guardar no 10.quest e no \acrshort{tcg}, respetivamente, garantindo sempre a sincronização dos dados.
 
-Na gestão de formações um utilizador consegue listar todas as formações associadas à sua conta (\textbf{RF27 - Mostrar lista de formações do utilizador}) e pode também criar uma nova formação (\textbf{RF20 - Criar formação}). O sistema efetua um pedido de todas essas formações ao \acrshort{tcg} e a partir daqui o utilizador consegue criar, eliminar, editar e pesquisar formações.
-
-Para criar uma formação (\textbf{RF20}) o utilizador terá, numa primeira instância, de atribuir um nome e definir a periodicidade (i. e. preencher a data de início e fim, dias da semana, hora de envio e  duração/validade) (\textbf{RF21 - Definir periodicidade}). 
-
-Numa segunda fase, o utilizador, através do requisito \textbf{RF - Definições da formação} consegue adicionar e gerir entradas (\textbf{RF25 - Adicionar entrada de perguntas} e \textbf{RF26 - Gerir entradas de perguntas}, respectivamente). As definições da formação (\textbf{RF24 - Definições da formação}) é onde o utilizador, através de \textit{tags} associa grupos de perguntas a grupos de pessoas. 
-
-Numa entrada o utilizador terá de introduzir a \textit{tag} de utilizador(es), a \textit{tag} da(s) pergunta(s) e o número de perguntas dessa \textit{tag} que serão enviadas em cada \textit{quiz}(i. e. cada iteração) da formação.
+Na gestão de formações um utilizador consegue listar todas as formações associadas à sua conta (\textbf{RF27 - Mostrar lista de formações do utilizador}) e pode também criar uma nova formação (\textbf{RF20 - Criar formação}).
+Para criar uma formação (\textbf{RF20}) o utilizador terá, numa primeira instância, de atribuir um nome e definir a periodicidade (i. e. preencher a hora de envio, dias da semana,  duração e validade) (\textbf{RF21 - Definir periodicidade}). 
+Numa segunda fase, o utilizador, através do requisito \textbf{RF - Definições da formação} consegue adicionar e gerir entradas de perguntas de formações(\textbf{RF25 - Adicionar entrada de perguntas} e \textbf{RF26 - Gerir entradas de perguntas}, respectivamente). É através destas entradas que o utilizador da plataforma associa perguntas à formação. Para adicionar uma entrada (\textbf{RF25 - Adicionar entrada de perguntas} ) o utilizador da plataforma seleciona as perguntas que deseja através de tags (i.e. as perguntas com as tags respectivas são associadas) e o número de perguntas que o utiliador final irá receber, com esse mesmo perfil de tags.
 
 Por fim o utilizador pode partilhar a formação (\textbf{RF56 - Partilhar}). As inscrições numa formação serão feitas através de uma \textit{landing page} que pode ser personalizada no requisito \textbf{RF08 - Landing Page} e enviadas para o email introduzido no mini formulário da \textit{landing page}. Este mail com o link para a formação, pode ser personalizado no requisito \textbf{RF09 - Notificações por E-mail}. 
 
