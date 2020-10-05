@@ -279,15 +279,20 @@ Para enviar uma mensagem é necessário introduzir o nome, email, mensagem e, ca
 	\end{center}
 \end{figure}
 
-Assim que uma formação, questionário ou concurso terminar, ou a qualquer momento, um utilizador pode gerar o relatório de dados. A secção de dados da plataforma mostra os resultados gerais sobre as formações, questionários e concursos (\textbf{RF49 - Relatório geral}). 
+Assim que uma campanha for publicada (i.e. o seu estado for online ou terminado), um utilizador pode gerar o relatório de dados. A secção de dados da plataforma mostra os resultados gerais sobre as campanhas (\textbf{RF49 - Relatório geral}) e permite também ao utilizador da plataforma gerar um relatório com informações mais detalhadas sobre uma campanha (\textbf{RF50 - Relatório}).
 
-O utilizador pode gerar um relatório (\textbf{RF50 - Relatório}) para um questionário onde será exposto o resultados do mesmo. Será mostrado um gráfico de conversão de tipos de utilizadores finais e uma secção onde se pode calcular a taxa de conversão. Serão também mostrados os resultados do questionário e as respostas por pergunta. Pode ser ainda visto, no final, um gráfico temporal de eventos.
+Como foi referido anteriormente, o utilizador da plataforma pode gerar um relatório (\textbf{RF50}) para uma campanha, online ou terminada, onde será exposto o resultadoso mesmo. As métricas analisadas relevantes para cada tipo de campanha são diferentes e por isso os relatórios serão diferentes nesse sentido.
 
-Para os relatórios de concursos será exposta uma tabela com as classificações de cada participante e para os relatórios de uma formação será feito um pedido ao TCG para retornar o relatório relativo à formação selecionada.
+Quando o utilizador da plataforma acede à secção dos relatórios (\textbf{RF48 - Relatórios}), será apresentado o relatório geral das campanhas (\textbf{RF49 - Relatório Geral das Campanhas}) e a lista de leads (\textbf{RF51 - Listar Leads}). O relatório geral das campanhas apresenta métricas relacionadas com tráfego de utilizadores finais (i.e. \textit{leads}) e na lista de leads, são apresentados todos os participantes qualificados, as suas informações básicas e o seu perfil traçado nas campanhas em que participou (i.e. todas as tags que tem associadas, permite traçar um perfil de personalidade). Na lista de leads é possível filtrar participantes qualificados por tags, ou por outras palavras, por um perfil de personalidade.
+	
+Para gerar um relatório mais detalhado o utilizador da plataforma terá de selecionar a campanha para o qual quer gerar o mesmo. No caso da campanha ser uma formação serão apresentados dados relaticos à participação dos utilizadores finais, percentagem de respostas correctas por tag e a lista de utilizadores finais (i.e. leads). Na lista de utilizadores finais, para cada lead diz: o nome, a média de questões por dia, percentagem de participação, total de respostas erradas, total de respostas correctas, respostas, percentagem de respostas correctas e o tempo total gasto a participar na formação. 
+Nas restantes campanhas, isto é, questionários de personalidade e concursos, grande parte das métricas tiradas são comuns. Em ambas as campanhas é aprentado as perguntas e respostas de todas as leads, o funil de participação e o gráfico temporal de eventos. A lista de resultados e tags é somente apresentada para os questionários de personalidade e a tabela de classificações para os concursos. 
 
-Por fim, na secção de dados (i. e. relatórios) o utilizador pode navegar na lista de leads (\textbf{RF51 - Listar Leads por perfil}) que vão participando nas suas formações, questionários e concursos. Esta lista terá todos os utilizadores finais listados que são considerados leads e é possível filtrar os mesmos por tags (i. e. criar um perfil de utilizador). Para cada utilizador serão apresentados os dados pessoais que eles vão fornecendo ao longo da jornada (e. g. nome, email etc...)
+O Funil de participação é um modelo estratégico separado por camadas, que apresenta de forma visual a jornada do participante (i.e. lead) durante a campanha. Este fúnil segue a mesma ideia do fúnil e marketing\cite{f8}\cite{f9} em que. As camadas representadas no funil estão organizadas por ordem de eventos e são: Visitas na página de apresentação, registos na página de apresentação, participações e submissões.
 
+O gráfico temporal de eventos é um gráfico que de forma temporal mostra o número de visualizações da página de apresentação, número de registos na campanha e o número de submissões.
 
+É ainda de notas que todos os dados não relacionados com tráfego dão para ser exportados através de uma \textit{spreadsheet}.
 
 
 \section{Mockups}
