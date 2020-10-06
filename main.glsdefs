@@ -546,7 +546,7 @@ name={EX.CO},%
 sort={EX.CO},%
 type={acronym},%
 first={\protect \textit {Experience Company}\glsspace (EX.CO)},%
-firstplural={\protect \textit {Experience Company}s\glsspace (EX.COs)},%
+firstplural={\protect \textit  {Experience Company}s\glsspace (EX.COs)},%
 text={EX.CO},%
 plural={EX.COs},%
 description={\textit {Experience Company}},%
@@ -576,7 +576,7 @@ name={WEB},%
 sort={WEB},%
 type={acronym},%
 first={\protect \textit {World Wide Web}\glsspace (WEB)},%
-firstplural={\protect \textit {World Wide Web}s\glsspace (WEBs)},%
+firstplural={\protect \textit  {World Wide Web}s\glsspace (WEBs)},%
 text={WEB},%
 plural={WEBs},%
 description={\textit {World Wide Web}},%
@@ -593,6 +593,66 @@ long={\protect \textit {World Wide Web}},%
 longplural={\protect \textit {World Wide Web}s},%
 short={WEB},%
 shortplural={WEBs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{ide}{}%
+{%
+\gls@defglossaryentry{ide}%
+{%
+name={IDE},%
+sort={IDE},%
+type={acronym},%
+first={\protect \textit {Integrated Development Environment}\glsspace (IDE)},%
+firstplural={\protect \textit  {Integrated Development Environment}s\glsspace (IDEs)},%
+text={IDE},%
+plural={IDEs},%
+description={\textit {Integrated Development Environment}},%
+descriptionplural={\textit {Integrated Development Environment}\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={\protect \textit {Integrated Development Environment}},%
+longplural={\protect \textit {Integrated Development Environment}s},%
+short={IDE},%
+shortplural={IDEs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{dom}{}%
+{%
+\gls@defglossaryentry{dom}%
+{%
+name={DOM},%
+sort={DOM},%
+type={acronym},%
+first={\protect \textit {Document Object Model}\glsspace (DOM)},%
+firstplural={\protect \textit  {Document Object Model}s\glsspace (DOMs)},%
+text={DOM},%
+plural={DOMs},%
+description={\textit {Document Object Model}},%
+descriptionplural={\textit {Document Object Model}\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={\protect \textit {Document Object Model}},%
+longplural={\protect \textit {Document Object Model}s},%
+short={DOM},%
+shortplural={DOMs},%
 counter={page},%
 parent={},%
 %

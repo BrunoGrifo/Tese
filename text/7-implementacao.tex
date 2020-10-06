@@ -1,26 +1,130 @@
 \chapter{Implementação}
 \label{sec:implementacao}
 
+O presente capítulo apresenta a forma como foi estruturado o desenvolvimento do projecto, as técnologias e ferramentas utilizadas e os desafios na implementação. Na secção \ref{sec:ferramentas} são listadas as ferramentas de suporte utilizadas durante o projecto e as técnologias de desenvolvimento. Na secção \ref{sec:sprints} e \ref{sec:dificuldades} estão detalhadas de forma breve todas as sprints planeadas para o projecto e as dificuldades e atrasos no decorrer das mesmas, respectivamente.
+
+
+
+\section{Técnologias e Ferramentas Utilizadas}
+\label{sec:ferramentas}
+
+
+\subsection{Ferramentas}
+
+A escolha das ferramentas para o projecto incidiram em dois aspectos: ferramentas utilizadas e impostas pela empresa ou ferramentas utilizadas pelo aluno.
+
+\begin{itemize}
+	\item \textbf{VSCode V1.49}\cite{ft1} - \acrfull{ide} de desenvolvimento do projecto. O VSCode é um dos \acrshort{ide} utilizados pela equipa de desenvolvimento da 10.digital e pelo aluno o que facilitou a configuração das convenções de código.
+	\item \textbf{draw.io}\cite{ft2} - O draw.io é um editor gráfico que permite aos utilizadores criar e modificar diagramas e gráficos. Esta ferramenta foi utilizada para criar todos os diagramas no decorrer do projecto, inclusive os diagramas presentes neste documento. A decisão da escolha esteve na familiarização com a ferramenta por parte do aluno e também por ser um \textit{software} gratuito e fácil de utilizar.
+	\item \textbf{Git V2.24}\cite{ft3} - O Git é um sistema de controlo de versões distribuido, muito utilizado no desenvolvimento de \textit{software}, que regista o historico de alterações. É uma ferramenta utilizada e imposta pela empresa. O Bitbucket\cite{bb} foi serviço de hospedagem utilizado para o repositório online.
+	\item \textbf{DBeaver V7.0.1}\cite{ft4} - O DBeaver é um software cliente SQL de administração de base de dados. É um software utilizado pela equipa de desenvolvimento na empresa o que facilitou a escolha visto ter sido apenas para dar suporte ao projecto na fase de desenvolvimento.
+		\item \textbf{Teams}\cite{ft5} - O Teams é a plataforma de comunicação utilizada e imposta pela empresa.
+	\item \textbf{Wrike}\cite{ft6} - O Wrike é um \textit{software} de colaboração e gestão de projectos. Esta ferramenta permitiu de forma fácil, gerir e debater sobre cada \textit{sprint} e as tarefas associadas a cada \textit{sprint}. Toda a \textit{scrum team} estava associada ao projecto no wrike, onde, dentro do projecto, estava uma pasta com o \textit{backlog} e uma pasta com todas as reuniões marcadas para gestão do projecto. Na pasta do \textit{backlog} estavam listadas todas as \textit{sprints} planeadas e associada a cada \textit{sprint} estavam os elementos que faziam parte da \textit{sprint} e todas as tarefas necessárias para completar a mesma. Cada tarefa tem um estado associado permitindo à \textins{scrum team} perceber o estado atual do projeto. Os estados utilizados para a gestão das tarefas foram os seguintes:
+	\begin{itemize}
+		\item \textit{active} - Representa uma tarefa active que ainda se encontra por iniciar.
+		\item \textit{in progress} - Representa uma tarefa que está a ser desenvolvida.
+		\item \textit{awaiting external approval} - Representa uma tarefa que está à espera de aprovação externa.
+		\item \textit{awaiting tests} - Representa uma tarefa aprovada que está pronta para ser testada.
+		\item \textit{completed} - Representa uma tarefa que foi concluída.
+		\item \textit{cancelled} - Representa uma tarefa que foi cancelada.
+	\end{itemize}
+	 Esta ferramenta é utilizada e imposta pela empresa. 
+\end{itemize}
+
+
+\subsection{Técnologias}
+
+A escolha das técnologias para o projecto incidiram em dois aspectos: técnologias utilizadas e impostas pela empresa ou experiência da equipa de desenvolvimento e avaliação de técnologias concorrentes.
+
+\subsubsection{Técnologias de Back-end}
+\begin{itemize}
+	\item \textbf{Django V3.0.4} - \textit{Framework Open-source} para desenvolvimento de aplicações \textit{Web} com python. \textit{Framework} base do servidor. Técnologia utilizada e imposta pela empresa.
+	\item \textbf{Python V3.7.3} - Linguagem de programação de alto nível, utilizado para programar o servidor. Técnologia utilizada e imposta pela empresa. Outra condição imposta pela empresa foi o uso da convenção PEP 8\cite{convencao} para todo o código em python.
+	\item \textbf{Celery V4.2.1} - 
+	\item \textbf{PostegreSQL V2.3.3e} - 
+	\item \textbf{plotly V4.8.1} - 
+	\item \textbf{Coverage V5.1} - 
+\end{itemize}
+
+\subsubsection{Técnologias de Front-end}
+\begin{itemize}
+	\item \textbf{HTML 5.0} - Linguagem utilizada para a construção das páginas \textit{web} da plataforma.
+	\item \textbf{JavaScript} - É uma linguagem de programação de alto nível, mais conhecida como linguagem de \textit{scripting} para páginas \textit{web}. Utilizada para execução de \textit{scripts} no lado do cliente, sem ter que passar pelo servidor.
+	\item \textbf{jQuery V3.5.1} - Biblioteca de javascript que permite executar pedidos AJAX e manipular facilmente a \acrfull{dom}. 
+	\item \textbf{Select2 V4.0.13} - 
+	\item \textbf{Bootstrap V4.5.0} - 
+\end{itemize}
+
 
 \section{Sprints}
 \label{sec:sprints}
 
-\section{Ferramentas Utilizadas}
-\label{sec:ferramentas}
+À semelhança do primeiro semestre, o desenvolvimento do projecto foi dividido em sprints. Como foi referido no Capítulo \ref{sec:abordagem} as sprints têm uma duração de 2 semanas e foram planeadas oito sprints para o desenvolvimento e uma sprint final para a finalização do relatório. Todos os dias houve uma reunião diária com o departamento de desenvolvimento de cerca de 15$\pm$5 minutos, onde era reportado o estado do desenvolvimento e sempre que necessário eram esclarecidas algumas dúvidas. No final de cada sprint era feita uma pequena reunião onde estava sempre presente o Scrum Master.
 
-%scrum
-%comunicação
-%testar pedidos rest
-%controlo de versões
+As sprints foram organizadas da seguinte forma:
+
+
+
+\begin{enumerate}
+	\item \textit{\textbf{Sprint \#8}} - Formação
+	\begin{itemize}
+		\item Data de Início: 14/02/2020
+		\item Data de Fim: 26/02/2020
+		\item Descrição: Periodio de apredizagem e familiarização com as técnilogias e ferramentas.
+	\end{itemize}
+	\item \textit{\textbf{Sprint \#9}} - Login, Autenticação e Definições de Conta
+	\begin{itemize}
+		\item Data de Início: 27/02/2020
+		\item Data de Fim: 15/03/2020
+		\item Descrição: Configuração inicial do servidor e da plataforma web. Modelação e criação da base de dados. Implementação das funcionalidade de autenticação e definições de conta.
+	\end{itemize}
+	\item \textit{\textbf{Sprint \#10}} - Questionários de Personalidade
+	\begin{itemize}
+		\item Data de Início: 16/03/2020
+		\item Data de Fim: 29/03/2020
+		\item Descrição: Implementação das funcionalidade de gestão de campanhas do tipo questionários de personalidade. 
+	\end{itemize}
+	\item \textit{\textbf{Sprint \#11}} - Modelo de Notificações
+	\begin{itemize}
+		\item Data de Início: 30/03/2020
+		\item Data de Fim: 12/04/2020
+		\item Descrição: Implementação das funcionalidade do modelo de notificações das campanhas.
+	\end{itemize}
+	\item \textit{\textbf{Sprint \#12}} - Campanhas online e algoritmo de recomendação
+	\begin{itemize}
+		\item Data de Início: 13/04/2020
+		\item Data de Fim: 26/04/2020
+		\item Descrição: Implementação das funcionalidades que permitem os permitem os utilizadores finais (i.e. leads) participarem nas campanhas, e implementação do algoritmo de recomendação.
+	\end{itemize}
+	\item \textit{\textbf{Sprint \#13}} - Formações
+	\begin{itemize}
+		\item Data de Início: 27/04/2020
+		\item Data de Fim: 10/05/2020
+		\item Descrição: Implementação das funcionalidades de gestão de formações. Integração com o TCG.
+	\end{itemize}
+	\item \textit{\textbf{Sprint \#14}} - Analise e Tratamento de dados
+	\begin{itemize}
+		\item Data de Início: 11/05/2020
+		\item Data de Fim: 24/05/2020
+		\item Descrição: Implementação das funcionalidade de analise e tratamento de dados. 
+	\end{itemize}
+	\item \textit{\textbf{Sprint \#15}} - Testes
+	\begin{itemize}
+		\item Data de Início: 25/05/2020
+		\item Data de Fim: 08/06/2020
+		\item Descrição: Cobertura do código desenvolvido em \textit{back-end}.
+	\end{itemize}
+	\item \textit{\textbf{Sprint \#16}} - Escrita do relatório
+	\begin{itemize}
+		\item Data de Início: 09/06/2020
+		\item Data de Fim: 21/06/2020
+		\item Descrição: Escrita da versão final do relatório.
+	\end{itemize}
+\end{enumerate}
+
 
 \section{Desafios na Implementação}
 \label{sec:dificuldades}
 
-\section{Produto Final}
-\label{sec:finalPro}
-
-%-------------------------------------------------------------------------------------------------
-\blankpage
-%-------------------------------------------------------------------------------------------------
 
 \glsresetall

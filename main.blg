@@ -3,44 +3,53 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: main.aux
 The style file: plain.bst
 Database file #1: references.bib
-You've used 63 entries,
+Warning--to sort, need author or key in ft1
+Warning--to sort, need author or key in ft2
+Warning--to sort, need author or key in ft3
+Warning--to sort, need author or key in bb
+Warning--to sort, need author or key in ft4
+Warning--to sort, need author or key in ft5
+Warning--to sort, need author or key in ft6
+Warning--to sort, need author or key in convencao
+You've used 71 entries,
             2118 wiz_defined-function locations,
-            742 strings with 10661 characters,
-and the built_in function-call counts, 13447 in all, are:
-= -- 1302
-> -- 447
+            767 strings with 11138 characters,
+and the built_in function-call counts, 14791 in all, are:
+= -- 1438
+> -- 455
 < -- 1
-+ -- 191
++ -- 199
 - -- 128
-* -- 339
-:= -- 2267
-add.period$ -- 230
-call.type$ -- 63
-change.case$ -- 251
+* -- 379
+:= -- 2419
+add.period$ -- 254
+call.type$ -- 71
+change.case$ -- 275
 chr.to.int$ -- 0
-cite$ -- 63
-duplicate$ -- 462
-empty$ -- 1394
+cite$ -- 79
+duplicate$ -- 518
+empty$ -- 1578
 format.name$ -- 128
-if$ -- 2962
+if$ -- 3298
 int.to.chr$ -- 0
-int.to.str$ -- 63
+int.to.str$ -- 71
 missing$ -- 5
-newline$ -- 359
+newline$ -- 399
 num.names$ -- 126
-pop$ -- 583
+pop$ -- 663
 preamble$ -- 1
-purify$ -- 190
+purify$ -- 206
 quote$ -- 0
-skip$ -- 385
+skip$ -- 425
 stack$ -- 0
-substring$ -- 339
-swap$ -- 70
+substring$ -- 379
+swap$ -- 78
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 248
-warning$ -- 0
+type$ -- 280
+warning$ -- 8
 while$ -- 129
-width$ -- 65
-write$ -- 655
+width$ -- 73
+write$ -- 727
+(There were 8 warnings)

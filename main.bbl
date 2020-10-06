@@ -1,5 +1,46 @@
 \begin{thebibliography}{10}
 
+\bibitem{bb}
+{Bitbucket}.
+\newblock \url{https://bitbucket.org/product}.
+\newblock Accessed: 04/10/2020.
+
+\bibitem{ft4}
+{DBeaver}.
+\newblock \url{https://dbeaver.io/}.
+\newblock Accessed: 04/10/2020.
+
+\bibitem{ft2}
+{draw.io}.
+\newblock \url{https://app.diagrams.net/}.
+\newblock Accessed: 04/10/2020.
+
+\bibitem{ft3}
+{Git}.
+\newblock \url{https://git-scm.com/}.
+\newblock Accessed: 04/10/2020.
+
+\bibitem{ft5}
+{Microsoft Teams}.
+\newblock
+  \url{https://www.microsoft.com/pt-pt/microsoft-365/microsoft-teams/group-chat-software}.
+\newblock Accessed: 04/10/2020.
+
+\bibitem{convencao}
+{Style Guide for Python Code}.
+\newblock \url{https://www.python.org/dev/peps/pep-0008/}.
+\newblock Accessed: 04/10/2020.
+
+\bibitem{ft1}
+{Visual Studio Code}.
+\newblock \url{https://code.visualstudio.com/}.
+\newblock Accessed: 04/10/2020.
+
+\bibitem{ft6}
+{Wrike}.
+\newblock \url{https://www.wrike.com/pt-br/}.
+\newblock Accessed: 04/10/2020.
+
 \bibitem{10}
 {10.Digital}.
 \newblock {10.Digital}.
