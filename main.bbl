@@ -1,43 +1,57 @@
 \begin{thebibliography}{10}
 
 \bibitem{bb}
-{Bitbucket}.
+{}.
+\newblock {Bitbucket}.
 \newblock \url{https://bitbucket.org/product}.
 \newblock Accessed: 04/10/2020.
 
 \bibitem{ft4}
-{DBeaver}.
+{}.
+\newblock {DBeaver}.
 \newblock \url{https://dbeaver.io/}.
 \newblock Accessed: 04/10/2020.
 
 \bibitem{ft2}
-{draw.io}.
+{}.
+\newblock {draw.io}.
 \newblock \url{https://app.diagrams.net/}.
 \newblock Accessed: 04/10/2020.
 
 \bibitem{ft3}
-{Git}.
+{}.
+\newblock {Git}.
 \newblock \url{https://git-scm.com/}.
 \newblock Accessed: 04/10/2020.
 
+\bibitem{mpl}
+{}.
+\newblock {Maplotlib}.
+\newblock \url{https://matplotlib.org/}.
+\newblock Accessed: 04/10/2020.
+
 \bibitem{ft5}
-{Microsoft Teams}.
+{}.
+\newblock {Microsoft Teams}.
 \newblock
   \url{https://www.microsoft.com/pt-pt/microsoft-365/microsoft-teams/group-chat-software}.
 \newblock Accessed: 04/10/2020.
 
 \bibitem{convencao}
-{Style Guide for Python Code}.
+{}.
+\newblock {Style Guide for Python Code}.
 \newblock \url{https://www.python.org/dev/peps/pep-0008/}.
 \newblock Accessed: 04/10/2020.
 
 \bibitem{ft1}
-{Visual Studio Code}.
+{}.
+\newblock {Visual Studio Code}.
 \newblock \url{https://code.visualstudio.com/}.
 \newblock Accessed: 04/10/2020.
 
 \bibitem{ft6}
-{Wrike}.
+{}.
+\newblock {Wrike}.
 \newblock \url{https://www.wrike.com/pt-br/}.
 \newblock Accessed: 04/10/2020.
 
@@ -240,6 +254,12 @@ Brian Halligan and Dharmesh Shah.
 {Microsoft}.
 \newblock {Microsoft}.
 \newblock \url{https://login.microsoftonline.com}.
+
+\bibitem{pb}
+{Microsoft}.
+\newblock {Power BI}.
+\newblock \url{https://powerbi.microsoft.com/pt-pt/}.
+\newblock Accessed: 04/10/2020.
 
 \bibitem{neipatel}
 {NEIPATEL}.
