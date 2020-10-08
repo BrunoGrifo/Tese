@@ -108,53 +108,52 @@
 \contentsline {subsection}{\numberline {C.1.11}RF12 - Importar quest\IeC {\~o}es}{138}{subsection.1.C.1.11}% 
 \contentsline {subsection}{\numberline {C.1.12}RF13 - Exportar quest\IeC {\~o}es}{139}{subsection.1.C.1.12}% 
 \contentsline {subsection}{\numberline {C.1.13}RF14 - Criar sistema de pontua\IeC {\c c}\IeC {\~o}es}{140}{subsection.1.C.1.13}% 
-\contentsline {subsection}{\numberline {C.1.14}RF15 - Mostrar lista de question\IeC {\'a}rios do utilizador}{141}{subsection.1.C.1.14}% 
-\contentsline {subsection}{\numberline {C.1.15}RF16 - Editar question\IeC {\'a}rio}{142}{subsection.1.C.1.15}% 
+\contentsline {subsection}{\numberline {C.1.14}RF15 - Mostrar lista de question\IeC {\'a}rios de personalidade do utilizador}{141}{subsection.1.C.1.14}% 
+\contentsline {subsection}{\numberline {C.1.15}RF16 - Editar Question\IeC {\'a}rio de Personalidade}{142}{subsection.1.C.1.15}% 
 \contentsline {subsection}{\numberline {C.1.16}RF17 - Notificar utilizadores finais}{143}{subsection.1.C.1.16}% 
 \contentsline {subsection}{\numberline {C.1.17}RF19 - Gerir Forma\IeC {\c c}\IeC {\~o}es}{144}{subsection.1.C.1.17}% 
 \contentsline {subsection}{\numberline {C.1.18}RF20 - Criar forma\IeC {\c c}\IeC {\~a}o}{145}{subsection.1.C.1.18}% 
 \contentsline {subsection}{\numberline {C.1.19}RF21 - Definir periodicidade}{146}{subsection.1.C.1.19}% 
 \contentsline {subsection}{\numberline {C.1.20}RF22 - Registo de atividade}{147}{subsection.1.C.1.20}% 
-\contentsline {subsection}{\numberline {C.1.21}RF23 - Enviar Notifica\IeC {\c c}\IeC {\~a}o}{148}{subsection.1.C.1.21}% 
-\contentsline {subsection}{\numberline {C.1.22}RF24 - Defini\IeC {\c c}\IeC {\~o}es da forma\IeC {\c c}\IeC {\~a}o}{149}{subsection.1.C.1.22}% 
-\contentsline {subsection}{\numberline {C.1.23}RF25 - Adicionar entrada de perguntas}{150}{subsection.1.C.1.23}% 
-\contentsline {subsection}{\numberline {C.1.24}RF26 - Gerir entradas de perguntas}{151}{subsection.1.C.1.24}% 
-\contentsline {subsection}{\numberline {C.1.25}RF27 - Mostrar lista de forma\IeC {\c c}\IeC {\~o}es do utilizador}{152}{subsection.1.C.1.25}% 
-\contentsline {subsection}{\numberline {C.1.26}RF28 - Editar forma\IeC {\c c}\IeC {\~a}o}{153}{subsection.1.C.1.26}% 
-\contentsline {subsection}{\numberline {C.1.27}RF29 - Adicionar novo utilizador final TCG}{154}{subsection.1.C.1.27}% 
-\contentsline {subsection}{\numberline {C.1.28}RF30 - Notificar utilizadores finais TCG}{155}{subsection.1.C.1.28}% 
-\contentsline {subsection}{\numberline {C.1.29}RF31 - Gerir concursos}{156}{subsection.1.C.1.29}% 
-\contentsline {subsection}{\numberline {C.1.30}RF32 - Criar concurso}{157}{subsection.1.C.1.30}% 
-\contentsline {subsection}{\numberline {C.1.31}RF33 - Criar perguntas}{158}{subsection.1.C.1.31}% 
-\contentsline {subsection}{\numberline {C.1.32}RF34 - Introduzir respostas}{159}{subsection.1.C.1.32}% 
-\contentsline {subsection}{\numberline {C.1.33}RF35 - Exportar perguntas}{160}{subsection.1.C.1.33}% 
-\contentsline {subsection}{\numberline {C.1.34}RF36 - Importar perguntas}{161}{subsection.1.C.1.34}% 
-\contentsline {subsection}{\numberline {C.1.35}RF37 - Mostrar lista de concursos do utilizador}{162}{subsection.1.C.1.35}% 
-\contentsline {subsection}{\numberline {C.1.36}RF38 - Editar concurso}{163}{subsection.1.C.1.36}% 
-\contentsline {subsection}{\numberline {C.1.37}RF39 - Gerir perguntas TCG}{164}{subsection.1.C.1.37}% 
-\contentsline {subsection}{\numberline {C.1.38}RF40 - Importar perguntas TCG}{165}{subsection.1.C.1.38}% 
-\contentsline {subsection}{\numberline {C.1.39}RF41 - Exportar pergunta TCG}{166}{subsection.1.C.1.39}% 
-\contentsline {subsection}{\numberline {C.1.40}RF42 - Criar pergunta TCG}{167}{subsection.1.C.1.40}% 
-\contentsline {subsection}{\numberline {C.1.41}RF44 - Filtrar perguntas TCG}{168}{subsection.1.C.1.41}% 
-\contentsline {subsection}{\numberline {C.1.42}RF45 - Mostrar lista de perguntas TCG}{169}{subsection.1.C.1.42}% 
-\contentsline {subsection}{\numberline {C.1.43}RF46 - Editar pergunta TCG}{170}{subsection.1.C.1.43}% 
-\contentsline {subsection}{\numberline {C.1.44}RF47 - Apagar pergunta TCG}{171}{subsection.1.C.1.44}% 
-\contentsline {subsection}{\numberline {C.1.45}RF48 - Relat\IeC {\'o}rios}{172}{subsection.1.C.1.45}% 
-\contentsline {subsection}{\numberline {C.1.46}RF49 - Relat\IeC {\'o}rio geral}{173}{subsection.1.C.1.46}% 
-\contentsline {subsection}{\numberline {C.1.47}RF50 - Relat\IeC {\'o}rio}{174}{subsection.1.C.1.47}% 
-\contentsline {subsection}{\numberline {C.1.48}RF51 - Listar leads por perfil}{175}{subsection.1.C.1.48}% 
-\contentsline {subsection}{\numberline {C.1.49}RF52 - Defini\IeC {\c c}\IeC {\~o}es}{176}{subsection.1.C.1.49}% 
-\contentsline {subsection}{\numberline {C.1.50}RF53 - Actualizar plano}{177}{subsection.1.C.1.50}% 
-\contentsline {subsection}{\numberline {C.1.51}RF54 - Ajuda}{178}{subsection.1.C.1.51}% 
-\contentsline {subsection}{\numberline {C.1.52}RF55- Sair}{179}{subsection.1.C.1.52}% 
-\contentsline {subsection}{\numberline {C.1.53}RF56 - Partilhar}{180}{subsection.1.C.1.53}% 
-\contentsline {subsection}{\numberline {C.1.54}RF57 - Apagar forma\IeC {\c c}\IeC {\~a}o}{181}{subsection.1.C.1.54}% 
-\contentsline {chapter}{\numberline {D}Mockups}{182}{Anexo.1.D}% 
-\contentsline {section}{\numberline {D.1}Interfaces do utilizador}{182}{section.1.D.1}% 
-\contentsline {subsection}{\numberline {D.1.1}Autentica\IeC {\c c}\IeC {\~a}o}{182}{subsection.1.D.1.1}% 
-\contentsline {subsection}{\numberline {D.1.2}P\IeC {\'a}gina Inicial}{184}{subsection.1.D.1.2}% 
-\contentsline {subsection}{\numberline {D.1.3}Question\IeC {\'a}rios}{185}{subsection.1.D.1.3}% 
-\contentsline {subsection}{\numberline {D.1.4}Concursos}{189}{subsection.1.D.1.4}% 
-\contentsline {subsection}{\numberline {D.1.5}Forma\IeC {\c c}\IeC {\~o}es}{191}{subsection.1.D.1.5}% 
-\contentsline {subsection}{\numberline {D.1.6}Relat\IeC {\'o}rios}{197}{subsection.1.D.1.6}% 
-\contentsline {subsection}{\numberline {D.1.7}Defini\IeC {\c c}\IeC {\~o}es e Plano de funcionalidades}{201}{subsection.1.D.1.7}% 
+\contentsline {subsection}{\numberline {C.1.21}RF24 - Defini\IeC {\c c}\IeC {\~o}es da forma\IeC {\c c}\IeC {\~a}o}{148}{subsection.1.C.1.21}% 
+\contentsline {subsection}{\numberline {C.1.22}RF25 - Adicionar entrada de perguntas}{149}{subsection.1.C.1.22}% 
+\contentsline {subsection}{\numberline {C.1.23}RF26 - Gerir entradas de perguntas}{150}{subsection.1.C.1.23}% 
+\contentsline {subsection}{\numberline {C.1.24}RF27 - Mostrar lista de forma\IeC {\c c}\IeC {\~o}es do utilizador}{151}{subsection.1.C.1.24}% 
+\contentsline {subsection}{\numberline {C.1.25}RF28 - Editar forma\IeC {\c c}\IeC {\~a}o}{152}{subsection.1.C.1.25}% 
+\contentsline {subsection}{\numberline {C.1.26}RF29 - Adicionar novo utilizador final TCG}{153}{subsection.1.C.1.26}% 
+\contentsline {subsection}{\numberline {C.1.27}RF30 - Notificar utilizadores finais TCG}{154}{subsection.1.C.1.27}% 
+\contentsline {subsection}{\numberline {C.1.28}RF31 - Gerir concursos}{155}{subsection.1.C.1.28}% 
+\contentsline {subsection}{\numberline {C.1.29}RF32 - Criar concurso}{156}{subsection.1.C.1.29}% 
+\contentsline {subsection}{\numberline {C.1.30}RF33 - Criar perguntas}{157}{subsection.1.C.1.30}% 
+\contentsline {subsection}{\numberline {C.1.31}RF34 - Introduzir respostas}{158}{subsection.1.C.1.31}% 
+\contentsline {subsection}{\numberline {C.1.32}RF35 - Exportar perguntas}{159}{subsection.1.C.1.32}% 
+\contentsline {subsection}{\numberline {C.1.33}RF36 - Importar perguntas}{160}{subsection.1.C.1.33}% 
+\contentsline {subsection}{\numberline {C.1.34}RF37 - Mostrar lista de concursos do utilizador}{161}{subsection.1.C.1.34}% 
+\contentsline {subsection}{\numberline {C.1.35}RF38 - Editar concurso}{162}{subsection.1.C.1.35}% 
+\contentsline {subsection}{\numberline {C.1.36}RF39 - Gerir perguntas TCG}{163}{subsection.1.C.1.36}% 
+\contentsline {subsection}{\numberline {C.1.37}RF40 - Importar perguntas TCG}{164}{subsection.1.C.1.37}% 
+\contentsline {subsection}{\numberline {C.1.38}RF41 - Exportar pergunta TCG}{165}{subsection.1.C.1.38}% 
+\contentsline {subsection}{\numberline {C.1.39}RF42 - Criar pergunta TCG}{166}{subsection.1.C.1.39}% 
+\contentsline {subsection}{\numberline {C.1.40}RF44 - Filtrar perguntas TCG}{167}{subsection.1.C.1.40}% 
+\contentsline {subsection}{\numberline {C.1.41}RF45 - Mostrar lista de perguntas TCG}{168}{subsection.1.C.1.41}% 
+\contentsline {subsection}{\numberline {C.1.42}RF46 - Editar pergunta TCG}{169}{subsection.1.C.1.42}% 
+\contentsline {subsection}{\numberline {C.1.43}RF47 - Apagar pergunta TCG}{170}{subsection.1.C.1.43}% 
+\contentsline {subsection}{\numberline {C.1.44}RF48 - Relat\IeC {\'o}rios}{171}{subsection.1.C.1.44}% 
+\contentsline {subsection}{\numberline {C.1.45}RF49 - Relat\IeC {\'o}rio geral}{172}{subsection.1.C.1.45}% 
+\contentsline {subsection}{\numberline {C.1.46}RF50 - Relat\IeC {\'o}rio}{173}{subsection.1.C.1.46}% 
+\contentsline {subsection}{\numberline {C.1.47}RF51 - Listar leads por perfil}{174}{subsection.1.C.1.47}% 
+\contentsline {subsection}{\numberline {C.1.48}RF52 - Defini\IeC {\c c}\IeC {\~o}es}{175}{subsection.1.C.1.48}% 
+\contentsline {subsection}{\numberline {C.1.49}RF53 - Actualizar plano}{176}{subsection.1.C.1.49}% 
+\contentsline {subsection}{\numberline {C.1.50}RF54 - Ajuda}{177}{subsection.1.C.1.50}% 
+\contentsline {subsection}{\numberline {C.1.51}RF55- Sair}{178}{subsection.1.C.1.51}% 
+\contentsline {subsection}{\numberline {C.1.52}RF56 - Partilhar}{179}{subsection.1.C.1.52}% 
+\contentsline {subsection}{\numberline {C.1.53}RF57 - Apagar forma\IeC {\c c}\IeC {\~a}o}{180}{subsection.1.C.1.53}% 
+\contentsline {chapter}{\numberline {D}Mockups}{181}{Anexo.1.D}% 
+\contentsline {section}{\numberline {D.1}Interfaces do utilizador}{181}{section.1.D.1}% 
+\contentsline {subsection}{\numberline {D.1.1}Autentica\IeC {\c c}\IeC {\~a}o}{181}{subsection.1.D.1.1}% 
+\contentsline {subsection}{\numberline {D.1.2}P\IeC {\'a}gina Inicial}{183}{subsection.1.D.1.2}% 
+\contentsline {subsection}{\numberline {D.1.3}Question\IeC {\'a}rios}{184}{subsection.1.D.1.3}% 
+\contentsline {subsection}{\numberline {D.1.4}Concursos}{188}{subsection.1.D.1.4}% 
+\contentsline {subsection}{\numberline {D.1.5}Forma\IeC {\c c}\IeC {\~o}es}{190}{subsection.1.D.1.5}% 
+\contentsline {subsection}{\numberline {D.1.6}Relat\IeC {\'o}rios}{196}{subsection.1.D.1.6}% 
+\contentsline {subsection}{\numberline {D.1.7}Defini\IeC {\c c}\IeC {\~o}es e Plano de funcionalidades}{200}{subsection.1.D.1.7}% 

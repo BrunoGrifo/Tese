@@ -121,6 +121,8 @@
 		\subitem Criar resultados (RF11 - Criar Resultados).
 		\subitem Importar questões através de uma spreadsheet (RF12 - Importar Questões).
 		\subitem Exportar questões para uma spreadsheet (RF13 - Exportar Questões).
+		\subitem Importar questões através de uma spreadsheet (RF59 - Importar resultados).
+		\subitem Exportar questões para uma spreadsheet (RF58 - Exportar resultados).
 		\subitem Partilhar os questionários de personalidade e/ou definir o template do E-mail (RF07 - Modelo de notificações).
 \end{itemize}
 \newpage
@@ -204,16 +206,17 @@
 	\item[--] \textbf{ID:} 10
 	\item[--]  \textbf{Ator:} Utilizador.
 	\item[--]  \textbf{Prioridade:} \textit{Must Have}
-	\item[--]  \textbf{Descrição:} Criar as questões que irão aparecer no questionário.
+	\item[--]  \textbf{Descrição:} Criar as questões que irão aparecer no questionário de personalidade.
 	\item[--]  \textbf{Pré-condições:} O utilizador necessita de estar autenticado na plataforma 10.quest.
 	\item[--]  \textbf{Estímulo:}  
-		\subitem RF06 - Criar questionário.
-		\subitem RF16 - Editar questionário.
+		\subitem RF56 - Mostrar lista de questões.
 	\item[--]  \textbf{Fluxo Principal:} 
-		\subitem 1. O utilizador introduz a questão a ser adicionada ao questionário.
-		\subitem 2. O utilizador carrega no botão para adicionar a questão ao questionário.
-		\subitem 3. O 10.quest notifica o utilizador que a questão foi adicionada com sucesso.
-	\item[--]  \textbf{Observações:} O utilizador pode adicionar múltiplas questões ao questionário. As questões são adicionadas em formato de lista e por isso para apagar uma questão basta carregar na cruz que se segue à questão.
+		\subitem 1. O utilizador introduz a questão a ser adicionada ao questionário de personalidade.
+		\subitem 2. O utilizador atribui uma pontuação à questão.
+		\subitem 3. O utilizador cria pelo menos duas respostas para a pergunta. A cada resposta pode associar uma ou mais tags e uma imagem ou vídeo.
+		\subitem 4. O utilizador carrega no botão para adicionar a questão ao questionário de personalidade.
+		\subitem 5. O 10.quest notifica o utilizador que a questão foi adicionada com sucesso.
+	\item[--]  \textbf{Observações:} O utilizador pode adicionar múltiplas questões ao questionário de personalidade. As questões são adicionadas em formato de lista e por isso para apagar uma questão basta selecionar todas as questões pertendidas e carregar no botão de apagar questões.
 \end{itemize}
 \newpage
 
@@ -225,23 +228,22 @@
 	\item[--]  \textbf{Descrição:} Criar resultados para serem apresentados ao utilizador final.
 	\item[--]  \textbf{Pré-condições:} O utilizador necessita de estar autenticado na plataforma 10.quest.
 	\item[--]  \textbf{Estímulo:}  
-		\subitem RF06 - Criar questionário.
-		\subitem RF16 - Editar questionário.
+		\subitem RF57 - Mostrar lista de resultados.
 	\item[--]  \textbf{Fluxo Principal:} 
-		\subitem 1. O utilizador associa uma ou mais tags ao resultado.
-		\subitem 2. O utilizador introduz o título para o resultado.
-		\subitem 3. O utilizador carrega uma imagem para o resultado.
-		\subitem 4. O utilizador introduz o \underline{link} para o resultado.
-		\subitem 5. O utilizador associa uma ou mais tags de perfis de utilizador ao resultado.		
+		\subitem 1. O utilizador introduz o título para o resultado.
+		\subitem 2. O utilizador introduz, opcionalmente, uma descrição para o resultado.
+		\subitem 3. O utilizador introduz, opcionalmente, um \textit{link} para o resultado.
+		\subitem 4. O utilizador associa uma ou mais tags ao resultado.
+		\subitem 5. O utilizador, opcionalmente, carrega uma imagem ou vídeo para o resultado.
 	\item[--]  \textbf{Fluxo de Excepção:} 
-		\subitem 3a. O utilizador carrega um ficheiro com formato inválido.
-		\subitem 3a1. O 10.quest notifica o utilizador que o formato carregado é inválido.
-		\subitem 4a. O utilizador introduz um link inválido.
+		\subitem 3a. O utilizador introduz um link inválido.
 		\subitem 4a1. O 10.quest notifica o utilizador que o link carregado é inválido.
+		\subitem 5a. O utilizador carrega um ficheiro com formato inválido.
+		\subitem 5a1. O 10.quest notifica o utilizador que o formato carregado é inválido.
 	\item[--]  \textbf{Observações:} 
-	Quando o utilizador associa uma tag ao resultado, independentemente o tipo de tag, se a tag existir então esta é associada ao resultado, caso contrário é criada uma nova tag e posteriormente associada ao resultado.
+	A lista de tags disponível para associar ao resultado contém apenas tags criadas nas questões da campanha especifica.
 	
-	A introdução de um link e uma tag de perfil de utilizador a um resultado é opcional.	
+	A introdução de um \textit{link}, imagem ou vídeo e tags a um resultado é opcional, contudo sem tags o sistema de pontuação não irá recomendar o respectivo resultado.	
 	
 \end{itemize}
 \newpage
@@ -254,8 +256,7 @@
 	\item[--]  \textbf{Descrição:} Importar questões através de uma spreadsheet. 
 	\item[--]  \textbf{Pré-condições:} O utilizador necessita de estar autenticado na plataforma 10.quest.
 	\item[--]  \textbf{Estímulo:}  
-		\subitem RF06 - Criar questionário.
-		\subitem RF16 - Editar questionário.
+		\subitem RF56 - Mostrar lista de questões.
 	\item[--]  \textbf{Fluxo Principal:} 
 		\subitem 1. O utilizador carrega no botão para importar questões.
 		\subitem 2. O utilizador carrega a spreadsheet (i. e. ficheiro com as questões) para a plataforma 10.quest.
@@ -264,7 +265,7 @@
 		\subitem 2a. O utilizador carrega um ficheiro com formato inválido.
 		\subitem 2a1. O 10.quest notifica o utilizador que o ficheiro carregado é inválido.
 		\subitem 2b. O utilizador carrega um ficheiro mas as questões estão mal formatadas (i. e. mal estruturadas).
-		\subitem 2b1. O 10.quest notifica o utilizador que as questões estão mal estruturadas e por isso não podem ser adicionadas ao questionário.
+		\subitem 2b1. O 10.quest notifica o utilizador quais as questões que estão mal estruturadas e não foram adicionadas ao questionário.
 	\item[--]  \textbf{Observações:} É fornecido um ficheiro exemplo para mostrar ao utilizador a estrutura em que as questões têm de ser escritas no ficheiro para ser aceite pela plataforma 10.quest com sucesso.
 \end{itemize}
 \newpage
@@ -277,8 +278,7 @@
 	\item[--]  \textbf{Descrição:} Exportar questões para uma spreadsheet.
 	\item[--]  \textbf{Pré-condições:} O utilizador necessita de estar autenticado na plataforma 10.quest.
 	\item[--]  \textbf{Estímulo:}  
-		\subitem RF06 - Criar questionário.
-		\subitem RF16 - Editar questionário.
+		\subitem RF56 - Mostrar lista de questões.
 	\item[--]  \textbf{Fluxo Principal:} 
 		\subitem 1. O utilizador carrega no botão para exportar as questões associadas ao questionário.
 		\subitem 2. O 10.quest descarrega um ficheiro com todas as questões associadas ao questionário.
@@ -289,13 +289,10 @@
 \subsection{RF14 - Criar sistema de pontuações}
 \begin{itemize}
 	\item[--] \textbf{ID:} 14
-	\item[--]  \textbf{Ator:} Utilizador.
+	\item[--]  \textbf{Ator:} Sistema.
 	\item[--]  \textbf{Prioridade:} \textit{Must Have}.
 	\item[--]  \textbf{Descrição:} Sistema que baseado nas respostas do utilizador final, irá decidir qual o resultado a ser apresentado.
 	\item[--]  \textbf{Pré-condições:}  O utilizador necessita de estar autenticado na plataforma 10.quest e o questiopnário terá de ter pelo menos um resultado e uma questão associada.
-	\item[--]  \textbf{Estímulo:}  
-		\subitem RF06 - Criar questionário.
-		\subitem RF16 - Editar questionário.
 	\item[--]  \textbf{Fluxo Principal:} 
 		\subitem 1. O utilizador seleciona a primeira pergunta do questionário.
 		\subitem 2. O utilizador cria pelo menos duas respostas para a pergunta.
@@ -309,51 +306,47 @@
 \end{itemize}
 \newpage
 
-\subsection{RF15 - Mostrar lista de questionários do utilizador}
+\subsection{RF15 - Mostrar lista de questionários de personalidade do utilizador}
 \begin{itemize}
 	\item[--] \textbf{ID:} 15
 	\item[--]  \textbf{Ator:} Utilizador
 	\item[--]  \textbf{Prioridade:} \textit{Must Have}
-	\item[--]  \textbf{Descrição:} A plaforma 10.quest lista todos os questionários associados à conta do utilizador.
+	\item[--]  \textbf{Descrição:} A plaforma 10.quest lista todos os questionários de personalidade associados à conta do utilizador.
 	\item[--]  \textbf{Pré-condições:} O utilizador necessita de estar autenticado na plataforma 10.quest.
-	\item[--]  \textbf{Estímulo:} RF05 - Gerir questionários.
+	\item[--]  \textbf{Estímulo:} RF05 - Gerir Questionários de Qersonalidade.
 	\item[--]  \textbf{Fluxo Principal:} 
-		\subitem 1. O 10.quest lista todos os questionários associados à conta do utilizador
-		\subitem 2. O utilizador pode selecionar um questionário e efectuar as \underline{operações desejadas}
+		\subitem 1. O 10.quest lista todos os questionários de personalidade associados à conta do utilizador
+		\subitem 2. O utilizador pode selecionar um questionário de personalidade e efectuar as \underline{operações desejadas}
 	\item[--]  \textbf{Fluxo de Excepção:} 
-		\subitem 1a. O utilizador não tem nenhum questionário associado à conta.
+		\subitem 1a. O utilizador não tem nenhum questionário de personalidade associado à conta.
 		\subitem 1a1. O 10.quest informa o utilizador que não existe nenhum questionário associado à conta do mesmo.
 	\item[--]  \textbf{Observações:} Depois de listados todos os questionários, o utilizador pode escolher um questionário e efectuar as \underline{operações desejadas}:
-		\subitem Filtrar os questionários por nome, data ou estado, definido na Secção \ref{d:concursos}.
+		\subitem Filtrar os questionários de personalidade por nome, data ou estado, definido na Secção \ref{d:quests}.
 		\subitem Apagar questionário.
-		\subitem Pesquisar questionário por nome.
-		\subitem Editar questionário (RF16 - Editar questionário).
+		\subitem Pesquisar questionário de personalidade por nome.
+		\subitem Editar questionário de personalidade (RF16 - Editar Questionário de Personalidade).
 \end{itemize}
 \newpage
 
 
-\subsection{RF16 - Editar questionário}
+\subsection{RF16 - Editar Questionário de Personalidade}
 \begin{itemize}
 	\item[--] \textbf{ID:} 16
 	\item[--]  \textbf{Ator:} Utilizador.
 	\item[--]  \textbf{Prioridade:} \textit{Must Have}.
 	\item[--]  \textbf{Descrição:} Efetuar uma das \underline{operações desejadas}.
-	\item[--]  \textbf{Pré-condições:} O utilizador necessita de estar autenticado na plataforma 10.quest e ter pelo menos um questionário criado.
+	\item[--]  \textbf{Pré-condições:} O utilizador necessita de estar autenticado na plataforma 10.quest e ter pelo menos um questionário de personalidade criado.
 	\item[--]  \textbf{Estímulo:} RF15 - Mostrar lista de questionários do utilizador.
 	\item[--]  \textbf{Fluxo Principal:} 
-		\subitem 1. O utilizador seleciona um questionário e efetua as \underline{operações desejadas}.
-	\item[--]  \textbf{Fluxo de Excepção:} 
-		\subitem 1a. O 10.quest não consegue efetuar o pedido à API do TCG devido a uma falha na conexão.
-		\subitem 1a1. O 10.quest notifica o utilizador que ocorreu uma falha na conexão.
-		\subitem 1b. O serviço do TCG (API) está indisponível.
-		\subitem 1b1. O 10.quest notifica o utilizador que o serviço do TCG está temporariamente indisponível. 
+		\subitem 1. O utilizador seleciona o questionário de personalidade e efetua as \underline{operações desejadas}.
 	\item[--]  \textbf{Observações:} Depois do 10.quest listar todos os questionários e o utilizador escolher o questionário que pretende editar, pode efetuar as \underline{operações desejadas}:
 		\subitem Criar ou apagar questões (RF10 - Criar questões).
 		\subitem Alterar modelo de notificações (RF07 - Modelo de notificações).
 		\subitem Criar ou apagar resultados (RF11 - Criar resultados).
-		\subitem Alterar sistema de pontuação (RF14 - Criar sistema de pontuação).
 		\subitem Importar questões (RF12 - Importar questões).
-		\subitem Exportar questões (RF13 - Exportar questões)
+		\subitem Exportar questões (RF13 - Exportar questões).
+		\subitem Importar questões (RF59 - Importar resultados).
+		\subitem Exportar questões (RF58 - Exportar resultados).
 \end{itemize}
 \newpage
 
@@ -365,9 +358,9 @@
 	\item[--]  \textbf{Prioridade:} \textit{Must Have}
 	\item[--]  \textbf{Descrição:} Enviar email para um utilizador final (i. e. participante), assim que ele se inscreve na landing page.
 	\item[--]  \textbf{Pré-condições:} O utilizador final tem que submeter inscrição na landing page.
-	\item[--]  \textbf{Estímulo:} O utilizador final deseja participar no questionário.
+	\item[--]  \textbf{Estímulo:} O utilizador final deseja participar na campanha.
 	\item[--]  \textbf{Fluxo Principal:} 
-		\subitem 1. O 10.quest envia um email para o contacto submetido na landing page com as informações sobre o questionário, definidas no (RF09 - Notificações por Email).
+		\subitem 1. O 10.quest envia um email para o contacto submetido na landing page com as informações sobre a campanha, definidas no (RF09 - Notificações por Email).
 \end{itemize}
 \newpage
 
@@ -395,6 +388,16 @@
 	\item[--]  \textbf{Observações:} 
 \end{itemize}
 \newpage
+
+
+\subitem 7. O 10.quest envia a informação para o TCG para que a informação seja criada a formação.
+\item[--]  \textbf{Fluxo de Excepção:} 
+\subitem 7a. O 10.quest não consegue enviar a informação para o TCG devido a uma falha na conexão.
+\subitem 7a1. O 10.quest notifica o utilizador que ocorreu uma falha na conexão.
+\subitem 7b. O serviço do TCG (API) está indisponível.
+\subitem 7b1. O 10.quest notifica o utilizador que o serviço do TCG está temporariamente indisponível. 
+
+
 \end{comment}
 
 
@@ -411,8 +414,8 @@
 	\subitem 2. O 10.quest  \underline{lista todos as formações associadas à conta do utilizador}.
 	\item[--]  \textbf{Fluxo de Excepção:} 
 	\subitem 2a. Não existe nenhuma formação associada à conta do utilizador.
-	\subitem 2a1. o 10.quest informa o utilizador que não existem formações para serem listados.
-	\item[--]  \textbf{Observações:} A forma como a platadorma 10.quest lista as formações está descrito no caso de uso \underline{RF15 - Mostrar lista de questionários do utilizador}.
+	\subitem 2a1. O 10.quest informa o utilizador que não existem formações para serem listados.
+	\item[--]  \textbf{Observações:} A forma como a platadorma 10.quest lista as formações está descrito no caso de uso \underline{RF27 - Mostrar lista de formações do utilizador}.
 \end{itemize}
 \newpage
 
@@ -441,19 +444,11 @@
 		\subitem RF20 - Criar Formação.
 		\subitem RF28 - Editar formação.
 	\item[--]  \textbf{Fluxo Principal:} 
-		\subitem 1. O utilizador introduz o nome da formação
-		\subitem 2. O utilizador seleciona a data de início da formação
-		\subitem 3. O utilizador seleciona a data de fim da formação
-		\subitem 4. O utilizador seleciona os dias da semana em que a formação é enviada para os utilizadores finais.
-		\subitem 5. O utilizador seleciona a hora do dia em que a formação é enviada para os utilizadores finais.
-		\subitem 6. O utilizador seleciona a duração da formação.
-		\subitem 7. O 10.quest envia a informação para o TCG para que a informação seja criada a formação.
-	\item[--]  \textbf{Fluxo de Excepção:} 
-		\subitem 7a. O 10.quest não consegue enviar a informação para o TCG devido a uma falha na conexão.
-		\subitem 7a1. O 10.quest notifica o utilizador que ocorreu uma falha na conexão.
-		\subitem 7b. O serviço do TCG (API) está indisponível.
-		\subitem 7b1. O 10.quest notifica o utilizador que o serviço do TCG está temporariamente indisponível. 
-	\item[--]  \textbf{Observações:} A duração de uma formação tem de ser igual ou menor ao menor intervalo de dias da semana selecionados para enviar a formação.
+		\subitem 1. O utilizador introduz o nome da formação.
+		\subitem 2. O utilizador seleciona a hora do dia em que a formação é enviada para os utilizadores finais.
+		\subitem 3. O utilizador seleciona a duração da formação (i. e. quantos dias irá durar).
+		\subitem 4. O utilizador seleciona a validade da formação (i. e. durante quanto tempo o link da formação recebido no mail é válido).
+		\subitem 5. O utilizador seleciona os dias da semana em que a formação é enviada para os utilizadores finais (i. e. em que dias da semana os utilizadores finais recebem notificação no mail com a formação).
 \end{itemize}
 \newpage
 
@@ -461,7 +456,7 @@
 \begin{itemize}
 	\item[--] \textbf{ID:} 22
 	\item[--]  \textbf{Ator:} Utilizador.
-	\item[--]  \textbf{Prioridade:} \textit{Should Have}.
+	\item[--]  \textbf{Prioridade:} \textit{Could Have}.
 	\item[--]  \textbf{Descrição:} Histórico de participação nas formações.
 	\item[--]  \textbf{Pré-condições:} O utilizador necessita de estar autenticado na plataforma 10.quest.
 	\item[--]  \textbf{Estímulo:}
@@ -487,6 +482,7 @@
 \end{itemize}
 \newpage
 
+\begin{comment}
 \subsection{RF23 - Enviar Notificação}
 \begin{itemize}
 	\item[--] \textbf{ID:} 23
@@ -505,15 +501,25 @@
 		\subitem 2a1. O 10.quest notifica o utilizador que ocorreu uma falha na conexão.
 		\subitem 2b. O serviço do TCG (API) está indisponível.
 		\subitem 2b1. O 10.quest notifica o utilizador que o serviço do TCG está temporariamente indisponível. 
+		
+		
+		\subitem 4. O 10.quest envia a informação para o TCG para ser adicionada à formação.
+		\item[--]  \textbf{Fluxo de Excepção:} 
+		\subitem 4a. O 10.quest não consegue efetuar o pedido à API do TCG devido a uma falha na conexão.
+		\subitem 4a1. O 10.quest notifica o utilizador que ocorreu uma falha na conexão.
+		\subitem 4b. O serviço do TCG (API) está indisponível.
+		\subitem 4b1. O 10.quest notifica o utilizador que o serviço do TCG está temporariamente indisponível. 
+		\item[--]  \textbf{Observações:} 
 \end{itemize}
 \newpage
+\end{comment}
 
 \subsection{RF24 - Definições da formação}
 \begin{itemize}
 	\item[--] \textbf{ID:} 24
 	\item[--]  \textbf{Ator:} Utilizador.
 	\item[--]  \textbf{Prioridade:} \textit{Must Have}.
-	\item[--]  \textbf{Descrição:} Definir utilizadores finais e perguntas associadas à formação.
+	\item[--]  \textbf{Descrição:} Definir perguntas associadas à formação.
 	\item[--]  \textbf{Pré-condições:} O utilizador necessita de estar autenticado na plataforma 10.quest e a formação deve estar criada.
 	\item[--]  \textbf{Estímulo:}
 	\subitem RF21 - Definir Periocidade.
@@ -536,17 +542,9 @@
 	\item[--]  \textbf{Pré-condições:} O utilizador necessita de estar autenticado na plataforma 10.quest e a formação deve estar criada.
 	\item[--]  \textbf{Estímulo:} RF24 - Definições da formação.
 	\item[--]  \textbf{Fluxo Principal:} 
-		\subitem 1. O utilizador seleciona a(s) tag(s) de utilizador que pretende que recebam a formação.
-		\subitem 2. O utilizador seleciona a(s) tag(s) de perguntas que quer que os utilizadores definidos no passo anterior recebam.
-		\subitem 3. O utilizador define o número de perguntas, com as tags definidas no passo anterior, que os utilizadores finais definidos no primeiro passo vão receber.
-		\subitem 4. O utilizador carrega no botão para adicionar entrada.
-		\subitem 5. O 10.quest envia a informação para o TCG para ser adicionada à formação.
-	\item[--]  \textbf{Fluxo de Excepção:} 
-		\subitem 5a. O 10.quest não consegue efetuar o pedido à API do TCG devido a uma falha na conexão.
-		\subitem 5a1. O 10.quest notifica o utilizador que ocorreu uma falha na conexão.
-		\subitem 5b. O serviço do TCG (API) está indisponível.
-		\subitem 5b1. O 10.quest notifica o utilizador que o serviço do TCG está temporariamente indisponível. 
-	\item[--]  \textbf{Observações:} 
+		\subitem 1. O utilizador seleciona a(s) tag(s) das perguntas que quer que os participantes recebam.
+		\subitem 2. O utilizador define o número de perguntas, com as tags definidas no passo anterior, que os utilizadores finais definidos no primeiro passo vão receber.
+		\subitem 3. O utilizador carrega no botão para adicionar entrada.
 \end{itemize}
 \newpage
 
@@ -560,11 +558,13 @@
 	\item[--]  \textbf{Estímulo:} RF24 - Definições da formação.
 	\item[--]  \textbf{Fluxo Principal:} 
 		\subitem 1. O utilizador efetua as \underline{operações desejadas} para gerir as entradas da formação.
+	\begin{comment}
 	\item[--]  \textbf{Fluxo de Excepção:} 
-		\subitem 1a. O 10.quest não consegue efetuar o pedido à API do TCG devido a uma falha na conexão.
-		\subitem 1a1. O 10.quest notifica o utilizador que ocorreu uma falha na conexão.
-		\subitem 1b. O serviço do TCG (API) está indisponível.
-		\subitem 1b1. O 10.quest notifica o utilizador que o serviço do TCG está temporariamente indisponível. 
+	\subitem 1a. O 10.quest não consegue efetuar o pedido à API do TCG devido a uma falha na conexão.
+	\subitem 1a1. O 10.quest notifica o utilizador que ocorreu uma falha na conexão.
+	\subitem 1b. O serviço do TCG (API) está indisponível.
+	\subitem 1b1. O 10.quest notifica o utilizador que o serviço do TCG está temporariamente indisponível. 
+	\end{comment}
 	\item[--]  \textbf{Observações:} As \underline{operações} que o utilizador pode efetuar para gerir uma entrada de perguntas são: 
 		\subitem Eliminar uma entrada.
 		\subitem Pesquisar uma entrada.
@@ -581,14 +581,16 @@
 	\item[--]  \textbf{Pré-condições:} O utilizador necessita de estar autenticado na plataforma 10.quest.
 	\item[--]  \textbf{Estímulo:} RF19 - Gerir formações.
 	\item[--]  \textbf{Fluxo Principal:} 
-		\subitem 1. O 10.quest efetua um pedido da lista de formações associados à conta do utilizador, ao TCG.
-		\subitem 2. O 10.quest lista todos as formações associados à conta do utilizador.
-		\subitem 3. O utilizador pode selecionar um questionário e efectuar as \underline{operações desejadas}
+		\subitem 1. O 10.quest lista todos as formações associados à conta do utilizador da plataforma.
+		\subitem 2. O utilizador pode selecionar um questionário e efectuar as \underline{operações desejadas}
 	\item[--]  \textbf{Fluxo de Excepção:} 
+		\begin{comment}
+		\subitem 1. O 10.quest efetua um pedido da lista de formações associados à conta do utilizador, ao TCG.
 		\subitem 1a. O 10.quest não consegue efetuar o pedido à API do TCG devido a uma falha na conexão.
 		\subitem 1a1. O 10.quest notifica o utilizador que ocorreu uma falha na conexão.
 		\subitem 1b. O serviço do TCG (API) está indisponível.
 		\subitem 1b1. O 10.quest notifica o utilizador que o serviço do TCG está temporariamente indisponível. 
+		\end{comment}
 		\subitem 2a. O utilizador não tem nenhuma formação associado à conta.
 		\subitem 2a1. O 10.quest informa o utilizador que não existe nenhuma formação associada à conta do mesmo.
 	\item[--]  \textbf{Observações:} Depois de listadas todas as formações, o utilizador pode escolher uma formação e efectuar as \underline{operações desejadas}:
@@ -1167,7 +1169,6 @@
 	\subitem 3b1. O 10.quest notifica o utilizador que o serviço do \underline{canal de partilha} está temporariamente indisponível.
 	\item[--]  \textbf{Observações:} Os \underline{canais de partilha} podem ser os seguintes:
 		\subitem Facebook
-		\subitem LinkedIn
 		\subitem Instagram
 		\subitem Twitter
 \end{itemize}
