@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.10.10)  8 OCT 2020 04:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.10.10)  8 OCT 2020 12:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2491,8 +2491,25 @@ Anexo C.
 [128
 
 
-] [129] [130] Excluding 'comment' comment. [131] [132] [133] [134]
-Overfull \hbox (10.79799pt too wide) in paragraph at lines 189--190
+] [129] [130] Excluding 'comment' comment.
+Overfull \hbox (145.09796pt too wide) in paragraph at lines 100--101
+[]| \T1/cmr/m/n/10.95 2. O 10.quest lista os três ti-pos de cam-pa-nhas onde es
+-tão $[]$. 
+ []
+
+
+Overfull \hbox (21.74408pt too wide) in paragraph at lines 104--105
+\T1/cmr/m/n/10.95 crito no caso de uso $[]$. 
+ []
+
+[131]
+Overfull \hbox (21.08527pt too wide) in paragraph at lines 119--120
+\T1/cmr/m/n/10.95 da cri-a-ção de um ques-ti-o-ná-rio de per-so-na-li-dade, est
+e pode efec-tuar as $[]$: 
+ []
+
+[132] [133] [134]
+Overfull \hbox (10.79799pt too wide) in paragraph at lines 187--188
 []| \T1/cmr/m/n/10.95 2b. O uti-li-za-dor se-le-ci-ona o tem-plate per-so-na-li
 -zado e $[]$. 
  []
@@ -2501,13 +2518,13 @@ Overfull \hbox (10.79799pt too wide) in paragraph at lines 189--190
 Excluding 'comment' comment. [144] [145] [146] [147] [148] [149] [150] [151]
 [152] [153] [154] [155] [156] [157] [158] [159] [160] [161] [162] [163]
 [164] [165] [166] [167] [168]
-Overfull \hbox (14.36987pt too wide) in paragraph at lines 931--932
+Overfull \hbox (14.36987pt too wide) in paragraph at lines 929--930
 []| \T1/cmr/m/n/10.95 2. O uti-li-za-dor pode se-le-ci-o-nar uma per-gunta TCG 
 e efec-tuar as $[]$ 
  []
 
 [169] [170] [171] [172] [173] [174] [175] [176] [177] [178]
-Overfull \hbox (4.29918pt too wide) in paragraph at lines 1144--1145
+Overfull \hbox (4.29918pt too wide) in paragraph at lines 1142--1143
 []\T1/cmr/bx/n/10.95 Pré-condições: \T1/cmr/m/n/10.95 O uti-li-za-dor de-seja a
 ce-der ao cen-tro de ajuda da pla-ta-forma 10.quest. 
  []
@@ -2685,9 +2702,15 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 360.
  (./main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 360.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 360.
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: F01519A2036BFDA87D7684F7C539AE00;11207.
 
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: F01519A2036BFDA87D7684F7C539AE00;11207
+(rerunfilecheck)             After:  13C1F818C589CB13680BA824C524AE31;11241.
 
 LaTeX Warning: There were undefined references.
 
@@ -2699,7 +2722,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 360.
 Here is how much of TeX's memory you used:
  41937 strings out of 492616
  788754 string characters out of 6129480
- 915104 words of memory out of 5000000
+ 915105 words of memory out of 5000000
  44379 multiletter control sequences out of 15000+600000
  552345 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2726,7 +2749,7 @@ e/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/
 /texmf-dist/fonts/type1/public/cm-super/sfsx2488.pfb></usr/local/texlive/2019/t
 exmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2019/tex
 mf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on main.pdf (222 pages, 50962710 bytes).
+Output written on main.pdf (222 pages, 50962855 bytes).
 PDF statistics:
  3173 PDF objects out of 3580 (max. 8388607)
  2622 compressed objects within 27 object streams

@@ -43,8 +43,7 @@
 			\subitem 4a. O email introduzido pelo utilizador corresponde ao email de uma conta já existente no sistema.
 			\subitem 4a1. O 10.quest notifica o utilizador que já existe uma conta registada com o mesmo email que foi introduzido.
 	\item[--]  \textbf{Observações:} 
-		\subitem O sistema considera os dados válidos se o Email introduzido não correspondem ao Email de uma conta já existente na plataforma 10.quest e TCG.
-		\subitem A informação é enviada para o TCG para ser criada uma conta nova do lado do TCG.
+		\subitem O sistema considera os dados válidos se o Email introduzido não correspondem ao Email de uma conta já existente na plataforma 10.quest.
 \end{itemize}
 \newpage
 
@@ -88,42 +87,41 @@
 \newpage
 \end{comment}
 
-\subsection{RF05 - Gerir questionários}
+\subsection{RF05 - Gerir Questionários de Personalidade}
 \begin{itemize}
 	\item[--] \textbf{ID:} 05
 	\item[--]  \textbf{Ator:} Utilizador.
 	\item[--]  \textbf{Prioridade:} \textit{Must Have}.
-	\item[--]  \textbf{Descrição:} O utilizador deseja visualizar, criar, editar ou eliminar um questionário.
+	\item[--]  \textbf{Descrição:} O utilizador deseja visualizar, criar, editar ou eliminar um questionário de personalidade.
 	\item[--]  \textbf{Pré-condições:} O utilizador necessita de estar autenticado na plataforma 10.quest.
 	\item[--]  \textbf{Estímulo:} O utilizador deseja gerir os seus questionários.
 	\item[--]  \textbf{Fluxo Principal:} 
-		\subitem 1. O utilizador pressiona o botão Questionários.
-		\subitem 2. O 10.quest  \underline{lista todos os questionários do utilizador}.
+		\subitem 1. O utilizador pressiona o botão para entrar na página principal.
+		\subitem 2. O 10.quest lista os três tipos de campanhas onde estão  \underline{ todos os questionários de personalidade do utilizador}.
 	\item[--]  \textbf{Fluxo de Excepção:} 
-		\subitem 2a. Não existe nenhum questionário associado à conta do utilizador.
-		\subitem 2a1. o 10.quest informa o utilizador que não existem questionários para serem listados.
-	\item[--]  \textbf{Observações:} A forma como a platadorma 10.quest lista os questionários está descrito no caso de uso \underline{RF15 - Mostrar lista de questionários do utilizador}.
+		\subitem 2a. Não existe nenhum questionário de personalidade associado à conta do utilizador.
+		\subitem 2a1. o 10.quest informa o utilizador que não existem questionários de personalidade para serem listados.
+	\item[--]  \textbf{Observações:} A forma como a platadorma 10.quest lista os questionários está descrito no caso de uso \underline{RF15 - Mostrar lista de questionários de personalidade do utilizador}.
 \end{itemize}
 \newpage
 
-\subsection{RF06 - Criar questionário}
+\subsection{RF06 - Criar Questionário de Personalidade}
 \begin{itemize}
 	\item[--] \textbf{ID:} 06
 	\item[--]  \textbf{Ator:} Utilizador.
 	\item[--]  \textbf{Prioridade:} \textit{Must Have}.
 	\item[--]  \textbf{Descrição:} O utilizador cria um questionário novo.
 	\item[--]  \textbf{Pré-condições:} O utilizador necessita de estar autenticado na plataforma 10.quest.
-	\item[--]  \textbf{Estímulo:} RF05 - Gerir questionários.
+	\item[--]  \textbf{Estímulo:} RF05 - Gerir Questionários de Pernsonalidade.
 	\item[--]  \textbf{Fluxo Principal:} 
-		\subitem 1. O utilizador seleciona a opção de criar um novo questionário.
-		\subitem 2. O 10.quest redireciona o utilizador para a página da criação de um questionário onde o utilizador pode efectuar as \underline{operações desejadas}.
-	\item[--]  \textbf{Observações:} Depois da plataforma 10.quest redirecionar o utilizador para a página da criação de um questionário, este pode efectuar as \underline{operações desejadas}:
-		\subitem Criar novas questões (RF10 - Criar questões).
-		\subitem Criar resultados (RF11 - Criar resultados).
-		\subitem Importar questões através de uma spreadsheet (RF12 - Importar questões).
-		\subitem Exportar questões para uma spreadsheet (RF13 - Exportar questões).
-		\subitem Criar sistema de pontuação (RF14 - Criar sistema de pontuação).
-		\subitem Partilhar os questionários e/ou definir o template do E-mail (RF07 - Modelo de notificações).
+		\subitem 1. O utilizador seleciona a opção de criar um novo questionário de personalidade.
+		\subitem 2. O 10.quest redireciona o utilizador para a página da criação de um questionário de personalidade onde o utilizador pode efectuar as \underline{operações desejadas}.
+	\item[--]  \textbf{Observações:} Depois da plataforma 10.quest redirecionar o utilizador para a página da criação de um questionário de personalidade, este pode efectuar as \underline{operações desejadas}:
+		\subitem Criar novas questões (RF10 - Criar Questões).
+		\subitem Criar resultados (RF11 - Criar Resultados).
+		\subitem Importar questões através de uma spreadsheet (RF12 - Importar Questões).
+		\subitem Exportar questões para uma spreadsheet (RF13 - Exportar Questões).
+		\subitem Partilhar os questionários de personalidade e/ou definir o template do E-mail (RF07 - Modelo de notificações).
 \end{itemize}
 \newpage
 
@@ -135,8 +133,8 @@
 	\item[--]  \textbf{Descrição:} Secção da plataforma onde se define os templates para a Landing page e para os Emails.
 	\item[--]  \textbf{Pré-condições:} O utilizador necessita de estar autenticado na plataforma 10.quest.
 	\item[--]  \textbf{Estímulo:}  
-		\subitem RF06 - Criar questionário.
-		\subitem RF16 - Editar questionário.
+		\subitem RF06 - Criar questionário de personalidade.
+		\subitem RF16 - Editar questionário de personalidade.
 		\subitem RF21 - Definir Periodicidade.
 		\subitem RF28 - Editar formação.
 		\subitem RF32 - Criar concurso.
@@ -155,7 +153,7 @@
 	\item[--] \textbf{ID:} 08
 	\item[--]  \textbf{Ator:} Utilizador.
 	\item[--]  \textbf{Prioridade:} \textit{Must Have}.
-	\item[--]  \textbf{Descrição:} Página de apresentação do questionário para converter um visitante numa lead.
+	\item[--]  \textbf{Descrição:} Página de apresentação da campanha para converter um visitante numa lead.
 	\item[--]  \textbf{Pré-condições:} O utilizador necessita de estar autenticado na plataforma 10.quest.
 	\item[--]  \textbf{Estímulo:} RF07 - Modelo de Notificações.
 	\item[--]  \textbf{Fluxo Principal:} 
@@ -169,7 +167,7 @@
 	\item[--]  \textbf{Observações:} No lado direito da plataforma é apresentada uma pré-visualização da landing page para ajudar o utilizador a \underline{alterar os campos necessários} e verificar o resultado final:
 		\subitem Título da landing page.
 		\subitem Texto da landing page (i. e. conteúdo que estará no corpo da landing page).
-		\subitem Imagem para o questionário e imagem da marca, que serão mostrados na landing page.
+		\subitem Imagem ou vídeo para o campanha e imagem da marca, que serão mostrados na landing page.
 		\subitem Cor para a landing page.
 	Do lado direito do ecrã será mostrado uma pré-visualização da landing page.
 \end{itemize}
@@ -184,7 +182,7 @@
 	\item[--]  \textbf{Pré-condições:} O utilizador necessita de estar autenticado na plataforma 10.quest.
 	\item[--]  \textbf{Estímulo:} RF07 - Modelo de Notificações.
 	\item[--]  \textbf{Fluxo Principal:} 
-	\subitem 1. O 10.quest mostra o template do email que está definido para o questionário.
+	\subitem 1. O 10.quest mostra o template do email que está definido para a campanha.
 	\subitem 2a. O utilizador seleciona o template pré-definido.
 	\subitem 2b. O utilizador seleciona o template personalizado e \underline{alterar os campos necessários}.
 	\subitem 3. O utilizador grava as alterações.
