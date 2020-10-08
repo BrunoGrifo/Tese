@@ -107,7 +107,7 @@
 \contentsline {subsection}{\numberline {C.1.10}RF11 - Criar resultados}{137}{subsection.1.C.1.10}% 
 \contentsline {subsection}{\numberline {C.1.11}RF12 - Importar quest\IeC {\~o}es}{138}{subsection.1.C.1.11}% 
 \contentsline {subsection}{\numberline {C.1.12}RF13 - Exportar quest\IeC {\~o}es}{139}{subsection.1.C.1.12}% 
-\contentsline {subsection}{\numberline {C.1.13}RF14 - Criar sistema de pontua\IeC {\c c}\IeC {\~o}es}{140}{subsection.1.C.1.13}% 
+\contentsline {subsection}{\numberline {C.1.13}RF14 - Criar sistema de recomenda\IeC {\c c}\IeC {\~o}es}{140}{subsection.1.C.1.13}% 
 \contentsline {subsection}{\numberline {C.1.14}RF15 - Mostrar lista de question\IeC {\'a}rios de personalidade do utilizador}{141}{subsection.1.C.1.14}% 
 \contentsline {subsection}{\numberline {C.1.15}RF16 - Editar Question\IeC {\'a}rio de Personalidade}{142}{subsection.1.C.1.15}% 
 \contentsline {subsection}{\numberline {C.1.16}RF17 - Notificar utilizadores finais}{143}{subsection.1.C.1.16}% 
