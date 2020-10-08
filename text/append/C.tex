@@ -611,9 +611,11 @@
 		\subitem 1b1. O 10.quest notifica o utilizador que o serviço do TCG está temporariamente indisponível.
 	\end{comment} 
 	\item[--]  \textbf{Observações:} Depois do 10.quest listar todas as formações e o utilizador escolher a formação que pretende editar, pode efetuar as \underline{operações desejadas}:
-		\subitem Alterar a Periocidade (RF21 - Definir periodicidade).
 		\subitem Alterar modelo de notificações (RF07 - Modelo de notificações).
+		\subitem Alterar a Periocidade (RF21 - Definir periodicidade).
+		\subitem Registo de actividade(RF22 - Registo de actividade).
 		\subitem Alterar definições da formação (RF24 - Definições da formação).
+		\subitem Gerir perguntas TCG (RF39 - Gerir Perguntas TCG).
 \end{itemize}
 \newpage
 
@@ -808,15 +810,19 @@
 	\item[--]  \textbf{Pré-condições:} O utilizador necessita de estar autenticado na plataforma 10.quest.
 	\item[--]  \textbf{Estímulo:} O utilizador deseja gerir as suas perguntas do TCG.
 	\item[--]  \textbf{Fluxo Principal:} 
+		\begin{comment}
 		\subitem 1. O utilizador pressiona o botão Perguntas TCG.
 		\subitem 2. O 10.quest efetua um pedido da lista de perguntas TCG ao TCG, associadas à conta do utilizador.
-		\subitem 3. O 10.quest  \underline{lista todas as perguntas do TCG, do utilizador}.
-		\subitem 4. O utilizador pode efetuar as \underline{operações desejadas} para gerir as perguntas TCG
+		\end{comment}
+		\subitem 1. O 10.quest  \underline{lista todas as perguntas do TCG, do utilizador}.
+		\subitem 2. O utilizador pode efetuar as \underline{operações desejadas} para gerir as perguntas TCG
 	\item[--]  \textbf{Fluxo de Excepção:} 
+		\begin{comment}
 		\subitem 2a. O 10.quest não consegue efetuar o pedido à API do TCG devido a uma falha na conexão.
 		\subitem 2a1. O 10.quest notifica o utilizador que ocorreu uma falha na conexão.
 		\subitem 2b. O serviço do TCG (API) está indisponível.
 		\subitem 2b1. O 10.quest notifica o utilizador que o serviço do TCG está temporariamente indisponível. 
+		\end{comment}
 		\subitem 3a. Não existe nenhuma pergunta TCG associada à conta do utilizador.
 		\subitem 3a1. o 10.quest informa o utilizador que não existem perguntas TCG para serem listadas.
 	\item[--]  \textbf{Observações:} A forma como a platadorma 10.quest lista os questionários está descrito no caso de uso \underline{RF45 - Mostrar lista de perguntas TCG}.
@@ -840,17 +846,18 @@
 	\item[--]  \textbf{Fluxo Principal:} 
 		\subitem 1. O utilizador carrega no botão para importar perguntas TCG.
 		\subitem 2. O utilizador carrega a spreadsheet (i. e. ficheiro com as perguntas TCG) para a plataforma 10.quest.
-		\subitem 3. O 10.quest envia as perguntas TCG para o TCG para serem adicionadas e associadas à conta do utilizador.
-		\subitem 4. O 10.quest notifica o utilizador que as perguntas TCG foram adicionadas com sucesso.
+		\subitem 3. O 10.quest notifica o utilizador que as perguntas TCG foram adicionadas com sucesso.
 	\item[--]  \textbf{Fluxo de Excepção:} 
 		\subitem 2a. O utilizador carrega um ficheiro com formato inválido.
 		\subitem 2a1. O 10.quest notifica o utilizador que o ficheiro carregado é inválido.
 		\subitem 2b. O utilizador carrega um ficheiro mas as perguntas TCG estão mal formatadas (i. e. mal estruturadas).
-		\subitem 2b1. O 10.quest notifica o utilizador que as perguntas TCG  estão mal estruturadas e por isso não podem ser adicionadas ao questionário.
+		\subitem 2b1. O 10.quest notifica o utilizador quais as perguntas TCG que estão mal estruturadas e quais não foram adicionadas ao questionário.
+		\begin{comment}
 		\subitem 3a. O 10.quest não consegue efetuar o pedido à API do TCG devido a uma falha na conexão.
 		\subitem 3a1. O 10.quest notifica o utilizador que ocorreu uma falha na conexão.
 		\subitem 3b. O serviço do TCG (API) está indisponível.
 		\subitem 3b1. O 10.quest notifica o utilizador que o serviço do TCG está temporariamente indisponível. 
+		\end{comment}
 	\item[--]  \textbf{Observações:} É fornecido um ficheiro exemplo para mostrar ao utilizador a estrutura em que as perguntas TCG  têm de ser escritas no ficheiro para ser aceite pela plataforma 10.quest com sucesso.
 \end{itemize}
 \newpage
@@ -882,14 +889,10 @@
 	\subitem RF46 - Editar pergunta TCG.
 	\item[--]  \textbf{Fluxo Principal:} 
 	\subitem 1. O utilizador associa uma ou mais tags à pergunta TCG.
-	\subitem 2. O utilizador atribui um peso à pergunta TCG.
-	\subitem 3. O utilizador introduz o texto da pergunta TCG.
-	\subitem 4. O utilizador introduz os respostas para a pergunta TCG (RF34 - Introduzir respostas).
-	\subitem 5. O utilizador uma descrição para a pergunta TCG.	
+	\subitem 2. O utilizador introduz o texto da pergunta TCG.
+	\subitem 3. O utilizador introduz os respostas para a pergunta TCG (RF34 - Introduzir respostas).
 	\item[--]  \textbf{Observações:} 
-	Quando o utilizador associa uma tag ao resultado, independentemente o tipo de tag, se a tag existir então esta é associada ao resultado, caso contrário é criada uma nova tag e posteriormente associada ao resultado.
-	
-	A introdução de uma descrição para a pergunta TCG é opcional.
+	Quando o utilizador associa uma tag ao à pergunta TCG, se a tag existir então esta é associada à prgunta TCG, caso contrário é criada uma nova tag e posteriormente associada à pergunta TCG.
 \end{itemize}
 \newpage
 
@@ -898,7 +901,7 @@
 	\item[--] \textbf{ID:} 44
 	\item[--]  \textbf{Ator:} Utilizador.
 	\item[--]  \textbf{Prioridade:} \textit{Must Have}.
-	\item[--]  \textbf{Descrição:} Filtrar perguntas TCG por nome e/ou tag.
+	\item[--]  \textbf{Descrição:} Filtrar perguntas TCG por nome ou tag.
 	\item[--]  \textbf{Pré-condições:} O utilizador necessita de estar autenticado na plataforma 10.quest.
 	\item[--]  \textbf{Estímulo:} RF39 - Gerir perguntas TCG.
 	\item[--]  \textbf{Fluxo Principal:} 
