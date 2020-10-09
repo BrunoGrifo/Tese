@@ -117,8 +117,8 @@
 		\subitem 2. O 10.quest redireciona o utilizador para a página da criação de um questionário de personalidade onde o utilizador pode efectuar as \underline{operações desejadas}.
 	\item[--]  \textbf{Observações:} Depois da plataforma 10.quest redirecionar o utilizador para a página da criação de um questionário de personalidade, este pode efectuar as \underline{operações desejadas}:
 	\begin{itemize}
-		\item Criar novas questões (RF10 - Criar Questões).
-		\item Criar resultados (RF11 - Criar Resultados).
+		\item Criar novas questões (RF10 - Criar e editar questões).
+		\item Criar resultados (RF11 - Criar e editar resultados).
 		\item Importar questões através de uma spreadsheet (RF12 - Importar Questões).
 		\item Exportar questões para uma spreadsheet (RF13 - Exportar Questões).
 		\item Importar questões através de uma spreadsheet (RF59 - Importar resultados).
@@ -209,7 +209,7 @@
 \end{itemize}
 \newpage
 
-\subsection{RF10 - Criar questões}
+\subsection{RF10 - Criar e editar questões}
 \begin{itemize}
 	\item[--] \textbf{ID:} 10
 	\item[--]  \textbf{Ator:} Utilizador.
@@ -217,7 +217,7 @@
 	\item[--]  \textbf{Descrição:} Criar as questões que irão aparecer no questionário de personalidade.
 	\item[--]  \textbf{Pré-condições:} O utilizador necessita de estar autenticado na plataforma 10.quest.
 	\item[--]  \textbf{Estímulo:}  
-		\subitem RF56 - Mostrar lista de questões.
+		\subitem RF58 - Mostrar lista de questões.
 	\item[--]  \textbf{Fluxo Principal:} 
 		\subitem 1. O utilizador introduz a questão a ser adicionada ao questionário de personalidade.
 		\subitem 2. O utilizador atribui uma pontuação à questão.
@@ -228,7 +228,7 @@
 \end{itemize}
 \newpage
 
-\subsection{RF11 - Criar resultados}
+\subsection{RF11 - Criar e editar resultados}
 \begin{itemize}
 	\item[--] \textbf{ID:} 11
 	\item[--]  \textbf{Ator:} Utilizador.
@@ -236,7 +236,7 @@
 	\item[--]  \textbf{Descrição:} Criar resultados para serem apresentados ao utilizador final.
 	\item[--]  \textbf{Pré-condições:} O utilizador necessita de estar autenticado na plataforma 10.quest.
 	\item[--]  \textbf{Estímulo:}  
-		\subitem RF57 - Mostrar lista de resultados.
+		\subitem RF59 - Mostrar lista de resultados.
 	\item[--]  \textbf{Fluxo Principal:} 
 		\subitem 1. O utilizador introduz o título para o resultado.
 		\subitem 2. O utilizador introduz, opcionalmente, uma descrição para o resultado.
@@ -264,7 +264,7 @@
 	\item[--]  \textbf{Descrição:} Importar questões através de uma spreadsheet. 
 	\item[--]  \textbf{Pré-condições:} O utilizador necessita de estar autenticado na plataforma 10.quest.
 	\item[--]  \textbf{Estímulo:}  
-		\subitem RF56 - Mostrar lista de questões.
+		\subitem RF58 - Mostrar lista de questões.
 	\item[--]  \textbf{Fluxo Principal:} 
 		\subitem 1. O utilizador carrega no botão para importar questões.
 		\subitem 2. O utilizador carrega a spreadsheet (i. e. ficheiro com as questões) para a plataforma 10.quest.
@@ -286,11 +286,11 @@
 	\item[--]  \textbf{Descrição:} Exportar questões para uma spreadsheet.
 	\item[--]  \textbf{Pré-condições:} O utilizador necessita de estar autenticado na plataforma 10.quest.
 	\item[--]  \textbf{Estímulo:}  
-		\subitem RF56 - Mostrar lista de questões.
+		\subitem RF58 - Mostrar lista de questões.
 	\item[--]  \textbf{Fluxo Principal:} 
-		\subitem 1. O utilizador carrega no botão para exportar as questões associadas ao questionário.
-		\subitem 2. O 10.quest descarrega um ficheiro com todas as questões associadas ao questionário.
-	\item[--]  \textbf{Observações:} Caso não haja questões associadas ao questionário, o ficheiro descarregado estará vazio.
+		\subitem 1. O utilizador carrega no botão para exportar as questões associadas ao questionário de personalidade.
+		\subitem 2. O 10.quest descarrega um ficheiro com todas as questões associadas ao questionário de personalidade.
+	\item[--]  \textbf{Observações:} Caso não haja questões associadas ao questionário de personalidade, o ficheiro descarregado estará vazio.
 \end{itemize}
 \newpage
 
@@ -344,9 +344,9 @@
 		\subitem 1. O utilizador seleciona o questionário de personalidade e efetua as \underline{operações desejadas}.
 	\item[--]  \textbf{Observações:} Depois do 10.quest listar todos os questionários e o utilizador escolher o questionário que pretende editar, pode efetuar as \underline{operações desejadas}:
 	\begin{itemize}
-		\item Criar ou apagar questões (RF10 - Criar questões).
+		\item Criar ou apagar questões (RF10 - Criar e editar questões).
 		\item Alterar modelo de notificações (RF07 - Modelo de notificações).
-		\item Criar ou apagar resultados (RF11 - Criar resultados).
+		\item Criar ou apagar resultados (RF11 - Criar e editar resultados).
 		\item Importar questões (RF12 - Importar questões).
 		\item Exportar questões (RF13 - Exportar questões).
 		\item Importar questões (RF59 - Importar resultados).
@@ -704,7 +704,7 @@
 	\subitem 2. O 10.quest redireciona o utilizador para a página da criação de um concurso onde o utilizador pode efectuar as \underline{operações desejadas}.
 	\item[--]  \textbf{Observações:} Depois da plataforma 10.quest redirecionar o utilizador para a página da criação de um concurso, este pode efectuar as \underline{operações desejadas}:
 	\begin{itemize}
-		\item Criar novas perguntas (RF33 - Criar perguntas).
+		\item Criar novas perguntas (RF33 - Criar e editar perguntas).
 		\item Importar perguntas através de uma spreadsheet (RF36 - Importar perguntas).
 		\item Exportar perguntas para uma spreadsheet (RF35 - Exportar perguntas).
 		\item Partilhar os questionários e/ou definir o template do E-mail (RF07 - Modelo de notificações).
@@ -712,7 +712,7 @@
 \end{itemize}
 \newpage
 
-\subsection{RF33 - Criar perguntas}
+\subsection{RF33 - Criar e editar perguntas}
 \begin{itemize}
 	\item[--] \textbf{ID:} 33
 	\item[--]  \textbf{Ator:} Utilizador.
@@ -736,7 +736,7 @@
 	\item[--]  \textbf{Prioridade:} \textit{Could Have}.
 	\item[--]  \textbf{Descrição:} Criar respostas para serem adicionadas às perguntas do concurso.
 	\item[--]  \textbf{Pré-condições:} O utilizador necessita de estar autenticado na plataforma 10.quest e de ter pelo menos um concurso criado.
-	\item[--]  \textbf{Estímulo:} RF33 - Criar perguntas.
+	\item[--]  \textbf{Estímulo:} RF33 - Criar e editar perguntas.
 	\item[--]  \textbf{Fluxo Principal:} 
 	\subitem 1. O utilizador introduz o texto da resposta.
 	\subitem 2. O utilizador carrega e adiciona um \underline{anexo} à resposta.
@@ -1204,10 +1204,8 @@
 	\item[--]  \textbf{Pré-condições:} O utilizador necessita de estar autenticado na plataforma 10.quest e deve ter pelo menos uma campanha criada.
 	\item[--]  \textbf{Estímulo:} RF07 - Modelo de notificações.
 	\item[--]  \textbf{Fluxo Principal:} 
-	\subitem o 
-	\subitem 1. O utilizador carrega no botão para publicar a formação, questionário ou concurso.
-	\subitem 2. O 10.quest gera um URL.
-	\subitem 3. O utilizador faz a publicação através de um dos \underline{canais de partilha} ou URL.
+	\subitem 1. O 10.quest gera um URL público para aceder à campanha.
+	\subitem 3. O utilizador faz uma publicação através de um dos \underline{canais de partilha}.
 	\item[--]  \textbf{Fluxo de Excepção:} 
 	\subitem 3a. O 10.quest não consegue efetuar o pedido à API do \underline{canal de partilha} devido a uma falha na conexão.
 	\subitem 3a1. O 10.quest notifica o utilizador que ocorreu uma falha na conexão.
@@ -1216,9 +1214,21 @@
 	\item[--]  \textbf{Observações:} Os \underline{canais de partilha} podem ser os seguintes:
 	\begin{itemize}
 		\item Facebook
-		\item Instagram
+		\item LinkedIn
 		\item Twitter
 	\end{itemize}
+	Caso o utilizador da plataforma deseje partilhar uma campanha do tipo formação o seguinte fluxo é adicionado:
+	\begin{itemize}
+		\item[--]  \textbf{Fluxo Principal:}
+			\subitem  2. O 10.quest envia os dados da formação para o TCG. A formação é criada do lado do TCG é guardado o identificador da formação na base de dados para sincronização de dados.
+		\item[--]  \textbf{Fluxo de Excepção:}
+			\subitem 2a. O 10.quest não consegue efetuar o pedido à API do TCG devido a uma falha na conexão.
+			\subitem 2a1. O 10.quest notifica o utilizador que ocorreu uma falha na conexão.
+			\subitem 2b. O serviço do TCG (API) está indisponível.
+			\subitem 2b1. O 10.quest notifica o utilizador que o serviço do TCG está temporariamente indisponível. 
+	\end{itemize}
+
+	
 \end{itemize}
 \newpage
 
@@ -1240,6 +1250,119 @@
 	\subitem 3a1. O 10.quest notifica o utilizador que ocorreu uma falha na conexão.
 	\subitem 3b. O serviço do TCG (API) está indisponível.
 	\subitem 3b1. O 10.quest notifica o utilizador que o serviço do TCG está temporariamente indisponível. 
-	\item[--]  \textbf{Observações:} O utilizador pode selecionar múltiplas formações para serem eliminadas.
+\end{itemize}
+\newpage
+
+\subsection{RF58 - Mostrar lista de questões}
+\begin{itemize}
+	\item[--] \textbf{ID:} 58
+	\item[--]  \textbf{Ator:} Utilizador.
+	\item[--]  \textbf{Prioridade:} \textit{Must Have}.
+	\item[--]  \textbf{Descrição:} O 10.quest lista todas as questões associadas ao questionário de personalidade e o utiliador da plataforma pode efetuar as das \underline{operações desejadas}.
+	\item[--]  \textbf{Pré-condições:} O utilizador necessita de estar autenticado na plataforma 10.quest.
+	\item[--]  \textbf{Estímulo:} 
+		\subitem RF06 - Criar questionário de personalidade.
+		\subitem RF16 - Editar questionário de personalidade.
+	\item[--]  \textbf{Fluxo Principal:} 
+		\subitem 1. O 10.quest lista todas as questões associadas ao questionário de personalidade selecionado.
+		\subitem 2. O utilizador pode selecionar uma questão e efectuar as \underline{operações desejadas}
+	\item[--]  \textbf{Fluxo de Excepção:} 
+		\subitem 1a. O utilizador não tem nenhuma questão associada ao questionário de personalidade.
+		\subitem 1a1. O 10.quest informa o utilizador que não existe nenhuma questão associada ao questionário de personalidade.
+	\item[--]  \textbf{Observações:} Depois de listadas todas as questões, o utilizador pode escolher uma e efectuar as \underline{operações desejadas}:
+		\begin{itemize}
+			\item Criar e editar questões (RF10 - Criar e editar questões).
+			\item Importar questões (RF12 - Importar questões).
+			\item Exportar questões (RF13 - Exportar questões).
+		\end{itemize}
+\end{itemize}
+\newpage
+
+\subsection{RF59 - Mostrar lista de resultados}
+\begin{itemize}
+	\item[--] \textbf{ID:} 59
+	\item[--]  \textbf{Ator:} Utilizador.
+	\item[--]  \textbf{Prioridade:} \textit{Must Have}.
+	\item[--]  \textbf{Descrição:} O 10.quest lista todas as resultados associadas ao questionário de personalidade e o utiliador da plataforma pode efetuar as das \underline{operações desejadas}.
+	\item[--]  \textbf{Pré-condições:} O utilizador necessita de estar autenticado na plataforma 10.quest.
+	\item[--]  \textbf{Estímulo:} 
+	\subitem RF06 - Criar questionário de personalidade.
+	\subitem RF16 - Editar questionário de personalidade.
+	\item[--]  \textbf{Fluxo Principal:} 
+	\subitem 1. O 10.quest lista todas as resultados associadas ao questionário de personalidade selecionado.
+	\subitem 2. O utilizador pode selecionar uma questão e efectuar as \underline{operações desejadas}
+	\item[--]  \textbf{Fluxo de Excepção:} 
+	\subitem 1a. O utilizador não tem nenhuma questão associada ao questionário de personalidade.
+	\subitem 1a1. O 10.quest informa o utilizador que não existe nenhuma questão associada ao questionário de personalidade.
+	\item[--]  \textbf{Observações:} Depois de listadas todas as resultados, o utilizador pode escolher uma e efectuar as \underline{operações desejadas}:
+	\begin{itemize}
+		\item Criar e editar resultados (RF11 - Criar e editar resultados).
+		\item Importar resultados (RF60 - Importar resultados).
+		\item Exportar resultados (RF61 - Exportar resultados).
+	\end{itemize}
+\end{itemize}
+\newpage
+
+\subsection{RF60 - Importar resultados}
+\begin{itemize}
+	\item[--] \textbf{ID:} 60
+	\item[--]  \textbf{Ator:} Utilizador.
+	\item[--]  \textbf{Prioridade:} \textit{Must Have}.
+	\item[--]  \textbf{Descrição:} Importar resultados através de uma spreadsheet. 
+	\item[--]  \textbf{Pré-condições:} O utilizador necessita de estar autenticado na plataforma 10.quest.
+	\item[--]  \textbf{Estímulo:}  
+		\subitem RF59 - Mostrar lista de resultados.
+	\item[--]  \textbf{Fluxo Principal:} 
+	\subitem 1. O utilizador carrega no botão para importar resultados.
+	\subitem 2. O utilizador carrega a spreadsheet (i. e. ficheiro com os resultados) para a plataforma 10.quest.
+	\subitem 3. O 10.quest notifica o utilizador que os resultados foram adicionadas com sucesso.
+	\item[--]  \textbf{Fluxo de Excepção:} 
+	\subitem 2a. O utilizador carrega um ficheiro com formato inválido.
+	\subitem 2a1. O 10.quest notifica o utilizador que o ficheiro carregado é inválido.
+	\subitem 2b. O utilizador carrega um ficheiro mas os resultados estão mal formatadas (i. e. mal estruturadas).
+	\subitem 2b1. O 10.quest notifica o utilizador quais os resultados que estão mal estruturadas e não foram adicionadas ao questionário.
+	\item[--]  \textbf{Observações:} É fornecido um ficheiro exemplo para mostrar ao utilizador a estrutura em que os resultados têm de ser escritas no ficheiro para ser aceite pela plataforma 10.quest com sucesso.
+\end{itemize}
+\newpage
+
+\subsection{RF61 - Exportar resultados}
+\begin{itemize}
+	\item[--] \textbf{ID:} 61
+	\item[--]  \textbf{Ator:} Utilizador.
+	\item[--]  \textbf{Prioridade:} \textit{Must Have}.
+	\item[--]  \textbf{Descrição:} Exportar resultados para uma spreadsheet.
+	\item[--]  \textbf{Pré-condições:} O utilizador necessita de estar autenticado na plataforma 10.quest.
+	\item[--]  \textbf{Estímulo:}  
+	\subitem RF59 - Mostrar lista de resultados.
+	\item[--]  \textbf{Fluxo Principal:} 
+	\subitem 1. O utilizador carrega no botão para exportar os resultados associadas ao questionário de personalidade.
+	\subitem 2. O 10.quest descarrega um ficheiro com todas os resultados associadas ao questionário de personalidade.
+	\item[--]  \textbf{Observações:} Caso não haja resultados associadas ao questionário de personalidade, o ficheiro descarregado estará vazio.
+\end{itemize}
+\newpage
+
+
+\subsection{RF62 - Mostrar lista de perguntas}
+\begin{itemize}
+	\item[--] \textbf{ID:} 62
+	\item[--]  \textbf{Ator:} Utilizador.
+	\item[--]  \textbf{Prioridade:} \textit{Must Have}.
+	\item[--]  \textbf{Descrição:} O 10.quest lista todas as perguntas associadas ao concurso e o utiliador da plataforma pode efetuar as das \underline{operações desejadas}.
+	\item[--]  \textbf{Pré-condições:} O utilizador necessita de estar autenticado na plataforma 10.quest.
+	\item[--]  \textbf{Estímulo:} 
+	\subitem RF32 - Criar concurso.
+	\subitem RF38 - Editar concurso.
+	\item[--]  \textbf{Fluxo Principal:} 
+	\subitem 1. O 10.quest lista todas as perguntas associadas ao concurso selecionado.
+	\subitem 2. O utilizador pode selecionar uma perguntas e efectuar as \underline{operações desejadas}
+	\item[--]  \textbf{Fluxo de Excepção:} 
+	\subitem 1a. O utilizador não tem nenhuma pergunta associada ao concurso.
+	\subitem 1a1. O 10.quest informa o utilizador que não existe nenhuma pergunta associada ao concurso.
+	\item[--]  \textbf{Observações:} Depois de listadas todas as perguntas, o utilizador pode escolher uma e efectuar as \underline{operações desejadas}:
+	\begin{itemize}
+		\item Criar e editar perguntas (RF33 - Criar e editar perguntas).
+		\item Importar perguntas (RF36 - Importar perguntas).
+		\item Exportar perguntas (RF35 - Exportar perguntas).
+	\end{itemize}
 \end{itemize}
 \newpage
