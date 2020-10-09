@@ -95,7 +95,7 @@ Como foi referido no Capítulo \ref{sec:introducao} o 10.quest é uma plataforma
 
 Como podemos ver na Figura \ref{fig:arq-contexto} o 10.quest interage com seis sistemas externos. O SendGrid\cite{sg} é um \acrshort{saas}, na \textit{cloud}, que fornece um serviço de entrega de emails. Este serviço permite enviar emails através de APIs flexíveis garantindo uma disponibilidade  de 99.999\% \cite{sguptime}. 
 O TCG, tal como foi referido no Capítulo \ref{sec:estado-arte}, é uma plataforma de criação de formações que tem como principal objectivo, transmitir conhecimento através de uma técnica de aprendizagem baseada em tentativa e erro Algumas das funcionalidades do \acrshort{tcg} serão utilizadas pelo 10.quest.
-Para partilhar os questionários, concursos e formações o 10.quest irá utilizar as APIs do Facebook, LinkedIn, Twitter e Instagram.
+Para partilhar campanhas, o 10.quest irá utilizar as APIs do Facebook, LinkedIn e Twitter.
 
 
 \newpage
@@ -112,7 +112,7 @@ Para partilhar os questionários, concursos e formações o 10.quest irá utiliz
 
 Na Figura \ref{fig:arq-contentores} está representado o diagrama de contentores, onde se pode observar com mais detalhe a constituição do sistema de software.
 
-Os utilizadores podem ser de dois tipos: o utilizador do backoffice que tem acesso a todas as funcionalidade da plataforma e o utilizador final que tem acesso a uma página web para participar nas formações, concursos e ou questionários.
+Os utilizadores podem ser de dois tipos: o utilizador do backoffice que tem acesso a todas as funcionalidade da plataforma e o utilizador final que tem acesso a uma página web para participar nas campanhas.
 
 A aplicação web efetua os pedidos dos utilizadores, através de pedidos \acrshort{https}/\acrshort{rest} à API. A aplicação web será a camada de apresentação da API e ambos serão desenvolvidos em Django. A API será o contentor responsável por tratar de todos os pedidos efetuados pelos utilizadores do \textit{backoffice}. Para este efeito a API implementa um conjunto de funcionalidades, representadas na Figura \ref{fig:arq-componentes1}, que manipulam um conjunto de dados armazenados numa base de dados relacional PostgreSQL, para conseguir as informações necessárias.
 \newpage
