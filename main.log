@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.10.10)  9 OCT 2020 04:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.10.10)  9 OCT 2020 12:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2492,30 +2492,30 @@ Anexo C.
 
 
 ] [129] [130] Excluding 'comment' comment.
-Overfull \hbox (141.46742pt too wide) in paragraph at lines 100--101
+Overfull \hbox (141.46742pt too wide) in paragraph at lines 99--100
 []| \T1/cmr/m/n/10.95 2. O 10.quest lista os três ti-pos de cam-pa-nhas onde es
 -tão $[]$. 
  []
 
 
-Overfull \hbox (21.74408pt too wide) in paragraph at lines 104--105
+Overfull \hbox (21.74408pt too wide) in paragraph at lines 103--104
 \T1/cmr/m/n/10.95 crito no caso de uso $[]$. 
  []
 
 [131]
-Overfull \hbox (21.08527pt too wide) in paragraph at lines 119--120
+Overfull \hbox (21.08527pt too wide) in paragraph at lines 118--119
 \T1/cmr/m/n/10.95 da cri-a-ção de um ques-ti-o-ná-rio de per-so-na-li-dade, est
 e pode efec-tuar as $[]$: 
  []
 
 [132] [133] [134]
-Overfull \hbox (10.79799pt too wide) in paragraph at lines 189--190
+Overfull \hbox (10.79799pt too wide) in paragraph at lines 195--196
 []| \T1/cmr/m/n/10.95 2b. O uti-li-za-dor se-le-ci-ona o tem-plate per-so-na-li
 -zado e $[]$. 
  []
 
 [135] [136] [137] [138] [139] [140] [141]
-Overfull \hbox (33.18578pt too wide) in paragraph at lines 334--335
+Overfull \hbox (33.18578pt too wide) in paragraph at lines 344--345
 []| \T1/cmr/m/n/10.95 1. O uti-li-za-dor se-le-ci-ona o ques-ti-o-ná-rio de per
 -so-na-li-dade e efe-tua as $[]$. 
  []
@@ -2524,7 +2524,7 @@ Overfull \hbox (33.18578pt too wide) in paragraph at lines 334--335
 Excluding 'comment' comment. [148] [149] Excluding 'comment' comment. [150]
 Excluding 'comment' comment. [151] Excluding 'comment' comment. [152] [153]
 [154]
-Overfull \hbox (41.59137pt too wide) in paragraph at lines 664--665
+Overfull \hbox (41.59137pt too wide) in paragraph at lines 686--687
 []| \T1/cmr/m/n/10.95 2. O 10.quest lista os três ti-pos de cam-pa-nhas onde es
 -tão $[]$. 
  []
@@ -2532,25 +2532,25 @@ Overfull \hbox (41.59137pt too wide) in paragraph at lines 664--665
 [155] [156] [157] [158] [159] [160] [161] [162] Excluding 'comment' comment.
 Excluding 'comment' comment. [163] Excluding 'comment' comment. [164] [165]
 [166] [167]
-Overfull \hbox (46.66522pt too wide) in paragraph at lines 925--926
+Overfull \hbox (46.66522pt too wide) in paragraph at lines 955--956
 []| \T1/cmr/m/n/10.95 2. O uti-li-za-dor pode se-le-ci-o-nar uma per-gunta de f
 or-ma-ção e efec-tuar as $[]$ 
  []
 
 [168]
-Overfull \hbox (10.97554pt too wide) in paragraph at lines 946--947
+Overfull \hbox (10.97554pt too wide) in paragraph at lines 978--979
 []| \T1/cmr/m/n/10.95 1. O uti-li-za-dor se-le-ci-ona uma per-gunta de for-ma-ç
 ão e efe-tua as $[]$. 
  []
 
 
-Overfull \hbox (33.66565pt too wide) in paragraph at lines 947--948
+Overfull \hbox (33.66565pt too wide) in paragraph at lines 979--980
 \T1/cmr/m/n/10.95 dor es-co-lher a per-gunta de for-ma-ção que pre-tende edi-ta
 r, pode efe-tuar as $[]$
  []
 
 [169] [170] [171] [172] [173] [174] [175] [176] [177]
-Overfull \hbox (4.29918pt too wide) in paragraph at lines 1149--1150
+Overfull \hbox (4.29918pt too wide) in paragraph at lines 1189--1190
 []\T1/cmr/bx/n/10.95 Pré-condições: \T1/cmr/m/n/10.95 O uti-li-za-dor de-seja a
 ce-der ao cen-tro de ajuda da pla-ta-forma 10.quest. 
  []
@@ -2742,7 +2742,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 360.
 Here is how much of TeX's memory you used:
  41934 strings out of 492616
  788706 string characters out of 6129480
- 915104 words of memory out of 5000000
+ 915105 words of memory out of 5000000
  44378 multiletter control sequences out of 15000+600000
  552345 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2769,7 +2769,7 @@ e/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/
 /texmf-dist/fonts/type1/public/cm-super/sfsx2488.pfb></usr/local/texlive/2019/t
 exmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2019/tex
 mf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on main.pdf (221 pages, 50959906 bytes).
+Output written on main.pdf (221 pages, 50960426 bytes).
 PDF statistics:
  3173 PDF objects out of 3580 (max. 8388607)
  2623 compressed objects within 27 object streams
