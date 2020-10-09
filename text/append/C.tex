@@ -1062,7 +1062,7 @@
 	\item[--]  \textbf{Ator:} Utilizador.
 	\item[--]  \textbf{Prioridade:} \textit{Must Have}.
 	\item[--]  \textbf{Descrição:} Listar e filtrar leads por tags de perfil. Cada lead mostra os seus detalhes.
-	\item[--]  \textbf{Pré-condições:} O utilizador necessita de estar autenticado na plataforma 10.quest e tem que ter dados recolhidos dos questionários, formações ou concursos.
+	\item[--]  \textbf{Pré-condições:} O utilizador necessita de estar autenticado na plataforma 10.quest e tem que ter dados recolhidos das campanhas.
 	\item[--]  \textbf{Estímulo:} RF48 - Relatórios.
 	\item[--]  \textbf{Fluxo Principal:} 
 	\subitem 1. O 10.quest lista todas as leads registadas no sistema.
@@ -1071,7 +1071,7 @@
 	\subitem 1a. O 10.quest não tem leads registadas.
 	\subitem 1a1. O 10.quest notifica o utilizador que não existem leads para ser listadas.
 	\item[--]  \textbf{Observações:} Depois de listadas as leads o utilizador pode efetuar as seguintes \underline{operações}:
-		\subitem Filtrar por tags de perfil. Se duas tags forem introduzidas, apenas serão listados leads que têm pelo menos essas duas leads associadas.
+		\subitem Filtrar por tags de perfil de personalidade. Se duas tags forem introduzidas, apenas serão listados leads que têm pelo menos essas duas leads associadas.
 		\subitem Selecionar uma lead e mostrar detalhes da mesma (i. e. nome, email, tags de perfil).
 \end{itemize}
 \newpage
@@ -1082,17 +1082,20 @@
 	\item[--]  \textbf{Ator:} Utilizador
 	\item[--]  \textbf{Prioridade:} \textit{Must Have}
 	\item[--]  \textbf{Descrição:} Alterar/atualizar informações sobre a conta do utilizador.
-	\item[--]  \textbf{Pré-condições:} O utilizador necessita de estar autenticado na plataforma 10.quest.
-	\item[--]  \textbf{Estímulo:} O utilizador deseja atualizar as informações sobre a sua conta.
+	\item[--]  \textbf{Pré-condições:} O utilizador da plataforma necessita de estar autenticado na plataforma 10.quest.
+	\item[--]  \textbf{Estímulo:} O utilizador da plataforma deseja atualizar as informações sobre a sua conta.
 	\item[--]  \textbf{Fluxo Principal:} 
 	\subitem 1. O utilizador carrega no botão para aceder às definições.
 	\subitem 2. O utilizador efetua as \underline{operações desejadas}.
-	\item[--]  \textbf{Observações:} Depois do utilizador aceder à página das definições de conta, pode efetuar as seguintes \underline{operações}:
-		\subitem Alterar Nome
-		\subitem Alterar Nome da empresa
+	\item[--]  \textbf{Observações:} Depois do utilizador da plataforma aceder à página das definições de conta, pode efetuar as seguintes \underline{operações}:
+		\subitem Alterar Nome.
+		\subitem Alterar Nome da empresa.
+		\subitem Alterar Morada da empresa.
 		\subitem Alterar email associado à conta.
-		\subitem Alterar password
+		\subitem Alterar email associado à empresa.
+		\subitem Alterar password.
 \end{itemize}
+	É de notar que apenas utilizadores com permissão de administrador de conta, podem alterar os dados da empresa. Os utilizadores com permissões de colaborador apenas podem actualizar os dados relativamente à sua conta pessoal.
 \newpage
 
 
@@ -1109,7 +1112,7 @@
 	\subitem 2. O utilizador seleciona o pacote de funcionalidades que deseja usufruir.
 	\subitem 3. O utilizador efetua o pagamento
 	\subitem 4. O 10.quest notifica o utilizador que o novo pacote de funcionalidades está ativo.
-	\item[--]  \textbf{Observações:} O método de pagamento ainda não está definido. O Paypal foi escolhido como método de pagamento, contudo poderá ser alterado no segundo semestre.
+	\item[--]  \textbf{Observações:} O Stripe foi técnologia escolhida para método de pagamento.
 \end{itemize}
 \newpage
 
@@ -1136,7 +1139,6 @@
 	\subitem 6a1. O 10.quest notifica o utilizador que ocorreu uma falha na conexão.
 	\subitem 6b. O serviço do SendGrid está indisponível.
 	\subitem 6b1. O 10.quest notifica o utilizador que o serviço do SendGrid está temporariamente indisponível. 
-	\item[--]  \textbf{Observações:} 
 \end{itemize}
 \newpage
 
