@@ -994,7 +994,7 @@
 \end{itemize}
 \newpage
 
-\subsection{RF49 - Relatório geral}
+\subsection{RF49 - Relatório geral das campanhas}
 \begin{itemize}
 	\item[--] \textbf{ID:} 49
 	\item[--]  \textbf{Ator:} Utilizador.
@@ -1003,15 +1003,20 @@
 	\item[--]  \textbf{Pré-condições:} O utilizador necessita de estar autenticado na plataforma 10.quest.
 	\item[--]  \textbf{Estímulo:} RF48 - Relatórios
 	\item[--]  \textbf{Fluxo Principal:} 
-	\subitem 1. O 10.quest gera o relatório global para os questionários.
-	\subitem 2. O 10.quest gera o relatório global para os concursos.
-	\subitem 3. O 10.quest efetua um pedido do relatório global das formações ao TCG.
-	\subitem 4. O 10.quest apresenta os dados relativos a todos os relatórios globais.
+	\subitem 1. O 10.quest gera o relatório global para as campanhas.
+	\subitem 2. O 10.quest efetua um pedido do relatório global das formações ao TCG.
+	\subitem 3. O 10.quest apresenta os dados relativos a todos os relatórios globais.
 	\item[--]  \textbf{Fluxo de Excepção:} 
-	\subitem 4a. O 10.quest não consegue efetuar o pedido à API do TCG devido a uma falha na conexão.
-	\subitem 4a1. O 10.quest notifica o utilizador que ocorreu uma falha na conexão.
-	\subitem 4b. O serviço do TCG (API) está indisponível.
-	\subitem 4b1. O 10.quest notifica o utilizador que o serviço do TCG está temporariamente indisponível. 
+	\subitem 2a. O 10.quest não consegue efetuar o pedido à API do TCG devido a uma falha na conexão.
+	\subitem 2a1. O 10.quest notifica o utilizador que ocorreu uma falha na conexão.
+	\subitem 2b. O serviço do TCG (API) está indisponível.
+	\subitem 2b1. O 10.quest notifica o utilizador que o serviço do TCG está temporariamente indisponível. 
+	\item[--]  \textbf{Observações:} As métricas analizadas no relatório geral são:
+	\begin{itemize}
+		\item Percentagem de Participação nas Formações.
+		\item Utilizadores abrangidos nas Formações.
+		\item Gráfico temporal de eventos de questionários de personalidade e concursos. Os eventos são: visitas na página de apresentação (i. e. \textit{landing page}), inscrições na página de apresentação, participações e submissões. 
+	\end{itemize}
 \end{itemize}
 \newpage
 
@@ -1020,11 +1025,11 @@
 	\item[--] \textbf{ID:} 50
 	\item[--]  \textbf{Ator:} Utilizador.
 	\item[--]  \textbf{Prioridade:} \textit{Must Have}.
-	\item[--]  \textbf{Descrição:} Gerar relatório de dados/estatísticas (i. e. resultados) para uma formação, questionário ou concurso.
+	\item[--]  \textbf{Descrição:} Gerar relatório de dados para uma campanha. Relatório onde se podem visualizar as métricas relevantes associadas a cada tipo de campanha.
 	\item[--]  \textbf{Pré-condições:} O utilizador necessita de estar autenticado na plataforma 10.quest e tem que ter dados recolhidos dos questionários, formações ou concursos.
 	\item[--]  \textbf{Estímulo:} RF48 - Relatórios.
 	\item[--]  \textbf{Fluxo Principal:} 
-		\subitem 1. O utilizador gera a formação, questionário ou concurso para o qual quer gerar um relatório.
+		\subitem 1. O utilizador seleciona a campanha para o qual quer gerar um relatório.
 		\subitem 2. O 10.quest gera o relatório.
 		\subitem 3. O 10.quest apresenta os resultados.
 	\item[--]  \textbf{Fluxo de Excepção:} 
@@ -1033,7 +1038,21 @@
 		\subitem 2b. O serviço do TCG (API) está indisponível.
 		\subitem 2b1. O 10.quest notifica o utilizador que o serviço do TCG está temporariamente indisponível. 
 	\item[--]  \textbf{Observações:} No passo 2, caso o utilizador queira gerar um relatório de para uma formação, é feito um pedido ao TCG e o mesmo retorna o relatório da formação em questão.
-	Caso o utilizador deseje gerar o relatório para um questionário, será apresentado um resumo dos resultados mais populares, um gráfico que mostra a conversão dos vários tipos de utilizadores finais, um resumo de todas as respostas por pergunta, a lista de todos os resultados e ainda um gráfico temporal de eventos (i. e. eventos que ocorrem ao longo do tempo e respectiva conversão). A funcionalidade para gerar o gráfico temporal de eventos tem prioridade \textit{could have}.
+	As métricas analisadas nos relatórios das formações são as seguintes:
+	\begin{itemize}
+		\item Funil de participação
+		\item Percentagem de Participação nas Formações.
+		\item Percentagem de respostas correctas opr tag de perguntas.
+		\item Lista de leads.
+	\end{itemize}
+	Caso o utilizador da plataforma queira gerar um relatório para questionários de personalidade ou concursos as métricas analisadas são as seguintes:
+	\begin{itemize}
+		\item Funil de participação
+		\item Lista de Resultados e Tags
+		\item Perguntas e respostas (exclusivo para questionários de personalidade)
+		\item Gráfico temporal de eventos
+		\item Tabela de classificações (exclusivo para concursos). Prioridade: \textit{could have}.
+	\end{itemize}
 \end{itemize}
 \newpage
 
