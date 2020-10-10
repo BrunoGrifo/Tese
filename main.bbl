@@ -276,6 +276,14 @@ Brian Halligan and Dharmesh Shah.
   \url{https://blog.nextinymarketing.com/history-of-inbound-marketing-then-and-now}.
 \newblock Accessed: 13.10.2019.
 
+\bibitem{tfidf}
+{Nikita Sharma}.
+\newblock {Recommender Systems with Python — Part I: Content-Based
+  Filtering}.
+\newblock
+  \url{https://heartbeat.fritz.ai/recommender-systems-with-python-part-i-content-based-filtering-5df4940bd831}.
+\newblock Accessed: 04/10/2020.
+
 \bibitem{djangobook}
 Andrew Pinkham.
 \newblock {\em Django Unleashed}.
