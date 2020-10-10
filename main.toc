@@ -10,14 +10,14 @@
 \contentsline {subsection}{\numberline {2.1.2}Typeform}{8}{subsection.2.1.2}% 
 \contentsline {subsection}{\numberline {2.1.3}Google Form}{8}{subsection.2.1.3}% 
 \contentsline {subsection}{\numberline {2.1.4}An\IeC {\'a}lise de concorrentes indirectos}{8}{subsection.2.1.4}% 
-\contentsline {section}{\numberline {2.2}\acrfull {tcg}}{9}{section.2.2}% 
+\contentsline {section}{\numberline {2.2}\acrfull {tcg}}{10}{section.2.2}% 
 \contentsline {section}{\numberline {2.3}An\IeC {\'a}lise de concorrentes directos}{10}{section.2.3}% 
 \contentsline {subsection}{\numberline {2.3.1}involve.me}{11}{subsection.2.3.1}% 
 \contentsline {subsection}{\numberline {2.3.2}Survey Anyplace}{11}{subsection.2.3.2}% 
 \contentsline {subsection}{\numberline {2.3.3}Interact}{11}{subsection.2.3.3}% 
 \contentsline {subsection}{\numberline {2.3.4}easypromo}{11}{subsection.2.3.4}% 
-\contentsline {subsection}{\numberline {2.3.5}Discuss\IeC {\~a}o de funcionalidades}{11}{subsection.2.3.5}% 
-\contentsline {subsubsection}{Question\IeC {\'a}rios}{11}{section*.13}% 
+\contentsline {subsection}{\numberline {2.3.5}Discuss\IeC {\~a}o de funcionalidades}{12}{subsection.2.3.5}% 
+\contentsline {subsubsection}{Question\IeC {\'a}rios}{12}{section*.13}% 
 \contentsline {subsubsection}{Concursos}{13}{section*.14}% 
 \contentsline {subsubsection}{Tabela de compara\IeC {\c c}\IeC {\~o}es}{13}{section*.15}% 
 \contentsline {chapter}{\numberline {3}Abordagem}{17}{chapter.3}% 
@@ -69,7 +69,7 @@
 \contentsline {subsubsection}{Diagrama de Contexto}{45}{section*.38}% 
 \contentsline {subsubsection}{Diagrama de Contentores}{46}{section*.40}% 
 \contentsline {subsubsection}{Diagrama de Componentes}{47}{section*.42}% 
-\contentsline {subsection}{\numberline {6.1.5}Diagrama Entidade Relacionamento}{48}{subsection.6.1.5}% 
+\contentsline {subsection}{\numberline {6.1.5}Diagrama Entidade Relacionamento}{49}{subsection.6.1.5}% 
 \contentsline {section}{\numberline {6.2}An\IeC {\'a}lise de Riscos}{53}{section.6.2}% 
 \contentsline {chapter}{\numberline {7}Implementa\IeC {\c c}\IeC {\~a}o}{57}{chapter.7}% 
 \contentsline {section}{\numberline {7.1}T\IeC {\'e}cnologias e Ferramentas Utilizadas}{57}{section.7.1}% 
@@ -80,6 +80,10 @@
 \contentsline {section}{\numberline {7.2}Sprints}{59}{section.7.2}% 
 \contentsline {section}{\numberline {7.3}Desafios na Implementa\IeC {\c c}\IeC {\~a}o}{61}{section.7.3}% 
 \contentsline {chapter}{\numberline {8}Valida\IeC {\c c}\IeC {\~a}o}{63}{chapter.8}% 
+\contentsline {section}{\numberline {8.1}Algoritmo de recomenda\IeC {\c c}\IeC {\~a}o}{63}{section.8.1}% 
+\contentsline {section}{\numberline {8.2}Revis\IeC {\~o}es de c\IeC {\'o}digo}{63}{section.8.2}% 
+\contentsline {section}{\numberline {8.3}Testes}{63}{section.8.3}% 
+\contentsline {section}{\numberline {8.4}Requisitos}{63}{section.8.4}% 
 \contentsline {chapter}{\numberline {9}Produto Final}{65}{chapter.9}% 
 \contentsline {chapter}{\numberline {10}Conclusion}{67}{chapter.10}% 
 \contentsline {chapter}{Refer\IeC {\^e}ncias}{69}{chapter*.49}% 

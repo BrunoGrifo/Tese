@@ -61,9 +61,9 @@ Por último temos o tratamento e visualização de dados que é um suporte funda
 O \acrlong{tcg} é um \acrshort{saas} presente atualmente no mercado, desenvolvido pela equipa da 10.digital, que tem como principal objectivo transmitir conhecimento através de uma técnica de aprendizagem baseada em tentativa e erro.
 
 
- O \acrshort{tcg} nasceu de uma forte convicção de que perder apenas 2 minutos por dia numa formação com uma abordagem tentativa e erro é uma ótima forma de aprender, poupando tempo e dinheiro às empresas. Inicialmente muito focado em formação interna, a equipa do \acrshort{tcg} foi-se apercebendo que existem muitos outros problemas (e. g. Consolidação de procedimentos, \textit{Onboarding} de novos colaboradores, Divulgação da cultura da empresa, Divulgação de informações técnicas a parceiros/clientes ...) para o qual a plataforma tem solução (e. g. Assimilação da cultura de empresa e do espírito das marcas, Simplificação do processo de acolhimento, Redução de custos em reuniões periódicas, Facilidade em divulgar aspectos técnicos, que de outra, forma demorariam mais tempo ...).\cite{tcginfo}. 
- 
- As principais funcionalidades do  \acrshort{tcg}  são as seguintes:
+O \acrshort{tcg} nasceu de uma forte convicção de que perder apenas 2 minutos por dia numa formação com uma abordagem tentativa e erro é uma ótima forma de aprender, poupando tempo e dinheiro às empresas. Inicialmente muito focado em formação interna, a equipa do \acrshort{tcg} foi-se apercebendo que existem muitos outros problemas (e. g. Consolidação de procedimentos, \textit{Onboarding} de novos colaboradores, Divulgação da cultura da empresa, Divulgação de informações técnicas a parceiros/clientes ...) para o qual a plataforma tem solução (e. g. Assimilação da cultura de empresa e do espírito das marcas, Simplificação do processo de acolhimento, Redução de custos em reuniões periódicas, Facilidade em divulgar aspectos técnicos, que de outra, forma demorariam mais tempo ...).\cite{tcginfo}. 
+
+As principais funcionalidades do  \acrshort{tcg}  são as seguintes:
 
 
 \begin{itemize}
@@ -82,10 +82,10 @@ Um dos objetivos do projeto é permitir aos utilizadores da plataforma a criaç�
 
 O Akinator\cite{akinator} e o high5test\cite{5} são dois bons exemplos de aplicações que através de um questionário, e baseado nas respostas do utilizador final, apresenta um resultado segmentado. Estas duas aplicações são bastante poderosas e utilizam algoritmos de decisão que os permitem tirar este tipo de conclusões. Nesta medida alguns algoritmos como o CART\cite{cart}, ID3\cite{id3}\cite{id3_2}\cite{cart} e C4.5\cite{cart}\cite{c4.5} foram brevemente estudados com intuito de avaliar a viabilidade de serem aplicados na conceção desta funcionalidade do projeto. Este tipo de algoritmos, não só são complexos como são algoritmos que necessitam de dados de treino. Tal como referido no Capítulo \ref{subsec:objetivos}, um dos requisitos definidos pelo cliente é que a criação destes questionário seja intuitiva e exequível por qualquer pessoa mesmo que esta não tenha qualquer conhecimento em programação. Isto agregado ao facto de que, em qualquer momento da criação dos questionário, não haverá dados de treino, a aplicação deste tipo de algoritmos não é viável.
 
-Dito isto foram discutidas outras abordagens e determinou-se que uma solução que vai de encontro ao conceito da funcionalidade passa pela criação de um sistema de pontuações
-Nesta abordagem são atribuídos pesos a cada pergunta e consoante a resposta do utilizador, o sistema vai pontuando os resultados possíveis para que no final possa ser apresentado o resultado com maior pontuação.
+Dito isto foram discutidas outras abordagens e determinou-se que uma possível boa solução, que vai de encontro ao conceito da funcionalidade, passa pela criação de um sistema recomendação.
+Nesta abordagem são atribuídos pesos a cada pergunta e tags às respectivas respostas. O peso determina o impacto que cada pergunta tem no calculo do resultado, e consoante a resposta do utilizador, o sistema vai organizando os resultados num ranking de recomendação baseado na pontuação da pergunta e na correspondência entre as tags associadas às respostas e as tags associadas aos resultados. Este algoritmo de recomendação será mais detalhados nas secções \ref{d:quests} e \ref{sec:val_alg}.
 
-Uma aplicação deste tipo de questionário será, por exemplo: "Calcule o lugar ideal de para viajar nas suas férias". Atualmente, num formato semelhante (i. e. em formato \textit{quiz}) já existem alguns \textit{Websites} (e. g. Chase for Adventure\cite{chaseforadventure}, travelpicker\cite{travelpicker}, Insight Vacations\cite{insightvacations} e Driftwood Journals\cite{driftwoodjournals}) que satisfazem, de forma simplista, esta necessidade em específico. Apesar de simples são exemplos que se conseguirião replicar com a plataforma a desenvolver e que está alinhado com a visão da plataforma. Neste sentido foram analisadas plataformas mais poderosas, que se focam na construção de leads, e que conseguem o mesmo resultado.
+Uma aplicação deste tipo de questionário será, por exemplo: "Calcule o lugar ideal de para viajar nas suas férias". Atualmente, num formato semelhante (i. e. em formato \textit{quiz}) já existem alguns \textit{Websites} (e. g. Chase for Adventure\cite{chaseforadventure}, travelpicker\cite{travelpicker}, Insight Vacations\cite{insightvacations} e Driftwood Journals\cite{driftwoodjournals}) que satisfazem, de forma simplista, esta necessidade em específico. Apesar de simples são exemplos que se conseguirião replicar com a plataforma a desenvolver e que está alinhado com a visão da plataforma. Neste sentido foram analisadas plataformas mais poderosas, que se focam na construção de leads, e que conseguem um resultado semelhante.
 
 
 \subsection{involve.me}
@@ -96,7 +96,7 @@ Uma aplicação deste tipo de questionário será, por exemplo: "Calcule o lugar
 %multichannel supporte
 %landiung page
 
-"\textit{involve.me is a next-generation user engagement \& customer experience platform with a focus on digital marketers \& e-commerce.}"\cite{involve}. \textit{O involve.me} é uma plataforma moderna que ajuda empresas a criar interações personalizadas ao longo da jornada dos clientes, aumentando a audiência e recolhendo mais e melhores dados. Esta plataforma foca-se também na recolha e análise destes dados/informações sobre os utilizadores finais.
+"\textit{involve.me is a next-generation user engagement \& customer experience platform with a focus on digital marketers \& e-commerce.}"\cite{involve}. O involve.me é uma plataforma moderna que ajuda empresas a criar interações personalizadas ao longo da jornada dos clientes, aumentando a audiência e recolhendo mais e melhores dados. Esta plataforma foca-se também na recolha e análise destes dados/informações sobre os utilizadores finais.
 
 
 \subsection{Survey Anyplace}
@@ -121,7 +121,7 @@ O Interact é uma das grandes plataformas de criação de questionários e gera�
 \subsection{easypromo}
 \label{easypromoM}
 
-\textit{Easypromos}\cite{f6} é uma plataforma para criação e gestão de campanhas, questionários, concursos, promoções etc.. A \textit{easypromos} afirma que a sua plataforma aumenta o número de seguidores das marcas, melhora a sua visibilidade, gera um maior número de\textit{leads} e ajuda na conversão dos mesmos para clientes.
+\textit{Easypromos}\cite{f6} é uma plataforma para criação e gestão de campanhas, questionários, concursos, promoções etc.. A \textit{easypromos} afirma que a sua plataforma aumenta o número de seguidores das marcas, melhora a sua visibilidade, gera um maior número de \textit{leads} e ajuda na conversão dos mesmos para clientes.
 
 
 \subsection{Discussão de funcionalidades}
@@ -131,11 +131,11 @@ O Interact é uma das grandes plataformas de criação de questionários e gera�
 
 Nas tabelas \ref{tab:comparacao1}, \ref{tab:comparacao2} e \ref{tab:comparacao3} encontra-se a comparação entre as plataformas analisadas no Anexo \ref{a:ea}, baseada numa lista de funcionalidades.
 
-Como vimos na análise efetuada no Anexo \ref{a:ea}, em todas as plataformas/ferramentas é necessário criar uma conta para aceder a todas as funcionalidades, contudo apenas o \textit{involve.me}, \textit{easypromos} e o 10.quest fornecem um plano gratuito que apenas dá acesso a algumas funcionalidades. As restantes plataformas apenas disponibilizam um plano trial fornece o acesso a um pacote de funcionalidades pago, durante 6 (\textit{Survey Anyplace}) a 15 (\textit{Interact}) dias. No fim deste prazo, os utilizadores, para continuarem a usufruir das funcionalidades da plataforma terão de subscrever um plano/pacote de funcionalidades.
+Como vimos na análise efetuada no Anexo \ref{a:ea}, em todas as plataformas/ferramentas é necessário criar uma conta para aceder a todas as funcionalidades, contudo apenas o \textit{involve.me} e p \textit{easypromos} fornecem um plano gratuito que dá acesso apenas a algumas funcionalidades. As restantes plataformas apenas disponibilizam um plano trial que fornece o acesso a um pacote de funcionalidades pago, durante 6 dias(\textit{Survey Anyplace}), 15 dias(\textit{Interact}) ou 30 dias (10.quest). No fim deste prazo, os utilizadores, para continuarem a usufruir das funcionalidades da plataforma terão de subscrever um plano/pacote de funcionalidades.
 
-Todas as ferramentas analisadas disponibilizam uma série de templates excepto o 10.quest que não prevê a integração dessa funcionalidade num futuro próximo. Todas as ferramentas permitem a criação de questionário do zero e todas elas possuem ferramentas de personalização dos questionários.
+Todas as ferramentas analisadas disponibilizam uma série de templates excepto o 10.quest que não prevê a integração dessa funcionalidade num futuro próximo. Todas as ferramentas permitem a criação de questionários do zero e todas elas possuem ferramentas de personalização dos mesmos.
 
-De entre todas as plataformas analisadas o 10.quest é a unica que permite importar conteúdo previamente feito com recurso a ficheiros externos (i.e. base de dados de perguntas e respostas em CSV). É de notar que as questões importadas para a plataforma através desta funcionalidade, tendo em conta que esse processo é feito através de uma \textit{spreadsheet}, ficheiros de imagens ou vídeo terão de ser adicionados posteriormente.
+De entre todas as plataformas analisadas o 10.quest é a unica que permite importar conteúdo previamente feito com recurso a ficheiros externos (i.e. perguntas e respostas ou resultados através de um ficheiro CSV). É de notar que as questões importadas para a plataforma através desta funcionalidade, tendo em conta que esse processo é feito através de uma \textit{spreadsheet}, ficheiros de imagens ou vídeo terão de ser adicionados posteriormente.
 
 Cada plataforma tem a seu método de criar um fluxo lógico ou sistema de pontuações para conseguir calcular o resultado segmentado de acordo com as respostas do utilizador final. O \textit{involve.me} desmonstrou ser a ferramenta mais fraca no que a esta funcionalidade diz respeito, visto que apenas se pode associar um resultado possível a uma resposta. O \textit{easypromos} implementa um sistema correlação com as resultados possívo. O utilizador cria uma série de resultados e atribui a cada um número (categoria), o resultado final será o resultado cuja sua categoria foi escolhida mais vezes. Uma desvantagem deste método é que não se consegue atribuir maior importância a uma determinada pergunta. O \textit{Survey Anyplace} e o 10.quest demonstram ser as plataformas com maior capacidade de implementar estas funcionalidades visto que ambos integram um sistema de pontuações e ambos conseguem criar um fluxo lógico. O \textit{Interact} consegue associar resultados a respostas contudo todas as ligações valem o mesmo e por isso mesmo o cálculo do resultado final não é tão preciso.
 
@@ -148,17 +148,17 @@ Outra maneira de partilhar os questionários será através de um link ou atrav�
 
 
 Na secção de recolha e análise de dados a 10.quest destaca-se. A 10.quest é unica plataforma que apresenta estatísticas globais que satisfazem as necessidades do utilizador (i. e. que representam dados relevantes). É também a única plataforma que tem capacidade de associar as tags dos questionários a utilizadores finais e assim criar perfis de utilizador conseguindo segmentar leads qualificadas. Estas tags são associadas às formações, questionários e concursos, e assim que um uitilizador final se inscreve nas mesmas, a tag é automaticamente associada ao utilizador final.  À semelhaça da plataforma \textit{Interact} o 10.quest mostra o túnel de conversão na análise de dados e gera um gráfico temporal de eventos que ajuda a perceber as tendências e as taxas de conversão ao longo do tempo.
- 
- 
- \subsubsection{Concursos}
- 
- As plataformas \textit{easypromos} e 10.quest são as únicas plataformas capazes de criar concursos. 
- Apesar de todas as plataformas terem múltiplas funcionalidades para criar e personalizar divertos tipos de pergunta, à excepção da \textit{easypromos} e do 10.quest, as restantes plataformas não apresentam os resultados em forma de \textit{leaderboard}, nem fazem o cálculo e atribuição de prémio ao vencedor de forma automática.
- Todas as restantes funcionalidades associadas aos concursos, são muito semelhantes, com as funcionalidades descritas em cima e no Anexo \ref{a:ea}. 
- 
- \subsubsection{Tabela de comparações}
-	
-	
+
+
+\subsubsection{Concursos}
+
+As plataformas \textit{easypromos} e 10.quest são as únicas plataformas capazes de criar concursos. 
+Apesar de todas as plataformas terem múltiplas funcionalidades para criar e personalizar divertos tipos de pergunta, à excepção da \textit{easypromos} e do 10.quest, as restantes plataformas não apresentam os resultados em forma de \textit{leaderboard}, nem fazem o cálculo e atribuição de prémio ao vencedor de forma automática.
+Todas as restantes funcionalidades associadas aos concursos, são muito semelhantes, com as funcionalidades descritas em cima e no Anexo \ref{a:ea}. 
+
+\subsubsection{Tabela de comparações}
+
+
 \renewcommand{\arraystretch}{2}
 \setlength\arrayrulewidth{1pt}
 \begin{table}[!ht]  
@@ -205,16 +205,16 @@ Na secção de recolha e análise de dados a 10.quest destaca-se. A 10.quest é 
 			\multicolumn{1}{c|}{} & \hspace{0.2cm}\begin{sideways}involve.me\end{sideways} & \hspace{0.4cm}\begin{sideways}Survey Anyplace\end{sideways} & \hspace{0.2cm}\begin{sideways}Interact\end{sideways}&
 			\hspace{0.2cm}\begin{sideways}easypromos\end{sideways}&
 			\hspace{0.2cm}\begin{sideways} 10.quest\end{sideways}\\ \hline
-		
-		
+			
+			
 			Pré-visualização dos questionários &\cellcolor{green!80}  & \cellcolor{green!80} & \cellcolor{green!80} & \cellcolor{green!80} & \cellcolor{green!80}  \\ \hline
 			
 			Exportar os resultados &\cellcolor{green!80}  & \cellcolor{green!80} & \cellcolor{green!80} & \cellcolor{green!80} & \cellcolor{green!80}  \\ \hline
 			
 			Integração de sistemas externos & \cellcolor{green!80}  & \cellcolor{green!80} & \cellcolor{green!80} & \cellcolor{green!80} & \cellcolor{red!80}  \\ \hline
-		
+			
 			Partilhar questionários nas redes sociais &\cellcolor{green!80}  & \cellcolor{yellow!80} & \cellcolor{green!80} & \cellcolor{green!80} & \cellcolor{green!80}  \\ \hline
-		
+			
 			
 			Estado dos questionários &\cellcolor{green!80}  & \cellcolor{red!80} & \cellcolor{red!80} & \cellcolor{green!80}  & \cellcolor{green!80}  \\ \hline
 			
@@ -222,11 +222,11 @@ Na secção de recolha e análise de dados a 10.quest destaca-se. A 10.quest é 
 			
 			Email Marketing &\cellcolor{red!80}  & \cellcolor{green!80} & \cellcolor{green!80} & \cellcolor{green!80} & \cellcolor{green!80}  \\ \hline
 			
-			 Embeber questionários& \cellcolor{green!80}  & \cellcolor{green!80}  & \cellcolor{green!80} & \cellcolor{green!80} & \cellcolor{green!80}  \\ \hline
+			Embeber questionários& \cellcolor{green!80}  & \cellcolor{green!80}  & \cellcolor{green!80} & \cellcolor{green!80} & \cellcolor{green!80}  \\ \hline
 			
 			Fluxo Lógico/Sistema de pontuação &\cellcolor{yellow!80}  & \cellcolor{green!80} & \cellcolor{green!80} & \cellcolor{yellow!80} & \cellcolor{green!80}  \\ \hline
 			
-		
+			
 			
 		\end{tabular}
 	\end{center}
@@ -265,16 +265,16 @@ Na secção de recolha e análise de dados a 10.quest destaca-se. A 10.quest é 
 			Suporte dedicado (i. e. canal de comunicação dedicado para suporte da plataforma)		 & \cellcolor{green!80}  & \cellcolor{green!80}  & \cellcolor{green!80} & \cellcolor{green!80} & \cellcolor{green!80}  \\ \hline
 			
 		\end{tabular}
-		\end{center}
+	\end{center}
 	\hspace{1.2cm}	\textcolor{red}{$\blacksquare$} Funcionalidade não implementada
-
-\hspace{1.2cm}     \textcolor{yellow}{$\blacksquare$} Funcionalidade parcialmente implementada
-
-\hspace{1.2cm}     \textcolor{green}{$\blacksquare$} Funcionalidade totalmente implementada 
-\begin{center}
-\caption{Tabela de comparação de funcionalidades (continuação)}
-\label{tab:comparacao3}
-\end{center}
+	
+	\hspace{1.2cm}     \textcolor{yellow}{$\blacksquare$} Funcionalidade parcialmente implementada
+	
+	\hspace{1.2cm}     \textcolor{green}{$\blacksquare$} Funcionalidade totalmente implementada 
+	\begin{center}
+		\caption{Tabela de comparação de funcionalidades (continuação)}
+		\label{tab:comparacao3}
+	\end{center}
 \end{table}
 
 \pagebreak
@@ -283,6 +283,5 @@ Na secção de recolha e análise de dados a 10.quest destaca-se. A 10.quest é 
 %-------------------------------------------------------------------------------------------------
 
 \glsresetall
-
 
 
