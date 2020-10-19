@@ -112,7 +112,7 @@ Desta forma será claro para o leitor, mas em especial para a equipa de desenvol
 	\end{center}
 \end{figure}
 
-A 10.quest, tal como referido nos capítulos anteriores, é uma plataforma de inbound marketing que permite aos utilizadores criar campanhas e tratar a informação recolhida nas mesmas. 
+A 10.quest, tal como referido nos capítulos anteriores, é uma plataforma de inbound marketing que permite aos utilizadores da plataforma (i. e. \textit{backoffice}) criar campanhas e tratar a informação recolhida nas mesmas, e permite aos utilizadores finais (i. e. portenciais clientes e ou \textit{leads}) participar nas campanhas. 
 Estas campanhas poderão ser partilhadas nas redes sociais (i. e. utilizando a API do Facebook, Instagram e Twitter) através de \textit{landing pages}. Estas \textit{landing pages} terão um pequeno formulário que necessita das informações básicas do utilizador final para que, automaticamente, as formações, questionários de personalidade e/ou concursos (i. e. campanhas) sejam enviados por mail para os inscritos, utilizando o sistema externo SendGrid.
 
 Tal como referido no Capítulo \ref{sec:estado-arte}, o \acrshort{tcg} é um produto desenvolvido pela 10.digital e encontra-se atualmente no mercado. Algumas das funcionalidades fundamentais da plataforma a desenvolver já estão implementadas no \acrshort{tcg}  e por isso mesmo haverá uma integração com o mesmo para aproveitar todas estas funcionalidades necessárias.
@@ -130,10 +130,12 @@ Tal como referido no Capítulo \ref{sec:estado-arte}, o \acrshort{tcg} é um pro
 	\end{center}
 \end{figure}
 
-Um utilizador para aceder a todas as funcionalidades da plataforma terá de primeiro realizar a autenticação (\textbf{RF01 - Login}). Caso ainda não tenha uma conta registada terá de o fazer. Assim que a conta for criada é enviada uma notificação para o email do utilizador, recorrendo ao sistema externo SendGrid. Por questões de segurança e confidencialidade dos dados, no acto do registo, a informação do utilizador será enviada e guardada na base de dados do \acrshort{tcg}, para que mais tarde todos os pedidos REST possam ser validados.
+Um utilizador da plataforma (i. e. \textit{backoffice}), para aceder a todas as funcionalidades da plataforma terá de primeiro realizar a autenticação (\textbf{RF01 - Login}). Caso ainda não tenha uma conta registada terá de o fazer. Assim que a conta for criada é enviada uma notificação para o email do utilizador, recorrendo ao sistema externo SendGrid. Por questões de segurança e confidencialidade dos dados, no acto do registo, a informação do utilizador será enviada e guardada na base de dados do \acrshort{tcg}, para que mais tarde todos os pedidos REST possam ser validados.
 
-Depois de um utilizador se autenticar, será direcionado para a página inicial. A partir daqui o utilizador tem acesso à sua lista de campanhas (i. e. questionários, formações e concursos) podendo gerir as mesmas, bem como aceder às definições, atualizar o plano da conta, utilizar o suporte da plataforma e terminar sessão.
-Ainda na página inicial da plataforma, onde se encontram listados todos os tipos de campanhas do utilizador da plataforma, será exibido o estado de cada campanha e data de término, se for o caso, para ajudar o utilizador a perceber de forma rápida o estado das mesmas.
+Depois de um utilizador se autenticar, será direcionado para a página inicial. A partir daqui o utilizador da plataforma tem acesso à sua lista de campanhas (i. e. questionários, formações e concursos) podendo gerir as mesmas, bem como aceder às definições, atualizar o plano da conta, utilizar o suporte da plataforma e terminar sessão.
+Ainda na página inicial da plataforma, onde se encontram listados todos os tipos de campanhas do utilizador da plataforma, será exibido o estado de cada campanha e data de término, se for o caso, para ajudar a perceber, de forma rápida, o estado das mesmas.
+
+Os utilizadores finais (i. e. potenciais clientes e/ou \textit{leads}), para participar numa campanha (\textbf{RF64 - Participar Campanha}), terão de se inscrever na \textit{landing page} da respetiva (\textbf{RF63 - Inscrição Campanha <Landing Page>}). As \textit{landing pages} são geradas e publicadas pelos utilizadores da plataforma.
 
 \newpage
 
@@ -295,11 +297,6 @@ O gráfico temporal de eventos é um gráfico que de forma temporal mostra o nú
 É ainda de notar que todos os dados não relacionados com tráfego dão para ser exportados através de uma \textit{spreadsheet}.
 
 
-\section{Mockups}
-\label{prototipagem}
-
-A criação de mockups/protótipos de baixa fidelidade, teve como principal objetivo representar a plataforma (i. e. todos os requisitos funcionais) de forma estática. Esta secção foi importante para conseguir visualizar a plataforma como um todo, facilitando não só a implementação, como também teve um papel importante na verificação dos requisitos levantados, satisfazendo todos os casos de uso descritos no Anexo \ref{a:cu}. Todos os mockups realizados encontram-se descritos no Anexo \ref{a:prototipos}.
-
 \section{Termos de Serviço}
 
 Os termos de serviço regulam as condições de acesso e uso da plataforma 10.quest. A Política de privacidade da plataforma foi construida a partir de um modelo fornecido na empresa e o documento de termos de serviço completo encontra-se no Anexo \ref{sec:gdpr}.
@@ -313,6 +310,13 @@ A Política de Privacidade, explica como recolhemos, processamos e armazenamos q
 	\item Como contactar-nos.
 	\item Reclamações.
 \end{itemize}
+
+
+\section{Mockups}
+\label{prototipagem}
+
+A criação de mockups/protótipos de baixa fidelidade, teve como principal objetivo representar a plataforma (i. e. todos os requisitos funcionais) de forma estática. Esta secção foi importante para conseguir visualizar a plataforma como um todo, facilitando não só a implementação, como também teve um papel importante na verificação dos requisitos levantados, satisfazendo todos os casos de uso descritos no Anexo \ref{a:cu}. Todos os mockups realizados encontram-se descritos no Anexo \ref{a:prototipos}.
+
 
 
 
