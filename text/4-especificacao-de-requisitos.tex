@@ -149,9 +149,20 @@ Os utilizadores finais (i. e. potenciais clientes e/ou \textit{leads}), para par
 	\end{center}
 \end{figure}
 
-Para se efetuar um registo é necessário introduzir o nome da empresa, nome do utilizador, email, \textit{username} e \textit{password}. De seguida é enviado um mail de validação para o email associado à conta.
+Para se efetuar um registo é necessário introduzir:
+\begin{itemize}
+	\setlength{\itemsep}{1pt}
+	\item [--] Nome da empresa;
+	\item [--] Morada da empresa;
+	\item [--] Email da empresa;
+	\item [--] Primeiro e último nome;
+	\item [--] Email de utilizador;
+	\item [--] Password
+	\item [--] VAT
+\end{itemize}
+De seguida é enviado um mail de validação para o email associado à conta.
 
-Depois de validada a conta do utilizador, este consegue efetuar o \textit{login} na plataforma.
+Depois de validada a conta do utilizador, através do mail, este consegue efetuar o \textit{login} na plataforma.
 
 
 
@@ -315,7 +326,58 @@ A Política de Privacidade, explica como recolhemos, processamos e armazenamos q
 \section{Mockups}
 \label{prototipagem}
 
-A criação de mockups/protótipos de baixa fidelidade, teve como principal objetivo representar a plataforma (i. e. todos os requisitos funcionais) de forma estática. Esta secção foi importante para conseguir visualizar a plataforma como um todo, facilitando não só a implementação, como também teve um papel importante na verificação dos requisitos levantados, satisfazendo todos os casos de uso descritos no Anexo \ref{a:cu}. Todos os mockups realizados encontram-se descritos no Anexo \ref{a:prototipos}.
+A criação de mockups/protótipos de baixa fidelidade, teve como principal objetivo representar a plataforma (i. e. todos os requisitos funcionais) de forma estática. Esta secção foi importante para conseguir visualizar a plataforma como um todo, facilitando não só a implementação, como também teve um papel importante na verificação dos requisitos levantados, satisfazendo todos os casos de uso descritos no Anexo \ref{a:cu}. 
+
+\subsection{Autenticação}
+
+Quando se acede à página oficial da aplicação, é possível ver a descrição do produto, funcionalidades, planos entre outros. É também a partir da página do produto que o utilizador consegue realizar a autenticação na plataforma.
+
+Representado na Figura \ref{10q-login} temos a interface que diz respeito à autenticação do utilizador.
+
+Quando se efectua o \textit{login} na plataforma, o utilizador é apresentado com a interface representada na Figura \ref{10q-login}, onde é necessário introduzir o email e password associados à sua conta. Caso as credênciais não estejam corretas, o utilizador é notificado para esse efeito.
+
+\begin{figure}[ht!]
+	\begin{center}
+		\includegraphics[width=1\textwidth]{img/prototipos/1.png}
+		\caption{10.quest - Login}
+		\label{10q-login}
+	\end{center}
+\end{figure}
+
+\subsection{Definições}
+
+Na Figura \ref{10q-def} está representada a página das definições da conta de um utilizador da plataforma. Nesta página o utilizador pode alterar os dados pessoais e os dados da empresa, caso tenha permissões para esse efeito.
+
+\begin{figure}[ht!]
+	\begin{center}
+		\includegraphics[width=1\textwidth]{img/prototipos/def.png}
+		\caption{10.quest - Definições}
+		\label{10q-def}
+	\end{center}
+\end{figure}
+
+\subsection{Página Inicial}
+
+Representado nas Figuras \ref{10q-home} e \ref{10q-home1} temos a página principal da plataforma. A partir da página inicial um utilizador autenticado tem acesso a todas as funcionalidades principais do sistema representadas na Figura \ref{d:altonivel}, na secção \ref{rf}.
+
+A partir da página principal o utilizador têm acesso à lista de campanhas organizadas (i. e. lista de formações, questionários de personalidade e concursos) e respectivo estado.
+
+
+\begin{figure}[ht!]
+	\begin{center}
+		\includegraphics[width=1\textwidth]{img/prototipos/home-q.png}
+		\caption{10.quest - Página Inicial}
+		\label{10q-home}
+	\end{center}
+\end{figure}
+
+\begin{figure}[ht!]
+	\begin{center}
+		\includegraphics[width=1\textwidth]{img/prototipos/home-f.png}
+		\caption{10.quest - Página Inicial}
+		\label{10q-home1}
+	\end{center}
+\end{figure}
 
 
 
