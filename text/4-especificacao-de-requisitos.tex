@@ -322,6 +322,7 @@ A Política de Privacidade, explica como recolhemos, processamos e armazenamos q
 	\item Reclamações.
 \end{itemize}
 
+\pagebreak
 
 \section{Mockups}
 \label{prototipagem}
@@ -348,6 +349,8 @@ Quando se efectua o \textit{login} na plataforma, o utilizador é apresentado co
 
 Na Figura \ref{10q-def} está representada a página das definições da conta de um utilizador da plataforma. Nesta página o utilizador pode alterar os dados pessoais e os dados da empresa, caso tenha permissões para esse efeito.
 
+\newpage
+
 \begin{figure}[ht!]
 	\begin{center}
 		\includegraphics[width=1\textwidth]{img/prototipos/def.png}
@@ -358,10 +361,9 @@ Na Figura \ref{10q-def} está representada a página das definições da conta d
 
 \subsection{Página Inicial}
 
-Representado nas Figuras \ref{10q-home} e \ref{10q-home1} temos a página principal da plataforma. A partir da página inicial um utilizador autenticado tem acesso a todas as funcionalidades principais do sistema representadas na Figura \ref{d:altonivel}, na secção \ref{rf}.
+ Representado nas Figuras \ref{10q-home} e \ref{10q-home1} temos a página principal da plataforma. A partir da página inicial um utilizador autenticado tem acesso a todas as funcionalidades principais do sistema representadas na Figura \ref{d:altonivel}, na secção \ref{rf}.
 
-A partir da página principal o utilizador têm acesso à lista de campanhas organizadas (i. e. lista de formações, questionários de personalidade e concursos) e respectivo estado.
-
+A partir da página principal o utilizador têm acesso à lista de campanhas organizadas (i. e. lista de formações, questionários de personalidade e concursos) e respetivo estado. Para criar uma campanhas é necessário carregar no botão "Novo Questionário" ou "Nova Formação", respetivamente. Para editar, o utilizador da plataforma apenas precisa de carregar na campanha que deseja editar e é redirecionado para uma página, para esse efeito.
 
 \begin{figure}[ht!]
 	\begin{center}
@@ -380,7 +382,81 @@ A partir da página principal o utilizador têm acesso à lista de campanhas org
 \end{figure}
 
 
+\subsection{Questionários de personalidade}
 
+Para criar ou editar um uma campanha do tipo questionário de personalidade, é necessário introduzir os dados necessários ao efeito, como se pode ver, representado na Figura \ref{10q-f-per}. Para eliminar a campanha, é necessário carregar no botão "Eliminar" e confirmar.
+
+\begin{figure}[ht!]
+	\begin{center}
+		\includegraphics[width=1\textwidth]{img/prototipos/q-def.png}
+		\caption{10.quest - Criar/Editar Formação (Definições da Campanha).}
+		\label{10q-f-per}
+	\end{center}
+\end{figure}
+
+Na secção "Questões e Resultados", representado na Figura \ref{10q-q-p-r} podemos encontrar a lista de todas as questões e resultados associadas a respectiva campanha (i. e. questionário de personalidade). 
+
+Em cada lista é possível criar uma nova entrada (i. e. nova questão ou resultado), importar novas questões e resultados, respectivamente, exportar todas as questões e resultados associadas à campanha e, para eliminar entradas, selecionar as entradas desejadas e carregar em "Apagar". É també possível filtrar entradas através do campo de pesquisa.
+
+\begin{figure}[ht!]
+	\begin{center}
+		\includegraphics[width=1\textwidth]{img/prototipos/q-p-r.png}
+		\caption{10.quest - Criar/Editar Formação (Definições da Campanha).}
+		\label{10q-q-p-r}
+	\end{center}
+\end{figure}
+
+
+\begin{comment}
+
+
+\subsection{Formações}
+
+Para criar ou editar um uma campanha do tipo formação, é necessário introduzir os dados necessários ao efeito, como se pode ver, representado na Figura \ref{10q-f-per}.
+
+\begin{figure}[ht!]
+	\begin{center}
+		\includegraphics[width=1\textwidth]{img/prototipos/q-def.png}
+		\caption{10.quest - Criar/Editar Formação (Definições da Campanha).}
+		\label{10q-fsdf-per}
+	\end{center}
+\end{figure}
+
+Nesta secção Perguntas Formação temos listadas todas as perguntas de formações, como podemos ver na Figura \ref{10q-perguntasL}. Nesta página o utilizador consegue visualizar, filtrar (por nome ou por tag), eliminar, importar e exportar perguntas. O utilizador consegue ainda criar uma nova pergunta de formação carregando no botão Nova Pergunta.
+
+Representado na Figura \ref{10q-NperguntaF} temos a criação de uma pergunta para uma formação. Como podemos ver, o utilizador tem de obrigatóriamente adicionar uma ou mais tags, a pergunta, uma resposta certa e pelos menos uma resposta errada. O peso associado à pergunta já está pré-definido contudo pode ser alterado pelo utilizador. É ainda possível adicionar uma descrição à pergunta e um ficheiro de aúdio, imagem ou vídeo a uma pergunta e/ou resposta.
+
+\begin{figure}[ht!]
+	\begin{center}
+		\includegraphics[width=1\textwidth]{img/prototipos/6.png}
+		\caption{10.quest - Criar/Editar Formação (Definições da Campanha).}
+		\label{10q-fd-per}
+	\end{center}
+\end{figure}
+
+
+
+Depois de criadas todas as perguntas necessárias para formação, sendo que o utilizador pode a qualquer momento voltar à página de criação de perguntas para formação e criar novas perguntas, o utilizador está então em condições para criar uma formação.
+
+Representado na Figura \ref{10q-Lformacoes}, temos a secção das formações. Nesta página à semelhança das secções dos questionários e dos concursos, estão listadas todas as formações associadas à conta do utilizador. Para cada formação é possível ver a data de inicio, data de fim, o estado actual do questionário e ainda alguns dados estatísticos que irão ser definidos no segundo semestre.
+Para  apagar uma ou mais formações o utilizador tem que marcar cada uma delas e depois carregar no botão para eliminar as formações. É ainda possível pesquisar uma formação por nome.
+\newpage
+
+\begin{figure}[ht!]
+	\begin{center}
+		\includegraphics[width=1\textwidth]{img/prototipos/8.png}
+		\caption{10.quest - Lista de Formações}
+		\label{10q-Lformacoes}
+	\end{center}
+\end{figure}
+
+
+Na criação de uma formação o primeiro passo é definir a periocidade do mesmo. Como podemos ver na Figura \ref{10q-periodo}, o utilizador tem introduzir o nome da formação, a data de inicio, a data de fim, os dias da semana em que a notificação da formação será enviada para os utilizadores finais, a hora do envio e a duração/validade da formação. A duração tem de ser menor ou igual ao menor intervalo de tempo possível entre os dias da semana selecionados.
+
+Depois de configurar a periocidade, a formação está criada e o utilizador pode adicionar entradas de perguntas. Representado na Figura \ref{10q-entradas} temos as definições da formação. Nesta página o utilizador pode adicionar e remover uma entrada à formação. Para adicionar uma entrada na formação, o utilizador tem de introduzir a(s) tag(s) de utilizador (i. e. utilizadores finais que estão associados a uma respectiva tag. Os utilizadores finais, quanto se inscrevem numa formação através da landing page, automaticamente ficam associados à(s) tag(s) associadas à formação em questão), a(s) tag(s) de perguntas e o número de perguntas que o utilizador final irá receber daquela entrada.
+
+
+\end{comment}
 
 
 %-------------------------------------------------------------------------------------------------
